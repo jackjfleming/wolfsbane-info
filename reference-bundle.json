@@ -1,0 +1,2179 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "2026-09-26-draft.1",
+  "checksum": "287c67c133faf8dadb7db7537113d82ac7085b01f96bd3e1382cf12c5a1a9ea6",
+  "roles": [
+    {
+      "id": "artist",
+      "name": "Artist",
+      "appName": "Artist",
+      "aliases": [],
+      "type": "townsfolk",
+      "ability": "Once per game, during the day, privately ask the Storyteller any yes/no question.",
+      "shortRuling": "Once per game, during the day, privately ask the Storyteller any yes/no question.",
+      "howToRun": "During any day, the Artist can request a private chat with you. Take them away from the circle so you cannot be overheard. They will ask you a question. Whisper 'Yes,' 'No,' or 'I don't know,' to them, or if you cannot answer in one of these ways, prompt the Artist to ask again in a different way. The Artist loses their ability - mark them with the NO ABILITY reminder.",
+      "interactions": [],
+      "examples": [
+        "The Artist asks, 'Is the Alpha Wolf sitting in a brown chair?' The Storyteller answers, 'No,' because the Alpha Wolf is in a black chair.",
+        "The Artist asks, 'Is David the Evil Twin?' and the Storyteller answers, 'Yes,' because David is.",
+        "The Artist asks, 'How many Minions are alive?' and the Storyteller says, 'Please ask another question. I cannot answer that with a yes, no, or I don't know.'",
+        "The Artist asks, 'Are we winning?' and the Storyteller answers, 'I don't know,' because even though all the Minions are dead, many good players trust the Alpha Wolf."
+      ],
+      "tips": [
+        "Ask your question as soon as you can on the first day! With the Alpha Wolf's ability, you risk losing your question every day that you do not use it. Using it right away negates this risk. There are a lot of questions you can ask knowing nothing else about the game that will give you a great head-start on detecting where evil is hidden in the town.",
+        "Hold onto your question for a few days. This is very risky, since the longer you are alive without using it, the greater chance you won't get to. With that said, this is a game of information - waiting to hear people's claims and the information they've got available to them can enable you to ask a much more specific and deadly question that could change the course of the game with a simple 'yes' or 'no'.",
+        "Being too specific with your question (e.g. Is Amy the Alpha Wolf?) will probably result in an unhelpful 'no'. Instead, ask questions that will divide the group into two halves. For example, ask if the Alpha Wolf is sitting in a particular group - yes or no, you have narrowed down where the Alpha Wolf is or isn't. Other questions can include asking if there's a concentration of evil players in a particular location, or asking about characters like the Evil Twin.",
+        "If you don't have a lot of in-game threads to follow, you can also ask for information outside of the game mechanics and still break the town into groups. For example, if a disproportionate number of players are wearing red shirts. you can ask if the Alpha Wolf is among them!",
+        "Your ability can be used to replicate many information gathering abilities in the game - providing you can phrase them as a yes/no question! Listen to the claims of the people around you and craft your question to cover weaknesses in the good team's info, or to confirm/deny another person's claims.",
+        "Hiding from the Alpha Wolf so they don't kill you before you use your ability is imperative. You can try bluffing as another character, but another option is come out to the town and pretend you have already asked your question. The Alpha Wolf will not consider you as much of a threat if they believe you, and will probably prioritize more dangerous targets that appear to be still getting information."
+      ],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane-info/index.html embedded role data",
+        "wolfsbane/lib/game-constants.ts"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
+      ],
+      "legacyPath": "roles/artist.html",
+      "hasExistingGuide": true
+    },
+    {
+      "id": "bodyguard",
+      "name": "Bodyguard",
+      "appName": "Bodyguard",
+      "aliases": [],
+      "type": "townsfolk",
+      "ability": "Each night*, choose a player (not yourself): they are safe from the Alpha tonight.",
+      "shortRuling": "Each night*, choose a player (not yourself): they are safe from the Alpha Wolf tonight.",
+      "howToRun": "Each night except the first, wake the Bodyguard. The Bodyguard points at any player except themself. (If the Bodyguard points at themself, shake your head no and prompt them to point at another player.) Put the Bodyguard to sleep. Put the Bodyguard's SAFE reminder token by the chosen player's character token. If the Alpha Wolf attacks the player marked SAFE, the player remains alive. (Do not mark them with the Alpha Wolf's DEAD reminder token or add a shroud as you normally would.) At dawn, declare that no one died at night. (Do not say why.) At dawn, remove the SAFE reminder token. In other editions, Alpha Wolfs may have abilities other than killing. The Bodyguard's protection also prevents all other harmful effects of the Alpha Wolf's ability, such as poisoning or turning the protected player evil.",
+      "interactions": [],
+      "examples": [
+        "The Bodyguard protects the Seer. The Alpha Wolf attacks the Seer. No deaths occur tonight.",
+        "The Bodyguard protects the Mayor, and the Alpha Wolf attacks the Mayor. The Mayor's 'another player dies' ability does not trigger, because the Mayor is safe from the Alpha Wolf. Nobody dies tonight.",
+        "The Bodyguard protects the Alpha Wolf. The Alpha Wolf chooses to kill themself tonight, but nothing happens. The Alpha Wolf stays alive and a new Alpha Wolf is not created."
+      ],
+      "tips": [
+        "Your goal is to keep valuable good players alive and stall the Alpha Wolf's mayhem. Try to predict who the Alpha Wolf may target each night based on the available information in the game and how the players are acting. Every Alpha Wolf is different, and figuring out the methodology of yours can enable you to save more than one player.",
+        "Don't try to predict what the Alpha Wolf will do. Instead, talk to your fellow players and find someone to keep alive at all costs. Valuable characters, such as the Seer or Empath, or players that you trust, such as a confirmed New in Town can survive for entire games under your protection.",
+        "If you find a Hunter or a New in Town, you can convince them not to use their ability right away, since you can protect them. This will enable them to use their once per game abilities later, when more information is on the table.",
+        "You are the only player that you cannot protect, and if you thwart the Alpha Wolf, they are probably going to want to identify and kill you, so try to avoid the Alpha Wolf's attention. You can do this by bluffing as a low priority target for the Alpha Wolf like the Chef, or an undesirable one like the Ravenkeeper or Soldier.",
+        "Coming out publicly as the Bodyguard can let you coordinate with the good team, finding the best choice for your protection that night. Even if you die, you are protecting the town; the night the Alpha Wolf had to spend killing you was a night the Alpha Wolf wasn't killing your Gravedigger or New in Town. Beware of the Poisoner if you take this route! They can disable you and let the Alpha Wolf kill freely.",
+        "If you successfully protect someone at night, you can be reasonably certain that they are good, since the Alpha Wolf wanted them dead. The only exception is the Alpha Wolf, who has the special ability to die and pass their Alpha Wolfhood onto one of their Minions, but the chances of this are slim.",
+        "If you suspect that someone is the Alpha Wolf and about to kill themselves to move the Alpha Wolf, you can deliberately protect them, preventing them from doing so.",
+        "Misdirect the Alpha Wolf about who you are going to protect. You can do this publicly or by privately whispering to select players. If the Alpha Wolf believes you are guarding the Seer, they may not target them, leaving you free to provide your actual protection to someone else. Keeping the evil team guessing is a good way to spread your 'protection' among multiple players. Be aware, though, that if the player that you say you're going to protect dies, it might make you look evil, so consider confiding in them that they won't actually be protected.",
+        "If you wake up and nobody is dead, you might not have protected anyone. The Alpha Wolf may have attacked a Soldier.",
+        "If think you've successfully protected your target, ask them to bluff as the Soldier. This will cause the Alpha Wolf to think they are not worth targeting again, and mask your existence for another night."
+      ],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane-info/index.html embedded role data",
+        "wolfsbane/lib/game-constants.ts"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
+      ],
+      "legacyPath": "roles/bodyguard.html",
+      "hasExistingGuide": true
+    },
+    {
+      "id": "chambermaid",
+      "name": "Chambermaid",
+      "appName": "Chambermaid",
+      "aliases": [],
+      "type": "townsfolk",
+      "ability": "Each night, choose 2 alive players (not yourself): you learn how many woke tonight due to their ability.",
+      "shortRuling": "Each night, choose 2 alive players (not yourself): you learn how many woke tonight due to their ability.",
+      "howToRun": "Each night, choose 2 alive players (not yourself): you learn how many woke tonight due to their ability.",
+      "interactions": [],
+      "examples": [],
+      "tips": [],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+      ],
+      "legacyPath": "roles/chambermaid.html",
+      "hasExistingGuide": false
+    },
+    {
+      "id": "chef",
+      "name": "Chef",
+      "appName": "Chef",
+      "aliases": [],
+      "type": "townsfolk",
+      "ability": "You start knowing how many pairs of Werewolf players sit next to each other.",
+      "shortRuling": "You start knowing how many pairs of evil players there are.",
+      "howToRun": "During the first night, wake the Chef. Show the Chef fingers (0, 1, 2, etc.) equaling the number of pairs of neighboring evil players. Put the Chef to sleep.",
+      "interactions": [],
+      "examples": [
+        "No evil players are sitting next to each other. The Chef learns a '0'.",
+        "The Alpha Wolf is sitting next to the Baron. Across the circle, the Poisoner is sitting next to the Successor. The Chef learns a '2'.",
+        "An evil Scapegoat is sitting between the Alpha Wolf and a Minion. Across the circle, two other Minions are sitting next to each other. The Chef learns a '3'.",
+        "The Recluse is sitting between the Alpha Wolf and the Poisoner. The Chef learns a '1'. Here, the Recluse is registering as evil for the Alpha Wolf-Recluse pair, but as good for the Poisoner-Recluse pair."
+      ],
+      "tips": [
+        "At the start of the game, your information is not very useful by itself, but can be extremely helpful when combined with the information of your allies. If you can find an Empath, or Seer, then knowing who is Good or Evil, or who is or is not the Alpha Wolf, can be very powerful.",
+        "If an Gravedigger sees that an Evil player was executed, you have information about their neighbors. If you got a '0', their neighbors are likely good, but you should be suspicious of them if you learnt anything higher.",
+        "Your information is gained on the first night, so you can reveal it immediately. This can help other information-gathering characters like the Empath or Seer to interpret their own information.",
+        "If you get a '0', this is fantastic information! It means that no evil players are sitting next to each other. This means that every evil player is surrounded by good players, which can help you narrow down who is evil.",
+        "If you get a high number (like 3 or 4), this suggests that most evil players are sitting in a group. Look for a section of the circle where 3, 4, or 5 players are sitting next to each other, and most of them are probably evil.",
+        "Be wary of the Recluse! If you know that they're sat next to an Evil player, telling the group that there are Evil pairs may accidentally condemn your teammate to an early grave."
+      ],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane-info/index.html embedded role data",
+        "wolfsbane/lib/game-constants.ts"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
+      ],
+      "legacyPath": "roles/chef.html",
+      "hasExistingGuide": true
+    },
+    {
+      "id": "clockmaker",
+      "name": "Clockmaker",
+      "appName": "Clockmaker",
+      "aliases": [],
+      "type": "townsfolk",
+      "ability": "You start knowing how many steps from the Alpha to its nearest Minion.",
+      "shortRuling": "You start knowing how many steps from the Alpha to its nearest Minion.",
+      "howToRun": "You start knowing how many steps from the Alpha to its nearest Minion.",
+      "interactions": [],
+      "examples": [],
+      "tips": [],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+      ],
+      "legacyPath": "roles/clockmaker.html",
+      "hasExistingGuide": false
+    },
+    {
+      "id": "courtier",
+      "name": "Courtier",
+      "appName": "Courtier",
+      "aliases": [],
+      "type": "townsfolk",
+      "ability": "Once per game, at night, choose a character: they are poisoned for 3 nights & 3 days.",
+      "shortRuling": "Once per game, at night, choose a character: they are poisoned for 3 nights & 3 days.",
+      "howToRun": "Once per game, at night, choose a character: they are poisoned for 3 nights & 3 days.",
+      "interactions": [],
+      "examples": [],
+      "tips": [],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+      ],
+      "legacyPath": "roles/courtier.html",
+      "hasExistingGuide": false
+    },
+    {
+      "id": "empath",
+      "name": "Empath",
+      "appName": "Empath",
+      "aliases": [],
+      "type": "townsfolk",
+      "ability": "Each night, you learn how many of your living neighbors are Werewolves.",
+      "shortRuling": "Each night, you learn how many of your 2 alive neighbors are evil.",
+      "howToRun": "Each night, wake the Empath. Show the Empath fingers (0, 1, or 2) equaling the number of evil alive neighbors of the Empath. Put the Empath to sleep.",
+      "interactions": [],
+      "examples": [
+        "The Empath neighbors two good players—a Soldier and a Bodyguard. The Empath learns a '0'.",
+        "The next day, the Soldier is executed. That night, the Bodyguard is killed by the Alpha Wolf. The Empath now detects the players sitting next to the Soldier and the Bodyguard, which are a Librarian and an evil Gunslinger. The Empath now learns a '1'.",
+        "There are only three players left alive: the Empath, the Alpha Wolf, and the Baron. No matter who is seated where, the Empath learns a '2'."
+      ],
+      "tips": [
+        "You get information based on the state of the game when you wake up (after the Alpha Wolf has killed that night). This means that if one of your neighbors died in the night, you immediately start to learn about the next living player.",
+        "The information you receive should inform how you handle your neighbors. If you get a \"0\", you are (probably) sitting between two good players who you can coordinate with and might want to try to keep alive. If you get a count of \"1\", then one of your neighbors is trustworthy, and one is not. You should try to determine which one of your neighbors you trust, and eliminate the other one. If you get a count of \"2\", then you are sitting between two evil players, and should probably look to change that as soon as possible.",
+        "If you trust your neighbors, keeping them alive drastically narrows the list of Alpha Wolf suspects.",
+        "If your neighbors die, you will receive new information on the next nearest living player to you. Getting your neighbors killed means you know more. Coordinating with a Gravedigger to confirm the identities of your neighbors and getting new information down the line is a powerful combo. Even if your neighbors are both good, it can be worth executing a Hunter who has used their ability so that you know if you can trust the information from the Fortune Teller the other side of them.",
+        "Coming out with your information early (especially if you know you're sitting near evil players) can help you coordinate with the rest of the good team to further check out your suspects.",
+        "Waiting to reveal your information means that you can protect your good neighbors or keep an eye on your evil ones, as well as gather a wider portfolio of information.",
+        "If you get a count of \"1\" or \"2\", consider telling your neighbors you got a count of \"0\" instead. This will make you appear to be the Village Idiot or poisoned, and the evil team may be more inclined to keep you alive since you do not appear to be a threat. You could also try claiming to be the Soldier or another character the Alpha Wolf doesn't want to attack. Remember to come out with your real information before the end of the game!",
+        "Travelers who neighbor you count for your information. If you're suddenly getting a \"1\" when previously you were getting \"0\", look to the newly arrived Traveler with some suspicion.",
+        "Beware the Spy! They may register as good for you, and give you an incorrect count. Additionally, the Recluse may register as evil, making you believe you are sitting next to an evil player when that is not actually the case."
+      ],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane-info/index.html embedded role data",
+        "wolfsbane/lib/game-constants.ts"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
+      ],
+      "legacyPath": "roles/empath.html",
+      "hasExistingGuide": true
+    },
+    {
+      "id": "warden",
+      "name": "Warden",
+      "appName": "Warden",
+      "aliases": [],
+      "type": "townsfolk",
+      "ability": "Each night except the first, choose a player (not the same as last night): the Alpha Wolf, if chosen, learns who you are & does not act tonight due to your patrol.",
+      "shortRuling": "Each night except the first, choose a player (not the same as last night): the Alpha Wolf, if chosen, learns who you are & does not act tonight due to your patrol.",
+      "howToRun": "Each night except the first, choose a player (not the same as last night): the Alpha Wolf, if chosen, learns who you are & does not act tonight due to your patrol.",
+      "interactions": [],
+      "examples": [],
+      "tips": [],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+      ],
+      "legacyPath": "roles/warden.html",
+      "hasExistingGuide": false
+    },
+    {
+      "id": "fool",
+      "name": "Fool",
+      "appName": "Fool",
+      "aliases": [],
+      "type": "townsfolk",
+      "ability": "The first time you die, you don't.",
+      "shortRuling": "The first time you die, you don't.",
+      "howToRun": "The first time you die, you don't.",
+      "interactions": [],
+      "examples": [],
+      "tips": [],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+      ],
+      "legacyPath": "roles/fool.html",
+      "hasExistingGuide": false
+    },
+    {
+      "id": "gambler",
+      "name": "Gambler",
+      "appName": "Gambler",
+      "aliases": [],
+      "type": "townsfolk",
+      "ability": "Each night*, choose a player & guess their character: if you guess wrong, you die.",
+      "shortRuling": "Each night*, choose a player & guess their character: if you guess wrong, you die.",
+      "howToRun": "Each night*, choose a player & guess their character: if you guess wrong, you die.",
+      "interactions": [],
+      "examples": [],
+      "tips": [],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+      ],
+      "legacyPath": "roles/gambler.html",
+      "hasExistingGuide": false
+    },
+    {
+      "id": "gossip",
+      "name": "Gossip",
+      "appName": "Gossip",
+      "aliases": [],
+      "type": "townsfolk",
+      "ability": "Each day, you may make a public statement. Tonight, if it was true, a player dies.",
+      "shortRuling": "Each day, you may make a public statement. Tonight, if it was true, a player dies.",
+      "howToRun": "Each day, you may make a public statement. Tonight, if it was true, a player dies.",
+      "interactions": [],
+      "examples": [],
+      "tips": [],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+      ],
+      "legacyPath": "roles/gossip.html",
+      "hasExistingGuide": false
+    },
+    {
+      "id": "grandmother",
+      "name": "Grandmother",
+      "appName": "Grandmother",
+      "aliases": [],
+      "type": "townsfolk",
+      "ability": "You start knowing 1 player & their character (they are Good). If the Alpha kills them, you die too.",
+      "shortRuling": "You start knowing 1 player & their character (they are Good). If the Alpha kills them, you die too.",
+      "howToRun": "You start knowing 1 player & their character (they are Good). If the Alpha kills them, you die too.",
+      "interactions": [],
+      "examples": [],
+      "tips": [],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+      ],
+      "legacyPath": "roles/grandmother.html",
+      "hasExistingGuide": false
+    },
+    {
+      "id": "gravedigger",
+      "name": "Gravedigger",
+      "appName": "Gravedigger",
+      "aliases": [],
+      "type": "townsfolk",
+      "ability": "Each night*, if someone died by execution today, you may choose a player: you learn their role.",
+      "shortRuling": "Each night*, you learn which character died by execution today.",
+      "howToRun": "If a player dies by execution, put the Gravedigger's DIED TODAY reminder token by the dead player's character token. Each night except the first, if any player died by execution today, wake the Gravedigger. Show the character token marked DIED TODAY to the Gravedigger. Put the Gravedigger to sleep. Remove the Gravedigger's reminder token when convenient. In Trouble Brewing, there can only be one execution per day, and every execution causes a player to die. In other editions, there may be more than one execution per day (in which case the Storyteller chooses which character to show the Gravedigger) or the execution does not cause a death (in which case the Gravedigger learns nothing).",
+      "interactions": [],
+      "examples": [
+        "The Mayor is executed today. That night, the Gravedigger is shown the Mayor token.",
+        "The Village Idiot, who thinks they are the New in Town, is executed today. At night, the Gravedigger is shown the Village Idiot token, because the Gravedigger learns a player's true character, as opposed to the one they believe they are.",
+        "The Spy is executed. Two Travelers are exiled. That night, the Gravedigger is shown the Butler token, because the Spy is registering as the Butler, and because the exiles are not executions.",
+        "Nobody was executed today. That night, the Gravedigger does not wake."
+      ],
+      "tips": [
+        "The more players that are executed, the more information you get. It's to your benefit to facilitate as many executions as you can. The good team's main method for killing evil players is execution as they are far less likely to die at night, so every execution is a chance to hit the Alpha Wolf. If you don't, you'll at least arrive on the final day knowing a lot more about your fellow players and their roles.",
+        "You do not learn the identity of Travelers; they are exiled, not executed. The only exception to this is the Scapegoat, since they are explicitly executed by their character ability. However, you do not learn their alignment, only their character.",
+        "Executing someone when you don't know their identity can lend credence to your claim as the Gravedigger. Alternatively, executing someone who has come out and is claiming a particular character allows you to confirm their story, as you will learn what character they are. Both are great ways to build trust with your fellow good team members.",
+        "Good candidates for early executions are characters like the Housekeeper and the Librarian, as confirming their identity allows you to also confirm other good players. Executing the Investigator or Chef doesn't confirm any other players, but still does mean you can trust their powerful information and perhaps quickly execute the troublesome Poisoner.",
+        "Executing a character like the Seer may mean they don't get any more information, but you can confirm them and everything they've said up until that point. If they die during the night, they can no longer be confirmed.",
+        "Coming out early opens you up to risks of death or poisoning. Waiting to reveal your information until a critical moment can maximise the amount of information you receive. Make sure to come out before the end of the game!",
+        "Coming out as soon as possible is a good choice if you've learned something critical, such as the identity of the Alpha Wolf. If you are shown that the executed player was the Alpha Wolf, it is very likely that a Successor just took over as the Alpha Wolf!",
+        "If an executed player is the Village Idiot, you will see the Village Idiot character token, not the Villager they thought they were.",
+        "If you see that a player is a good character, you can trust them, and claim what you are to them. Then, when you eventually reveal yourself as the Gravedigger, the executed players will be able to back you up.",
+        "If you see an evil character token, it is typically unwise to be truthful with the player who was just executed. You may still want to claim to be the Gravedigger and pretend to back up their bluff, so that the Alpha Wolf and Poisoner might avoid you in future nights.",
+        "A player who dies because of the New in Town is considered executed and will react to your ability, so you will learn who they are that night.",
+        "Beware the Spy and the Recluse! They will likely register to you as good and evil characters respectively, as their abilities continue to function even when they are dead."
+      ],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane-info/index.html embedded role data",
+        "wolfsbane/lib/game-constants.ts"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
+      ],
+      "legacyPath": "roles/gravedigger.html",
+      "hasExistingGuide": true
+    },
+    {
+      "id": "housekeeper",
+      "name": "Housekeeper",
+      "appName": "Housekeeper",
+      "aliases": [],
+      "type": "townsfolk",
+      "ability": "You start knowing that 1 of 2 players is a particular Townsfolk.",
+      "shortRuling": "You start knowing that 1 of 2 players is a particular Villager.",
+      "howToRun": "While preparing the first night, put the Housekeeper's VILLAGER reminder token by any Villager character token, and put the Housekeeper's WRONG reminder token by any other character token. During the first night, wake the Housekeeper and point to the players marked VILLAGER and WRONG. Show the character token marked VILLAGER to the Housekeeper. Put the Housekeeper to sleep. Remove the Housekeeper's reminder tokens when convenient.",
+      "interactions": [],
+      "examples": [
+        "Evin is the Chef, and Amy is the Ravenkeeper. The Housekeeper learns that either Evin or Amy is the Chef.",
+        "Julian is the Alpha Wolf, and Alex is the New in Town. The Housekeeper learns that either Julian or Alex is the New in Town.",
+        "Marianna is the Spy, and Sarah is the Successor. The Housekeeper learns that one of them is the Ravenkeeper. Here, the Spy is registering as a Villager—in this case, the Ravenkeeper."
+      ],
+      "tips": [
+        "The Housekeeper is deceptively powerful. Even though you don't gain information on the evil players, you can confirm the identity of a good player. This player should be your focus for the game, because if they have great information, then you have that information too. If they have a useful ability that they choose to use, you can help them use it wisely.",
+        "When the Housekeeper is poisoned or is actually the Village Idiot, they will often get information that is easy to figure out is incorrect—at least compared to other characters. While the Chef has no clue as to whether their '1' is incorrect, if both of the players the Storyteller pointed at tell you they're a different character to the one the Storyteller showed you, it is likely that you are the Village Idiot or poisoned.",
+        "You know that of the two players you are shown, one must be the Villager you are shown. Importantly, this means that you know that the person you see is not the Village Idiot.",
+        "To find out which of the two players is the Villager, either ask the group publicly or have a private conversation with each player individually. It is usually best to reveal what you know before the Villager in question says who they are so they trust you more.",
+        "If you share your information on the first day, and speak up quickly, the good team has some solid information to begin with. This is particularly useful if you confirm another information-receiving Villager like the Empath or the Seer.",
+        "Waiting until the final day - or at least very late in the game - to share your information with the group can also be very useful. If you can keep the Villager that you know alive until the final day, then you know one player who is not the Alpha Wolf!",
+        "Talk to the Villager player that you know, and secretly let them know that you know who they are. This way, you can hopefully form an alliance, and can come to each other's defence if either of you are nominated for execution.",
+        "After talking to the Villager that you know in private, and confirming who they are, you can tell the group that they are a different character than they actually are. This strategy is useful if you want to protect a powerful Villager from characters like the Poisoner.",
+        "You can claim to be a more powerful character than you actually are. You start with all the information you're going to get, so if the Alpha Wolf kills you, they aren't killing the Hunter or the Seer.",
+        "You could claim to be the Housekeeper and point to a player you suspect is evil, stating that they are the Villager you learned about. An opportunistic evil player may pounce on an opportunity to appear good.",
+        "Beware of the Spy! They may register as a Villager character to you. That player who you think is the Investigator may not be the Investigator after all...",
+        "Remember that while the Spy is likely to know that you've seen them as a Villager, they won't know which Villager you've seen them as."
+      ],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane-info/index.html embedded role data",
+        "wolfsbane/lib/game-constants.ts"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
+      ],
+      "legacyPath": "roles/housekeeper.html",
+      "hasExistingGuide": true
+    },
+    {
+      "id": "hunter",
+      "name": "Hunter",
+      "appName": "Hunter",
+      "aliases": [],
+      "type": "townsfolk",
+      "ability": "Once per game, during the day, publicly choose a player: if they are the Alpha, they die.",
+      "shortRuling": "Once per game, during the day, publicly choose a player: if they are the Alpha Wolf, they die.",
+      "howToRun": "During the day, the Hunter can declare that they wish to use their ability. If so, the Hunter points at any player. If the chosen player is an alive Alpha Wolf, declare that the chosen player dies—put a shroud on their character token in the Grimoire. If the chosen player is not an alive Alpha Wolf, say 'Nothing happens.' Either way, the Hunter loses their ability—put the Hunter's NO ABILITY reminder token by the Hunter token. If a player is bluffing as the Hunter and declares they wish to use their ability, act as if they were indeed the Hunter—allow time for discussion, let them make the decision, and act like you're fiddling with tokens in your Grimoire, then say 'Nothing happens.' When the Hunter declares that they wish to use their ability, give the group a minute or two to discuss who the Hunter should choose. This allows the group to feel responsible for the win (or the loss!), but the Hunter always makes the final choice.",
+      "interactions": [],
+      "examples": [
+        "The Hunter chooses the Alpha Wolf. The Alpha Wolf dies, and good wins!",
+        "The Hunter chooses the Recluse. The Storyteller decides that the Recluse registers as the Alpha Wolf, so the Recluse dies, but the game continues.",
+        "The Alpha Wolf is bluffing as the Hunter. They declare that they use their Hunter ability on the Successor. Nothing happens."
+      ],
+      "tips": [
+        "Using your ability late in the game is far more effective than using it early in the game. When fewer people are alive, there is a greater chance that you will select the Alpha Wolf and win the game. Also, if fewer than five players are alive, then the Successor cannot become the Alpha Wolf after you kill it.",
+        "However, using your ability early in the game is better than not using your ability at all because you're dead. Most players will die before the final day arrives, so the odds that you'll also be dead by then are high. Make sure you use your ability before you die. The Alpha Wolf will want to kill you as soon as possible, so it is usually best to wait, then claim to be the Hunter only on the day that you intend to use your ability.",
+        "Coordinate with the other good players to help you select which player to choose. When you tell the group that you are the Hunter, you may find that many players reveal who they are and what information they have, so that you can make the best decision about who to slay. You can make particular use of a Seer's info to find people who might be the Alpha Wolf.",
+        "Most of the time, the player that you choose to slay will not be the Alpha Wolf. This is still useful to do, since you now know a player that is definitely NOT the Alpha Wolf. Knowing who the Alpha Wolf isn't is almost as useful as knowing who the Alpha Wolf is.",
+        "Sometimes, it can be useful to choose to slay a player, not because you think that they are the Alpha Wolf, but because you just want to make sure that they are not. For example, if a player is claiming to be the Saint, and is about to be executed, you can prove that they are not the Alpha Wolf by using your ability on them - if they don't die, you will probably want to execute somebody else instead!",
+        "An advanced strategy can be to try to influence the Alpha Wolf's kills with your shot. If someone claims to be the Ravenkeeper, try to slay them. If they aren't the Alpha Wolf, the real Alpha Wolf will be forced to make a difficult choice: to kill them, and give them information, or to leave them alive late into the game with everyone knowing they aren't the Alpha Wolf?",
+        "When you choose to use your ability, the Storyteller should allow a minute or so for the group to discuss who they think you should choose. They may give you advice, but it is always your decision. This period can be a good time to pretend to be 'about to choose' a particular player... just so you can watch to see how much they sweat under pressure. If, for example, you really want to slay the player claiming to be the Mayor, you can tell the group that you are really keen to choose the player claiming Soldier, but secretly you want to see how the Soldier player reacts before making your final choice.",
+        "If you find a Bodyguard in play, convince them to protect you every night. This way, you can publicly claim to be the Hunter, safe in the knowledge that the Alpha Wolf can not kill you tonight. Whilst the Bodyguard is alive, you know you will always be alive tomorrow, so are under no pressure to use your ability today. If the Bodyguard dies at night, you are no longer safe, but if you die at night whilst the Bodyguard is still alive, then you know the player is not actually the Bodyguard.",
+        "Beware the Poisoner! If you publicly claim to be the Hunter, even if the Bodyguard is protecting you, you are a prime target for poisoning.",
+        "Your ability may work on the Recluse, since the Recluse might register as the Alpha Wolf. If your target dies, and claims to be the Recluse, then they might actually be the Recluse... or they could have been the Alpha Wolf, but had a Successor who is now the Alpha Wolf.",
+        "You can use your ability at any time during the day. There's no need to rush. You can even use it with the day about to end. On the block? Take your shot. Even if you don't have a clue who the Alpha Wolf is, it's better to have shot someone than to die unspent.",
+        "Remember that your ability only works on the Alpha Wolf. A person surviving your shot does not prove that they are good, merely that they are not the Alpha Wolf.",
+        "Be aware that the Alpha Wolf may change players throughout the game. If you choose to slay a Minion early in the game, nothing will happen, but that same player may be the Alpha Wolf by the end of the game."
+      ],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane-info/index.html embedded role data",
+        "wolfsbane/lib/game-constants.ts"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
+      ],
+      "legacyPath": "roles/hunter.html",
+      "hasExistingGuide": true
+    },
+    {
+      "id": "innkeeper",
+      "name": "Innkeeper",
+      "appName": "Innkeeper",
+      "aliases": [],
+      "type": "townsfolk",
+      "ability": "Each night*, choose 2 players: they are safe from the Alpha tonight, but 1 is confused.",
+      "shortRuling": "Each night*, choose 2 players: they are safe from the Alpha tonight, but 1 is confused.",
+      "howToRun": "Each night*, choose 2 players: they are safe from the Alpha tonight, but 1 is confused.",
+      "interactions": [],
+      "examples": [],
+      "tips": [],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+      ],
+      "legacyPath": "roles/innkeeper.html",
+      "hasExistingGuide": false
+    },
+    {
+      "id": "investigator",
+      "name": "Investigator",
+      "appName": "Investigator",
+      "aliases": [],
+      "type": "townsfolk",
+      "ability": "You start knowing that 1 of 2 players is a particular Minion, or that zero are in play.",
+      "shortRuling": "You start knowing that 1 of 2 players is a particular Minion.",
+      "howToRun": "While preparing the first night, put the Investigator's MINION reminder token by any Minion character token, and put the Investigator's WRONG reminder token by any other character token. During the first night, wake the Investigator and point to the players marked MINION and WRONG. Show the character token marked MINION to the Investigator. Put the Investigator to sleep. Remove the Investigator's reminder tokens when convenient.",
+      "interactions": [],
+      "examples": [
+        "Amy is the Baron, and Julian is the Mayor. The Investigator learns that either Amy or Julian is the Baron.",
+        "Angelus is the Spy, and Lewis is the Poisoner. The Investigator learns that either Angelus or Lewis is the Spy.",
+        "Brianna is the Recluse, and Marianna is the Alpha Wolf. The Investigator learns that either Brianna or Marianna is the Poisoner. (This happens because the Recluse is registering as a Minion—in this case, the Poisoner.)"
+      ],
+      "tips": [
+        "Tell the group what your information is as soon as possible on the first day. You probably won't be able to determine which of the two players is the Minion, but if you are believed, then the good team will probably have enough time to execute both players, guaranteeing that a Minion is dead on the final day.",
+        "Whilst your information by itself will probably not be enough to condemn a specific player, it might combine well with another good player's information, such as the Empath or the Chef. If you trust them, you can team up to execute a Minion early in the game, which removes their voting power and gives you an advantage.",
+        "If you have a strong suspicion regarding one of the 2 players shown to you, simply say nothing and study their behaviour. If they continually come to the defense of a particular player, that player is likely the Alpha Wolf.",
+        "Instead of revealing your information publicly, confide in other members of the town secretly. Someone else may have information that exonerates or condemns one of your choices, and it may be easier to persuade them to tell you what they know in secret.",
+        "If you learn that a Successor or a Poisoner is in play, it becomes all the more important to execute them as soon as you can! They have powerful abilities that can continue to disrupt the Good team for as long as they are in play.",
+        "All minions are dangerous. Even if you learn of a Baron or a Spy, it remains important to execute them. Even if doing so doesn't prevent them from mechanically affecting the game, they still retain their voting and nomination power, and may even go on to become the Alpha Wolf!",
+        "If you learn that any minion other than the Baron is in play in a game with only one minion, you know exactly how many outsiders there are. If more than that number are claiming to be outsiders, then you know that at least one of them is lying.",
+        "Beware the Recluse! They may register as a Minion to you. If one of the players you detect is actually the Recluse, the second player could be literally anything, including the Minion you were shown.",
+        "Even though one of the players you detect is a Minion, that does not necessarily mean that the other player is good."
+      ],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane-info/index.html embedded role data",
+        "wolfsbane/lib/game-constants.ts"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
+      ],
+      "legacyPath": "roles/investigator.html",
+      "hasExistingGuide": true
+    },
+    {
+      "id": "librarian",
+      "name": "Librarian",
+      "appName": "Librarian",
+      "aliases": [],
+      "type": "townsfolk",
+      "ability": "You start knowing that 1 of 2 players is a particular Outsider, or that zero are in play.",
+      "shortRuling": "You start knowing that 1 of 2 players is a particular Outsider. (Or that zero are in play.)",
+      "howToRun": "While preparing the first night, put the Librarian's OUTSIDER reminder token by any Outsider character token, and put the Librarian's WRONG reminder token by any other character token. During the first night, wake the Librarian and point to the players marked OUTSIDER and WRONG. Show the character token marked OUTSIDER to the Librarian. Put the Librarian to sleep. Remove the Librarian's reminder tokens when convenient.",
+      "interactions": [],
+      "examples": [
+        "Benjamin is the Saint, and Filip is the Baron. The Librarian learns that either Benjamin or Filip is the Saint.",
+        "There are no Outsiders in this game. The Librarian learns a '0'.",
+        "Abdallah is the Village Idiot, who thinks they are the Bodyguard, and Douglas is the Gravedigger. The Librarian learns that either Abdallah or Douglas is the Village Idiot. (This happens because the Librarian learns the true character. The Village Idiot is Abdallah's true character, not the Bodyguard.)"
+      ],
+      "tips": [
+        "It is vital to figure out early which of the two players is the one you have information about. The player that you know is good even if they are an Outsider - while their ability may be detrimental to the good team, they are a guaranteed good vote and also one player who you know for sure is definitely not the Alpha Wolf.",
+        "If you get a 0, this information is super powerful if you aren't the Village Idiot or poisoned, as then you know for sure there are no Outsiders in the game. This means there is no Baron in play, and any Outsider claims are probably evil players bluffing.",
+        "You learn your information on the first night of the game. Revealing what you know early can help confirm a player as good, which might in turn confirm other information from Villager like the Empath or the Ravenkeeper.",
+        "If you do not reveal your information until late in the game and the player you are confirming is still alive, then you can reveal them on the final day or close to it, taking them out of contention as a potential Alpha Wolf and reducing the number of players for the good team to deliberate on from 3 to 2.",
+        "Because you get all of your information at the start of the game, you might find it useful to confirm it by nominating a New in Town. Alternatively, you might want to claim to be something more powerful to incite the Alpha Wolf into attacking you rather than the Gravedigger or the Bodyguard.",
+        "Characters like the Saint would rather die at night than by execution. Since Outsiders are generally not targets a Alpha Wolf will want to kill, you can try to bait the Alpha Wolf into attacking them during the night.",
+        "If you see that your two shown players are the Village Idiot, it is a good idea to communicate this early, especially if they think they are actually a character who receives information. Knowing that their information may be wrong is information in itself.",
+        "Alternatively, you can deliberately give false information about who the Village Idiot is - the Alpha Wolf is less likely to attack a player they think is the Village Idiot, which means that you can protect players who are sober and getting information while getting the Alpha Wolf to target the actual Village Idiot instead.",
+        "If you see two players as the Village Idiot, remember that you might be the real village idiot!",
+        "Giving away your information freely will mean that the other player can trust you, but not that you can necessarily trust them - it is always possible they are an evil player simply agreeing with you to shore up their own bluff."
+      ],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane-info/index.html embedded role data",
+        "wolfsbane/lib/game-constants.ts"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
+      ],
+      "legacyPath": "roles/librarian.html",
+      "hasExistingGuide": true
+    },
+    {
+      "id": "mayor",
+      "name": "Mayor",
+      "appName": "Mayor",
+      "aliases": [],
+      "type": "townsfolk",
+      "ability": "If only 3 players live & no execution occurs, your team wins. If you die at night, another player might die instead.",
+      "shortRuling": "If only 3 players live & no execution occurs, your team wins. If you die at night, another player might die instead.",
+      "howToRun": "During the night, if the Mayor would die, you choose if the Mayor actually dies, or if the Mayor remains alive and another character dies instead—put the Alpha Wolf's DEAD reminder token by that character token instead of the Mayor, and put a shroud on that character token instead of the Mayor. At dawn, declare that the player marked DEAD died at night. (Do not say how they died.) At dusk, if exactly three players are alive and no player was executed today, declare that the game ends and good wins.",
+      "interactions": [],
+      "examples": [
+        "The Alpha Wolf attacks the Mayor. The Storyteller chooses that the Ravenkeeper dies instead.",
+        "There are three players alive. There are no nominations for execution today. Good wins.",
+        "There are five players alive, including two Travelers. Both Travelers are exiled, and the vote is tied between the remaining players. Because a tied vote means neither player is executed, good wins."
+      ],
+      "tips": [
+        "Your power activates on the final day, when just three players are alive. You may not know who the Alpha Wolf is, but you can definitely win by not executing. Do whatever you can to convince the group that you are the Mayor. Everything. If the good team believes you, they will either not nominate anybody, or will deliberately tie votes so that no execution occurs.",
+        "It is often best not to reveal that you are the Mayor until late in the game. If you reveal early, the Alpha Wolf may spend night after night trying to kill you, and the Storyteller may let that attempt succeed.",
+        "You might want to tell people that you're the Mayor. Winning the game with your ability requires trust from your fellow players, and being open and honest is a fine way to achieve that trust.",
+        "When a character that's an unlikely target for the Alpha Wolf to pick dies at night, such as the Butler, this may be an indication that you were attacked instead. When convincing other players that you are the Mayor, you can use this as evidence.",
+        "Once the Alpha Wolf attacks you and somebody else dies, they will know for sure that you are the Mayor. At the very beginning of each morning, if a particular player looks surprised and confused, they are likely to be the Alpha Wolf!",
+        "If you intend to use your ability to win the game by not executing, do everything you can to make sure you are not actually the Village Idiot. Spend the game listening to other players, and verifying that any Outsiders are actually Outsiders. If you think a Village Idiot is in play, you will need to figure out who it is, because if it is you, and you don't execute on the final day, evil wins. Similarly, if the only other players alive are the Alpha Wolf and the Poisoner, then you will certainly be poisoned. You will need to make sure that the Poisoner is dead before using your Mayor ability."
+      ],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane-info/index.html embedded role data",
+        "wolfsbane/lib/game-constants.ts"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
+      ],
+      "legacyPath": "roles/mayor.html",
+      "hasExistingGuide": true
+    },
+    {
+      "id": "minstrel",
+      "name": "Minstrel",
+      "appName": "Minstrel",
+      "aliases": [],
+      "type": "townsfolk",
+      "ability": "When a Minion dies by execution, all other players (except Travelers) are confused until dusk tomorrow.",
+      "shortRuling": "When a Minion dies by execution, all other players (except Travelers) are confused until dusk tomorrow.",
+      "howToRun": "When a Minion dies by execution, all other players (except Travelers) are confused until dusk tomorrow.",
+      "interactions": [],
+      "examples": [],
+      "tips": [],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+      ],
+      "legacyPath": "roles/minstrel.html",
+      "hasExistingGuide": false
+    },
+    {
+      "id": "new-in-town",
+      "name": "New in Town",
+      "appName": "New in Town",
+      "aliases": [],
+      "type": "townsfolk",
+      "ability": "The 1st time you are nominated, if the nominator is a Villager, they are executed immediately.",
+      "shortRuling": "The 1st time you are nominated, if the nominator is a Villager, they are executed immediately.",
+      "howToRun": "If the first player to ever nominate the New in Town is a Villager, immediately declare that the nominating player is executed. That player dies—put a shroud on their character token in the Grimoire. The New in Town loses their ability—put the New in Town's NO ABILITY reminder token by the New in Town token. End the nomination process and proceed to the night phase. (No one else can be executed today.) If the first player to ever nominate the New in Town is not a Villager, continue the vote as normal. The New in Town loses their ability—put the New in Town's NO ABILITY reminder token by the New in Town token.",
+      "interactions": [],
+      "examples": [
+        "The Housekeeper nominates the New in Town. The Housekeeper is immediately executed and the day ends.",
+        "The Village Idiot, who thinks they are the Chef, nominates the New in Town. The Village Idiot remains alive, and the New in Town loses their ability. Players may now vote on whether or not to execute the New in Town. (This happens because the Village Idiot is not a Villager.)",
+        "A dead player nominates the New in Town. The dead, however, cannot nominate. The Storyteller declares that the nomination does not count. The New in Town does not lose their ability."
+      ],
+      "tips": [
+        "You are one of the few Villager in the game that can be absolutely confirmed as good. If a player is executed for nominating you, that is absolute and undeniable proof that you are the New in Town.",
+        "Characters who have received their information or have used their ability already (like the Housekeeper, Investigator or Hunter) are great choices to encourage into nominating you. Not only will they and their information be validated by their death, but they don't lose out on gaining any more information as the game continues.",
+        "Characters like the Gravedigger, Seer or even Empath are great choices if they have received a little information and want to confirm they are good, or if they are under suspicion and want to remove themselves as a potential Alpha Wolf.",
+        "An Outsider who nominates you will not be executed. Your ability requires your nominator to be a Villager, not merely good.",
+        "Don't like any of your potential suitors? You can nominate yourself and trigger your ability, proving you are the New in Town! This can prevent an evil Minion or hapless Outsider from wasting your ability.",
+        "Once your ability activates, the nominator is immediately executed, ending the day (even if someone else had the votes and was due to be executed). Using this strategically can allow you to block an execution from happening in addition to proving yourself as good.",
+        "If you are known to be the New in Town but haven't used your ability yet, you are a prime target for death or poisoning. Using your ability early minimizes this risk and allows you to be a rally point for the good team to work around.",
+        "Waiting a couple of days before announcing that you're the New in Town can give you a chance to decide who should nominate you. A player being proven good, a few days into the game, can completely unravel an evil narrative.",
+        "Not claiming to be the New in Town until you get nominated can be a powerful strategy to uncover an evil player who is claiming to be a Villager, but might not be willing to nominate you if you were to claim to be the New in Town.",
+        "If you can find a player that is claiming to be the Bodyguard, convince them to protect you every night. Since you no longer have to fear death in the night, you can always wait another day to get somebody to nominate you.",
+        "If your ability doesn't activate, this can mean a few things: The person who did the nominating is evil! Evil players can nominate the New in Town so that your ability does not activate, leaving you unable to be confirmed and throwing you both into doubt. The person who nominated is an Outsider. This includes the Village Idiot, who thinks they are a Villager. You are in fact the Village Idiot or poisoned, so you have no ability.",
+        "Your ability only triggers the first time you are nominated. Even if you were poisoned or nominated by a non-Villager, your ability is already spent, and you can no longer cause an execution from your ability.",
+        "Beware the Spy! It is the only evil character that can activate your ability, since it registers as a Villager."
+      ],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane-info/index.html embedded role data",
+        "wolfsbane/lib/game-constants.ts"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
+      ],
+      "legacyPath": "roles/new-in-town.html",
+      "hasExistingGuide": true
+    },
+    {
+      "id": "pacifist",
+      "name": "Pacifist",
+      "appName": "Pacifist",
+      "aliases": [],
+      "type": "townsfolk",
+      "ability": "Executed Villager players might not die.",
+      "shortRuling": "Executed Villager players might not die.",
+      "howToRun": "Executed Villager players might not die.",
+      "interactions": [],
+      "examples": [],
+      "tips": [],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+      ],
+      "legacyPath": "roles/pacifist.html",
+      "hasExistingGuide": false
+    },
+    {
+      "id": "professor",
+      "name": "Professor",
+      "appName": "Professor",
+      "aliases": [],
+      "type": "townsfolk",
+      "ability": "Once per game, at night*, choose a dead player: if they are a Townsfolk, they are resurrected.",
+      "shortRuling": "Once per game, at night*, choose a dead player: if they are a Villager, they are resurrected.",
+      "howToRun": "Each night except the first, wake the Professor. The Professor either shakes their head no or points to a dead player. Put the Professor to sleep. If the Professor chose a dead Villager, the chosen player becomes alive again—mark them with the Professor's ALIVE reminder and remove their shroud. (They wake later tonight if they normally would. If they wake on the first night only, they wake now to use their ability.) At dawn, after declaring which players died, declare which player is alive again. (Do not say why.) The Professor loses their ability—mark them with the NO ABILITY reminder and remove their night token from the night sheet.",
+      "interactions": [],
+      "examples": [],
+      "tips": [
+        "Use your ability as early as you possibly can! Evil players will really not want to keep you around, so getting your ability to trigger as soon as possible will give you an edge. Additionally, it is more likely that players who die early in the game will be good Villager, since they are in the majority and evil will be protecting each other.",
+        "Use your ability as late in the game as you dare! While risky, you can't underestimate how disruptive the resurrection of a confirmed Villager at the end of the game can be for the evil team. The good team will be able to rally around both you and your revived Villager, and the evil team will have a lot less options for disguising themselves as the game has worn on.",
+        "Remember that if your ability fails, the dead player is either evil or an Outsider. Don't jump to conclusions right away - you could've targeted the Recluse or the Spy!",
+        "Resurrect players who died at night, rather than players who were executed. Players who die at night were probably targeted by the Alpha Wolf, and are therefore most likely good.",
+        "Resurrect executed players if you believe the town has made a mistake! If your ability works, you have absolved an innocent villager. If it doesn't, well, you can be very sure that they were right to execute them the first time. (Bonus strategy: Reveal yourself to a player you believe to be good, and ask them to be deliberately executed so you can bring them back, proving both of you. Especially effective early in the game!)",
+        "Successfully resurrect a villager, and you are going to be one of the more trustworthy good players in the game. While you won't be totally free of suspicion, you and your revived Villager will know you can trust each other 100%, and most other players will want to join your circle! Use this to your advantage to rally the good team in the face of evil.",
+        "When picking who to resurrect, consider telling the player ahead of time what you intend to do. The player can warn you off if they are an outsider who is bluffing as a villager for whatever reason. Additionally, if the player agrees to go along with this plan and doesn't come back, you can be much more confident that they are evil, since they had the chance to stop you and didn't!"
+      ],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane-info/index.html embedded role data",
+        "wolfsbane/lib/game-constants.ts"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
+      ],
+      "legacyPath": "roles/professor.html",
+      "hasExistingGuide": true
+    },
+    {
+      "id": "ravenkeeper",
+      "name": "Ravenkeeper",
+      "appName": "Ravenkeeper",
+      "aliases": [],
+      "type": "townsfolk",
+      "ability": "If you die at night, you may choose a player: you learn their role.",
+      "shortRuling": "If you die at night, you are woken to choose a player: you learn their character.",
+      "howToRun": "If the Ravenkeeper died tonight, wake them. They point at any player. Show the chosen player's character token to the Ravenkeeper. Put the Ravenkeeper to sleep.",
+      "interactions": [],
+      "examples": [
+        "The Ravenkeeper is killed by the Alpha Wolf, and then wakes to choose a player. After some deliberation, they choose Benjamin. Benjamin is the Empath, and the Ravenkeeper learns this.",
+        "The Alpha Wolf attacks the Mayor. The Mayor doesn't die, but the Ravenkeeper dies instead, due to the Mayor's ability. The Ravenkeeper is woken and chooses Douglas, who is a dead Recluse. The Ravenkeeper learns that Douglas is the Successor, since the Recluse registered as a Minion."
+      ],
+      "tips": [
+        "If the Alpha Wolf knows you are the Ravenkeeper, they are very unlikely to kill you. It is to your benefit to bluff as a character who is a constant threat to the evil team, such as the Empath, Seer, Hunter, or Gravedigger. Even bluffing as a good character that tends to be trusted by the good team (such as Chef or Housekeeper) can make you look like a trusted good player in the eyes of the Alpha Wolf, and attract their attention at night.",
+        "The Ravenkeeper gets some of the best information in Trouble Brewing. Think about whose character you would like to learn before each night falls. You won't want to make a hasty decision and choose wildly in the moment.",
+        "You may want to tell the group that you are the Ravenkeeper first thing on the first day. This will almost guarantee that you are still alive on the final day, as the Alpha Wolf will probably not kill you. This strategy means that you have more power in the late game (since living players may vote more than dead players), but you sacrifice the chance of gaining information by your death. Additionally, claiming Ravenkeeper is the sort of thing a Hunter or Gravedigger might do early game, so it might just get you killed.",
+        "If you get to use your ability by dying at night, tell the group you are the Ravenkeeper the following day. Your information will be immediately useful.",
+        "If you see a good token, consider keeping that information private. If the Alpha Wolf knows that you know that a player is good, that player becomes a much higher priority target, and you want the player you trust alive as long as possible.",
+        "If you have told nobody that you are the Ravenkeeper, and you are still alive late in the game, then it is probable that a Spy is in play, telling the Alpha Wolf who to attack. If you notice this happening, pay attention to who is whispering to whom."
+      ],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane-info/index.html embedded role data",
+        "wolfsbane/lib/game-constants.ts"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
+      ],
+      "legacyPath": "roles/ravenkeeper.html",
+      "hasExistingGuide": true
+    },
+    {
+      "id": "sage",
+      "name": "Sage",
+      "appName": "Sage",
+      "aliases": [],
+      "type": "townsfolk",
+      "ability": "If the Alpha kills you, you learn that it is 1 of 2 players.",
+      "shortRuling": "If the Alpha kills you, you learn that it is 1 of 2 players.",
+      "howToRun": "If the Alpha kills you, you learn that it is 1 of 2 players.",
+      "interactions": [],
+      "examples": [],
+      "tips": [],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+      ],
+      "legacyPath": "roles/sage.html",
+      "hasExistingGuide": false
+    },
+    {
+      "id": "sailor",
+      "name": "Sailor",
+      "appName": "Sailor",
+      "aliases": [],
+      "type": "townsfolk",
+      "ability": "Each night, choose an alive player: either you or they are confused. You cannot die.",
+      "shortRuling": "Each night, choose an alive player: either you or they are confused. You cannot die.",
+      "howToRun": "Each night, choose an alive player: either you or they are confused. You cannot die.",
+      "interactions": [],
+      "examples": [],
+      "tips": [],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+      ],
+      "legacyPath": "roles/sailor.html",
+      "hasExistingGuide": false
+    },
+    {
+      "id": "seer",
+      "name": "Seer",
+      "appName": "Seer",
+      "aliases": [],
+      "type": "townsfolk",
+      "ability": "Each night, choose 2 players: you learn if either is an Alpha. One player registers falsely to you.",
+      "shortRuling": "Each night, choose 2 players: you learn if either is a Alpha Wolf. There is a good player that registers as a Alpha Wolf to you.",
+      "howToRun": "While preparing the first night, put the Seer's RED HERRING reminder token by any good character token, marking that player as the Red Herring. Each night, wake the Seer. The Seer points at any two players. If either chosen player is a Alpha Wolf or the Red Herring, nod your head yes. Otherwise, shake your head no. Put the Seer to sleep. In smaller games, making the Seer their own Red Herring is sometimes advised, as the Seer gets more information that way.",
+      "interactions": [],
+      "examples": [
+        "The Seer chooses the Bodyguard and the Gravedigger and learns a 'no'.",
+        "The Seer chooses the Alpha Wolf and the Empath, and learns a 'yes'.",
+        "The Seer chooses an alive Butler and a dead Alpha Wolf, and learns a 'yes'.",
+        "The Seer chooses themselves and a Saint. The Saint is the Red Herring. The Seer learns a 'yes'."
+      ],
+      "tips": [
+        "Getting a 'no' is often more useful than getting a 'yes'. A 'no' means that neither of the two players is the Alpha Wolf, which narrows down the number of players you have to inspect.",
+        "You only learn about Alpha Wolfs. Just because you got a 'no' on somebody doesn't mean that they're good. They could still be a Minion.",
+        "If you have a pair of players who you got a 'yes' on, and a pair of players you got a 'no' on, try picking one player from each pair. If you get another 'yes', you know that the player you got a 'yes' on both times is the player you're getting a read on; otherwise, it's the player in your initial 'yes' pair that you didn't pick this time that you should look to.",
+        "If you have gotten a 'yes' on players you are suspicious of, getting confirmation of which player is causing your ability to react can give you a clear goal, especially if that player is still alive at the end of the game.",
+        "You only have a limited number of nights to gather information. Spending a lot of it focusing on one or two people may give you less to work with in the end game. For this reason, it's usually most efficient to start the game casting a wide net and learn about as many pairs as possible. Then, after you have some general information, start focusing on the players you are most suspicious of.",
+        "Remember that the Alpha Wolf can kill themselves and cause a Minion to become the Alpha Wolf, and if they're executed, the Successor might become the Alpha Wolf. Even if you got a 'no' on someone earlier in the game doesn't mean they aren't the Alpha Wolf now. If you think the Alpha Wolf died, try picking someone you think is a Minion that you previously got a 'no' on and see if your information has changed.",
+        "Your false positive is chosen at the beginning of the game and does not move, and you will not receive a false read from more than one player because of your ability. Remember your false register can be anyone, including you, and a 'yes' is not a definite confirmation of a Alpha Wolf.",
+        "You can choose yourself as one of the two players. Since you know you are not the Alpha Wolf, this enables you to get a read on one specific player. Beware though, the Storyteller can make you your own false positive, so this may not always be effective.",
+        "Be aware of the Recluse, who may register as the Alpha Wolf to you. This is not the same as the Red Herring.",
+        "Claiming to be a character that the Alpha Wolf would not want to kill, such as the Saint, Soldier, or Ravenkeeper can help you survive longer, allowing you some much needed time to gain useful information."
+      ],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane-info/index.html embedded role data",
+        "wolfsbane/lib/game-constants.ts"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
+      ],
+      "legacyPath": "roles/seer.html",
+      "hasExistingGuide": true
+    },
+    {
+      "id": "soldier",
+      "name": "Soldier",
+      "appName": "Soldier",
+      "aliases": [],
+      "type": "townsfolk",
+      "ability": "You are safe from the Alpha.",
+      "shortRuling": "You are safe from the Alpha Wolf.",
+      "howToRun": "During the night, if the Alpha Wolf attacks the Soldier, the Soldier remains alive. (At dawn, declare that no one died at night.) In other editions, Alpha Wolfs may have abilities other than killing. The Soldier is also protected from all other harmful effects of the Alpha Wolf's ability, such as poisoning or turning the Soldier evil.",
+      "interactions": [],
+      "examples": [
+        "The Alpha Wolf attacks the Soldier. The Soldier does not die, so nobody dies that night.",
+        "The Poisoner poisons the Soldier, then the Alpha Wolf attacks the Soldier. The Soldier dies, since they have no ability.",
+        "The Alpha Wolf attacks the Soldier. The Soldier dies, because they are actually the Village Idiot."
+      ],
+      "tips": [
+        "If the Alpha Wolf attacks you, nobody dies this night. This has two benefits. Firstly, since no good player has died at night, there are more players alive than there ought to have been, allowing the good team more time to execute. Secondly, no death of a night time supports your claim that you are indeed the Soldier.",
+        "You will never know for sure that your ability has worked. If you wake up to no deaths, perhaps there is a Bodyguard in play, or the Alpha Wolf decided to take a night off terrorising the living and attack someone's already dead corpse. Both of those look identical to the Alpha Wolf attacking you in the night.",
+        "Consider bluffing as a juicy Alpha Wolf target, such as the Seer, Gravedigger, Empath or Hunter, to attract a Alpha Wolf attack.",
+        "If you can prove that you are the Soldier, then the good team has an enormous advantage on the final day. Instead of good choosing between three (or four) players to execute, they will be choosing between two (or three). Getting an Empath or Seer to confirm you as not the Alpha Wolf can be very helpful.",
+        "A clever Alpha Wolf will not attack you again after the first time unless they think they can kill you. If you can convince the Alpha Wolf that a Bodyguard protected you, the Alpha Wolf might try to attack you again.",
+        "If there are no deaths at night, don't immediately claim to be the Soldier! Perhaps the Alpha Wolf attacked another player protected by the Bodyguard and has no idea you were ever protected.",
+        "If you are unsure whether they are good or evil, allow powerful information characters to bluff as your role. This way, the Alpha Wolf is more likely to attack you, and less likely to attack them. You can even talk with these players secretly, and agree to publicly claim to be each others' characters - they stay safe, whilst you reveal their information to the group.",
+        "If you die at night, you were either poisoned by the Poisoner, or you are the Village Idiot. This is big information, and very helpful for the group to know. If you were poisoned, then a Poisoner is still alive (and in a one Minion game, you now know which Minion is in play!), which also gives you information about the alignment of the dead players. If you are the Village Idiot, then nobody else can be the Village Idiot. Either way, you learn something useful.",
+        "Tell the group you are the Soldier at some stage during the game. After all, good will need as much information as they can get at their disposal.",
+        "If you have told nobody that you are the Soldier, you are still alive on the final day, and a death has occurred every night so far, then it is probable that a Spy is in play and telling the Alpha Wolf who to attack. If you notice this happening, pay attention to who is whispering to who.",
+        "If you never tell anyone who you are, your role can combo in a very risky way with the Mayor. You might be more confident to execute nobody in final three than anyone else in your position. Even if the Alpha Wolf is pretending to be the Mayor, and you execute no one, evil hasn't won yet! The Alpha Wolf still has to kill either you or the other surviving player, and just maybe they'll guess wrong, and you will wake to a second day with just three players alive."
+      ],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane-info/index.html embedded role data",
+        "wolfsbane/lib/game-constants.ts"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
+      ],
+      "legacyPath": "roles/soldier.html",
+      "hasExistingGuide": true
+    },
+    {
+      "id": "tea-lady",
+      "name": "Tea Lady",
+      "appName": "Tea Lady",
+      "aliases": [],
+      "type": "townsfolk",
+      "ability": "If both your alive neighbors are Villagers, they cannot die.",
+      "shortRuling": "If both your alive neighbors are Villagers, they cannot die.",
+      "howToRun": "If both your alive neighbors are Villagers, they cannot die.",
+      "interactions": [],
+      "examples": [],
+      "tips": [],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+      ],
+      "legacyPath": "roles/tea-lady.html",
+      "hasExistingGuide": false
+    },
+    {
+      "id": "trapper",
+      "name": "Trapper",
+      "appName": "Trapper",
+      "aliases": [],
+      "type": "townsfolk",
+      "ability": "Each night*, choose a player: they are safe from the Alpha tonight. If they are the Alpha, you learn this.",
+      "shortRuling": "Each night*, choose a player: they are safe from the Alpha tonight. If they are the Alpha, you learn this.",
+      "howToRun": "Each night*, choose a player: they are safe from the Alpha tonight. If they are the Alpha, you learn this.",
+      "interactions": [],
+      "examples": [],
+      "tips": [],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+      ],
+      "legacyPath": "roles/trapper.html",
+      "hasExistingGuide": false
+    },
+    {
+      "id": "bill",
+      "name": "Bill",
+      "appName": "Bill",
+      "aliases": [],
+      "type": "outsider",
+      "ability": "Whoever wins, loses & whoever loses, wins, even if you are dead.",
+      "shortRuling": "Whoever wins, loses & whoever loses, wins, even if you are dead.",
+      "howToRun": "Whoever wins, loses & whoever loses, wins, even if you are dead.",
+      "interactions": [],
+      "examples": [],
+      "tips": [],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+      ],
+      "legacyPath": "roles/bill.html",
+      "hasExistingGuide": false
+    },
+    {
+      "id": "butler",
+      "name": "Butler",
+      "appName": "Butler",
+      "aliases": [],
+      "type": "outsider",
+      "ability": "Each night, choose a player (not yourself): tomorrow, you may only vote if they are voting too.",
+      "shortRuling": "Each night, choose a player (not yourself): tomorrow, you may only vote if they are voting too.",
+      "howToRun": "Each night, wake the Butler. They point at any player. Mark this player with the MASTER reminder token. Put the Butler to sleep. During a nomination, the Butler may only have their hand raised to vote if the Master has their hand raised to vote or if the Master's vote has already been counted. If the Butler accidentally votes illegally, tally the Butler's vote anyway. If you don't, the total will be less than it should be, and all players will know which player is the Butler, which is unfair for the evil team.",
+      "interactions": [],
+      "examples": [
+        "The Butler chooses Filip to be their Master. Tomorrow, if Filip raises his hand to vote on an execution, then the Butler may too. If not, then the Butler may not raise their hand.",
+        "A nomination is in progress. The Butler and their Master both have their hands raised to vote. As the Storyteller is counting votes, the Master lowers their hand at the last second. The Butler must lower their hand immediately.",
+        "The Butler is dead. Because dead players have no ability, the Butler may vote with their vote token at any time."
+      ],
+      "tips": [
+        "The player who you choose as your 'Master' is very important. Your vote still counts as much as a normal vote, it is just that you will not be able to vote at all if your Master has their hand down. So, spend a good deal of time listening, and being involved in figuring out which players are good.",
+        "If you tell your Master that you have selected them, they will often vote under the assumption that you will be voting with them. Observing how your Master wants you to vote can give you some hints as to whether your Master is good or evil.",
+        "Even though you may not vote unless your Master has their hand up to vote too, you do not have to vote just because they do. Remember to only vote for players you truly believe are evil, or otherwise deserve it!",
+        "The player you choose as your Master will usually trust you, and want to keep you alive. After all, you are in their power! It is in their best interest to help you survive, so building up that trust may come in handy if anybody nominates you for execution.",
+        "You can choose a dead player as your Master, but do this carefully - as dead players only have one remaining vote, they may not use it for a while, meaning that you might not be able to vote at all.",
+        "If particular other players think that you are evil, and want to execute you, you can often win their support by promising to be their Butler tonight. If you ask them not to nominate or vote for you today, and in return you will choose them as your master tonight, they will often agree, and keep you alive.",
+        "You may choose a dead player to be your Master. Sometimes, you will do so without intending to, if you and the Alpha Wolf choose the same player."
+      ],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane-info/index.html embedded role data",
+        "wolfsbane/lib/game-constants.ts"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
+      ],
+      "legacyPath": "roles/butler.html",
+      "hasExistingGuide": true
+    },
+    {
+      "id": "goon",
+      "name": "Goon",
+      "appName": "Goon",
+      "aliases": [],
+      "type": "outsider",
+      "ability": "Each night, the first player to choose you with their ability is confused until dusk. You become their alignment.",
+      "shortRuling": "Each night, the first player to choose you with their ability is confused until dusk. You become their alignment.",
+      "howToRun": "Each night, the first player to choose you with their ability is confused until dusk. You become their alignment.",
+      "interactions": [],
+      "examples": [],
+      "tips": [],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+      ],
+      "legacyPath": "roles/goon.html",
+      "hasExistingGuide": false
+    },
+    {
+      "id": "klutz",
+      "name": "Klutz",
+      "appName": "Klutz",
+      "aliases": [],
+      "type": "outsider",
+      "ability": "When you learn that you died, publicly choose 1 alive player: if they are a Werewolf, your team loses.",
+      "shortRuling": "When you learn that you died, publicly choose 1 alive player: if they are evil, your team loses.",
+      "howToRun": "When the Klutz player is declared dead, they must declare that they are the Klutz and then point at any player. (Give them time.) If they choose an evil player, the game ends and the evil team wins. If they choose a good player, the game continues. In the strange situation where the Klutz is evil and chooses an evil player, then the game ends and the good team wins instead.",
+      "interactions": [],
+      "examples": [
+        "The Klutz dies by execution. After much yelling and confusion, the Klutz chooses a player—who is secretly the Seer. Night falls, and the game continues.",
+        "The Alpha Wolf kills Dave, the Klutz. In the morning, when the Storyteller informs the group that Dave is dead, Dave says 'Ok everybody, I was the Klutz' and after discussion for a few minutes, Dave publicly chooses the player that is the Alpha Wolf. The game ends immediately and evil rejoices."
+      ],
+      "tips": [
+        "Like nearly all Outsiders, you should avoid dying if at all possible. Your ability is particularly nasty as it can end the game if you choose poorly, but it only becoming an issue if you actually die!",
+        "If the good team is floundering, you can die deliberately and confirm someone as good by choosing them. Your ability yields incredibly powerful information for incredibly high risk. Knowing for sure that someone is good allows you to trust them completely, a very rare thing in this game!",
+        "Before you die, work with the other players and try to find one alive player you believe is good, so you have a safe choice to pick in the event you accidentally die. (It's up to you if you want to reveal your identity before death to this player - if you do, they may be more inclined to trust you while you're both alive. If you don't, your choice will be more of a surprise, but it will look less like you're colluding with that player. It all depends on how the group is leaning right now.)",
+        "Don't pick players who are doubling up their character claim with another player - in most cases, a double up means one of the two is evil, which gives you a 50/50 chance to lose!",
+        "If the group is keen to execute you, you can pre-empt the voting by loudly proclaiming which player you WILL choose as the Klutz after you die. If the group thinks that this player might be evil, they are less likely to kill you.",
+        "If you die, and choose a player, and the game does not end, you can be almost certain that that player is good. "
+      ],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane-info/index.html embedded role data",
+        "wolfsbane/lib/game-constants.ts"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
+      ],
+      "legacyPath": "roles/klutz.html",
+      "hasExistingGuide": true
+    },
+    {
+      "id": "lunatic",
+      "name": "Lunatic",
+      "appName": "Lunatic",
+      "aliases": [],
+      "type": "outsider",
+      "ability": "You think you are the Alpha, but your abilities malfunction. The Alpha knows who you are & who you attack.",
+      "shortRuling": "You think you are the Alpha, but your abilities malfunction. The Alpha knows who you are & who you attack.",
+      "howToRun": "You think you are the Alpha, but your abilities malfunction. The Alpha knows who you are & who you attack.",
+      "interactions": [],
+      "examples": [],
+      "tips": [],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+      ],
+      "legacyPath": "roles/lunatic.html",
+      "hasExistingGuide": false
+    },
+    {
+      "id": "moonchild",
+      "name": "Moonchild",
+      "appName": "Moonchild",
+      "aliases": [],
+      "type": "outsider",
+      "ability": "When you learn you are dead, choose 1 alive player: if they are a Villager, they die tonight.",
+      "shortRuling": "When you learn you are dead, choose 1 alive player: if they are a Villager, they die tonight.",
+      "howToRun": "When you learn you are dead, choose 1 alive player: if they are a Villager, they die tonight.",
+      "interactions": [],
+      "examples": [],
+      "tips": [],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+      ],
+      "legacyPath": "roles/moonchild.html",
+      "hasExistingGuide": false
+    },
+    {
+      "id": "recluse",
+      "name": "Recluse",
+      "appName": "Recluse",
+      "aliases": [],
+      "type": "outsider",
+      "ability": "You might register as a Werewolf & as a Minion or Alpha, even when dead.",
+      "shortRuling": "You might register as evil & as a Minion or Alpha Wolf, even if dead.",
+      "howToRun": "The Recluse has no ability that affects the game directly. However, if the Recluse's alignment is detected by another character's ability, you choose whether the Recluse registers as good or evil. If the Recluse is targeted by an ability that affects a Minion or Alpha Wolf specifically, you choose whether the Recluse is affected or not.",
+      "interactions": [],
+      "examples": [
+        "The Hunter uses their ability on the Recluse. The Storyteller decides that the Recluse registers as the Alpha Wolf, so the Recluse dies. The Hunter believes that they just killed the Alpha Wolf.",
+        "The Empath, who neighbors the Recluse and the Bodyguard, learns she is neighboring one evil player. The next night, the Empath learns they are neighboring no evil players.",
+        "The Investigator learns that either the Recluse or the Saint is the Successor.",
+        "The Recluse is executed. The Gravedigger learns that the Alpha Wolf was executed.",
+        "The Recluse neighbors the Alpha Wolf and an Evil Traveler. Because showing a \"2\" to the Chef might be too revealing, the Chef learns true information, a \"0,” instead."
+      ],
+      "tips": [
+        "Tell everyone that you are the Recluse as soon as possible! This way, much of the good players' misinformation can be accounted for, such as that from the Chef, Empath or Investigator. Characters that get further information, like the Fortune Teller and Ravenkeeper will know not to choose you. However, if the group knows that you are the Recluse, they may want to execute you anyway.",
+        "Alternatively, stay silent about which character you are until the final day. If you can figure out which other players are Outsiders, or which characters you have been registering falsly to (hopefully not many), then you may be able to convince the group that you are actually an Outsider. Since the good team will often want to kill a Recluse, and this is not of benefit to the team as a whole, then staying alive by any means necessary is a helpful way to win.",
+        "Remember that you are a good player, and are therefore generally a worse choice of execution than any evil player. You also might register as evil even after you're dead - the Gravedigger will not get reliable information about you.",
+        "You will usually register as evil - be suspicious of anyone saying otherwise. If you are sitting next to an Empath who is saying that both their neighbors are good, or if a Fortune Teller says you are not the Alpha Wolf, they are probably lying, and therefore evil. Similarly, anyone who claims to have information about you being evil can often be trusted.",
+        "Don't get Hunted! The Hunter will usually kill you if they select you, and this will make it look like you are the Alpha Wolf and a Successor is in play. This is not helpful to your team, and should be avoided at all costs. Similarly, avoid getting executed, since a Gravedigger will usually learn that you are a Minion or Alpha Wolf, confusing the good team even further.",
+        "Registering as evil can sometimes be quite helpful. Players who say that you are evil can often be trusted, and information like the Chef or Empath can be downright useful in helping you detect other evil players... if you can convince the group that you are not actually evil.",
+        "If the players are incredibly suspicious of you, and very much want to execute you, it is best to accept your fate before the final day happens. You can even vote for yourself to make sure you are executed. If the group thinks you are evil, then dying before the final day at least confirms that you are not the Alpha Wolf, and will turn the good team's attention to other players. Dying on the second last day is safe. Dying on the last day means game over for you."
+      ],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane-info/index.html embedded role data",
+        "wolfsbane/lib/game-constants.ts"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
+      ],
+      "legacyPath": "roles/recluse.html",
+      "hasExistingGuide": true
+    },
+    {
+      "id": "saint",
+      "name": "Saint",
+      "appName": "Saint",
+      "aliases": [],
+      "type": "outsider",
+      "ability": "If you die by execution, your team loses.",
+      "shortRuling": "If you die by execution, your team loses.",
+      "howToRun": "If the Saint dies by execution, declare that the game ends and evil wins.",
+      "interactions": [],
+      "examples": [
+        "There are seven players alive and nominations are in progress. The Saint gets four votes and is about to die. Then, the Baron is nominated but only gets three votes. No more nominations occur today. The Saint is executed, and evil wins.",
+        "The Alpha Wolf is nominated, and the players vote. The Gunslinger kills the Saint. The Saint dies, and the game continues.",
+        "The Saint is executed. However, the Scapegoat's ability is triggered, so the Scapegoat dies instead. The game continues, because the Saint did not die."
+      ],
+      "tips": [
+        "Don't get Executed. No, really. Don't. If you die by execution, the game ends, and your whole team loses. Make sure the good team knows you are the Saint! Tell it in the streets! Tell it from the rooftops! Tell it to everybody! You must be believed to be a good player, or it's curtains. If you have been nominated, cry black and blue that you are the Saint, loudly and publicly... the fate of the game depends on it.",
+        "To help prove that you are good, you can arrange for other good players to confirm your identity. Kill players sitting between you and an Empath so that the Empath learns your alignment. Convince the Fortune Teller to select you at night to prove you are not the Alpha Wolf. Find a Ravenkeeper and get them to agree to choose you so they learn who you are. Get a Hunter to attempt to slay you. The Alpha Wolf will usually not want to kill you at night, so the question of who you really are will be asked by the group at some stage, and having some players back you up could be crucial.",
+        "Alternatively, either stay silent, or bluff as a juicy target for the Alpha Wolf to attack, such as the Hunter or the Bodyguard. If you die at night, then you remove the possibility of being executed accidentally by the good team. It's only executions that count for your ability.",
+        "Find out which other Outsiders are in play. If there are supposed to be two Outsiders in the game, and the only Outsiders to come out publicly are you and the Recluse, for example, then even though you both look inherently suspicious, there are supposed to be two Outsiders in play, so the good team may believe that you are good for this reason alone. If you're the only one, so much the better! It must be you and a Village Idiot."
+      ],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane-info/index.html embedded role data",
+        "wolfsbane/lib/game-constants.ts"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
+      ],
+      "legacyPath": "roles/saint.html",
+      "hasExistingGuide": true
+    },
+    {
+      "id": "tinker",
+      "name": "Tinker",
+      "appName": "Tinker",
+      "aliases": [],
+      "type": "outsider",
+      "ability": "You might die at any time.",
+      "shortRuling": "You might die at any time.",
+      "howToRun": "You might die at any time.",
+      "interactions": [],
+      "examples": [],
+      "tips": [],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+      ],
+      "legacyPath": "roles/tinker.html",
+      "hasExistingGuide": false
+    },
+    {
+      "id": "village-idiot",
+      "name": "Village Idiot",
+      "appName": "Village Idiot",
+      "aliases": [],
+      "type": "outsider",
+      "ability": "You do not know you are the village idiot. You think you are a Townsfolk character, but you are not.",
+      "shortRuling": "You do not know you are the Village Idiot. You think you are a Villager character, but you are not.",
+      "howToRun": "While setting up the game, before putting character tokens in the bag, remove the Village Idiot token and add a Villager character token. Add the Village Idiot's IS THE VILLAGE IDIOT reminder token to the Grimoire. Put the swapped Villager character token in the bag, not the Village Idiot character token. While preparing the first night, put the Village Idiot's IS THE VILLAGE IDIOT reminder token by any Villager character token, changing that player's character to the Village Idiot. They are now an Outsider, and do not have the ability of this Villager character. (But they think they do.) During the game, act as if the Village Idiot is actually this Villager character.",
+      "interactions": [],
+      "examples": [
+        "The Village Idiot, who thinks they are the Soldier, is attacked by the Alpha Wolf. The Village Idiot dies.",
+        "The Village Idiot, who thinks they are the Empath, wakes and learns a '0,' even though they are sitting next to one evil player. The next night, they learn a '1'.",
+        "The Village Idiot, who thinks they are the Ravenkeeper, is killed at night. They choose the Saint, but learn that this player is the Poisoner.",
+        "The Seer is executed. That night, the Village Idiot, who thinks they are Gravedigger, learns that the Village Idiot died today."
+      ],
+      "tips": [
+        "The Village Idiot will never know that they are the Village Idiot - they will start the game with a Villager token and behave as that Villager normally while receiving bad information.",
+        "Figuring out if a Village Idiot is in play is important - this will allow Villager to know whether or not they should be scrutinizing their information.",
+        "If you suspect a Village Idiot is in play, it is important to determine which of the Villager it is as soon as possible. There can only be one Village Idiot in play, so knowing who it is will allow you to treat their information skeptically.",
+        "Differentiating the effects of a Village Idiot from a Poisoner can be difficult, but crucial. If only one person seems to be receiving false information, they might be the Village Idiot.",
+        "Characters like the Gravedigger and Ravenkeeper will see the Village Idiot character when checking that player. You do not register as a Villager - you just think you are!",
+        "If you have figured out you are the Village Idiot, try to reverse engineer what you know. For example, if you thought you were the Empath and have been getting a read of '0', you should be suspicious that you have at least one evil neighbor after all."
+      ],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane-info/index.html embedded role data",
+        "wolfsbane/lib/game-constants.ts"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
+      ],
+      "legacyPath": "roles/village-idiot.html",
+      "hasExistingGuide": true
+    },
+    {
+      "id": "assassin",
+      "name": "Assassin",
+      "appName": "Assassin",
+      "aliases": [],
+      "type": "minion",
+      "ability": "Once per game, at night*, choose a player: they die, even if for some reason they could not.",
+      "shortRuling": "Once per game, at night*, choose a player: they die, even if for some reason they could not.",
+      "howToRun": "Once per game, at night*, choose a player: they die, even if for some reason they could not.",
+      "interactions": [],
+      "examples": [],
+      "tips": [],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+      ],
+      "legacyPath": "roles/assassin.html",
+      "hasExistingGuide": false
+    },
+    {
+      "id": "baron",
+      "name": "Baron",
+      "appName": "Baron",
+      "aliases": [],
+      "type": "minion",
+      "ability": "There are extra Outsiders in play. [+2 Outsiders]",
+      "shortRuling": "There are extra Outsiders in play. [+2 Outsiders]",
+      "howToRun": "While setting up the game, remove any two Villager character tokens and add any two Outsider character tokens. (If you add the Village Idiot, remember to follow its setup instructions as well.) These Outsider tokens go into the bag instead of the Villager tokens.",
+      "interactions": [],
+      "examples": [
+        "The game is being set up for seven players, with five Villager, one Minion, and one Alpha Wolf. Because the Minion is the Baron, the Storyteller removes two Villager tokens and adds a Saint and a Butler token. In total, three Villager, two Outsider, one Minion, and one Alpha Wolf tokens go in the bag for the players to draw from.",
+        "The game is being set up for fifteen players, with nine Villager, two Outsiders, three Minions, and one Alpha Wolf. Because the Baron is in play, the Storyteller must add a Village Idiot and a Recluse. So, they remove the Bodyguard token and add a Recluse token. Then, instead of adding the Village Idiot character token, they add the Village Idiot's “Is the Village Idiot” reminder token to the Grimoire... because this game, one player isn’t a Villager—they are an Outsider: the Village Idiot. All these character tokens go into the bag for the players to draw from."
+      ],
+      "tips": [
+        "Your ability is brought into effect before the game even begins. This means that you have absolutely no responsibility other than to help your Alpha Wolf win! Have fun! Deliberately claim to be in-play Villager to make them look evil! Tell lies! Make good players look evil and evil players look good by muckraking, double bluffing, or creative tomfoolery. You are emboldened to do whatever you want, since you have nothing to lose!",
+        "Since you add Outsiders to the game, and those players will almost always publicly claim to be Outsiders, claiming to be an Outsider as well causes havoc. If a Village Idiot is in play, only you and a real Outsider have claimed to be Outsiders - in this situation, the good team will know that a Baron is in play, but will think that you are actually an Outsider, since there appear to be 2 more Outsiders than usual. If, however, there is no Village Idiot in play, then there will appear to be three more Outsiders than usual in the game, and the good team will probably want to execute all three Outsiders, since they know that at least one is evil - and being responsible for the executions of three players (including yourself) is a great way to start any game and give your team the advantage.",
+        "Deliberately double up with an in-play character that you want to undermine. Since it does not matter if you die, claiming to be a Fortune Teller or a Gravedigger or even a Mayor when that character is already is in play, causes the good team to look upon you both with suspicion. They may think you are evil, but they will usually be suspicious of the other player as well, and not trust any information they give.",
+        "Claiming that a Baron is in play when there is no Baron in play is a great strategy for the evil team. Claiming to be an Outsider means that the group conversation will turn to figuring out whether or not a Baron is in play. If the good team comes to believe a Baron is indeed in play, then you look like a legitimate Outsider, but the good team will also come to believe that a Village Idiot is in play, because the Village Idiot must be the other Outsider. They will not trust their own information.",
+        "Better yet, if you claim that a Baron is in play when there isn't, and two evil players both claim to be Outsiders, then it will seem like they are the two Outsiders added by the Baron, and will usually not be executed by the good team. Since good wants to keep good players alive, even good players that are \"confirmed\" as Outsiders are better off alive than dead.",
+        "Throw suspicion onto the Outsiders. If you can make the good team think that the Outsiders you added are evil, they will chase their tails looking for signs of a Poisoner or Successor!",
+        "Be a patsy. If you are executed, the Alpha Wolf is not. Don't be afraid to die this way, since it gives the Alpha Wolf a day of safety. Furthermore, if you can look so execution-worthy that characters like the Hunter or Ravenkeeper use their ability on you, then at least they are not using it on the Alpha Wolf. Even if you nominate the New in Town, you might look evil, but it prevents the Alpha Wolf from doing so.",
+        "If you are not bluffing as an Outsider, heap as much suspicion on the actual Outsiders as possible. They will usually be trusted by the good team, since it's obvious that a Baron is in play, and will need to be killed if you are to win.",
+        "One option is getting your Alpha Wolf to kill you early on - players who die early at night are usually considered good, and you can use this position of trust to go around and talk to players, gathering information and feeding it back to the evil team, while also spreading misinformation. Whilst any Minion can use this strategy, of course, the Baron is particularly suited, since your devastating ability has already been used.",
+        "You don't always have to be the fall guy. The last thing you want is for you to look evil and have the Alpha Wolf to kill themselves and have you as their only escape route!"
+      ],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane-info/index.html embedded role data",
+        "wolfsbane/lib/game-constants.ts"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
+      ],
+      "legacyPath": "roles/baron.html",
+      "hasExistingGuide": true
+    },
+    {
+      "id": "evil-twin",
+      "name": "Evil Twin",
+      "appName": "Evil Twin",
+      "aliases": [],
+      "type": "minion",
+      "ability": "You & an opposing player know each other. If the Villager player is executed, Werewolves win. Villagers cannot win while you both live.",
+      "shortRuling": "You & an opposing player know each other. If the good player is executed, evil wins. Good can't win if you both live.",
+      "howToRun": "While setting up the game, choose a Good Twin by marking any good character with the TWIN reminder. During the first night, wake both Twins. Let them make eye contact. Point at the Evil Twin, then show the Evil Twin token to the Good Twin. Point at the Good Twin, then show the Good Twin's character token to the Evil Twin. Put them both to sleep. While both Twins are alive, the good team cannot win. If a good-aligned Twin is executed, the evil team wins.",
+      "interactions": [],
+      "examples": [
+        "Both twins are claiming to be the Oracle. The Evil Twin is executed. The game continues.",
+        "The Good Twin and the Evil Twin are both loudly claiming to be the Artist. Both players approach the Storyteller to ask a question in private. The good players, confused, execute the Alpha Wolf. The game continues, with no death during the night from now on."
+      ],
+      "tips": [
+        "Say that the good twin is the Evil Twin. Say it again, and again, and again. After all, that's what the good twin will be doing!",
+        "Claim that you are the same character as the good twin. On the first night, you learn the character of the good twin, and they learn yours. This is a hint to help you know a character that is safe to bluff as.",
+        "Be passionate, not relaxed. Since the game end, and evil wins, whenever the good twin is executed, the good twin is almost always very vocal and insistent that they do not be executed under any circumstances.",
+        "Get the good twin executed, however you can. Give false information that indicates that your fellow evil players information is true. Give true information so that you look more trustworthy.",
+        "If you are the Alpha Wolf, cease killing at some stage, to pretend that the Alpha Wolf was executed that day. Normally, if the Alpha Wolf is executed, the game continues (the Evil Twin character says that while the Evil Twin is alive, 'Good can not win').",
+        "If you are the Alpha Wolf, feel free to try riskier bluffs that you may not otherwise feel fully capable of succeeding with. Since the game continues if you die, it matters less than normal if you are executed."
+      ],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane-info/index.html embedded role data",
+        "wolfsbane/lib/game-constants.ts"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
+      ],
+      "legacyPath": "roles/evil-twin.html",
+      "hasExistingGuide": true
+    },
+    {
+      "id": "godfather",
+      "name": "Godfather",
+      "appName": "Godfather",
+      "aliases": [],
+      "type": "minion",
+      "ability": "You start knowing which Outsiders are in play. If 1 died today, choose a player tonight: they die. [-1 or +1 Outsider]",
+      "shortRuling": "You start knowing which Outsiders are in play. If 1 died today, choose a player tonight: they die. [-1 or +1 Outsider]",
+      "howToRun": "You start knowing which Outsiders are in play. If 1 died today, choose a player tonight: they die. [-1 or +1 Outsider]",
+      "interactions": [],
+      "examples": [],
+      "tips": [],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+      ],
+      "legacyPath": "roles/godfather.html",
+      "hasExistingGuide": false
+    },
+    {
+      "id": "mastermind",
+      "name": "Mastermind",
+      "appName": "Mastermind",
+      "aliases": [],
+      "type": "minion",
+      "ability": "If the Alpha dies, play for 1 more day. If no one is executed, the Werewolves win.",
+      "shortRuling": "If the Alpha dies, play for 1 more day. If no one is executed, the Werewolves win.",
+      "howToRun": "If the Alpha dies, play for 1 more day. If no one is executed, the Werewolves win.",
+      "interactions": [],
+      "examples": [],
+      "tips": [],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+      ],
+      "legacyPath": "roles/mastermind.html",
+      "hasExistingGuide": false
+    },
+    {
+      "id": "poisoner",
+      "name": "Poisoner",
+      "appName": "Poisoner",
+      "aliases": [],
+      "type": "minion",
+      "ability": "Each night, choose a player: they are poisoned tonight and tomorrow day.",
+      "shortRuling": "Each night, choose a player: they are poisoned tonight and tomorrow day.",
+      "howToRun": "Each night, wake the Poisoner. They point at any player. Put the Poisoner to sleep. Put the Poisoner's POISONED reminder token by the chosen player's character token. The chosen player is poisoned—they have no ability, but the Storyteller acts as if they do.",
+      "interactions": [],
+      "examples": [
+        "During the night, the Poisoner poisons the Hunter. The next day, the Hunter tries to slay the Alpha Wolf. Nothing happens. The Hunter now has no ability.",
+        "The poisoned Empath, who neighbors two evil players, learns a \"0.” The next night, the Empath, no longer poisoned, learns the correct information: a \"2.”",
+        "The Investigator is poisoned. They learn that one of two players is the Baron, even though neither is a Minion. (Or even the right players, but the wrong Minion type.)",
+        "The Gravedigger is poisoned. Even though the Alpha Wolf died today, they learn that the New in Town died. A few days later, a poisoned Saint dies, and the game continues.",
+        "The Poisoner poisons the Mayor, then becomes the Alpha Wolf. The Mayor is no longer poisoned because there is no Poisoner in play."
+      ],
+      "tips": [
+        "Identifying targets for poison is vital. Characters who get information over several nights like the Seer or Gravedigger are great choices if you can find them. You can also make your choice based on the player; players who are strong leaders and rallying the good team or players who are quiet and trying not to attract attention are good options.",
+        "Undermine players who trust each other by poisoning the characters getting key info in that clique. If a group is rallying around an Gravedigger, you can turn the entire group on someone innocent by poisoning them at the right time.",
+        "Co-ordinate with your Alpha Wolf so that you are not selecting the same players - unless they are a character like the Ravenkeeper, you'll just be wasting your poison for the day!",
+        "Targeting characters like the New in Town, Hunter or Mayor can be excellent, but only if they use their ability while they are poisoned. You'll need to convince them to use their ability, or time it right so that they are compromised at the moment they choose to activate.",
+        "It's risky, but you can poison your own Alpha Wolf, and use the lack of death for that night to bluff as the Bodyguard or Soldier. (You should probably warn your Alpha Wolf you're going to do this!)",
+        "If everyone is on board with the idea, try poisoning the Successor. If the Alpha Wolfchooses to kill themselves, the Successor will become the new Alpha Wolf... unless you poison them first! That way, you or a third Minion can become the new Alpha Wolfand keep the Successor in play. Just don't get your Alpha Wolfkilled while the Successor is still poisoned!",
+        "You will usually be more efficient as a Poisoner by selecting multiple targets around the town rather than focusing on one player for the entire game. You only really need to poison the Seer on the night they're checking your Alpha Wolf, for example - then you're free to mess with other characters. This method of poisoning is also more difficult to detect than sticking to one player.",
+        "On the other hand, if you only poison one player, that player might end up looking like the Village Idiot, perhaps hiding the real Village Idiot, or making it look like a Baron is in play.",
+        "On the first night, if you don't know who to poison, poison a player sitting next to the Alpha Wolf. You know which player is the Alpha Wolf, and on the off chance that an Empath is sitting next to the Alpha Wolf, you'll be giving some very damaging information to the good team.",
+        "Make use of your Spy! They know who the best targets are and can guide you in the right direction."
+      ],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane-info/index.html embedded role data",
+        "wolfsbane/lib/game-constants.ts"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
+      ],
+      "legacyPath": "roles/poisoner.html",
+      "hasExistingGuide": true
+    },
+    {
+      "id": "spy",
+      "name": "Spy",
+      "appName": "Spy",
+      "aliases": [],
+      "type": "minion",
+      "ability": "Each night, you see the Grimoire. You might register as a Villager & as a Townsfolk or Outsider, even when dead.",
+      "shortRuling": "Each night, you see the Grimoire. You might register as good & as a Villager or Outsider, even if dead.",
+      "howToRun": "Each night, wake the Spy and show them the Grimoire for as long as they need. Put the Spy to sleep.",
+      "interactions": [],
+      "examples": [
+        "The Housekeeper learns that either Abdallah or Douglas is the Ravenkeeper. Abdallah is the Bodyguard, and Douglas is the Spy registering as the Ravenkeeper.",
+        "The Spy neighbors the Alpha Wolf and the Empath. The Chef learns a '1' because the Spy is registering as evil. Later that night, the Empath learns a '0' because the Spy is now registering as good.",
+        "The Spy nominates the New in Town and is executed by the New in Town's ability, because the Storyteller chooses that the Spy registers as a Villager. That night, the Gravedigger learns that the Village Idiot died today, because the Spy is now registering as the Village Idiot."
+      ],
+      "tips": [
+        "You will usually register as a good player to characters like the Empath, Chef, and Gravedigger. Thanks to this, you will be able to gain the trust of good players much more easily than the other evil characters.",
+        "You also have access to information that is hard to guess or obtain as an evil player, like player's characters. This makes you an especially potent Housekeeper, Gravedigger or Ravenkeeper, since all of these characters learn that sort of information.",
+        "The Spy is particularly effective for bluffs that require more than one player. For example, you can claim to be the Housekeeper, Librarian or Ravenkeeper and back up your Alpha Wolf's character claim.",
+        "You are the only evil player that can activate the New in Town ability. Players who die this way are usually the most trusted characters in the game."
+      ],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane-info/index.html embedded role data",
+        "wolfsbane/lib/game-constants.ts"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
+      ],
+      "legacyPath": "roles/spy.html",
+      "hasExistingGuide": true
+    },
+    {
+      "id": "successor",
+      "name": "Successor",
+      "appName": "Successor",
+      "aliases": [],
+      "type": "minion",
+      "ability": "If the Alpha dies, you become the Alpha that night.",
+      "shortRuling": "If there are 5 or more players alive & the Alpha Wolf dies, you become the Alpha Wolf. (Travelers don't count.)",
+      "howToRun": "If the Alpha Wolf dies and there were five or more alive players immediately before the Alpha Wolf died, replace the Successor token with a spare Alpha Wolf token, changing that player's character from the Successor into the Alpha Wolf. (They are now the Alpha Wolf and have the Alpha Wolf's ability. If they die, good wins.)",
+      "interactions": [],
+      "examples": [
+        "There are seven players alive: the Alpha Wolf, the Successor, two Villager, and three Travelers. The Alpha Wolf is executed, so the game ends and good wins because Travelers do not add to the player count for the Successor's ability.",
+        "There are five players alive: the Alpha Wolf, the Successor, the Baron, and two Villager. The Alpha Wolf is executed. The Successor becomes the Alpha Wolf, and the game continues.",
+        "Brianna is the Successor. The Seer chooses Brianna and Alex, and learns a 'no.' Later, the Alpha Wolf dies, so Brianna becomes the Alpha Wolf. The Seer chooses Brianna and Alex again, and learns a 'yes.'"
+      ],
+      "tips": [
+        "The Successor is at her strongest when you co-ordinate with the Alpha Wolf and figure out a strategy that you both like, since the Alpha Wolf can safely die. Maybe you accuse the Alpha Wolf of being evil, and the Alpha Wolf does everything possible to make the good team think they are indeed evil? This makes you look very good, and trustworthy. Maybe the Alpha Wolf kills themselves of a night time and claims to be the Ravenkeeper, saying that you are the character you say you are. Maybe the Alpha Wolf accuses you of being evil, but does so unconvincingly, so that you look good by comparison. Maybe you and the Alpha Wolf both claim to be the same character, such as the Mayor? After all, \"one of you must be the Mayor\", right? It doesn't matter which one of you dies, since the game continues with a living Alpha Wolf either way.",
+        "In the early game, staying alive is more important for you compared to other Minions. Whist it doesn't really matter if the Baron, or Poisoner dies early (since they can often cause a lot of disruption early in the game), you will need to survive until the end of the game if you intend to become the Alpha Wolf at some point. Waiting, listening, then claiming to be a character that you know is not in play often achieves this best.",
+        "Timing is important. Remember that if fewer than five players are alive when the Alpha Wolf dies, the game is over and good wins. If your Alpha Wolf has a lot of heat on them, and you think that they won't survive to the final day, take action and get your Alpha Wolf killed while five or more players are still alive... before it's too late.",
+        "Whilst you are the Successor, you will not register as the Alpha Wolf. So, if you can get yourself confirmed as such by good characters, such as the Hunter or the Fortune Teller, then become the Alpha Wolf at a later stage, then the good team will be very confused about the identity of the real Alpha Wolf, as their information won't add up.",
+        "If the Alpha Wolf is playing well, and seems to be trusted by the good team, there is no need to use your ability. You can play the normal Minion role of spreading false information, breeding distrust among the good players and generally being troublesome whilst ignoring your character ability."
+      ],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane-info/index.html embedded role data",
+        "wolfsbane/lib/game-constants.ts"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
+      ],
+      "legacyPath": "roles/successor.html",
+      "hasExistingGuide": true
+    },
+    {
+      "id": "advocate",
+      "name": "Advocate",
+      "appName": "Advocate",
+      "aliases": [],
+      "type": "minion",
+      "ability": "Each night, choose a living player (different from last night): if executed tomorrow, they do not die.",
+      "shortRuling": "Each night, choose a living player (different from last night): if executed tomorrow, they do not die.",
+      "howToRun": "Each night, choose a living player (different from last night): if executed tomorrow, they do not die.",
+      "interactions": [],
+      "examples": [],
+      "tips": [],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+      ],
+      "legacyPath": "roles/advocate.html",
+      "hasExistingGuide": false
+    },
+    {
+      "id": "fang-gu",
+      "name": "Fang Gu",
+      "appName": "Fang Gu",
+      "aliases": [],
+      "type": "alpha",
+      "ability": "Each night*, choose a player: they die. The 1st Outsider you kill becomes a Werewolf Fang Gu & you die. [+1 Outsider]",
+      "shortRuling": "Each night*, choose a player: they die. The 1st Outsider you kill becomes a Werewolf Fang Gu & you die. [+1 Outsider]",
+      "howToRun": "Each night*, choose a player: they die. The 1st Outsider you kill becomes a Werewolf Fang Gu & you die. [+1 Outsider]",
+      "interactions": [],
+      "examples": [],
+      "tips": [],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+      ],
+      "legacyPath": "roles/fang-gu.html",
+      "hasExistingGuide": false
+    },
+    {
+      "id": "fenrir",
+      "name": "Fenrir",
+      "appName": "Fenrir",
+      "aliases": [
+        "Alpha Wolf",
+        "The Oliver"
+      ],
+      "type": "alpha",
+      "ability": "Each night*, choose a player: they die. If you kill yourself this way, a Minion becomes the Alpha.",
+      "shortRuling": "Each night*, choose a player: they die. If you kill yourself this way, a Minion becomes the Alpha Wolf.",
+      "howToRun": "Each night except the first, wake the Alpha Wolf. They point at any player. Put the Alpha Wolf to sleep. The chosen player dies—put a DEAD reminder token by their character token and lay the character token flat. If the Alpha Wolf chose themselves, replace a living Minion's character token with a spare Alpha Wolf token instead.",
+      "interactions": [],
+      "examples": [
+        "It is the first night. The Alpha Wolf learns that Evin and Sarah are the Minions. The Alpha Wolf also learns that the Bodyguard, Chef, and Librarian are not in play. The Alpha Wolf bluffs as the Chef, then bluffs as Mayor halfway through the game. Eventually, the Alpha Wolf is executed and good wins.",
+        "On the third night, there are just five players left alive, including the Alpha Wolf and the Successor. The Alpha Wolf kills themselves, so the Successor becomes the new Alpha Wolf. The game continues.",
+        "There are lots of reasons why you should register as an evil Alpha Wolf to good players. If this happens, don't despair! Maybe you can convince the group that Empath is village idiot? Maybe you can argue that you are that Seer's 'red herring'?"
+      ],
+      "tips": [
+        "There are many strategies for evil players, particularly the Alpha Wolf, that are covered in more detail in Player Strategy section. Generally speaking, as the Alpha Wolf, you want to look trustworthy, spread false information where possible, get your Minions to confirm that you are a good player, and sacrifice them when needed. Take a look at this section for more information.",
+        "Stay alive during the day at all costs. Even in games with three Minions, do not assume there is a Successor in play. (However, if you talk to your Minion(s) and you learn that there is, then ignore this advice!)",
+        "If you are under suspicion, night time suicide is always an option. Killing yourself and passing the Alpha Wolfhood to a Minion that is looking more trustworthy robs you of the support of their continued voting power, but survival is more important. You can also do this when there is no suspicion on you - people tend to trust players that die at night. Either way, if you die at night, giving false information to the good team the day after, such as claiming to be the Ravenkeeper, can change the course of the game.",
+        "Your Minions are pawns to be sacrificed! Kill them! Kill them all! You're the only one that matters!",
+        "At the beginning of the game, the Storyteller will give you three possible bluffs to choose from. You can bluff as whatever you want, of course, but these few bluffs are safe. Since the Alpha Wolf can die at night, and pass the Alpha Wolfhood to a Minion, both the more passive and the more aggressive bluffs can be useful. If you are new to the game, or don't quite understand how certain characters work, either ask the Storyteller for help, or bluff as a more passive character, such as the Soldier or the Recluse. If you are more adventurous, more high-risk high-reward bluffs such as the Fortune Teller or Gravedigger can be risked.",
+        "A very bold strategy, to be employed on occasion when playing with players who are more familiar with the game, is to claim to be a character that you did not see as one of your bluffs. If you're bluffing as a character that's really in the game, then maybe the good team will assume that you're just a Baron who didn't learn any out of play characters, and kill the other players instead. Of course, they might decide that you're actually the Successor and execute you just to be on the safe side.",
+        "When choosing who to kill, you generally want to kill powerful, troublesome, information-gathering Villager sooner rather than later, such as the Empath, Gravedigger, Bodyguard or Hunter. Removing their information (or power) from the game early can help you later on. Every so often, deliberately keeping one of these Villager alive until the final day can double-bluff the good players. They may ask this player \"If you are really the Fortune Teller, why are you still alive?\", and kill them.",
+        "Also, when deciding who to attack at night, you are best killing the more trusted players earlier rather than later. A New in Town that everybody knows is the New in Town will never be executed, which decreases your odds of being executed later on. A pair of Outsiders that everybody believes are actually Outsiders will need to disappear, because they will not be executed either. On the final day, you will want at least one other player, preferably two, to be looking more suspicious than you.",
+        "Send your Minions out on information-gathering missions. Gather as much information as you can about who is who. This will help you avoid attacking troublesome characters like the Ravenkeeper or the Soldier, and the problems that consequently follow.",
+        "Talk to your Minions! Co-ordinate with them, by helping them bluff. Agree that one of you will look as evil as possible, while the other one will take the Alpha Wolfhood and survive to the end of the game. Find out what your Spy knows. Co-ordinate with your Poisoner so that you choose different players at night. Let your Baron run wild. Learn if your Successor's plan is to kill you, or keep you alive.",
+        "There are lots of reasons why you should register as an evil Alpha Wolf to good players. If this happens, don't despair! Maybe you can convince the group that Empath is Village Idiot? Maybe you can argue that you are that Fortune Teller's \"red herring\"?",
+        "If you don't want to kill one night, you can choose a dead player instead. This can also help you bluff well as the Soldier or the Bodyguard, as no death of a night-time makes it look like your Soldier or Bodyguard ability triggered. If no one is dead after the first day, there are no dead players to 'sink' a kill into, but if you're committed to bluffing as one of those characters, just ask your Poisoner pick you!"
+      ],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane-info/index.html embedded role data",
+        "wolfsbane/lib/game-constants.ts"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
+      ],
+      "legacyPath": "roles/alpha-wolf.html",
+      "hasExistingGuide": true
+    },
+    {
+      "id": "no-dashii",
+      "name": "No Dashii",
+      "appName": "No Dashii",
+      "aliases": [],
+      "type": "alpha",
+      "ability": "Each night*, choose a player: they die. Your 2 nearest Townsfolk neighbors are poisoned.",
+      "shortRuling": "Each night*, choose a player: they die. Your 2 nearest Townsfolk neighbors are poisoned.",
+      "howToRun": "Each night*, choose a player: they die. Your 2 nearest Townsfolk neighbors are poisoned.",
+      "interactions": [],
+      "examples": [],
+      "tips": [],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+      ],
+      "legacyPath": "roles/no-dashii.html",
+      "hasExistingGuide": false
+    },
+    {
+      "id": "po",
+      "name": "Po",
+      "appName": "Po",
+      "aliases": [],
+      "type": "alpha",
+      "ability": "Each night*, choose a player: they die. Or, choose no one tonight & 3 players tomorrow night.",
+      "shortRuling": "Each night*, choose a player: they die. Or, choose no one tonight & 3 players tomorrow night.",
+      "howToRun": "Each night*, choose a player: they die. Or, choose no one tonight & 3 players tomorrow night.",
+      "interactions": [],
+      "examples": [],
+      "tips": [],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+      ],
+      "legacyPath": "roles/po.html",
+      "hasExistingGuide": false
+    },
+    {
+      "id": "pukka",
+      "name": "Pukka",
+      "appName": "Pukka",
+      "aliases": [],
+      "type": "alpha",
+      "ability": "Each night, choose a player: they are poisoned until tomorrow night, then die. You act on the first night.",
+      "shortRuling": "Each night, choose a player: they are poisoned until tomorrow night, then die. You act on the first night.",
+      "howToRun": "Each night, choose a player: they are poisoned until tomorrow night, then die. You act on the first night.",
+      "interactions": [],
+      "examples": [],
+      "tips": [],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+      ],
+      "legacyPath": "roles/pukka.html",
+      "hasExistingGuide": false
+    },
+    {
+      "id": "shabaloth",
+      "name": "Shabaloth",
+      "appName": "Shabaloth",
+      "aliases": [],
+      "type": "alpha",
+      "ability": "Each night*, choose 2 players: they die. A dead player you chose last night might be regurgitated.",
+      "shortRuling": "Each night*, choose 2 players: they die. A dead player you chose last night might be regurgitated.",
+      "howToRun": "Each night*, choose 2 players: they die. A dead player you chose last night might be regurgitated.",
+      "interactions": [],
+      "examples": [],
+      "tips": [],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+      ],
+      "legacyPath": "roles/shabaloth.html",
+      "hasExistingGuide": false
+    },
+    {
+      "id": "vigormortis",
+      "name": "Vigormortis",
+      "appName": "Vigormortis",
+      "aliases": [],
+      "type": "alpha",
+      "ability": "Each night*, choose a player: they die. Minions you kill keep their ability & register as a Villager. [+1 Outsider]",
+      "shortRuling": "Each night*, choose a player: they die. Minions you kill keep their ability & register as a Villager. [+1 Outsider]",
+      "howToRun": "Each night*, choose a player: they die. Minions you kill keep their ability & register as a Villager. [+1 Outsider]",
+      "interactions": [],
+      "examples": [],
+      "tips": [],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+      ],
+      "legacyPath": "roles/vigormortis.html",
+      "hasExistingGuide": false
+    },
+    {
+      "id": "zombuul",
+      "name": "Zombuul",
+      "appName": "Zombuul",
+      "aliases": [],
+      "type": "alpha",
+      "ability": "Each night*, if no one died today, choose a player: they die. The first time you die, you appear to die but are secretly still alive.",
+      "shortRuling": "Each night*, if no one died today, choose a player: they die. The first time you die, you appear to die but are secretly still alive.",
+      "howToRun": "Each night*, if no one died today, choose a player: they die. The first time you die, you appear to die but are secretly still alive.",
+      "interactions": [],
+      "examples": [],
+      "tips": [],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+      ],
+      "legacyPath": "roles/zombuul.html",
+      "hasExistingGuide": false
+    },
+    {
+      "id": "apprentice",
+      "name": "Apprentice",
+      "appName": "Apprentice",
+      "aliases": [],
+      "type": "traveler",
+      "ability": "On your first night, you gain a Townsfolk ability (if Villager) or a Minion ability (if Werewolf).",
+      "shortRuling": "On your first night, you gain a Townsfolk ability (if Villager) or a Minion ability (if Werewolf).",
+      "howToRun": "On your first night, you gain a Townsfolk ability (if Villager) or a Minion ability (if Werewolf).",
+      "interactions": [],
+      "examples": [],
+      "tips": [],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+      ],
+      "legacyPath": "roles/apprentice.html",
+      "hasExistingGuide": false
+    },
+    {
+      "id": "barista",
+      "name": "Barista",
+      "appName": "Barista",
+      "aliases": [],
+      "type": "traveler",
+      "ability": "Each night, choose a player: they learn true info, or their ability works twice tonight/tomorrow. (Storyteller decides)",
+      "shortRuling": "Each night, choose a player: they learn true info, or their ability works twice tonight/tomorrow. (Storyteller decides)",
+      "howToRun": "Each night, choose a player: they learn true info, or their ability works twice tonight/tomorrow. (Storyteller decides)",
+      "interactions": [],
+      "examples": [],
+      "tips": [],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+      ],
+      "legacyPath": "roles/barista.html",
+      "hasExistingGuide": false
+    },
+    {
+      "id": "beggar",
+      "name": "Beggar",
+      "appName": "Beggar",
+      "aliases": [],
+      "type": "traveler",
+      "ability": "You must use a vote token to vote. If a dead player gives you theirs, you learn their alignment. You are sober and healthy.",
+      "shortRuling": "You must use a vote token to vote. If a dead player gives you theirs, you learn their alignment.",
+      "howToRun": "The Beggar cannot vote unless they have a vote token. They lose one vote token each time they vote. During the day, a dead player can declare that they give their vote token to the Beggar. Transfer the vote token to the Beggar and privately tell the Beggar the alignment of that player.",
+      "interactions": [],
+      "examples": [
+        "The Beggar cannot vote. On the fourth day, the Monk gives her vote token to the Beggar. The Beggar may now vote (once), and learns that the player is good. The Beggar is evil and tells the group that the Monk player is evil.",
+        "The good Beggar has three vote tokens. The Recluse gives the Beggar their vote token, and the Beggar learns that they are evil. That day, the Beggar dies, and loses all their vote tokens except for one."
+      ],
+      "tips": [],
+      "tipsGood": [
+        "You definitely want to learn the alignment of at least one player, but don't get too greedy. Learning 1 or 2 players' alignments could mean that 1 or 2 good players can no longer vote - this is probably acceptable. But learning 5 players' alignment could mean that 5 good players can no longer vote - and that gives evil the majority vote at the next execution, granting evil the win. Gain a vote token or two... or three... but know when to stop.",
+        "Tell the truth about good players who give you their vote token. You trust them. They will probably trust you. Have a private conversation about your combined strategy for the future, and tell the group that they are good. You can trust whatever information this good player has due to their character ability, so use that to your advantage and let them help you decide who to vote for.",
+        "Lie about a good player who gave you their vote token. If you tell the group that a good player is in fact evil, the Alpha Wolf or its Minions may seek you out and tell you who they are, believing that you are evil too. This could be amazing information. Either way, you'll want to tell the group that you were lying before the game ends, and reveal your strategy to them, otherwise they may believe that you are evil, or that the good player who selflessly gave you their token is evil.",
+        "If an evil player is foolish enough or brave enough to give you their vote token, tell the truth about their alignment. Tell the group that the player is evil, and be prepared for that player to accuse you of being evil. Since it is rare for evil players to give their vote to a good beggar (but some will do so because it is so unexpected), you may find it difficult to convince the group that they are evil. It will be easier to convince the group if you can get a good player's vote token as well, as that good player will probably help you.",
+        "If an evil player has given you their vote token, you may want to lie about their alignment. Tell the group they they are good - this may convince the evil players that you are evil, and will encourage more evil players to give you their vote token. On the final day, you can reveal the truth.",
+        "You can't vote. So, when you do get a vote token, use it very, very wisely. This is especially important because you may have removed a good player's ability to vote when you took their token, which means that good has less voting power overall. Make your vote count by saving it until the final day, or waiting to use it when your vote will decide whether a player is executed or not.",
+        "Be proactive in getting players to give you their vote token. Ask. Demand. Bargain. Beg. Others will not usually volunteer to give you their token, because they have other things on their mind, but will often consider it if you pester them a little."
+      ],
+      "tipsEvil": [
+        "Learn the alignment of as many players as possible. Take vote tokens from as many players as possible. Even though by talking to the Alpha Wolf you can learn the alignments of all players quickly, the more players that give you their vote tokens, the more players will not be able to vote on the final day. You'll be able to vote as much as you want, and that is a powerful enough ability to win the game. Good players often don't realize how powerful their dead vote is - 1 player giving it away to an evil Beggar might not make much difference, but 4 players doing so will make a huge difference.",
+        "When good players give your their token, tell the truth about their alignment in order to gain their trust. If you publicly tell the group that a good player is good, that goes some way in confirming their legitimacy (and therefore their information), but you may be able to convince more players to give you their token. You can lie about their alignment at a later date.",
+        "Lie about good players' alignments, if you think that you can get away with it. It is much more common for good players to give their vote tokens to Beggars, so claiming that an evil player has done so is a difficult bluff. But, it is possible, and if you succeed, you have not only convinced the group of the illegitimacy of their information, you have gained a vote and convinced them of your goodness. The good player will kick and scream and do everything they can to convince the group that you are evil, so be prepared.",
+        "Lie about evil players alignment, if evil players give you their tokens. There is usually not much to be gained by telling the group that an evil player is evil, beyond making yourself look good. Sure, you'll get the benefit of looking more trustworthy (and maybe even getting another player to give up their vote token), but you've sacrificed the evil player to do so. The Chef, Empath, Investigator and Gravedigger in particular are very good at using the simple fact that one player is evil to deduce the alignment of several other players.",
+        "Tell the truth about evil players to build trust. But do so rarely. Very rarely. Since it is so unlikely that an evil Beggar would actually tell the group the truth about an evil player's alignment, when you actually do it, it may be believed. You'll want to make sure the payoff is worth it though. It can be worth it if the evil player was heavily suspicious anyway, or if the evil player was the third or fourth player to give you their vote token. In such circumstances, building the group's faith that you are good can give you the edge and keep you alive.",
+        "Use your vote wisely or throw it away. Either way, it doesn't really matter. What is important is that you look like you use your vote wisely, and that you save at least one vote token for the final day. The final day is all that really matters, so who you vote for before that point is mostly about making you look trustworthy so that you can survive until the final day.",
+        "Be proactive in getting players to give you their vote token. Ask. Demand. Bargain. Beg. Others will not usually volunteer to give you their token, because they have other things on their mind, but will often consider it if you pester them a little."
+      ],
+      "sourceNotes": [
+        "wolfsbane-info/index.html embedded role data",
+        "wolfsbane/lib/game-constants.ts"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
+      ],
+      "legacyPath": "roles/beggar.html",
+      "hasExistingGuide": true
+    },
+    {
+      "id": "bone-collector",
+      "name": "Bone Collector",
+      "appName": "Bone Collector",
+      "aliases": [],
+      "type": "traveler",
+      "ability": "Once per game, at night, choose a dead player: they regain their ability until dawn tomorrow.",
+      "shortRuling": "Once per game, at night, choose a dead player: they regain their ability until dawn tomorrow.",
+      "howToRun": "Once per game, at night, choose a dead player: they regain their ability until dawn tomorrow.",
+      "interactions": [],
+      "examples": [],
+      "tips": [],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+      ],
+      "legacyPath": "roles/bone-collector.html",
+      "hasExistingGuide": false
+    },
+    {
+      "id": "bureaucrat",
+      "name": "Bureaucrat",
+      "appName": "Bureaucrat",
+      "aliases": [],
+      "type": "traveler",
+      "ability": "Each night, choose a player (not yourself): their vote counts as 3 votes tomorrow.",
+      "shortRuling": "Each night, choose a player (not yourself): their vote counts as 3 votes tomorrow.",
+      "howToRun": "Each night, wake the Bureaucrat. They point at any player. Mark the chosen player with the Bureaucrat's 3 VOTES reminder. Put the Bureaucrat to sleep. Each time you tally the vote of a player marked 3 VOTES, count it as three votes instead of one. (Count this out loud, as normal.)",
+      "interactions": [],
+      "examples": [
+        "The Bureaucrat chooses Evin. The next day, when the first vote is being tallied, the Storyteller counts \"1... 2... 3... 4-5-6... 7.” The nominated player now has seven votes for their execution, and the nomination process continues.",
+        "The Bureaucrat chooses Filip. The next day, Filip has a triple vote, which he uses during four nominations.",
+        "The Bureaucrat chooses Douglas, who is dead. The next day, Douglas uses his vote token to vote, and his vote counts as triple."
+      ],
+      "tips": [],
+      "tipsGood": [
+        "When picking who to give your extra votes to, prioritize living players. Dead players get a single vote for the rest of the game, and will be reluctant to spend it before a critical moment, even with your ability giving them an extra punch. (Similarly, be wary of characters like the Butler, who can have their voting restricted because of their ability.)",
+        "Find a good player you trust or who has been confirmed in some way, and pair up with them. Characters like a New in Town who has caused an execution or anyone confirmed by a Housekeeper are great options of trustworthy players you can work with. This also has the benefit of making you look good, as you are publicly aligning yourself with a good player.",
+        "Watch how people vote, especially the people you choose. Depending on who is on the chopping block, players will change their vote - it's very unlikely that a Minion would vote for their Alpha Wolf knowing they have 3 votes, for example. If a player doesn't take advantage of your power at a critical moment (or worse, does), then they are telling you a lot about their priorities and who they are aligned with.",
+        "Ask the town to help you choose who the person that receives your extra votes should be! If you don't have any strong leads on a reliable good player to trust, crowd-sourcing a solution will not only help the town trust you, but uncover good potential options for you to pick.",
+        "Communicate with the town about who you have picked - not only does keeping an open and honest policy help the town believe that you have a good alignment, but it helps the group when coordinating information and votes to get someone killed.",
+        "Deliberately lie about who you picked so that you can observe the behaviour of the player you 'picked'. While secretly giving your votes to a trustworthy player, pick someone who you want more of a read on, and see how they behave when they think they have extra voting power.",
+        "You are especially deadly on the final night - your ability means that one person can single-handedly kick off an execution. If you choose an evil player, good will have to work extra hard to make up the difference. Consider asking to be exiled before nominations begin - a good player may lose out on the extra kick you have to offer, but at least you know for sure your ability isn't going to cause more harm than good.",
+        "The Thief is your counterpart among Travellers, causing votes to count negatively... but if you both choose the same player, your abilities combine to give someone -3 votes! If you both trust the Thief and have a strong lead on an evil player, this can be a devastating way to undermine the evil team, cancelling out three evil votes!"
+      ],
+      "tipsEvil": [
+        "Don't choose evil players ALL the time - that will look too suspicious. If you just choose the Alpha Wolf over and over again. the good team has reason to believe that you are evil, as good Bureaucrats tend to change their minds more often. Choose evil players MOST, but not all, of the time. This way, evil players will be getting the majority of the triple votes, but you look more trustworthy to the good team, allowing you to survive longer.",
+        "Another strategy is to choose good players until the perfect moment arises. This works best if the players you choose for the first half of the game are not only good, but believed to be good by the group. Choosing good players this way builds up a lot of trust in you, trust that you can betray at the last minute, by giving an evil player triple votes on the last day, or even at a similarly crucial point late in the game.",
+        "Choose an evil player on the final day. Although it might be tempting to choose a good player on the final day, so that you look more trustworthy, a good player having triple voting power is a huge danger to your team and far outweighs any benefits gained due to your angelic appearance. On the contrary, an evil player getting triple votes on the final day can win the game.",
+        "Choose dead evil players, if you can justify your reason for doing so. The dead are generally more trustworthy than the living, so giving a dead Minion triple votes not only helps your image, but gets that brutal extra two votes for the evil teams' desired nominee. A dead evil player with triple votes is really maximizing their offensive potential, as long as they actually are believed to be good."
+      ],
+      "sourceNotes": [
+        "wolfsbane-info/index.html embedded role data",
+        "wolfsbane/lib/game-constants.ts"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
+      ],
+      "legacyPath": "roles/bureaucrat.html",
+      "hasExistingGuide": true
+    },
+    {
+      "id": "butcher",
+      "name": "Butcher",
+      "appName": "Butcher",
+      "aliases": [],
+      "type": "traveler",
+      "ability": "Each day, after the 1st execution, you may nominate again.",
+      "shortRuling": "Each day, after the 1st execution, you may nominate again.",
+      "howToRun": "Each day, immediately after a player is executed, the Butcher may nominate a player for execution. (Remind them if needed.) To succeed, this nomination must tally votes of at least half the alive players, as normal, but does not have to exceed the votes of the execution that prompted the Butcher ability. If this second execution succeeds, it does not allow the Butcher to nominate a third player.",
+      "interactions": [],
+      "examples": [
+        "The Baron is executed and dies. The Butcher then nominates the Seer, who gets enough votes to be executed. The Seer dies too.",
+        "The Gunslinger is exiled, and then the Beggar is exiled. There are no executions today. The Butcher does not get to nominate again, because exiles are not executions.",
+        "The Butcher nominates the Recluse, but the Recluse is not executed. The Investigator gets more votes and is executed today. The game continues, and the Butcher nominates the Recluse again. This time, enough hands are raised, and the Recluse is executed."
+      ],
+      "tips": [],
+      "tipsGood": [
+        "Only nominate players that you think you can execute. Executing 2 players per day is extremely helpful to the good team. Instead of 1 player dying during the day by the choice of the group and 1 player dying at night (by the choice of the Alpha Wolf), there will be 2 players dying per day by the choice of the group for every player that dies at night by choice of the Alpha Wolf.",
+        "During the normal voting process, pay attention to which players get a lot of votes, but are not executed, and which players don't get many votes, but are not executed. Players that get an overwhelming number of votes are unlikely to be the Alpha Wolf, since Minions rarely vote for the Alpha Wolf in such dangerous circumstances.",
+        "If the group keeps failing to vote for the players that you nominate, or if the group is talking about exiling you, then you can make a deal with them - you will nominate who they want you to nominate. Staying alive is better than being dead, even if it means that you go with the group's guesses instead of your own.",
+        "If there is an Evil Twin in the game, be much more frugal with your nominations. If the Alpha Wolf and the Evil Twin are both still alive when just 3 players are alive, it is possible that evil has already won."
+      ],
+      "tipsEvil": [
+        "Nominate. Nominate. Nominate. Vote. Vote. Vote. If you can secure an extra successful execution each day, then an evil victory is basically certain. Evil Butchers are incredibly dangerous.",
+        "You know who the Alpha Wolf is. Never nominate them using your ability. If even half the group votes, no other nominees can be nominated to exceed that tally, so there is no way to fix a foolish mistake.",
+        "If you really, really think that the good team trusts the Alpha Wolf player, nominate them using your ability. You need to be certain that even half the group won't vote for the Alpha Wolf, and be prepared for the good team to think that you are evil.",
+        "Nominate Minions using your ability. Or don't. Whatever you think is best.",
+        "If an Evil Twin is in play, co-ordinate with them to see if you can quickly get the number of living players to just 3 - the Evil Twin, the good twin, and the Alpha Wolf. At this point, evil has usually already won."
+      ],
+      "sourceNotes": [
+        "wolfsbane-info/index.html embedded role data",
+        "wolfsbane/lib/game-constants.ts"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
+      ],
+      "legacyPath": "roles/butcher.html",
+      "hasExistingGuide": true
+    },
+    {
+      "id": "gangster",
+      "name": "Gangster",
+      "appName": "Gangster",
+      "aliases": [],
+      "type": "traveler",
+      "ability": "Once per day, you may choose to kill an alive neighbor, if your other alive neighbor agrees.",
+      "shortRuling": "Once per day, you may choose to kill 1 of your 2 alive neighbors, if your other alive neighbor agrees.",
+      "howToRun": "Once per day, the Gangster can declare that they wish to use their ability. If so, ask if an alive neighbor agrees. If an alive neighbor agrees, the other alive neighbor dies. If both alive neighbors agree, the Gangster chooses which alive neighbor dies. If neither alive neighbor agrees, the Gangster may not use their ability today.",
+      "interactions": [],
+      "examples": [
+        "The Gangster neighbors the Saint and the Baron. The Gangster asks the Baron if they want to kill the Saint. The Baron agrees and the Saint dies.",
+        "The Gangster neighbours the Chambermaid and the Poppy Grower, but they are both dead. The Gangster's two living neighbours are the Engineer and the Po. The Gangster talks with the Po and offers to kill the Engineer. The Po declines. The Gangster talks with the Engineer and the Engineer asks the Gangster to kill the Po. The Gangster agrees, and the Po dies. Good wins.",
+        "The Gangster neighbours the Fool and the Sage. The Sage and the Gangster kill the Fool but the Fool doesn't die, because of the Fool's ability. The Gangster may not use their ability again today."
+      ],
+      "tips": [],
+      "tipsGood": [
+        "Find out the characters of your living neighbors. They will know you are the Gangster. It is best if you know their characters too. Learn what they are before making any rash decisions on who to kill.",
+        "Talk to each living neighbor. Convince them to \"give you permission\" to kill the other player, even if they think the other player is good. You are good, so being able to kill either living neighbor at any time is a powerful, and hopefully helpful, option to have. You can always choose not to kill either player, even if both players want you to kill the other.",
+        "If you can, kill every day. Just by playing the odds, killing two players per day (one by execution and one by Gangster) means that the good team is twice as likely to kill the Alpha Wolf and win. Even if you think both your living neighbors are good, it's worth it.",
+        "When choosing which player to kill, aim for evil players first. If you suspect someone of being evil, arrange for them to sleep with the fishes. If you don't really suspect either player of being evil, choose the player that has a character ability that seems less useful to the good team or the one that seems less willing to die.",
+        "If you believe that both your neighbors are good, and they both have character abilities that will continue to be useful for the rest of the game, don't kill today and don't ask for each player to kill the other. This way, they can both use their abilities to the fullest. You probably won't want to kill a Mayor, a Sage or a King, and if they die at night, then you will get to use your ability on a new living neighbor instead - your ability is also very useful, and it would be a shame to never use it.",
+        "If you think that a particular player is the Alpha Wolf (or even a Minion), then kill players that are sitting between you and them. Hopefully, in a day or two, you and the Alpha Wolf will be living neighbors and you can kill them with your ability.",
+        "Before the final day, request that the group exile you. An evil Gangster that is alive when just 3 other players are left alive can win the game for the evil team by agreeing with the Alpha Wolf to kill another player. Getting yourself exiled means that you won't be able to use your ability on the final day, but it will be a show of good faith to the good team. If the good team believes that you are good, they will look at your previous kills as the best choices of a good player, and not erroneously assume that you were just killing good players because you were evil.",
+        "Remember that you need your living neighbors to agree to use your ability. You can't just do it on their behalf. You'll need to make friends with them, and convince them that you are good and have the good team's interests at heart. They may not want you to use your ability, and with good reason."
+      ],
+      "tipsEvil": [
+        "If both your living neighbors are good, turn them against each other. If they both think that they are both good, they are unlikely to kill each other. Find some way to imply that at least one of them is evil, and one is likely to kill the other.",
+        "If one of your living neighbors is evil, they have every reason to want to kill the other living neighbor. The trick won't be in convincing them to do it, but in coming up with a good reason why. Talk to your evil neighbor and help them formulate a valid reason to tell the group since evil players that are too gung-ho in using the Gangster may appear evil. You can even act reluctant to kill the other neighbor and claim that you are doing so only because there is no better choice.",
+        "Get as many good players killed as possible. It doesn't matter how you do it. Every good player that dies is one fewer good player gaining information, one fewer player using an ability against the evil team,and one fewer good player voting.",
+        "Get any non-Alpha Wolf player killed. Even if Minions die due to your ability, that means that the final day is sooner, and evil's victory is sooner. Similarly, if Outsiders die to your ability, then evil is closer to winning. Don't be too concerned about what each player's character is... as long as they are not the Alpha Wolf, they are probably best dead.",
+        "Talk to any evil living neighbors before talking to any good living neighbors. Many players will want to kill the other player before that other player kills them, and talking to an evil neighbor first gives you a good excuse to kill the good player.",
+        "Every so often, it is better for the evil team if certain characters die by execution. Characters such as the Good Twin (see the Evil Twin) or the Saint lose the game for the good team if executed, so it is best to not kill them using your Gangster ability. Beware of pushing too hard here, though, as there's little reason for a good Gangster to not be willing to kill a Saint.",
+        "If you suspect that a good neighbor is about to be nominated and executed, don't kill them with your Gangster ability today. A death by the Gangster's ability doesn't count as an execution, and the day will continue afterwards. It is more helpful to the evil team if the day ends after the death occurs, so that the Alpha Wolf can't accidentally be executed today as well.",
+        "Choose players to die so that the distance between you and the Alpha Wolf is maximized. Since the Gangster can only kill living neighbors, the good players may have some very strong opinions on which of your living neighbors should die. If one of your living neighbors is the Alpha Wolf, they may put a lot of pressure on you to kill them, and while you can always choose not to, this may end up looking incredibly suspicious and reveal that you are evil and know who the Alpha Wolf is. It is best to avoid this situation by never neighboring the Alpha Wolf in the first place. When the Alpha Wolf is sitting 2, 3, 4, or more players away from you, keep it that way by killing players in the opposite direction."
+      ],
+      "sourceNotes": [
+        "wolfsbane-info/index.html embedded role data",
+        "wolfsbane/lib/game-constants.ts"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
+      ],
+      "legacyPath": "roles/gangster.html",
+      "hasExistingGuide": true
+    },
+    {
+      "id": "gunslinger",
+      "name": "Gunslinger",
+      "appName": "Gunslinger",
+      "aliases": [],
+      "type": "traveler",
+      "ability": "Each day, after the 1st vote has been tallied, you may choose a player that voted: they die.",
+      "shortRuling": "Each day, after the 1st vote has been tallied, you may choose a player that voted: they die.",
+      "howToRun": "Each day, after the first vote has been tallied, the Gunslinger may choose a player that voted. That player dies immediately.",
+      "interactions": [],
+      "examples": [
+        "The Alpha Wolf has been nominated. There are 10 players alive, and five votes for the Alpha Wolf, so the Alpha Wolf is about to die. The Gunslinger chooses a voting player to die. They die, and the nomination continues, with the Alpha Wolf still about to die.",
+        "The players exile the Thief. Then, the Butler is nominated for execution and gets one vote. This is the first nomination for execution, since the Thief’s exile does not count. The Gunslinger chooses to kill the single voting player. Later that day, the Saint is nominated and six players vote. The Gunslinger cannot use their ability now because this is not the first vote for execution today."
+      ],
+      "tips": [],
+      "tipsGood": [
+        "Hot diggity, you're the Gunslinger! Enjoy it while you can!",
+        "Deaths caused by your ability are not executions, and as such, they don't cause the day to end, and nor does the character you shot get seen by the Gravedigger.",
+        "You get the opportunity to kill a player each day. Make the most of it, and remember to let the Storyteller know that you wish to use your ability. Doing so every day practically doubles the good team's chance of killing the Alpha Wolf. Normally, each day / night, 2 players die - one due to the Alpha Wolf attack, and one due to the daily execution. If you use your ability each day, two thirds of all deaths are chosen by the good team. These are great odds.",
+        "Pay attention to the vibe of the group. Sometimes, the good players will not want you to kill a player each day. If you go against their desires, they may Exile you as soon as they can. Pay attention and get your fingers off the trigger if you want to stay alive.",
+        "Pay attention to who isn't voting on the first nomination each day. Minions may be a bit laissez faire, but Alpha Wolf players quickly learn how dangerous it can be to vote when you are in play. Alpha Wolves will usually not vote if they think there is even a small chance that you will shoot them. Use this information to your advantage! By executing those players that seem fearful of voting, you may luck upon the Alpha Wolf. Or, you may startle the Alpha Wolf into voting, which gives you a chance of killing them single-handedly.",
+        "It's ok if a few innocent bystanders die. Don't be afraid to take out a supposed Gravedigger or a suspicious looking Recluse. As long as you kill a Minion or two as well, it was probably worth it.",
+        "You are the perfect way to deal with the Saint. They can't be executed? You don't execute!",
+        "If you live until just 3 players are left alive, be very wary of who you kill. The Alpha Wolf may try to psyche you out and get you to kill a Minion (or a good player), which will reduce the player count to just 2 players... and evil wins. Beware.",
+        "Ignore all of the above advice, and never use your ability. Sit. Wait. Watch. Be passive and silent and unassuming. Watch people's body language and listen to what arguments they are making. When you think that you know who the Alpha Wolf is, say nothing, and wait until that player votes on the first nomination of the day - then BOOM. Either you've won the game and have one very surprised dead Alpha Wolf, or you blew it and killed a nobody.",
+        "If there are 3 or more other Travelers in the game, you know that 1 of them is probably evil. It may be worth taking out an evil Traveler before they can do too much harm."
+      ],
+      "tipsEvil": [
+        "Just like a good Gunslinger, it is best if you kill each day. After all, you have insider information on who you should be killing and who you shouldn't, so go nuts. The more destruction you cause, the quicker that the game will get to the final day, and the more evil players will be alive compared to good, which gives your team greater voting power. Just like a good gunslinger though, listen to the group's opinion on what your actions should be, and don't go kill crazy unless they want you to.",
+        "Obviously, shooting the Alpha Wolf is a bad idea, unless you know you have a Successor. Luckily, you know who the Alpha Wolf is, so that won't be a problem. But should you kill Minions? That depends. If Minions are looking suspicious, and you think that they may get executed soon anyway, putting a cap in that Minion's arse may be the best option. Each Minion that you kill reduces the living players by one - and that means that an evil victory is one step closer. Killing a Minion that has already used their ability, such as a Baron or a Spy, is probably more helpful than keeping them alive. Killing a Minion that still has trouble to cause, such as a Poisoner or Successor is probably a mistake.",
+        "Of course, if you want to avoid shooting Minions, you'll have to learn who they are - be sure to coordinate with your Alpha Wolf!",
+        "Encourage the Alpha Wolf to vote. Since you'll not be killing them, they can vote freely. Tell the group that the players that are not voting are probably the Alpha Wolf.",
+        "You can play it safe, if you want to stay alive longer. Each day, kill the player that looks the most suspicious, regardless of what character they are claiming to be. This will ingratiate you with the good team, because it looks like you are trying to kill evil players. You can even ask the other players who they think you should kill. If the good players see you repeatedly killing the players that they want to kill, you'll live a long time.",
+        "You can throw caution to the wind, and kill the most dangerous, powerful good player to remove their ability from the game. If a Fortune Teller keeps getting fantastic information, and is believed to be trustworthy by the good team, you can quickly and easily neutralize that threat. The downside is that the good team will quickly vote to exile you afterwards. But there are situations where it is worth it. Another example is if a Soldier is in the game, and the good players overwhelmingly believe them, then you may foresee a troublesome final day where the Soldier is one of three living players. To avoid this situation, sacrificing yourself to remove the Soldier would be well worth it.",
+        "Use fear as a weapon. Nominate evil players, or bluff nominating evil players, and dare the good team to vote for it. You'll probably get exiled, but you can have some control over the execution for a day or two.",
+        "If the good players are foolish enough to keep you alive until just 3 players are left alive (not including Travelers), you've basically won. As soon as the first vote happens, kill a non-Alpha Wolf player and seize victory."
+      ],
+      "sourceNotes": [
+        "wolfsbane-info/index.html embedded role data",
+        "wolfsbane/lib/game-constants.ts"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
+      ],
+      "legacyPath": "roles/gunslinger.html",
+      "hasExistingGuide": true
+    },
+    {
+      "id": "judge",
+      "name": "Judge",
+      "appName": "Judge",
+      "aliases": [],
+      "type": "traveler",
+      "ability": "Once per game, you may choose to force the outcome of a nomination, even after the votes are counted.",
+      "shortRuling": "Once per game, you may choose to force the outcome of a nomination, even after the votes are counted.",
+      "howToRun": "Once per game, you may choose to force the outcome of a nomination, even after the votes are counted.",
+      "interactions": [],
+      "examples": [],
+      "tips": [],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+      ],
+      "legacyPath": "roles/judge.html",
+      "hasExistingGuide": false
+    },
+    {
+      "id": "matron",
+      "name": "Matron",
+      "appName": "Matron",
+      "aliases": [],
+      "type": "traveler",
+      "ability": "Each day, you may choose which 2 players sit next to you.",
+      "shortRuling": "Each day, you may choose which 2 players sit next to you.",
+      "howToRun": "Each day, you may choose which 2 players sit next to you.",
+      "interactions": [],
+      "examples": [],
+      "tips": [],
+      "tipsGood": [],
+      "tipsEvil": [],
+      "sourceNotes": [
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+      ],
+      "legacyPath": "roles/matron.html",
+      "hasExistingGuide": false
+    },
+    {
+      "id": "scapegoat",
+      "name": "Scapegoat",
+      "appName": "Scapegoat",
+      "aliases": [],
+      "type": "traveler",
+      "ability": "If a player of your alignment is executed, you might be executed instead.",
+      "shortRuling": "If a player of your alignment is executed, you might be executed instead.",
+      "howToRun": "If a player of the same alignment as the Scapegoat is about to be executed, you may choose to execute the Scapegoat instead. If you do, the Scapegoat dies and the original player lives.",
+      "interactions": [],
+      "examples": [
+        "The Seer is about to be executed, but the Storyteller chooses to execute the good Scapegoat instead. The Fortune Teller lives and the Scapegoat dies. That night, the Gravedigger learns that a Scapegoat was executed today.",
+        "The Poisoner is about to be executed, but the Storyteller chooses to execute the evil Scapegoat instead. The Storyteller could have let the Poisoner die as normal, but chose not to.",
+        "The Spy is about to be executed. The good Scapegoat dies instead."
+      ],
+      "tips": [],
+      "tipsGood": [
+        "Stay alive, however you can. Lay low and don't tempt the Alpha Wolf into attacking you. Avoid getting exiled until after your ability triggers. If you can live long enough for you to die in place of an executed player, that helps enormously. The Storyteller will often wait for the second half of the game for your ability to make your ability trigger, so be patient, and play it safe.",
+        "When the Storyteller declares that the players kill you instead of the normal executee, this is great! Talk to the player you saved in private. You know that they are good, and they know that you are good. Work together, vote together, and win together. Encourage them to tell you any information that they have due to their character ability, and any information that they have due to other private conversations they have had. Do whatever you can to keep this player alive, and save your vote for when they vote too.",
+        "Vote liberally, and try to convince others to do the same. If you execute an evil player, that's great! The Alpha Wolf will often bluff as a powerful information-gathering character that the good team doesn't want to execute, so taking a chance on executing the Fortune Teller might help your teammate enormously. If you execute a good player, you might be executed instead, which is what you want - you can keep that very real Fortune Teller alive!",
+        "After you have talked to the player whose life you saved, do whatever you can to convince the rest of the group that they are good. You have two publicly known facts to help you do this: Most Travelers are good. The odds that you are good, are good, therefore the odds that the player you saved is good, are good. Both you and the player you saved are the same alignment. If there is a Chef or Empath in play, their information would need to be congruent with you both being the same alignment. If an Investigator or Fortune Teller is in-play, their information may be incongruent with you both being evil. It is rare that a piece of information such as \"two players are the same alignment\" becomes publicly known, so use it to the full.",
+        "Beware of the Spy! If they get the votes, you, the poor, innocent, good Scapegoat might be executed instead! You at least learn that they weren't the Alpha Wolf when you were executed, so it's not all bad news!",
+        "Feeling devious? Go up to a player you don't trust and tell them you're evil. Convince them to get themselves executed so you can 'prove' you're on the same team - only to watch them get executed for their crime of believing you. One Minion (or even Alpha Wolf!) down.",
+        "To help convince the group that you are good, make the argument that another Traveler in the game is evil. Whether they are actually good or evil doesn't really matter to you. What does matter is that if the group thinks that one of them is evil, they will believe that you are good, because the chance of there being 2 evil Travelers is small. A group that believes that you are the good Traveler will keep you alive long enough for you to use your ability, and will believe that the player whose life you save is good too. And you never know, maybe the Traveler that you are throwing under the bus actually is evil after all!"
+      ],
+      "tipsEvil": [
+        "Stay alive, however you can. So that the Alpha Wolf doesn't kill you, either talk to the Alpha Wolf to let them know that you are evil, or otherwise get a message to them. Avoid getting exiled no matter the cost. The Storyteller will almost always wait until the Alpha Wolf is executed for your ability to trigger, so you remaining alive until that happens will save the evil team from defeat. Sometimes, the Storyteller will make your ability trigger when a Minion is executed instead. If this happens, that's still great, because at least that Minion gets another night and day in the game.",
+        "You are that rare beast, an evil traveler who can prove themselves evil to their Alpha Wolf! If they get the votes and you're executed instead, they know that you must be their ally!",
+        "If the good team begins to think that you are evil, it may be best to die. Either get yourself exiled, or get the Alpha Wolf to kill you. If you live, and your ability triggers when a Minion dies, the good team will believe that the Minion you saved is in fact evil. This may give them all the information they need to deduce who the Alpha Wolf is.",
+        "When the Storyteller declares that the players kill you instead of the normal executee, this is great! Talk to the player you saved in private, just as if you were a good player. You can talk about the weather, football, whatever. As long as the good team believes that you are good, they will believe that the player you saved is good. If this player is the Alpha Wolf, this strategy could win you the game. If this player is a Minion, they get to keep their ability and their daily voting power.",
+        "If the game is near to a close, and you died in place of a Minion, it may be best if you look as evil as possible to the group. The following day, if just 3 or 4 players are left alive, the good team will probably execute the player you saved, believing them to be the Alpha Wolf. If you look evil, the good team thinks that the Minion is evil, and may not click that they are not in fact the Alpha Wolf. This strategy may still be useful if 5, 6, or even 7 players are still alive. Convincing the group to execute a Minion (again) at least means that they are not executing the Alpha Wolf, and good loses precious time and votes in the process.",
+        "Do whatever you can to convince the rest of the group that the player whose life you saved is good. This may be an uphill struggle, depending on the number of other Travelers in play. Since the group will know for a fact that you are both the same alignment, they may be able to use this information to prove or disprove other player's alignments. Pay attention, and focus on discrediting key players. For example, if the Alpha Wolf just got executed but saved by you, and the Empath is sitting next to you and knows that one of their neighbors is evil, you will need to completely discredit either the Empath, or their other living neighbor... otherwise it's curtains for team evil."
+      ],
+      "sourceNotes": [
+        "wolfsbane-info/index.html embedded role data",
+        "wolfsbane/lib/game-constants.ts"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
+      ],
+      "legacyPath": "roles/scapegoat.html",
+      "hasExistingGuide": true
+    },
+    {
+      "id": "thief",
+      "name": "Thief",
+      "appName": "Thief",
+      "aliases": [],
+      "type": "traveler",
+      "ability": "Each night, choose a player (not yourself): their vote counts negatively tomorrow.",
+      "shortRuling": "Each night, choose a player (not yourself): their vote counts negatively tomorrow.",
+      "howToRun": "Each night, wake the Thief. They point at any player. Mark the chosen player with the Thief's NEGATIVE VOTE reminder. Put the Thief to sleep. Each time you tally the vote of a player marked NEGATIVE VOTE, count it as subtracting one vote instead of adding one vote. (Count this out loud, as normal.)",
+      "interactions": [],
+      "examples": [
+        "The Thief chooses Marianna. The next day, while tallying the first vote, the Storyteller counts '1... 2... 3... 2... 3... 4... 5.' The nominated player now has five votes for their execution, and the nomination process continues.",
+        "The Thief chooses Abdallah. Abdallah votes for an execution, and instead of the tally being six, it is four. Since 10 players are alive, the nominee is not executed today. Later that day, the players are voting to exile the Gunslinger. Abdallah votes to exile, and his vote counts as positive."
+      ],
+      "tips": [],
+      "tipsGood": [
+        "Use your ability to undermine players who you believe are evil! Secretly pick a player you suspect at night, and do not let them know tomorrow that their vote is now negative. When this player votes, they'll be voting with the expectation that they'll be counting towards the vote, when in fact they'll be undermining whatever cause they're working for.",
+        "Weaponize your negativity - pick a player you believe to be good, and tell them about it! While this does mean one less good vote on the table, this player now has the very powerful ability to vote against a nomination.",
+        "Swap up who you are picking, especially if you're trying to pick evil players. Once a player knows their vote counts negatively, they can use it to their advantage. To avoid this, change who you pick each night, moving the negative vote around and keeping players guessing.",
+        "Double and triple bluff who you picked publicly. Players who believe their vote counts negatively will react differently to players who think their vote is normal. With the power of words alone, you can be able to convince an evil player not to vote at a critical juncture.",
+        "Remember that you can pick dead players if you want to. This is particularly useful on the final day, since that is when most dead players will be using their single vote.",
+        "Keep quiet about who you pick so nobody knows what to expect! This will often mean that players you want to execute, don't get executed, which is an unfortunate downside. However, when each player first votes each day, you can observe their reaction and body language.",
+        "If a Bureaucrat is in play, and you think that they are good, co-ordinate with them and both choose the same player, giving a whopping 3 negative votes to a player of your choice."
+      ],
+      "tipsEvil": [
+        "Pick good players who are figuring out who is good and who is evil, but don't tell them that you have stolen their vote. They will vote for executions that they want to pass, and this will often mean that they are voting for good players.",
+        "Lie about who you chose. This will cause confusion and trick the good players into making executions fail when they don't want them to. If a player believes that they have a negative vote, they will vote when they want an execution to fail, but accidentally increase its chances of succeeding instead.",
+        "Pick evil players, and tell them that you have picked them. Evil players know exactly who is good and who is evil, so will always use their negative vote effectively. You may need to swap between evil players - choosing the Alpha Wolf one night, then choosing a Minion the next night.",
+        "On the final day, you definitely want to choose an evil player, and have them know that you have chosen them. Even if the good team exiles you after the fact, having a negative vote on the Alpha Wolf is incredibly helpful. It may even win you the game!"
+      ],
+      "sourceNotes": [
+        "wolfsbane-info/index.html embedded role data",
+        "wolfsbane/lib/game-constants.ts"
+      ],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
+      ],
+      "legacyPath": "roles/thief.html",
+      "hasExistingGuide": true
+    }
+  ]
+}
