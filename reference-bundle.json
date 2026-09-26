@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "contentVersion": "2026-09-26-draft.1",
-  "checksum": "287c67c133faf8dadb7db7537113d82ac7085b01f96bd3e1382cf12c5a1a9ea6",
+  "contentVersion": "2026-09-26-draft.2",
+  "checksum": "0db1efc6844d4282534455d58310dafefd5c1184682520cc29eb103ca6f99ce6",
   "roles": [
     {
       "id": "artist",
@@ -87,19 +87,29 @@
       "aliases": [],
       "type": "townsfolk",
       "ability": "Each night, choose 2 alive players (not yourself): you learn how many woke tonight due to their ability.",
-      "shortRuling": "Each night, choose 2 alive players (not yourself): you learn how many woke tonight due to their ability.",
-      "howToRun": "Each night, choose 2 alive players (not yourself): you learn how many woke tonight due to their ability.",
-      "interactions": [],
-      "examples": [],
+      "shortRuling": "Count how many of the two chosen living players woke tonight for their own abilities; give 0, 1, or 2.",
+      "howToRun": "Each night, wake the Chambermaid and have them choose two different living players other than themself. Determine whether each chosen player woke that night because of their own character ability, including a wake while that ability was poisoned or confused. Do not count a wake caused only by another character or a general game event. Show the total on your fingers, then put the Chambermaid to sleep. Game Master suggests a count, but enter the result yourself after checking exceptional wakes and impairments.",
+      "interactions": [
+        "A poisoned or confused chosen player can still count if they actually woke for their own ability; impairment affects the ability's effect, not whether the wake happened.",
+        "If the Chambermaid is poisoned or confused, the information may be false. Game Master offers a decoy count but leaves the final number to the Storyteller.",
+        "The two choices must be distinct, alive, and neither can be the Chambermaid."
+      ],
+      "examples": [
+        "The Chambermaid chooses the alive Empath and Fool. The Empath woke for their own ability and the Fool did not, so show 1.",
+        "Both chosen players woke for their own abilities, but one was poisoned. Both wakes count, so show 2 if the Chambermaid is healthy."
+      ],
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
       "sourceNotes": [
-        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES",
+        "wolfsbane/components/game/grimoire-wizard/role-steps/ChambermaidStep.tsx",
+        "wolfsbane/lib/game-utils.ts doesPlayerWakeTonight",
+        "https://wiki.bloodontheclocktower.com/Chambermaid (comparison source)"
       ],
       "reviewStatus": "draft",
       "reviewNotes": [
-        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+        "Confirm whether every special or conditional wake in Wolf’s Bane follows the official 'own ability' test; Game Master's scheduled-wake suggestion may need manual correction."
       ],
       "legacyPath": "roles/chambermaid.html",
       "hasExistingGuide": false
@@ -148,19 +158,28 @@
       "aliases": [],
       "type": "townsfolk",
       "ability": "You start knowing how many steps from the Alpha to its nearest Minion.",
-      "shortRuling": "You start knowing how many steps from the Alpha to its nearest Minion.",
-      "howToRun": "You start knowing how many steps from the Alpha to its nearest Minion.",
-      "interactions": [],
-      "examples": [],
+      "shortRuling": "On the first night, give the shortest seat distance from the Alpha Wolf to any Minion.",
+      "howToRun": "On the first night, find the Alpha Wolf and each Minion in seating order. For each Minion, count one step per neighboring seat along the shorter path around the circle; adjacent players are one step apart. Use the smallest of those distances. Wake the Clockmaker, show that number, and put them to sleep. Game Master calculates a suggested distance from its current seating order; verify the seats and any special registrations before entering the result.",
+      "interactions": [
+        "Count seats, not only living players. A Traveler occupying a seat adds a step even though that Traveler is not a Minion.",
+        "If the Clockmaker is poisoned or confused when receiving the information, the number may be false.",
+        "The information describes the first-night arrangement; later deaths or seat changes do not update it."
+      ],
+      "examples": [
+        "A Minion sits next to the Alpha Wolf. Show 1, even if another Minion is farther away.",
+        "The nearest Minion is two seats clockwise from the Alpha Wolf and four seats counterclockwise. Show 2."
+      ],
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
       "sourceNotes": [
-        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES",
+        "wolfsbane/components/game/grimoire-wizard/role-steps/ChefEmpathClockmakerStep.tsx",
+        "https://wiki.bloodontheclocktower.com/Clockmaker (comparison source)"
       ],
       "reviewStatus": "draft",
       "reviewNotes": [
-        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+        "Confirm how Wolf’s Bane handles special Alpha or Minion registration for this count, including multiple Alpha candidates."
       ],
       "legacyPath": "roles/clockmaker.html",
       "hasExistingGuide": false
@@ -172,19 +191,30 @@
       "aliases": [],
       "type": "townsfolk",
       "ability": "Once per game, at night, choose a character: they are poisoned for 3 nights & 3 days.",
-      "shortRuling": "Once per game, at night, choose a character: they are poisoned for 3 nights & 3 days.",
-      "howToRun": "Once per game, at night, choose a character: they are poisoned for 3 nights & 3 days.",
-      "interactions": [],
-      "examples": [],
+      "shortRuling": "Once per game at night, name a character; that character is poisoned for three nights and three days.",
+      "howToRun": "On a night when the Courtier has not used their ability, wake them and ask them to choose a character name, including one that may not be in play. Put the Courtier to sleep and mark the choice as used. If that character is in play and the Courtier's ability works, mark its player poisoned for this night and the next two nights, with the intervening three days. Game Master applies a 'Courtier Poisoned: 3' tag to a matching player and reduces the counter at transitions into later nights. Check the tag and other causes of impairment before resolving that character's actions; clear the effect when its duration ends.",
+      "interactions": [
+        "The Courtier chooses a character, not a player. A choice that is absent from the game still spends the once-per-game use.",
+        "The chosen character's ability stops working while the Courtier effect applies, but the player may still wake and make choices as usual.",
+        "Game Master uses the same poisoned state for several causes of impairment. Check whether another cause remains when the Courtier counter ends."
+      ],
+      "examples": [
+        "The Courtier names Poisoner and that character is in play. Mark the Poisoner affected for the current night and the following two nights and days.",
+        "The Courtier names a character that is not in play. Record the use, but no player receives the effect."
+      ],
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
       "sourceNotes": [
-        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES",
+        "wolfsbane/components/game/grimoire-wizard/role-steps/CourtierStep.tsx",
+        "wolfsbane/hooks/useGameState.ts transitionToNight",
+        "https://wiki.bloodontheclocktower.com/Courtier (comparison source)"
       ],
       "reviewStatus": "draft",
       "reviewNotes": [
-        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+        "Decide whether Wolf’s Bane intentionally says 'poisoned' rather than the source game's 'drunk'; if so, confirm whether poison-specific interactions apply.",
+        "Confirm what happens if the Courtier is impaired when choosing or becomes impaired during the three-night effect. Game Master currently only applies the tag when the Courtier is healthy and alive at selection."
       ],
       "legacyPath": "roles/courtier.html",
       "hasExistingGuide": false
@@ -259,19 +289,29 @@
       "aliases": [],
       "type": "townsfolk",
       "ability": "The first time you die, you don't.",
-      "shortRuling": "The first time you die, you don't.",
-      "howToRun": "The first time you die, you don't.",
-      "interactions": [],
-      "examples": [],
+      "shortRuling": "Prevent the Fool's first death and mark the ability used; the next death happens normally.",
+      "howToRun": "When an alive Fool would die from an execution or a night effect, first resolve any other protection that prevents the death. If death would still happen and the Fool is healthy with an unused ability, leave the Fool alive and mark 'Fool Used'. Do not announce the reason the death failed. A later death proceeds normally. Game Master checks the poisoned state and the 'Fool Used' tag during execution and night resolution.",
+      "interactions": [
+        "If another protection stops the death before the Fool ability is needed, leave 'Fool Used' unmarked.",
+        "A poisoned or confused Fool cannot use this protection and may die on the first attempt.",
+        "Protection and special effects that bypass ordinary death prevention should be resolved before relying on the Fool."
+      ],
+      "examples": [
+        "The healthy, unused Fool is executed with no other protection. They survive; mark 'Fool Used'. A later lethal attack kills them.",
+        "A protected Fool is attacked but the earlier protection prevents death. The Fool stays alive with their ability unused."
+      ],
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
       "sourceNotes": [
-        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES",
+        "wolfsbane/hooks/useGameState.ts execution resolution",
+        "wolfsbane/components/game/grimoire-wizard.tsx night death resolution",
+        "https://wiki.bloodontheclocktower.com/Fool (comparison source)"
       ],
       "reviewStatus": "draft",
       "reviewNotes": [
-        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+        "Confirm the intended priority when multiple night protections, unavoidable kills, or simultaneous deaths affect the Fool; Game Master may need a matching behavior audit."
       ],
       "legacyPath": "roles/fool.html",
       "hasExistingGuide": false
@@ -283,19 +323,30 @@
       "aliases": [],
       "type": "townsfolk",
       "ability": "Each night*, choose a player & guess their character: if you guess wrong, you die.",
-      "shortRuling": "Each night*, choose a player & guess their character: if you guess wrong, you die.",
-      "howToRun": "Each night*, choose a player & guess their character: if you guess wrong, you die.",
-      "interactions": [],
-      "examples": [],
+      "shortRuling": "From night two onward, a wrong character guess causes the Gambler to die that night.",
+      "howToRun": "Each night after the first, wake the Gambler. Have them identify a player and guess that player's character; Game Master currently offers every other player as a target. Put the Gambler to sleep. Compare the guess with the target's actual character, applying any registration or impairment ruling. If the guess is wrong and the Gambler's ability works, add the Gambler to that night's deaths, then resolve protection and announce deaths at dawn in the normal way. The Game Master wizard compares the selected character name with the stored role name and proposes the death.",
+      "interactions": [
+        "A poisoned or confused Gambler's wrong guess does not cause this ability's death in Game Master.",
+        "The current wizard excludes the Gambler from its target list even though the comparison game's rules allow a self-guess.",
+        "Death protection may save a Gambler after a wrong guess; resolve the cause of death and protection in night order."
+      ],
+      "examples": [
+        "The Gambler names the Empath and guesses Empath. If that player's character is Empath, the Gambler stays alive.",
+        "The Gambler names the Fool but guesses Soldier. If the Gambler is healthy, add the Gambler to tonight's potential deaths."
+      ],
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
       "sourceNotes": [
-        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES",
+        "wolfsbane/components/game/grimoire-wizard/role-steps/GamblerStep.tsx",
+        "wolfsbane/components/game/grimoire-wizard.tsx night death resolution",
+        "https://wiki.bloodontheclocktower.com/Gambler (comparison source)"
       ],
       "reviewStatus": "draft",
       "reviewNotes": [
-        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+        "Decide whether the Gambler may choose themself. Game Master excludes self, while the comparison game's rules allow it.",
+        "Confirm whether registrations or character changes alter what counts as a correct guess; Game Master currently compares the stored role name directly."
       ],
       "legacyPath": "roles/gambler.html",
       "hasExistingGuide": false

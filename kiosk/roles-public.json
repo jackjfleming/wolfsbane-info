@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "contentVersion": "2026-09-26-draft.1",
-  "checksum": "287c67c133faf8dadb7db7537113d82ac7085b01f96bd3e1382cf12c5a1a9ea6",
+  "contentVersion": "2026-09-26-draft.2",
+  "checksum": "0db1efc6844d4282534455d58310dafefd5c1184682520cc29eb103ca6f99ce6",
   "roles": [
     {
       "id": "artist",
