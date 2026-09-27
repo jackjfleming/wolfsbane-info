@@ -537,8 +537,11 @@
       "type": "townsfolk",
       "ability": "Each night*, choose 2 players: they are safe from the Alpha tonight, but 1 is confused.",
       "shortRuling": "Each night*, choose 2 players: they are safe from the Alpha tonight, but 1 is confused.",
-      "howToRun": "Each night*, choose 2 players: they are safe from the Alpha tonight, but 1 is confused.",
-      "interactions": [],
+      "howToRun": "Each night except the first, wake the Innkeeper and ask them to choose two different players; the Innkeeper may choose themself. Put the Innkeeper to sleep. Mark both chosen players safe from the Alpha Wolf tonight. Choose one of those two players to become confused and mark them confused until dusk the following day. At dawn, remove the safety markers. At dusk, remove the confusion marker. If the Innkeeper becomes confused, their ability no longer provides protection while confused, including to the other chosen player.",
+      "interactions": [
+        "The Innkeeper may choose themself as one of the two players. If the Innkeeper is the one made confused, neither chosen player remains protected by the Innkeeper's ability while that confusion applies.",
+        "Confusion from the Innkeeper lasts until dusk the following day."
+      ],
       "examples": [],
       "tips": [],
       "tipsGood": [],
@@ -546,10 +549,8 @@
       "sourceNotes": [
         "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/innkeeper.html",
       "hasExistingGuide": false
     },
