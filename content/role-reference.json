@@ -561,9 +561,12 @@
       "aliases": [],
       "type": "townsfolk",
       "ability": "You start knowing that 1 of 2 players is a particular Minion, or that zero are in play.",
-      "shortRuling": "You start knowing that 1 of 2 players is a particular Minion.",
-      "howToRun": "While preparing the first night, put the Investigator's MINION reminder token by any Minion character token, and put the Investigator's WRONG reminder token by any other character token. During the first night, wake the Investigator and point to the players marked MINION and WRONG. Show the character token marked MINION to the Investigator. Put the Investigator to sleep. Remove the Investigator's reminder tokens when convenient.",
-      "interactions": [],
+      "shortRuling": "You start knowing that 1 of 2 players is a particular Minion, or that zero Minions are in play.",
+      "howToRun": "Before the first night, if a Minion is in play, mark a Minion character and a different player as the two choices. A Recluse may register as the particular Minion at the Storyteller's discretion. Wake the Investigator, point to both players, show the marked Minion character, and put the Investigator to sleep. If no Minions are in play, wake the Investigator and show 'zero Minions' without pointing to two players or showing a Minion character. Remove the reminder markers when convenient.",
+      "interactions": [
+        "A Recluse may register as any particular Minion for Investigator information at the Storyteller's discretion.",
+        "When no Minions are in play, show 'zero Minions' rather than pointing to two players."
+      ],
       "examples": [
         "Amy is the Baron, and Julian is the Mayor. The Investigator learns that either Amy or Julian is the Baron.",
         "Angelus is the Spy, and Lewis is the Poisoner. The Investigator learns that either Angelus or Lewis is the Spy.",
@@ -586,10 +589,8 @@
         "wolfsbane-info/index.html embedded role data",
         "wolfsbane/lib/game-constants.ts"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/investigator.html",
       "hasExistingGuide": true
     },
