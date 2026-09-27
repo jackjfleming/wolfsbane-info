@@ -224,9 +224,13 @@
       "aliases": [],
       "type": "townsfolk",
       "ability": "Each night, you learn how many of your living neighbors are Werewolves.",
-      "shortRuling": "Each night, you learn how many of your 2 alive neighbors are evil.",
-      "howToRun": "Each night, wake the Empath. Show the Empath fingers (0, 1, or 2) equaling the number of evil alive neighbors of the Empath. Put the Empath to sleep.",
-      "interactions": [],
+      "shortRuling": "Each night, learn how many of your 2 living neighbors are Werewolves.",
+      "howToRun": "Each night, wake the Empath. On each side of the Empath, skip dead players to find the nearest living neighbor. Count how many of these two living neighbors register as Werewolves, and show the Empath 0, 1, or 2 fingers. The Recluse may register as a Werewolf for this information. Put the Empath to sleep.",
+      "interactions": [
+        "A Recluse may register as a Werewolf neighbor or not, at the Storyteller's discretion.",
+        "A Werewolf-aligned Traveler counts as a Werewolf neighbor when alive.",
+        "The Empath's information can be false while the Empath is poisoned or confused."
+      ],
       "examples": [
         "The Empath neighbors two good players—a Soldier and a Bodyguard. The Empath learns a '0'.",
         "The next day, the Soldier is executed. That night, the Bodyguard is killed by the Alpha Wolf. The Empath now detects the players sitting next to the Soldier and the Bodyguard, which are a Librarian and an evil Gunslinger. The Empath now learns a '1'.",
@@ -249,10 +253,8 @@
         "wolfsbane-info/index.html embedded role data",
         "wolfsbane/lib/game-constants.ts"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/empath.html",
       "hasExistingGuide": true
     },
