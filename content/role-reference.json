@@ -493,8 +493,11 @@
       "type": "townsfolk",
       "ability": "Once per game, during the day, publicly choose a player: if they are the Alpha, they die.",
       "shortRuling": "Once per game, during the day, publicly choose a player: if they are the Alpha Wolf, they die.",
-      "howToRun": "During the day, the Hunter can declare that they wish to use their ability. If so, the Hunter points at any player. If the chosen player is an alive Alpha Wolf, declare that the chosen player dies—put a shroud on their character token in the Grimoire. If the chosen player is not an alive Alpha Wolf, say 'Nothing happens.' Either way, the Hunter loses their ability—put the Hunter's NO ABILITY reminder token by the Hunter token. If a player is bluffing as the Hunter and declares they wish to use their ability, act as if they were indeed the Hunter—allow time for discussion, let them make the decision, and act like you're fiddling with tokens in your Grimoire, then say 'Nothing happens.' When the Hunter declares that they wish to use their ability, give the group a minute or two to discuss who the Hunter should choose. This allows the group to feel responsible for the win (or the loss!), but the Hunter always makes the final choice.",
-      "interactions": [],
+      "howToRun": "During the day, the Hunter can declare that they wish to use their ability. If so, the Hunter points at any player. If the chosen player is an alive Alpha Wolf, or an alive Recluse whom you choose to register as an Alpha Wolf for this shot, declare that the chosen player dies—put a shroud on their character token in the Grimoire. Otherwise, say 'Nothing happens.' Either way, including when poisoned or confused, the Hunter loses their ability—put the Hunter's NO ABILITY reminder token by the Hunter token. If a player is bluffing as the Hunter and declares they wish to use their ability, act as if they were indeed the Hunter—allow time for discussion, let them make the decision, and act like you're fiddling with tokens in your Grimoire, then say 'Nothing happens.' When the Hunter declares that they wish to use their ability, give the group a minute or two to discuss who the Hunter should choose. This allows the group to feel responsible for the win (or the loss!), but the Hunter always makes the final choice.",
+      "interactions": [
+        "The Recluse may register as the Alpha Wolf for a Hunter shot, at the Storyteller's discretion, and die as a result.",
+        "An attempted once-per-game Hunter use is spent even if the Hunter is poisoned or confused."
+      ],
       "examples": [
         "The Hunter chooses the Alpha Wolf. The Alpha Wolf dies, and good wins!",
         "The Hunter chooses the Recluse. The Storyteller decides that the Recluse registers as the Alpha Wolf, so the Recluse dies, but the game continues.",
@@ -521,10 +524,8 @@
         "wolfsbane-info/index.html embedded role data",
         "wolfsbane/lib/game-constants.ts"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/hunter.html",
       "hasExistingGuide": true
     },
@@ -1181,7 +1182,9 @@
       "ability": "You might register as a Werewolf & as a Minion or Alpha, even when dead.",
       "shortRuling": "You might register as evil & as a Minion or Alpha Wolf, even if dead.",
       "howToRun": "The Recluse has no ability that affects the game directly. However, if the Recluse's alignment is detected by another character's ability, you choose whether the Recluse registers as good or evil. If the Recluse is targeted by an ability that affects a Minion or Alpha Wolf specifically, you choose whether the Recluse is affected or not.",
-      "interactions": [],
+      "interactions": [
+        "At the Storyteller's discretion, the Recluse may register as any Werewolf, Minion, or Alpha Wolf when another ability checks or affects that identity, even while dead. For example, a Hunter shot can kill a Recluse registered as the Alpha Wolf."
+      ],
       "examples": [
         "The Hunter uses their ability on the Recluse. The Storyteller decides that the Recluse registers as the Alpha Wolf, so the Recluse dies. The Hunter believes that they just killed the Alpha Wolf.",
         "The Empath, who neighbors the Recluse and the Bodyguard, learns she is neighboring one evil player. The next night, the Empath learns they are neighboring no evil players.",
@@ -1503,7 +1506,9 @@
       "ability": "Each night, you see the Grimoire. You might register as a Villager & as a Townsfolk or Outsider, even when dead.",
       "shortRuling": "Each night, you see the Grimoire. You might register as good & as a Villager or Outsider, even if dead.",
       "howToRun": "Each night, wake the Spy and show them the Grimoire for as long as they need. Put the Spy to sleep.",
-      "interactions": [],
+      "interactions": [
+        "At the Storyteller's discretion, the Spy may register as any Villager character, including a Townsfolk or Outsider, when another ability checks or affects that identity, even while dead."
+      ],
       "examples": [
         "The Housekeeper learns that either Abdallah or Douglas is the Ravenkeeper. Abdallah is the Bodyguard, and Douglas is the Spy registering as the Ravenkeeper.",
         "The Spy neighbors the Alpha Wolf and the Empath. The Chef learns a '1' because the Spy is registering as evil. Later that night, the Empath learns a '0' because the Spy is now registering as good.",
