@@ -408,7 +408,7 @@
       "appName": "Gravedigger",
       "aliases": [],
       "type": "townsfolk",
-      "ability": "Each night*, if someone died by execution today, you may choose a player: you learn their role.",
+      "ability": "Each night*, you learn which character died by execution today.",
       "shortRuling": "Each night*, you learn which character died by execution today.",
       "howToRun": "If a player dies by execution, put the Gravedigger's DIED TODAY reminder token by the dead player's character token. Each night except the first, if any player died by execution today, wake the Gravedigger. Show the character token marked DIED TODAY to the Gravedigger. Put the Gravedigger to sleep. Remove the Gravedigger's reminder token when convenient. In Trouble Brewing, there can only be one execution per day, and every execution causes a player to die. In other editions, there may be more than one execution per day (in which case the Storyteller chooses which character to show the Gravedigger) or the execution does not cause a death (in which case the Gravedigger learns nothing).",
       "interactions": [],
@@ -438,10 +438,8 @@
         "wolfsbane-info/index.html embedded role data",
         "wolfsbane/lib/game-constants.ts"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/gravedigger.html",
       "hasExistingGuide": true
     },
