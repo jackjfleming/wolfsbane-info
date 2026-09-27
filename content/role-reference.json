@@ -602,8 +602,12 @@
       "type": "townsfolk",
       "ability": "You start knowing that 1 of 2 players is a particular Outsider, or that zero are in play.",
       "shortRuling": "You start knowing that 1 of 2 players is a particular Outsider. (Or that zero are in play.)",
-      "howToRun": "While preparing the first night, put the Librarian's OUTSIDER reminder token by any Outsider character token, and put the Librarian's WRONG reminder token by any other character token. During the first night, wake the Librarian and point to the players marked OUTSIDER and WRONG. Show the character token marked OUTSIDER to the Librarian. Put the Librarian to sleep. Remove the Librarian's reminder tokens when convenient.",
-      "interactions": [],
+      "howToRun": "Before the first night, if an Outsider is in play, mark that Outsider's true character and a different player. Wake the Librarian, point to both players, show the marked Outsider character, and put the Librarian to sleep. A Spy may register as a particular Outsider at the Storyteller's discretion. If no Outsiders are in play, wake the Librarian and show '0' without pointing to two players or showing an Outsider character. Remove the reminder markers when convenient.",
+      "interactions": [
+        "Show an Outsider's true character, including the Village Idiot when that player believes they have another character.",
+        "A Spy may register as an Outsider for Librarian information at the Storyteller's discretion.",
+        "When no Outsiders are in play, show '0' without pointing to players."
+      ],
       "examples": [
         "Benjamin is the Saint, and Filip is the Baron. The Librarian learns that either Benjamin or Filip is the Saint.",
         "There are no Outsiders in this game. The Librarian learns a '0'.",
@@ -627,10 +631,8 @@
         "wolfsbane-info/index.html embedded role data",
         "wolfsbane/lib/game-constants.ts"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/librarian.html",
       "hasExistingGuide": true
     },
