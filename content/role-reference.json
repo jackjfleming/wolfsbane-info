@@ -360,8 +360,11 @@
       "type": "townsfolk",
       "ability": "Each day, you may make a public statement. Tonight, if it was true, a player dies.",
       "shortRuling": "Each day, you may make a public statement. Tonight, if it was true, a player dies.",
-      "howToRun": "Each day, you may make a public statement. Tonight, if it was true, a player dies.",
-      "interactions": [],
+      "howToRun": "Each day, listen for a clear public statement that all players and the Storyteller can hear and understand as the Gossip using their ability. Record the statement and determine whether it is definitely true. Mumbled, private, ambiguous, or unanswerable statements do not count; ask for a clear public statement. Each night except the first, if the Gossip made a qualifying true statement that day and their ability is working when it resolves tonight, choose a player to die and mark the death. A Gossip who was poisoned or confused when making the statement can still cause a death if their ability works when it resolves at night. If the statement was false or their ability is not working at resolution, it causes no death.",
+      "interactions": [
+        "The statement must be clear, public, and recognizable as the Gossip's ability to the whole group.",
+        "Check whether the Gossip's ability is working at night when the effect resolves. Impairment when the statement was made does not prevent a death if the ability works at night."
+      ],
       "examples": [],
       "tips": [],
       "tipsGood": [],
@@ -369,10 +372,8 @@
       "sourceNotes": [
         "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/gossip.html",
       "hasExistingGuide": false
     },
