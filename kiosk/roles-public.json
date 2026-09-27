@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "contentVersion": "2026-09-26-draft.2",
-  "checksum": "0db1efc6844d4282534455d58310dafefd5c1184682520cc29eb103ca6f99ce6",
+  "contentVersion": "2026-09-27-draft.4",
+  "checksum": "baa23f5f74cc6aabd3c572ab681634680719bf709aa6b1b77c41be7315c68cef",
   "roles": [
     {
       "id": "artist",
@@ -52,7 +52,7 @@
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "chef",
@@ -81,7 +81,7 @@
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "courtier",
@@ -92,7 +92,7 @@
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "empath",
@@ -135,7 +135,7 @@
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "gambler",
@@ -146,7 +146,7 @@
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "gossip",
