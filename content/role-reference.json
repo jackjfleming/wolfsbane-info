@@ -450,27 +450,29 @@
       "aliases": [],
       "type": "townsfolk",
       "ability": "You start knowing that 1 of 2 players is a particular Townsfolk.",
-      "shortRuling": "You start knowing that 1 of 2 players is a particular Villager.",
-      "howToRun": "While preparing the first night, put the Housekeeper's VILLAGER reminder token by any Villager character token, and put the Housekeeper's WRONG reminder token by any other character token. During the first night, wake the Housekeeper and point to the players marked VILLAGER and WRONG. Show the character token marked VILLAGER to the Housekeeper. Put the Housekeeper to sleep. Remove the Housekeeper's reminder tokens when convenient.",
-      "interactions": [],
+      "shortRuling": "You start knowing that 1 of 2 players is a particular Townsfolk.",
+      "howToRun": "While preparing the first night, put the Housekeeper's TOWNSFOLK reminder token by any Townsfolk character token, and put the Housekeeper's WRONG reminder token by any other character token. During the first night, wake the Housekeeper and point to the players marked TOWNSFOLK and WRONG. Show the character token marked TOWNSFOLK to the Housekeeper. Put the Housekeeper to sleep. Remove the Housekeeper's reminder tokens when convenient.",
+      "interactions": [
+        "A Spy may register as a Townsfolk character to the Housekeeper. The two shown players can therefore include the Spy even when neither actually has the shown character."
+      ],
       "examples": [
         "Evin is the Chef, and Amy is the Ravenkeeper. The Housekeeper learns that either Evin or Amy is the Chef.",
         "Julian is the Alpha Wolf, and Alex is the New in Town. The Housekeeper learns that either Julian or Alex is the New in Town.",
-        "Marianna is the Spy, and Sarah is the Successor. The Housekeeper learns that one of them is the Ravenkeeper. Here, the Spy is registering as a Villager—in this case, the Ravenkeeper."
+        "Marianna is the Spy, and Sarah is the Successor. The Housekeeper learns that one of them is the Ravenkeeper. Here, the Spy is registering as a Townsfolk—in this case, the Ravenkeeper."
       ],
       "tips": [
         "The Housekeeper is deceptively powerful. Even though you don't gain information on the evil players, you can confirm the identity of a good player. This player should be your focus for the game, because if they have great information, then you have that information too. If they have a useful ability that they choose to use, you can help them use it wisely.",
         "When the Housekeeper is poisoned or is actually the Village Idiot, they will often get information that is easy to figure out is incorrect—at least compared to other characters. While the Chef has no clue as to whether their '1' is incorrect, if both of the players the Storyteller pointed at tell you they're a different character to the one the Storyteller showed you, it is likely that you are the Village Idiot or poisoned.",
-        "You know that of the two players you are shown, one must be the Villager you are shown. Importantly, this means that you know that the person you see is not the Village Idiot.",
-        "To find out which of the two players is the Villager, either ask the group publicly or have a private conversation with each player individually. It is usually best to reveal what you know before the Villager in question says who they are so they trust you more.",
-        "If you share your information on the first day, and speak up quickly, the good team has some solid information to begin with. This is particularly useful if you confirm another information-receiving Villager like the Empath or the Seer.",
-        "Waiting until the final day - or at least very late in the game - to share your information with the group can also be very useful. If you can keep the Villager that you know alive until the final day, then you know one player who is not the Alpha Wolf!",
-        "Talk to the Villager player that you know, and secretly let them know that you know who they are. This way, you can hopefully form an alliance, and can come to each other's defence if either of you are nominated for execution.",
-        "After talking to the Villager that you know in private, and confirming who they are, you can tell the group that they are a different character than they actually are. This strategy is useful if you want to protect a powerful Villager from characters like the Poisoner.",
+        "You know that of the two players you are shown, one must be the Townsfolk you are shown. Importantly, this means that you know that the person you see is not the Village Idiot.",
+        "To find out which of the two players is the Townsfolk, either ask the group publicly or have a private conversation with each player individually. It is usually best to reveal what you know before the Townsfolk in question says who they are so they trust you more.",
+        "If you share your information on the first day, and speak up quickly, the good team has some solid information to begin with. This is particularly useful if you confirm another information-receiving Townsfolk like the Empath or the Seer.",
+        "Waiting until the final day - or at least very late in the game - to share your information with the group can also be very useful. If you can keep the Townsfolk that you know alive until the final day, then you know one player who is not the Alpha Wolf!",
+        "Talk to the Townsfolk player that you know, and secretly let them know that you know who they are. This way, you can hopefully form an alliance, and can come to each other's defence if either of you are nominated for execution.",
+        "After talking to the Townsfolk that you know in private, and confirming who they are, you can tell the group that they are a different character than they actually are. This strategy is useful if you want to protect a powerful Townsfolk from characters like the Poisoner.",
         "You can claim to be a more powerful character than you actually are. You start with all the information you're going to get, so if the Alpha Wolf kills you, they aren't killing the Hunter or the Seer.",
-        "You could claim to be the Housekeeper and point to a player you suspect is evil, stating that they are the Villager you learned about. An opportunistic evil player may pounce on an opportunity to appear good.",
-        "Beware of the Spy! They may register as a Villager character to you. That player who you think is the Investigator may not be the Investigator after all...",
-        "Remember that while the Spy is likely to know that you've seen them as a Villager, they won't know which Villager you've seen them as."
+        "You could claim to be the Housekeeper and point to a player you suspect is evil, stating that they are the Townsfolk you learned about. An opportunistic evil player may pounce on an opportunity to appear good.",
+        "Beware of the Spy! They may register as a Townsfolk character to you. That player who you think is the Investigator may not be the Investigator after all...",
+        "Remember that while the Spy is likely to know that you've seen them as a Townsfolk, they won't know which Townsfolk you've seen them as."
       ],
       "tipsGood": [],
       "tipsEvil": [],
@@ -478,10 +480,8 @@
         "wolfsbane-info/index.html embedded role data",
         "wolfsbane/lib/game-constants.ts"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/housekeeper.html",
       "hasExistingGuide": true
     },
