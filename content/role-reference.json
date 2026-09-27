@@ -385,8 +385,11 @@
       "type": "townsfolk",
       "ability": "You start knowing 1 player & their character (they are Good). If the Alpha kills them, you die too.",
       "shortRuling": "You start knowing 1 player & their character (they are Good). If the Alpha kills them, you die too.",
-      "howToRun": "You start knowing 1 player & their character (they are Good). If the Alpha kills them, you die too.",
-      "interactions": [],
+      "howToRun": "Before the first night, choose one good Townsfolk or Outsider as the Grandchild and mark them. On the first night, wake the Grandmother, show them the Grandchild's character and point to that player, then put the Grandmother to sleep. Do not tell the Grandchild about the Grandmother. If the Alpha Wolf kills the Grandchild, the Grandmother dies too; mark both deaths. If the Grandchild dies by execution or another cause, the Grandmother does not die from this ability.",
+      "interactions": [
+        "Choose a good Townsfolk or Outsider as Grandchild; do not notify the Grandchild.",
+        "The Grandmother dies from this ability only when the Alpha Wolf kills the Grandchild, not when the Grandchild dies from another cause."
+      ],
       "examples": [],
       "tips": [],
       "tipsGood": [],
@@ -394,10 +397,8 @@
       "sourceNotes": [
         "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/grandmother.html",
       "hasExistingGuide": false
     },
