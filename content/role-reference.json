@@ -266,8 +266,10 @@
       "type": "townsfolk",
       "ability": "Each night except the first, choose a player (not the same as last night): the Alpha Wolf, if chosen, learns who you are & does not act tonight due to your patrol.",
       "shortRuling": "Each night except the first, choose a player (not the same as last night): the Alpha Wolf, if chosen, learns who you are & does not act tonight due to your patrol.",
-      "howToRun": "Each night except the first, choose a player (not the same as last night): the Alpha Wolf, if chosen, learns who you are & does not act tonight due to your patrol.",
-      "interactions": [],
+      "howToRun": "Each night except the first, wake the Warden and ask them to choose a player different from their choice last night. If they repeat last night's choice, shake your head no and ask for another. Record the chosen player and put the Warden to sleep. If the chosen player is the Alpha Wolf, wake the Alpha Wolf, show them who the Warden is, then put them to sleep without taking the Alpha Wolf's action tonight. Effects caused by the Alpha Wolf on earlier nights still resolve. Other players' abilities and wakes proceed normally.",
+      "interactions": [
+        "If the Warden chooses the Alpha Wolf, only the Alpha Wolf's action tonight is prevented. Effects established on earlier nights still resolve."
+      ],
       "examples": [],
       "tips": [],
       "tipsGood": [],
@@ -275,10 +277,8 @@
       "sourceNotes": [
         "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/warden.html",
       "hasExistingGuide": false
     },
