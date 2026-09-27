@@ -11,7 +11,9 @@
       "ability": "Once per game, during the day, privately ask the Storyteller any yes/no question.",
       "shortRuling": "Once per game, during the day, privately ask the Storyteller any yes/no question.",
       "howToRun": "During any day, the Artist can request a private chat with you. Take them away from the circle so you cannot be overheard. They will ask you a question. Whisper 'Yes,' 'No,' or 'I don't know,' to them, or if you cannot answer in one of these ways, prompt the Artist to ask again in a different way. The Artist loses their ability - mark them with the NO ABILITY reminder.",
-      "interactions": [],
+      "interactions": [
+        "Attempting the Artist question spends the once-per-game use even if the Artist is poisoned or confused. An impaired Artist may receive unreliable information."
+      ],
       "examples": [
         "The Artist asks, 'Is the Alpha Wolf sitting in a brown chair?' The Storyteller answers, 'No,' because the Alpha Wolf is in a black chair.",
         "The Artist asks, 'Is David the Evil Twin?' and the Storyteller answers, 'Yes,' because David is.",
@@ -32,10 +34,8 @@
         "wolfsbane-info/index.html embedded role data",
         "wolfsbane/lib/game-constants.ts"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/artist.html",
       "hasExistingGuide": true
     },
@@ -72,10 +72,8 @@
         "wolfsbane-info/index.html embedded role data",
         "wolfsbane/lib/game-constants.ts"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/bodyguard.html",
       "hasExistingGuide": true
     },
@@ -120,9 +118,12 @@
       "aliases": [],
       "type": "townsfolk",
       "ability": "You start knowing how many pairs of Werewolf players sit next to each other.",
-      "shortRuling": "You start knowing how many pairs of evil players there are.",
-      "howToRun": "During the first night, wake the Chef. Show the Chef fingers (0, 1, 2, etc.) equaling the number of pairs of neighboring evil players. Put the Chef to sleep.",
-      "interactions": [],
+      "shortRuling": "You start knowing how many pairs of Werewolf players sit next to each other.",
+      "howToRun": "During the first night, count each pair of neighboring Werewolf players around the full seating circle, including the pair across the end of the seating order. Wake the Chef, show the number of pairs on your fingers, then put the Chef to sleep. Game Master suggests a count; check special registration before giving the final number.",
+      "interactions": [
+        "A Werewolf-aligned Traveler counts as a Werewolf player for each neighboring pair.",
+        "The Recluse may register as a Werewolf for one neighboring pair and not the other; determine registration separately for each pair."
+      ],
       "examples": [
         "No evil players are sitting next to each other. The Chef learns a '0'.",
         "The Alpha Wolf is sitting next to the Baron. Across the circle, the Poisoner is sitting next to the Successor. The Chef learns a '2'.",
@@ -143,10 +144,8 @@
         "wolfsbane-info/index.html embedded role data",
         "wolfsbane/lib/game-constants.ts"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/chef.html",
       "hasExistingGuide": true
     },
