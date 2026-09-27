@@ -644,12 +644,16 @@
       "type": "townsfolk",
       "ability": "If only 3 players live & no execution occurs, your team wins. If you die at night, another player might die instead.",
       "shortRuling": "If only 3 players live & no execution occurs, your team wins. If you die at night, another player might die instead.",
-      "howToRun": "During the night, if the Mayor would die, you choose if the Mayor actually dies, or if the Mayor remains alive and another character dies instead—put the Alpha Wolf's DEAD reminder token by that character token instead of the Mayor, and put a shroud on that character token instead of the Mayor. At dawn, declare that the player marked DEAD died at night. (Do not say how they died.) At dusk, if exactly three players are alive and no player was executed today, declare that the game ends and good wins.",
-      "interactions": [],
+      "howToRun": "Whenever the living Mayor would die at night, pause before marking the death. If the Mayor's ability is working, choose whether to let the Mayor die or have another player receive that death instead. If you let the Mayor die, mark and announce the Mayor's death as normal. To resist the Mayor's death, leave the Mayor alive, choose a different player to receive the death, and resolve that death against the chosen player, including any protection that prevents it. If the chosen player cannot die, neither player dies from this attempt. Mark any resulting death and announce it at dawn without giving the cause. At dusk, if exactly three players are alive, including any Travelers, and no player was executed today, the Mayor's current team wins. Exile is not execution. If the Mayor's ability is not working, resolve the original death normally and do not trigger the special win.",
+      "interactions": [
+        "The Mayor can resist a nighttime death by redirecting that death to another player at the Storyteller's discretion. If that player is protected and cannot die, the Mayor survives and the redirected death does not occur.",
+        "The no-execution win belongs to the Mayor's current team, including the Werewolf team if the Mayor has become a Werewolf.",
+        "Living Travelers count toward the three-player condition; exile does not count as execution."
+      ],
       "examples": [
         "The Alpha Wolf attacks the Mayor. The Storyteller chooses that the Ravenkeeper dies instead.",
-        "There are three players alive. There are no nominations for execution today. Good wins.",
-        "There are five players alive, including two Travelers. Both Travelers are exiled, and the vote is tied between the remaining players. Because a tied vote means neither player is executed, good wins."
+        "There are three players alive. There are no nominations for execution today. The Mayor's current team wins.",
+        "There are five players alive, including two Travelers. Both Travelers are exiled, and the vote is tied between the remaining players. Because a tied vote means neither player is executed, the Mayor's current team wins."
       ],
       "tips": [
         "Your power activates on the final day, when just three players are alive. You may not know who the Alpha Wolf is, but you can definitely win by not executing. Do whatever you can to convince the group that you are the Mayor. Everything. If the good team believes you, they will either not nominate anybody, or will deliberately tie votes so that no execution occurs.",
@@ -665,10 +669,8 @@
         "wolfsbane-info/index.html embedded role data",
         "wolfsbane/lib/game-constants.ts"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/mayor.html",
       "hasExistingGuide": true
     },
