@@ -1,6 +1,8 @@
 # Wolf's Bane storyteller reference
 
-This static site and the Game Master app use one editorial source: [`content/role-reference.json`](content/role-reference.json). It contains the 69 currently selectable characters. All entries are drafts until the Wolf's Bane rules owner reviews them.
+This static site and the Game Master app use one editorial source: [`content/role-reference.json`](content/role-reference.json). It contains the 69 currently selectable characters. Each entry remains a draft until the Wolf's Bane rules owner reviews it.
+
+Approved-ruling discrepancies and verification tasks for Game Master are tracked in [`GAME-MASTER-ACTION-ITEMS.md`](GAME-MASTER-ACTION-ITEMS.md). Update that backlog when a guide is approved or an app fix lands.
 
 ## Review and publish
 
