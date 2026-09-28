@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "contentVersion": "2026-09-27-draft.10",
-  "checksum": "01c6fd50ea4b3afafc6c5ee18e3525ac033f90050f6f3243cd4df94b9607f5d8",
+  "checksum": "b914ad2e1a3a540c1bc548a38329137c70320d28c5d884c3b2b92bb9bbd51b3c",
   "roles": [
     {
       "id": "artist",
@@ -521,7 +521,7 @@
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "moonchild",
@@ -532,7 +532,7 @@
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "recluse",
@@ -551,7 +551,7 @@
       ],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "saint",
@@ -567,7 +567,7 @@
       ],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "tinker",
@@ -591,7 +591,7 @@
         "Figuring out if a Village Idiot is in play is important - this will allow Villager to know whether or not they should be scrutinizing their information.",
         "If you suspect a Village Idiot is in play, it is important to determine which of the Villager it is as soon as possible. There can only be one Village Idiot in play, so knowing who it is will allow you to treat their information skeptically.",
         "Differentiating the effects of a Village Idiot from a Poisoner can be difficult, but crucial. If only one person seems to be receiving false information, they might be the Village Idiot.",
-        "Characters like the Gravedigger and Ravenkeeper will see the Village Idiot character when checking that player. You do not register as a Villager - you just think you are!",
+        "Characters like the Gravedigger and Ravenkeeper will see the Village Idiot character when checking that player. You are an actual Outsider, not the Townsfolk you think you are!",
         "If you have figured out you are the Village Idiot, try to reverse engineer what you know. For example, if you thought you were the Empath and have been getting a read of '0', you should be suspicious that you have at least one evil neighbor after all."
       ],
       "tipsGood": [],
@@ -607,7 +607,7 @@
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "baron",
@@ -629,7 +629,7 @@
       ],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "evil-twin",
@@ -658,18 +658,18 @@
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "mastermind",
       "name": "Mastermind",
       "aliases": [],
       "type": "minion",
-      "ability": "If the Alpha dies, play for 1 more day. If no one is executed, the Werewolves win.",
+      "ability": "If the Alpha dies by execution and that would end the game, play one more day. Executing a good player then wins for Werewolves; otherwise Villagers win.",
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "poisoner",
@@ -691,7 +691,7 @@
       ],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "spy",
@@ -707,7 +707,7 @@
       ],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "successor",
@@ -735,7 +735,7 @@
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "fang-gu",

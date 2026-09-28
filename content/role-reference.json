@@ -1236,22 +1236,27 @@
       "aliases": [],
       "type": "outsider",
       "ability": "You think you are the Alpha, but your abilities malfunction. The Alpha knows who you are & who you attack.",
-      "shortRuling": "You think you are the Alpha, but your abilities malfunction. The Alpha knows who you are & who you attack.",
-      "howToRun": "You think you are the Alpha, but your abilities malfunction. The Alpha knows who you are & who you attack.",
-      "interactions": [],
-      "examples": [],
+      "shortRuling": "You think you are an Alpha. Your apparent choices do nothing; the real Alpha knows who you are and sees every player you choose each night.",
+      "howToRun": "Wake Lunatic on the first night as an apparent Alpha: show an apparent Minion team and three bluffs, which may be false or in play. Show the real Alpha that they are the real Alpha and identify Lunatic. Each attack night, wake Lunatic first as the Alpha type they believe they are, record every chosen target, then show those targets to the real Alpha before the Alpha acts. Lunatic choices have no kill effect. A different apparent Alpha type may be used, including one that chooses multiple targets.",
+      "interactions": [
+        "The real Alpha sees every player Lunatic targeted, including multiple targets; the Alpha still makes their own choice."
+      ],
+      "examples": [
+        "The apparent Alpha and real Alpha may choose different targets, so a different player dies from the one Lunatic chose."
+      ],
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
       "sourceNotes": [
-        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES",
+        "Owner review annotations, 2026-09-27"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/lunatic.html",
-      "hasExistingGuide": false
+      "hasExistingGuide": false,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-27"
     },
     {
       "id": "moonchild",
@@ -1260,22 +1265,27 @@
       "aliases": [],
       "type": "outsider",
       "ability": "When you learn you are dead, choose 1 alive player: if they are a Villager, they die tonight.",
-      "shortRuling": "When you learn you are dead, choose 1 alive player: if they are a Villager, they die tonight.",
-      "howToRun": "When you learn you are dead, choose 1 alive player: if they are a Villager, they die tonight.",
-      "interactions": [],
-      "examples": [],
+      "shortRuling": "When you learn you died, publicly choose a living player. If they counted as a Villager then, they die tonight if your ability works and protection does not save them.",
+      "howToRun": "When Moonchild learns of their death, ask them to publicly choose one living player. Determine at that choice whether the player counts as a Villager, including a good Outsider or good Traveler and discretionary Spy/Recluse registration. Record that result. Tonight, if Moonchild is able to act, attempt to kill that player only if the recorded result was Villager; resolve the target’s applicable protection normally.",
+      "interactions": [
+        "Check alignment and registration when Moonchild chooses, not when the night kill resolves. Protection can prevent the death according to the protection’s scope."
+      ],
+      "examples": [
+        "Moonchild selects a good Traveler, who later changes alignment. The saved Villager check still qualifies, but a protection that covers the kill may save them."
+      ],
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
       "sourceNotes": [
-        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES",
+        "Owner review annotations, 2026-09-27"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/moonchild.html",
-      "hasExistingGuide": false
+      "hasExistingGuide": false,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-27"
     },
     {
       "id": "recluse",
@@ -1285,16 +1295,12 @@
       "type": "outsider",
       "ability": "You might register as a Werewolf & as a Minion or Alpha, even when dead.",
       "shortRuling": "You might register as evil & as a Minion or Alpha Wolf, even if dead.",
-      "howToRun": "The Recluse has no ability that affects the game directly. However, if the Recluse's alignment is detected by another character's ability, you choose whether the Recluse registers as good or evil. If the Recluse is targeted by an ability that affects a Minion or Alpha Wolf specifically, you choose whether the Recluse is affected or not.",
+      "howToRun": "For each ability that detects or affects a Werewolf, Minion, or Alpha, the Storyteller may have Recluse register as that alignment or character, even while dead. Make the choice separately for each check. Recluse remains an actual good Outsider and never gains the registered character’s ability.",
       "interactions": [
-        "At the Storyteller's discretion, the Recluse may register as any Werewolf, Minion, or Alpha Wolf when another ability checks or affects that identity, even while dead. For example, a Hunter shot can kill a Recluse registered as the Alpha Wolf."
+        "Registration may affect target-sensitive abilities, not only information; it does not change Recluse’s actual character or team."
       ],
       "examples": [
-        "The Hunter uses their ability on the Recluse. The Storyteller decides that the Recluse registers as the Alpha Wolf, so the Recluse dies. The Hunter believes that they just killed the Alpha Wolf.",
-        "The Empath, who neighbors the Recluse and the Bodyguard, learns she is neighboring one evil player. The next night, the Empath learns they are neighboring no evil players.",
-        "The Investigator learns that either the Recluse or the Saint is the Successor.",
-        "The Recluse is executed. The Gravedigger learns that the Alpha Wolf was executed.",
-        "The Recluse neighbors the Alpha Wolf and an Evil Traveler. Because showing a \"2\" to the Chef might be too revealing, the Chef learns true information, a \"0,” instead."
+        "A Hunter may kill Recluse if the Storyteller registers Recluse as Alpha for that shot."
       ],
       "tips": [
         "Tell everyone that you are the Recluse as soon as possible! This way, much of the good players' misinformation can be accounted for, such as that from the Chef, Empath or Investigator. Characters that get further information, like the Fortune Teller and Ravenkeeper will know not to choose you. However, if the group knows that you are the Recluse, they may want to execute you anyway.",
@@ -1309,14 +1315,15 @@
       "tipsEvil": [],
       "sourceNotes": [
         "wolfsbane-info/index.html embedded role data",
-        "wolfsbane/lib/game-constants.ts"
+        "wolfsbane/lib/game-constants.ts",
+        "Owner review annotations, 2026-09-27"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/recluse.html",
-      "hasExistingGuide": true
+      "hasExistingGuide": true,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-27"
     },
     {
       "id": "saint",
@@ -1325,13 +1332,13 @@
       "aliases": [],
       "type": "outsider",
       "ability": "If you die by execution, your team loses.",
-      "shortRuling": "If you die by execution, your team loses.",
-      "howToRun": "If the Saint dies by execution, declare that the game ends and evil wins.",
-      "interactions": [],
+      "shortRuling": "If you die by execution, your current team loses. Bill may invert the result.",
+      "howToRun": "If the actual Saint dies by execution while their ability works, end the game: Saint’s current team loses. An execution without death does not trigger Saint, and merely registering another player as Saint does not grant that player Saint’s loss ability. Apply the single Bill victory inversion to the result if active.",
+      "interactions": [
+        "Bill can invert this loss so Villagers win. A Scapegoat replacement executes Scapegoat rather than Saint."
+      ],
       "examples": [
-        "There are seven players alive and nominations are in progress. The Saint gets four votes and is about to die. Then, the Baron is nominated but only gets three votes. No more nominations occur today. The Saint is executed, and evil wins.",
-        "The Alpha Wolf is nominated, and the players vote. The Gunslinger kills the Saint. The Saint dies, and the game continues.",
-        "The Saint is executed. However, the Scapegoat's ability is triggered, so the Scapegoat dies instead. The game continues, because the Saint did not die."
+        "A Werewolf-aligned Saint dies by execution. Werewolves lose; if Bill is active, the result is inverted once."
       ],
       "tips": [
         "Don't get Executed. No, really. Don't. If you die by execution, the game ends, and your whole team loses. Make sure the good team knows you are the Saint! Tell it in the streets! Tell it from the rooftops! Tell it to everybody! You must be believed to be a good player, or it's curtains. If you have been nominated, cry black and blue that you are the Saint, loudly and publicly... the fate of the game depends on it.",
@@ -1343,14 +1350,15 @@
       "tipsEvil": [],
       "sourceNotes": [
         "wolfsbane-info/index.html embedded role data",
-        "wolfsbane/lib/game-constants.ts"
+        "wolfsbane/lib/game-constants.ts",
+        "Owner review annotations, 2026-09-27"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/saint.html",
-      "hasExistingGuide": true
+      "hasExistingGuide": true,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-27"
     },
     {
       "id": "tinker",
@@ -1371,7 +1379,7 @@
       ],
       "reviewStatus": "draft",
       "reviewNotes": [
-        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+        "Storyteller may choose day or night death timing freely. Clarify interaction with protection, death-triggered abilities, and final-day win checks before approval."
       ],
       "legacyPath": "roles/tinker.html",
       "hasExistingGuide": false
@@ -1383,8 +1391,8 @@
       "aliases": [],
       "type": "outsider",
       "ability": "You do not know you are the village idiot. You think you are a Townsfolk character, but you are not.",
-      "shortRuling": "You do not know you are the Village Idiot. You think you are a Villager character, but you are not.",
-      "howToRun": "While setting up the game, before putting character tokens in the bag, remove the Village Idiot token and add a Villager character token. Add the Village Idiot's IS THE VILLAGE IDIOT reminder token to the Grimoire. Put the swapped Villager character token in the bag, not the Village Idiot character token. While preparing the first night, put the Village Idiot's IS THE VILLAGE IDIOT reminder token by any Villager character token, changing that player's character to the Village Idiot. They are now an Outsider, and do not have the ability of this Villager character. (But they think they do.) During the game, act as if the Village Idiot is actually this Villager character.",
+      "shortRuling": "You do not know you are the Village Idiot. You think you are a Townsfolk character, but you are actually an Outsider without that ability.",
+      "howToRun": "While setting up the game, before putting character tokens in the bag, remove the Village Idiot token and add a Townsfolk character token. Add the Village Idiot's IS THE VILLAGE IDIOT reminder token to the Grimoire. Put the swapped Townsfolk character token in the bag, not the Village Idiot character token. While preparing the first night, put the Village Idiot's IS THE VILLAGE IDIOT reminder token by any Townsfolk character token, changing that player's character to the Village Idiot. They are now an Outsider, and do not have the ability of this Townsfolk character. (But they think they do.) During the game, act as if the Village Idiot is actually this Townsfolk character.",
       "interactions": [],
       "examples": [
         "The Village Idiot, who thinks they are the Soldier, is attacked by the Alpha Wolf. The Village Idiot dies.",
@@ -1397,7 +1405,7 @@
         "Figuring out if a Village Idiot is in play is important - this will allow Villager to know whether or not they should be scrutinizing their information.",
         "If you suspect a Village Idiot is in play, it is important to determine which of the Villager it is as soon as possible. There can only be one Village Idiot in play, so knowing who it is will allow you to treat their information skeptically.",
         "Differentiating the effects of a Village Idiot from a Poisoner can be difficult, but crucial. If only one person seems to be receiving false information, they might be the Village Idiot.",
-        "Characters like the Gravedigger and Ravenkeeper will see the Village Idiot character when checking that player. You do not register as a Villager - you just think you are!",
+        "Characters like the Gravedigger and Ravenkeeper will see the Village Idiot character when checking that player. You are an actual Outsider, not the Townsfolk you think you are!",
         "If you have figured out you are the Village Idiot, try to reverse engineer what you know. For example, if you thought you were the Empath and have been getting a read of '0', you should be suspicious that you have at least one evil neighbor after all."
       ],
       "tipsGood": [],
@@ -1408,7 +1416,7 @@
       ],
       "reviewStatus": "draft",
       "reviewNotes": [
-        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
+        "Confirm how apparent once-per-game abilities are presented and spent, and what other roles learn about the actual Outsider. The perceived role must be Townsfolk."
       ],
       "legacyPath": "roles/village-idiot.html",
       "hasExistingGuide": true
@@ -1421,21 +1429,26 @@
       "type": "minion",
       "ability": "Once per game, at night*, choose a player: they die, even if for some reason they could not.",
       "shortRuling": "Once per game, at night*, choose a player: they die, even if for some reason they could not.",
-      "howToRun": "Once per game, at night*, choose a player: they die, even if for some reason they could not.",
-      "interactions": [],
-      "examples": [],
+      "howToRun": "Once per game after the first night, wake Assassin and let them choose a player. The choice spends the use even if Assassin is poisoned or confused. If Assassin was functional when choosing Goon, apply Goon’s alignment change and confusion, but this newly caused confusion does not stop that Assassin attack. Kill the target despite ordinary cannot-die effects. If Assassin was already impaired before choosing, the attack has no effect.",
+      "interactions": [
+        "The kill bypasses ordinary death protection; impairment can prevent the kill but still spends the use."
+      ],
+      "examples": [
+        "Assassin attacks protected Fool: Fool dies without consuming a survival use."
+      ],
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
       "sourceNotes": [
-        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES",
+        "Owner review annotations, 2026-09-27"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/assassin.html",
-      "hasExistingGuide": false
+      "hasExistingGuide": false,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-27"
     },
     {
       "id": "baron",
@@ -1445,11 +1458,12 @@
       "type": "minion",
       "ability": "There are extra Outsiders in play. [+2 Outsiders]",
       "shortRuling": "There are extra Outsiders in play. [+2 Outsiders]",
-      "howToRun": "While setting up the game, remove any two Villager character tokens and add any two Outsider character tokens. (If you add the Village Idiot, remember to follow its setup instructions as well.) These Outsider tokens go into the bag instead of the Villager tokens.",
-      "interactions": [],
+      "howToRun": "At setup replace two Townsfolk slots with Outsiders; the change persists if Baron later dies or is impaired. Use eligible Outsiders on the script and do not combine Baron with Bill. If the configured script lacks two eligible Outsiders, resolve the script/setup incompatibility before starting.",
+      "interactions": [
+        "Bill and Baron cannot both be in the setup."
+      ],
       "examples": [
-        "The game is being set up for seven players, with five Villager, one Minion, and one Alpha Wolf. Because the Minion is the Baron, the Storyteller removes two Villager tokens and adds a Saint and a Butler token. In total, three Villager, two Outsider, one Minion, and one Alpha Wolf tokens go in the bag for the players to draw from.",
-        "The game is being set up for fifteen players, with nine Villager, two Outsiders, three Minions, and one Alpha Wolf. Because the Baron is in play, the Storyteller must add a Village Idiot and a Recluse. So, they remove the Bodyguard token and add a Recluse token. Then, instead of adding the Village Idiot character token, they add the Village Idiot's “Is the Village Idiot” reminder token to the Grimoire... because this game, one player isn’t a Villager—they are an Outsider: the Village Idiot. All these character tokens go into the bag for the players to draw from."
+        "At seven players, Baron changes two Townsfolk slots into two Outsider slots."
       ],
       "tips": [
         "Your ability is brought into effect before the game even begins. This means that you have absolutely no responsibility other than to help your Alpha Wolf win! Have fun! Deliberately claim to be in-play Villager to make them look evil! Tell lies! Make good players look evil and evil players look good by muckraking, double bluffing, or creative tomfoolery. You are emboldened to do whatever you want, since you have nothing to lose!",
@@ -1467,14 +1481,15 @@
       "tipsEvil": [],
       "sourceNotes": [
         "wolfsbane-info/index.html embedded role data",
-        "wolfsbane/lib/game-constants.ts"
+        "wolfsbane/lib/game-constants.ts",
+        "Owner review annotations, 2026-09-27"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/baron.html",
-      "hasExistingGuide": true
+      "hasExistingGuide": true,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-27"
     },
     {
       "id": "evil-twin",
@@ -1506,7 +1521,7 @@
       ],
       "reviewStatus": "draft",
       "reviewNotes": [
-        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
+        "Bill inverts the final victory result. Clarify whether later twin alignment changes re-pair the twins and whether execution without death triggers the win before approval."
       ],
       "legacyPath": "roles/evil-twin.html",
       "hasExistingGuide": true
@@ -1519,21 +1534,26 @@
       "type": "minion",
       "ability": "You start knowing which Outsiders are in play. If 1 died today, choose a player tonight: they die. [-1 or +1 Outsider]",
       "shortRuling": "You start knowing which Outsiders are in play. If 1 died today, choose a player tonight: they die. [-1 or +1 Outsider]",
-      "howToRun": "You start knowing which Outsiders are in play. If 1 died today, choose a player tonight: they die. [-1 or +1 Outsider]",
-      "interactions": [],
-      "examples": [],
+      "howToRun": "At setup choose either one additional Outsider or one fewer Outsider, within the available script, and do not combine Godfather with Bill. Tell Godfather which Outsider characters are in play. If at least one player who counts as an Outsider dies during the day, including by execution or exile, wake Godfather that night to choose exactly one player to kill. A night death does not qualify.",
+      "interactions": [
+        "Discretionary registration can make a dead Spy or Recluse count as Outsider for this trigger. Multiple qualifying deaths still grant one kill."
+      ],
+      "examples": [
+        "Two Outsiders die during the day; Godfather chooses one night victim."
+      ],
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
       "sourceNotes": [
-        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES",
+        "Owner review annotations, 2026-09-27"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/godfather.html",
-      "hasExistingGuide": false
+      "hasExistingGuide": false,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-27"
     },
     {
       "id": "mastermind",
@@ -1541,23 +1561,28 @@
       "appName": "Mastermind",
       "aliases": [],
       "type": "minion",
-      "ability": "If the Alpha dies, play for 1 more day. If no one is executed, the Werewolves win.",
-      "shortRuling": "If the Alpha dies, play for 1 more day. If no one is executed, the Werewolves win.",
-      "howToRun": "If the Alpha dies, play for 1 more day. If no one is executed, the Werewolves win.",
-      "interactions": [],
-      "examples": [],
+      "ability": "If the Alpha dies by execution and that would end the game, play one more day. Executing a good player then wins for Werewolves; otherwise Villagers win.",
+      "shortRuling": "If the Alpha dies by execution and that would end the game, play one more day. Executing a good player then wins for Werewolves; otherwise Villagers win.",
+      "howToRun": "If the actual Alpha dies by execution and that death would otherwise end the game, suspend that win and play through one more night and day. On the extra day, an executed good player gives Werewolves the win; an executed evil player or no execution gives Villagers the win. If the chosen player survives execution, apply the execution outcome based on that player’s team. Apply any active Bill inversion once to the final result.",
+      "interactions": [
+        "Only an Alpha death by execution that would end the game triggers this extra day. A night death, an execution without Alpha death, or a successor handoff does not."
+      ],
+      "examples": [
+        "The Alpha dies by execution. The next day nobody is executed, so Villagers win."
+      ],
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
       "sourceNotes": [
-        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES",
+        "Owner review annotations, 2026-09-27"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/mastermind.html",
-      "hasExistingGuide": false
+      "hasExistingGuide": false,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-27"
     },
     {
       "id": "poisoner",
@@ -1567,14 +1592,12 @@
       "type": "minion",
       "ability": "Each night, choose a player: they are poisoned tonight and tomorrow day.",
       "shortRuling": "Each night, choose a player: they are poisoned tonight and tomorrow day.",
-      "howToRun": "Each night, wake the Poisoner. They point at any player. Put the Poisoner to sleep. Put the Poisoner's POISONED reminder token by the chosen player's character token. The chosen player is poisoned—they have no ability, but the Storyteller acts as if they do.",
-      "interactions": [],
+      "howToRun": "Each night wake Poisoner to choose any player, including themself. That player is poisoned from the choice through the following day. They may still be woken and appear to act, but their ability has no effect and their information may be false. An attempted once-per-game use is spent. When the effect expires, remove only this Poisoner source; another active poison source continues to apply.",
+      "interactions": [
+        "A new nightly target does not instantly clear another unexpired poison effect. Multiple sources overlap independently."
+      ],
       "examples": [
-        "During the night, the Poisoner poisons the Hunter. The next day, the Hunter tries to slay the Alpha Wolf. Nothing happens. The Hunter now has no ability.",
-        "The poisoned Empath, who neighbors two evil players, learns a \"0.” The next night, the Empath, no longer poisoned, learns the correct information: a \"2.”",
-        "The Investigator is poisoned. They learn that one of two players is the Baron, even though neither is a Minion. (Or even the right players, but the wrong Minion type.)",
-        "The Gravedigger is poisoned. Even though the Alpha Wolf died today, they learn that the New in Town died. A few days later, a poisoned Saint dies, and the game continues.",
-        "The Poisoner poisons the Mayor, then becomes the Alpha Wolf. The Mayor is no longer poisoned because there is no Poisoner in play."
+        "A poisoned Hunter attempts their once-per-game shot. It fails, and the use is spent."
       ],
       "tips": [
         "Identifying targets for poison is vital. Characters who get information over several nights like the Seer or Gravedigger are great choices if you can find them. You can also make your choice based on the player; players who are strong leaders and rallying the good team or players who are quiet and trying not to attract attention are good options.",
@@ -1592,14 +1615,15 @@
       "tipsEvil": [],
       "sourceNotes": [
         "wolfsbane-info/index.html embedded role data",
-        "wolfsbane/lib/game-constants.ts"
+        "wolfsbane/lib/game-constants.ts",
+        "Owner review annotations, 2026-09-27"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/poisoner.html",
-      "hasExistingGuide": true
+      "hasExistingGuide": true,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-27"
     },
     {
       "id": "spy",
@@ -1609,14 +1633,12 @@
       "type": "minion",
       "ability": "Each night, you see the Grimoire. You might register as a Villager & as a Townsfolk or Outsider, even when dead.",
       "shortRuling": "Each night, you see the Grimoire. You might register as good & as a Villager or Outsider, even if dead.",
-      "howToRun": "Each night, wake the Spy and show them the Grimoire for as long as they need. Put the Spy to sleep.",
+      "howToRun": "Each night show Spy the current Grimoire. For each relevant check or target-sensitive ability, the Storyteller may register Spy as a Villager and a particular Townsfolk or Outsider, even while dead. The decision may differ between checks, but Spy remains an actual Werewolf Minion and does not gain the registered ability. Do not combine Spy with Bill.",
       "interactions": [
-        "At the Storyteller's discretion, the Spy may register as any Villager character, including a Townsfolk or Outsider, when another ability checks or affects that identity, even while dead."
+        "A Spy may register as Townsfolk for New in Town; generic Villager registration alone does not meet that Townsfolk requirement."
       ],
       "examples": [
-        "The Housekeeper learns that either Abdallah or Douglas is the Ravenkeeper. Abdallah is the Bodyguard, and Douglas is the Spy registering as the Ravenkeeper.",
-        "The Spy neighbors the Alpha Wolf and the Empath. The Chef learns a '1' because the Spy is registering as evil. Later that night, the Empath learns a '0' because the Spy is now registering as good.",
-        "The Spy nominates the New in Town and is executed by the New in Town's ability, because the Storyteller chooses that the Spy registers as a Villager. That night, the Gravedigger learns that the Village Idiot died today, because the Spy is now registering as the Village Idiot."
+        "New in Town is nominated by Spy; if Spy registers as Townsfolk for that interaction, the nomination may trigger New in Town."
       ],
       "tips": [
         "You will usually register as a good player to characters like the Empath, Chef, and Gravedigger. Thanks to this, you will be able to gain the trust of good players much more easily than the other evil characters.",
@@ -1628,14 +1650,15 @@
       "tipsEvil": [],
       "sourceNotes": [
         "wolfsbane-info/index.html embedded role data",
-        "wolfsbane/lib/game-constants.ts"
+        "wolfsbane/lib/game-constants.ts",
+        "Owner review annotations, 2026-09-27"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/spy.html",
-      "hasExistingGuide": true
+      "hasExistingGuide": true,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-27"
     },
     {
       "id": "successor",
@@ -1644,8 +1667,8 @@
       "aliases": [],
       "type": "minion",
       "ability": "If the Alpha dies, you become the Alpha that night.",
-      "shortRuling": "If there are 5 or more players alive & the Alpha Wolf dies, you become the Alpha Wolf. (Travelers don't count.)",
-      "howToRun": "If the Alpha Wolf dies and there were five or more alive players immediately before the Alpha Wolf died, replace the Successor token with a spare Alpha Wolf token, changing that player's character from the Successor into the Alpha Wolf. (They are now the Alpha Wolf and have the Alpha Wolf's ability. If they die, good wins.)",
+      "shortRuling": "If the Alpha dies and the eligibility condition is met, you immediately become that Alpha. The five-player eligibility condition still needs owner confirmation.",
+      "howToRun": "If the Alpha Wolf dies and there were five or more alive players immediately before the Alpha Wolf died, immediately replace the Successor token with a spare Alpha Wolf token, changing that player's character from the Successor into the Alpha Wolf. (They are now the Alpha Wolf and have the Alpha Wolf's ability. If they die, good wins.)",
       "interactions": [],
       "examples": [
         "There are seven players alive: the Alpha Wolf, the Successor, two Villager, and three Travelers. The Alpha Wolf is executed, so the game ends and good wins because Travelers do not add to the player count for the Successor's ability.",
@@ -1667,7 +1690,7 @@
       ],
       "reviewStatus": "draft",
       "reviewNotes": [
-        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
+        "Conversion happens immediately; Fenrir self-kill passes to Successor. Resolve whether the five-living-non-Traveler threshold in the draft guide applies despite its omission from printed ability, and resolve Fang Gu jump priority before approval."
       ],
       "legacyPath": "roles/successor.html",
       "hasExistingGuide": true
@@ -1680,21 +1703,26 @@
       "type": "minion",
       "ability": "Each night, choose a living player (different from last night): if executed tomorrow, they do not die.",
       "shortRuling": "Each night, choose a living player (different from last night): if executed tomorrow, they do not die.",
-      "howToRun": "Each night, choose a living player (different from last night): if executed tomorrow, they do not die.",
-      "interactions": [],
-      "examples": [],
+      "howToRun": "Each night choose one living player, including Advocate themself, but not the player chosen the previous night. If that player is executed tomorrow while Advocate’s ability works, the execution occurs but the protected player does not die. A Zombuul that only registers as dead remains living for this choice. If Advocate is impaired during the effect, protection pauses.",
+      "interactions": [
+        "The previous-night restriction still applies if no execution occurred."
+      ],
+      "examples": [
+        "Advocate protects themself; they are executed tomorrow but survive, so death-triggered abilities do not fire."
+      ],
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
       "sourceNotes": [
-        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES",
+        "Owner review annotations, 2026-09-27"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/advocate.html",
-      "hasExistingGuide": false
+      "hasExistingGuide": false,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-27"
     },
     {
       "id": "fang-gu",
