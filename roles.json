@@ -813,7 +813,7 @@
     {
       "name": "Successor",
       "type": "minion",
-      "summary": "If the Alpha dies and the eligibility condition is met, you immediately become that Alpha. The five-player eligibility condition still needs owner confirmation.",
+      "summary": "If at least 5 non-Traveler players are alive immediately before the Alpha dies, you immediately become that Alpha.",
       "howToRun": "If the Alpha Wolf dies and there were five or more alive players immediately before the Alpha Wolf died, immediately replace the Successor token with a spare Alpha Wolf token, changing that player's character from the Successor into the Alpha Wolf. (They are now the Alpha Wolf and have the Alpha Wolf's ability. If they die, good wins.)",
       "examples": [
         "There are seven players alive: the Alpha Wolf, the Successor, two Villager, and three Travelers. The Alpha Wolf is executed, so the game ends and good wins because Travelers do not add to the player count for the Successor's ability.",

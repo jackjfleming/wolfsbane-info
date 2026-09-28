@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "contentVersion": "2026-09-27-draft.10",
-  "checksum": "b914ad2e1a3a540c1bc548a38329137c70320d28c5d884c3b2b92bb9bbd51b3c",
+  "checksum": "af87a0dca59ff4173d358ea2462c223ba807ff3bd0b354e6724b36901ad599f9",
   "roles": [
     {
       "id": "artist",
@@ -714,7 +714,7 @@
       "name": "Successor",
       "aliases": [],
       "type": "minion",
-      "ability": "If the Alpha dies, you become the Alpha that night.",
+      "ability": "If there are 5 or more non-Traveler players alive when the Alpha dies, you immediately become that Alpha.",
       "tips": [
         "The Successor is at her strongest when you co-ordinate with the Alpha Wolf and figure out a strategy that you both like, since the Alpha Wolf can safely die. Maybe you accuse the Alpha Wolf of being evil, and the Alpha Wolf does everything possible to make the good team think they are indeed evil? This makes you look very good, and trustworthy. Maybe the Alpha Wolf kills themselves of a night time and claims to be the Ravenkeeper, saying that you are the character you say you are. Maybe the Alpha Wolf accuses you of being evil, but does so unconvincingly, so that you look good by comparison. Maybe you and the Alpha Wolf both claim to be the same character, such as the Mayor? After all, \"one of you must be the Mayor\", right? It doesn't matter which one of you dies, since the game continues with a living Alpha Wolf either way.",
         "In the early game, staying alive is more important for you compared to other Minions. Whist it doesn't really matter if the Baron, or Poisoner dies early (since they can often cause a lot of disruption early in the game), you will need to survive until the end of the game if you intend to become the Alpha Wolf at some point. Waiting, listening, then claiming to be a character that you know is not in play often achieves this best.",
