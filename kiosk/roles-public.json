@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "contentVersion": "2026-09-27-draft.5",
-  "checksum": "a4209feb763951567de2cab4b03efee83353831907a96c3f57d60c5418200c13",
+  "contentVersion": "2026-09-27-draft.6",
+  "checksum": "cc23aac7399cd3febb4d96a34f790f1edf357423154178e475c1c79d8dbe8068",
   "roles": [
     {
       "id": "artist",
@@ -404,7 +404,7 @@
       "name": "Sailor",
       "aliases": [],
       "type": "townsfolk",
-      "ability": "Each night, choose an alive player: either you or they are confused. You cannot die.",
+      "ability": "Each night, choose an alive player: either you or they are confused until dusk. You cannot die.",
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
@@ -415,18 +415,11 @@
       "name": "Seer",
       "aliases": [],
       "type": "townsfolk",
-      "ability": "Each night, choose 2 players: you learn if either is an Alpha. One player registers falsely to you.",
+      "ability": "Each night, choose 2 players: learn if either is an Alpha. One fixed good player registers as an Alpha to you.",
       "tips": [
-        "Getting a 'no' is often more useful than getting a 'yes'. A 'no' means that neither of the two players is the Alpha Wolf, which narrows down the number of players you have to inspect.",
-        "You only learn about Alpha Wolfs. Just because you got a 'no' on somebody doesn't mean that they're good. They could still be a Minion.",
-        "If you have a pair of players who you got a 'yes' on, and a pair of players you got a 'no' on, try picking one player from each pair. If you get another 'yes', you know that the player you got a 'yes' on both times is the player you're getting a read on; otherwise, it's the player in your initial 'yes' pair that you didn't pick this time that you should look to.",
-        "If you have gotten a 'yes' on players you are suspicious of, getting confirmation of which player is causing your ability to react can give you a clear goal, especially if that player is still alive at the end of the game.",
-        "You only have a limited number of nights to gather information. Spending a lot of it focusing on one or two people may give you less to work with in the end game. For this reason, it's usually most efficient to start the game casting a wide net and learn about as many pairs as possible. Then, after you have some general information, start focusing on the players you are most suspicious of.",
-        "Remember that the Alpha Wolf can kill themselves and cause a Minion to become the Alpha Wolf, and if they're executed, the Successor might become the Alpha Wolf. Even if you got a 'no' on someone earlier in the game doesn't mean they aren't the Alpha Wolf now. If you think the Alpha Wolf died, try picking someone you think is a Minion that you previously got a 'no' on and see if your information has changed.",
-        "Your false positive is chosen at the beginning of the game and does not move, and you will not receive a false read from more than one player because of your ability. Remember your false register can be anyone, including you, and a 'yes' is not a definite confirmation of a Alpha Wolf.",
-        "You can choose yourself as one of the two players. Since you know you are not the Alpha Wolf, this enables you to get a read on one specific player. Beware though, the Storyteller can make you your own false positive, so this may not always be effective.",
-        "Be aware of the Recluse, who may register as the Alpha Wolf to you. This is not the same as the Red Herring.",
-        "Claiming to be a character that the Alpha Wolf would not want to kill, such as the Saint, Soldier, or Ravenkeeper can help you survive longer, allowing you some much needed time to gain useful information."
+        "Track the same red herring throughout the game. A yes can also come from Recluse registration or impairment.",
+        "Seer may choose themself and dead players, but must choose two distinct players.",
+        "A prior no does not rule out a player who later becomes the Alpha."
       ],
       "tipsGood": [],
       "tipsEvil": [],
@@ -439,17 +432,9 @@
       "type": "townsfolk",
       "ability": "You are safe from the Alpha.",
       "tips": [
-        "If the Alpha Wolf attacks you, nobody dies this night. This has two benefits. Firstly, since no good player has died at night, there are more players alive than there ought to have been, allowing the good team more time to execute. Secondly, no death of a night time supports your claim that you are indeed the Soldier.",
-        "You will never know for sure that your ability has worked. If you wake up to no deaths, perhaps there is a Bodyguard in play, or the Alpha Wolf decided to take a night off terrorising the living and attack someone's already dead corpse. Both of those look identical to the Alpha Wolf attacking you in the night.",
-        "Consider bluffing as a juicy Alpha Wolf target, such as the Seer, Gravedigger, Empath or Hunter, to attract a Alpha Wolf attack.",
-        "If you can prove that you are the Soldier, then the good team has an enormous advantage on the final day. Instead of good choosing between three (or four) players to execute, they will be choosing between two (or three). Getting an Empath or Seer to confirm you as not the Alpha Wolf can be very helpful.",
-        "A clever Alpha Wolf will not attack you again after the first time unless they think they can kill you. If you can convince the Alpha Wolf that a Bodyguard protected you, the Alpha Wolf might try to attack you again.",
-        "If there are no deaths at night, don't immediately claim to be the Soldier! Perhaps the Alpha Wolf attacked another player protected by the Bodyguard and has no idea you were ever protected.",
-        "If you are unsure whether they are good or evil, allow powerful information characters to bluff as your role. This way, the Alpha Wolf is more likely to attack you, and less likely to attack them. You can even talk with these players secretly, and agree to publicly claim to be each others' characters - they stay safe, whilst you reveal their information to the group.",
-        "If you die at night, you were either poisoned by the Poisoner, or you are the Village Idiot. This is big information, and very helpful for the group to know. If you were poisoned, then a Poisoner is still alive (and in a one Minion game, you now know which Minion is in play!), which also gives you information about the alignment of the dead players. If you are the Village Idiot, then nobody else can be the Village Idiot. Either way, you learn something useful.",
-        "Tell the group you are the Soldier at some stage during the game. After all, good will need as much information as they can get at their disposal.",
-        "If you have told nobody that you are the Soldier, you are still alive on the final day, and a death has occurred every night so far, then it is probable that a Spy is in play and telling the Alpha Wolf who to attack. If you notice this happening, pay attention to who is whispering to who.",
-        "If you never tell anyone who you are, your role can combo in a very risky way with the Mayor. You might be more confident to execute nobody in final three than anyone else in your position. Even if the Alpha Wolf is pretending to be the Mayor, and you execute no one, evil hasn't won yet! The Alpha Wolf still has to kill either you or the other surviving player, and just maybe they'll guess wrong, and you will wake to a second day with just three players alive."
+        "A night without deaths does not prove that Soldier was attacked; several abilities can prevent or redirect a kill.",
+        "Soldier is still vulnerable to execution, non-Alpha deaths, and impairment.",
+        "A Soldier dying at night does not identify the cause by itself."
       ],
       "tipsGood": [],
       "tipsEvil": [],

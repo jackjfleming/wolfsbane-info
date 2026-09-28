@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "contentVersion": "2026-09-27-draft.5",
-  "checksum": "a4209feb763951567de2cab4b03efee83353831907a96c3f57d60c5418200c13",
+  "contentVersion": "2026-09-27-draft.6",
+  "checksum": "cc23aac7399cd3febb4d96a34f790f1edf357423154178e475c1c79d8dbe8068",
   "roles": [
     {
       "id": "artist",
@@ -871,19 +871,30 @@
       "aliases": [],
       "type": "townsfolk",
       "ability": "If the Alpha kills you, you learn that it is 1 of 2 players.",
-      "shortRuling": "If the Alpha kills you, you learn that it is 1 of 2 players.",
-      "howToRun": "If the Alpha kills you, you learn that it is 1 of 2 players.",
-      "interactions": [],
-      "examples": [],
+      "shortRuling": "If the Alpha’s ability kills Sage at night, show two distinct players, including the Alpha who killed them.",
+      "howToRun": "When Sage dies from the Alpha’s ability, wake Sage that night. Point to two distinct players, one of whom is the Alpha who caused that death. The other may be alive or dead. Do not wake Sage for execution or a night death caused by another character. If Sage is impaired when the information is given, the two players shown need not include the killer. The Storyteller resolves any special registration before showing the pair.",
+      "interactions": [
+        "Track the Alpha who actually caused the death, even if another player later becomes the Alpha.",
+        "A night death from Assassin, Gossip, or another non-Alpha ability does not trigger Sage.",
+        "The comparison game permits Recluse to register as the Alpha for this information; confirm whether Wolf’s Bane follows that interaction."
+      ],
+      "examples": [
+        "Fenrir kills Sage. The Storyteller shows Fenrir and one other player.",
+        "Assassin kills Sage during the night. Sage receives no information.",
+        "Sage is poisoned when Fenrir kills them. Any pair shown is unreliable."
+      ],
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
       "sourceNotes": [
-        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES",
+        "wolfsbane/lib/game-utils.ts night wake logic",
+        "https://wiki.bloodontheclocktower.com/Sage (comparison rules)"
       ],
       "reviewStatus": "draft",
       "reviewNotes": [
-        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+        "Confirm the Recluse registration interaction and first-night behavior if a special Alpha ability kills Sage then.",
+        "Game Master currently wakes Sage for any Died Tonight tag; it does not track whether the Alpha caused the death."
       ],
       "legacyPath": "roles/sage.html",
       "hasExistingGuide": false
@@ -894,20 +905,32 @@
       "appName": "Sailor",
       "aliases": [],
       "type": "townsfolk",
-      "ability": "Each night, choose an alive player: either you or they are confused. You cannot die.",
-      "shortRuling": "Each night, choose an alive player: either you or they are confused. You cannot die.",
-      "howToRun": "Each night, choose an alive player: either you or they are confused. You cannot die.",
-      "interactions": [],
-      "examples": [],
+      "ability": "Each night, choose an alive player: either you or they are confused until dusk. You cannot die.",
+      "shortRuling": "Each night, choose a living player; the Storyteller confuses either that player or Sailor until dusk. A healthy Sailor cannot die.",
+      "howToRun": "Each night, wake Sailor and ask them to choose any living player, including themself. If they point to a dead player, ask them to choose again. If Sailor’s ability is working, decide whether Sailor or the chosen player becomes confused until the following dusk; choosing themself necessarily confuses Sailor. If Sailor is already impaired, the choice creates no new confusion. Mark the effect and clear it at dusk. While Sailor has a working ability and is not confused, they cannot die, including by execution. If they are executed but survive, announce the execution and end nominations for the day.",
+      "interactions": [
+        "A healthy Sailor cannot die even before they first wake to choose.",
+        "If Sailor is poisoned or made confused, their no-death protection does not function.",
+        "Confirm whether poisoning Sailor later suspends the ongoing confusion they caused to another player.",
+        "Assassin can kill through Sailor’s no-death protection."
+      ],
+      "examples": [
+        "Sailor chooses a living Empath. The Storyteller confuses Empath until dusk; Sailor survives an Alpha attack that night.",
+        "Sailor chooses themself. Sailor is confused and can die until the effect clears.",
+        "A healthy Sailor is executed and remains alive; that still uses the day’s execution."
+      ],
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
       "sourceNotes": [
-        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES",
+        "wolfsbane/lib/role-rulings.ts night poisoning projection",
+        "https://wiki.bloodontheclocktower.com/Sailor (comparison rules)"
       ],
       "reviewStatus": "draft",
       "reviewNotes": [
-        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+        "Confirm the until-dusk duration, self-selection, and suspension of an ongoing effect if Sailor later becomes poisoned.",
+        "Game Master currently offers dead targets in the Sailor selection and requires Storyteller review of the confusion result."
       ],
       "legacyPath": "roles/sailor.html",
       "hasExistingGuide": false
@@ -918,37 +941,35 @@
       "appName": "Seer",
       "aliases": [],
       "type": "townsfolk",
-      "ability": "Each night, choose 2 players: you learn if either is an Alpha. One player registers falsely to you.",
-      "shortRuling": "Each night, choose 2 players: you learn if either is a Alpha Wolf. There is a good player that registers as a Alpha Wolf to you.",
-      "howToRun": "While preparing the first night, put the Seer's RED HERRING reminder token by any good character token, marking that player as the Red Herring. Each night, wake the Seer. The Seer points at any two players. If either chosen player is a Alpha Wolf or the Red Herring, nod your head yes. Otherwise, shake your head no. Put the Seer to sleep. In smaller games, making the Seer their own Red Herring is sometimes advised, as the Seer gets more information that way.",
-      "interactions": [],
+      "ability": "Each night, choose 2 players: learn if either is an Alpha. One fixed good player registers as an Alpha to you.",
+      "shortRuling": "Each night, Seer chooses two distinct players and learns whether either is an Alpha or the fixed good red herring.",
+      "howToRun": "At setup, mark one good player as Seer’s red herring; this can be Seer themself and does not move during the game. Each night, wake Seer to choose two distinct players, living or dead. Give a yes if either is an Alpha or the red herring, subject to registration; otherwise give a no. Do not reveal which target caused a yes. If Seer is poisoned or confused, the answer may be unreliable.",
+      "interactions": [
+        "A dead Alpha can still produce a yes. If the Alpha identity moves to a different player, later reads follow the current characters.",
+        "Recluse may register as an Alpha and add another possible yes beyond the fixed red herring.",
+        "A yes does not prove either target is the Alpha; a no is only reliable while Seer’s ability is working."
+      ],
       "examples": [
-        "The Seer chooses the Bodyguard and the Gravedigger and learns a 'no'.",
-        "The Seer chooses the Alpha Wolf and the Empath, and learns a 'yes'.",
-        "The Seer chooses an alive Butler and a dead Alpha Wolf, and learns a 'yes'.",
-        "The Seer chooses themselves and a Saint. The Saint is the Red Herring. The Seer learns a 'yes'."
+        "Seer chooses the current Alpha and an Empath and receives yes.",
+        "Seer chooses themself and the fixed red herring and receives yes, even though neither is the Alpha.",
+        "Seer chooses a dead Alpha and a living Butler and receives yes."
       ],
       "tips": [
-        "Getting a 'no' is often more useful than getting a 'yes'. A 'no' means that neither of the two players is the Alpha Wolf, which narrows down the number of players you have to inspect.",
-        "You only learn about Alpha Wolfs. Just because you got a 'no' on somebody doesn't mean that they're good. They could still be a Minion.",
-        "If you have a pair of players who you got a 'yes' on, and a pair of players you got a 'no' on, try picking one player from each pair. If you get another 'yes', you know that the player you got a 'yes' on both times is the player you're getting a read on; otherwise, it's the player in your initial 'yes' pair that you didn't pick this time that you should look to.",
-        "If you have gotten a 'yes' on players you are suspicious of, getting confirmation of which player is causing your ability to react can give you a clear goal, especially if that player is still alive at the end of the game.",
-        "You only have a limited number of nights to gather information. Spending a lot of it focusing on one or two people may give you less to work with in the end game. For this reason, it's usually most efficient to start the game casting a wide net and learn about as many pairs as possible. Then, after you have some general information, start focusing on the players you are most suspicious of.",
-        "Remember that the Alpha Wolf can kill themselves and cause a Minion to become the Alpha Wolf, and if they're executed, the Successor might become the Alpha Wolf. Even if you got a 'no' on someone earlier in the game doesn't mean they aren't the Alpha Wolf now. If you think the Alpha Wolf died, try picking someone you think is a Minion that you previously got a 'no' on and see if your information has changed.",
-        "Your false positive is chosen at the beginning of the game and does not move, and you will not receive a false read from more than one player because of your ability. Remember your false register can be anyone, including you, and a 'yes' is not a definite confirmation of a Alpha Wolf.",
-        "You can choose yourself as one of the two players. Since you know you are not the Alpha Wolf, this enables you to get a read on one specific player. Beware though, the Storyteller can make you your own false positive, so this may not always be effective.",
-        "Be aware of the Recluse, who may register as the Alpha Wolf to you. This is not the same as the Red Herring.",
-        "Claiming to be a character that the Alpha Wolf would not want to kill, such as the Saint, Soldier, or Ravenkeeper can help you survive longer, allowing you some much needed time to gain useful information."
+        "Track the same red herring throughout the game. A yes can also come from Recluse registration or impairment.",
+        "Seer may choose themself and dead players, but must choose two distinct players.",
+        "A prior no does not rule out a player who later becomes the Alpha."
       ],
       "tipsGood": [],
       "tipsEvil": [],
       "sourceNotes": [
         "wolfsbane-info/index.html embedded role data",
-        "wolfsbane/lib/game-constants.ts"
+        "wolfsbane/lib/game-constants.ts",
+        "https://wiki.bloodontheclocktower.com/Fortune_Teller (comparison rules)"
       ],
       "reviewStatus": "draft",
       "reviewNotes": [
-        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
+        "Confirm that the red herring is one fixed good player, and that Recluse registration can create another yes.",
+        "Game Master’s Seer wizard currently permits duplicate targets; the standalone Seer form checks a different red-herring representation."
       ],
       "legacyPath": "roles/seer.html",
       "hasExistingGuide": true
@@ -960,36 +981,34 @@
       "aliases": [],
       "type": "townsfolk",
       "ability": "You are safe from the Alpha.",
-      "shortRuling": "You are safe from the Alpha Wolf.",
-      "howToRun": "During the night, if the Alpha Wolf attacks the Soldier, the Soldier remains alive. (At dawn, declare that no one died at night.) In other editions, Alpha Wolfs may have abilities other than killing. The Soldier is also protected from all other harmful effects of the Alpha Wolf's ability, such as poisoning or turning the Soldier evil.",
-      "interactions": [],
+      "shortRuling": "A healthy Soldier is safe from harmful effects of the Alpha’s ability, including its kill.",
+      "howToRun": "When an Alpha ability would kill a Soldier whose ability is working, leave Soldier alive. Do not let another harmful effect of that same Alpha ability affect them, such as poisoning or turning evil. The Alpha does not choose a replacement target just because the attack failed. Soldier can still die by execution or by abilities from other characters. If Soldier is poisoned or confused, resolve the Alpha effect normally.",
+      "interactions": [
+        "Protection is from the Alpha’s ability, not every night death or action taken by the Alpha player.",
+        "A poisoned Soldier has no protection; a Soldier who is actually Village Idiot has no Soldier ability.",
+        "Other protection may also explain a night without deaths, so a zero-death night does not prove Soldier was attacked."
+      ],
       "examples": [
-        "The Alpha Wolf attacks the Soldier. The Soldier does not die, so nobody dies that night.",
-        "The Poisoner poisons the Soldier, then the Alpha Wolf attacks the Soldier. The Soldier dies, since they have no ability.",
-        "The Alpha Wolf attacks the Soldier. The Soldier dies, because they are actually the Village Idiot."
+        "Fenrir attacks a healthy Soldier. Soldier remains alive.",
+        "Poisoner poisons Soldier before Fenrir attacks. Soldier dies.",
+        "Gossip kills a healthy Soldier at night. Soldier can die because Gossip is not an Alpha ability."
       ],
       "tips": [
-        "If the Alpha Wolf attacks you, nobody dies this night. This has two benefits. Firstly, since no good player has died at night, there are more players alive than there ought to have been, allowing the good team more time to execute. Secondly, no death of a night time supports your claim that you are indeed the Soldier.",
-        "You will never know for sure that your ability has worked. If you wake up to no deaths, perhaps there is a Bodyguard in play, or the Alpha Wolf decided to take a night off terrorising the living and attack someone's already dead corpse. Both of those look identical to the Alpha Wolf attacking you in the night.",
-        "Consider bluffing as a juicy Alpha Wolf target, such as the Seer, Gravedigger, Empath or Hunter, to attract a Alpha Wolf attack.",
-        "If you can prove that you are the Soldier, then the good team has an enormous advantage on the final day. Instead of good choosing between three (or four) players to execute, they will be choosing between two (or three). Getting an Empath or Seer to confirm you as not the Alpha Wolf can be very helpful.",
-        "A clever Alpha Wolf will not attack you again after the first time unless they think they can kill you. If you can convince the Alpha Wolf that a Bodyguard protected you, the Alpha Wolf might try to attack you again.",
-        "If there are no deaths at night, don't immediately claim to be the Soldier! Perhaps the Alpha Wolf attacked another player protected by the Bodyguard and has no idea you were ever protected.",
-        "If you are unsure whether they are good or evil, allow powerful information characters to bluff as your role. This way, the Alpha Wolf is more likely to attack you, and less likely to attack them. You can even talk with these players secretly, and agree to publicly claim to be each others' characters - they stay safe, whilst you reveal their information to the group.",
-        "If you die at night, you were either poisoned by the Poisoner, or you are the Village Idiot. This is big information, and very helpful for the group to know. If you were poisoned, then a Poisoner is still alive (and in a one Minion game, you now know which Minion is in play!), which also gives you information about the alignment of the dead players. If you are the Village Idiot, then nobody else can be the Village Idiot. Either way, you learn something useful.",
-        "Tell the group you are the Soldier at some stage during the game. After all, good will need as much information as they can get at their disposal.",
-        "If you have told nobody that you are the Soldier, you are still alive on the final day, and a death has occurred every night so far, then it is probable that a Spy is in play and telling the Alpha Wolf who to attack. If you notice this happening, pay attention to who is whispering to who.",
-        "If you never tell anyone who you are, your role can combo in a very risky way with the Mayor. You might be more confident to execute nobody in final three than anyone else in your position. Even if the Alpha Wolf is pretending to be the Mayor, and you execute no one, evil hasn't won yet! The Alpha Wolf still has to kill either you or the other surviving player, and just maybe they'll guess wrong, and you will wake to a second day with just three players alive."
+        "A night without deaths does not prove that Soldier was attacked; several abilities can prevent or redirect a kill.",
+        "Soldier is still vulnerable to execution, non-Alpha deaths, and impairment.",
+        "A Soldier dying at night does not identify the cause by itself."
       ],
       "tipsGood": [],
       "tipsEvil": [],
       "sourceNotes": [
         "wolfsbane-info/index.html embedded role data",
-        "wolfsbane/lib/game-constants.ts"
+        "wolfsbane/lib/game-constants.ts",
+        "https://wiki.bloodontheclocktower.com/Soldier (comparison rules)"
       ],
       "reviewStatus": "draft",
       "reviewNotes": [
-        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
+        "Confirm whether safety covers all harmful effects of an Alpha ability, beyond killing.",
+        "The older guide’s claim that a night death proves Poisoner or Village Idiot was removed because other causes exist."
       ],
       "legacyPath": "roles/soldier.html",
       "hasExistingGuide": true
@@ -1001,19 +1020,32 @@
       "aliases": [],
       "type": "townsfolk",
       "ability": "If both your alive neighbors are Villagers, they cannot die.",
-      "shortRuling": "If both your alive neighbors are Villagers, they cannot die.",
-      "howToRun": "If both your alive neighbors are Villagers, they cannot die.",
-      "interactions": [],
-      "examples": [],
+      "shortRuling": "If both closest living neighbors are good, Tea Lady prevents either neighbor from dying while her ability works.",
+      "howToRun": "Continually identify Tea Lady’s nearest living neighbor in each direction, skipping dead players. If both neighbors are currently good and Tea Lady has a working ability, neither neighbor can die from ordinary death attempts, including execution; Assassin is an exception. Tea Lady does not protect themself. Recheck the condition whenever deaths, alignment, or impairment changes the situation. If a protected neighbor is executed, announce that they were executed but did not die; the day’s execution is still used.",
+      "interactions": [
+        "A good Outsider is a Villager and can satisfy the condition. Confirm whether a good Traveler does too.",
+        "An evil neighbor means neither neighbor is protected. A poisoned or confused Tea Lady protects neither.",
+        "In the comparison game, a protected Traveler may be exiled yet survive. Confirm whether Wolf’s Bane follows that ruling; Game Master currently applies exile as a death.",
+        "Spy and Recluse registration may affect whether a neighbor counts as good; confirm the Storyteller choice.",
+        "Assassin can kill a protected neighbor despite Tea Lady’s no-death effect."
+      ],
+      "examples": [
+        "Tea Lady has a good Outsider and a good Townsfolk as nearest living neighbors. Both are protected.",
+        "One living neighbor turns evil. Neither neighbor remains protected.",
+        "A protected neighbor is executed but survives; no more nominations happen that day."
+      ],
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
       "sourceNotes": [
-        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES",
+        "wolfsbane/hooks/useGameState.ts execution protection",
+        "https://wiki.bloodontheclocktower.com/Tea_Lady (comparison rules)"
       ],
       "reviewStatus": "draft",
       "reviewNotes": [
-        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+        "Confirm whether good Travelers count as Villagers for Tea Lady, whether Spy/Recluse registration can change the condition, and whether a protected Traveler survives exile.",
+        "Game Master checks actual alignment and applies exile directly without Tea Lady protection."
       ],
       "legacyPath": "roles/tea-lady.html",
       "hasExistingGuide": false
