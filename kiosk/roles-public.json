@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "contentVersion": "2026-09-27-draft.8",
-  "checksum": "b3fa2a3083b7961c66c63e7da7e7b71031c8a66f1e920cb31c3dd25608a5af28",
+  "contentVersion": "2026-09-27-draft.9",
+  "checksum": "b69fa46dae61e7383dd3a4b543394c46d36dedb7f578aecae3a9e68e58c9ddf4",
   "roles": [
     {
       "id": "artist",
@@ -480,13 +480,8 @@
       "type": "outsider",
       "ability": "Each night, choose a player (not yourself): tomorrow, you may only vote if they are voting too.",
       "tips": [
-        "The player who you choose as your 'Master' is very important. Your vote still counts as much as a normal vote, it is just that you will not be able to vote at all if your Master has their hand down. So, spend a good deal of time listening, and being involved in figuring out which players are good.",
-        "If you tell your Master that you have selected them, they will often vote under the assumption that you will be voting with them. Observing how your Master wants you to vote can give you some hints as to whether your Master is good or evil.",
-        "Even though you may not vote unless your Master has their hand up to vote too, you do not have to vote just because they do. Remember to only vote for players you truly believe are evil, or otherwise deserve it!",
-        "The player you choose as your Master will usually trust you, and want to keep you alive. After all, you are in their power! It is in their best interest to help you survive, so building up that trust may come in handy if anybody nominates you for execution.",
-        "You can choose a dead player as your Master, but do this carefully - as dead players only have one remaining vote, they may not use it for a while, meaning that you might not be able to vote at all.",
-        "If particular other players think that you are evil, and want to execute you, you can often win their support by promising to be their Butler tonight. If you ask them not to nominate or vote for you today, and in return you will choose them as your master tonight, they will often agree, and keep you alive.",
-        "You may choose a dead player to be your Master. Sometimes, you will do so without intending to, if you and the Alpha Wolf choose the same player."
+        "Choose a Master whose voting judgment you trust, while remembering you are never required to vote with them.",
+        "A dead Master may leave you unable to vote for many nominations because they have only one remaining vote."
       ],
       "tipsGood": [],
       "tipsEvil": [],
@@ -510,12 +505,8 @@
       "type": "outsider",
       "ability": "When you learn that you died, publicly choose 1 alive player: if they are a Werewolf, your team loses.",
       "tips": [
-        "Like nearly all Outsiders, you should avoid dying if at all possible. Your ability is particularly nasty as it can end the game if you choose poorly, but it only becoming an issue if you actually die!",
-        "If the good team is floundering, you can die deliberately and confirm someone as good by choosing them. Your ability yields incredibly powerful information for incredibly high risk. Knowing for sure that someone is good allows you to trust them completely, a very rare thing in this game!",
-        "Before you die, work with the other players and try to find one alive player you believe is good, so you have a safe choice to pick in the event you accidentally die. (It's up to you if you want to reveal your identity before death to this player - if you do, they may be more inclined to trust you while you're both alive. If you don't, your choice will be more of a surprise, but it will look less like you're colluding with that player. It all depends on how the group is leaning right now.)",
-        "Don't pick players who are doubling up their character claim with another player - in most cases, a double up means one of the two is evil, which gives you a 50/50 chance to lose!",
-        "If the group is keen to execute you, you can pre-empt the voting by loudly proclaiming which player you WILL choose as the Klutz after you die. If the group thinks that this player might be evil, they are less likely to kill you.",
-        "If you die, and choose a player, and the game does not end, you can be almost certain that that player is good. "
+        "Plan a trusted living choice before you die, but remember that registration and impairment can complicate what the result proves.",
+        "The choice must be public and made after you learn of your death."
       ],
       "tipsGood": [],
       "tipsEvil": [],

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "contentVersion": "2026-09-27-draft.8",
+  "contentVersion": "2026-09-27-draft.9",
   "roles": [
     {
       "id": "artist",
@@ -1055,19 +1055,28 @@
       "aliases": [],
       "type": "townsfolk",
       "ability": "Each night*, choose a player: they are safe from the Alpha tonight. If they are the Alpha, you learn this.",
-      "shortRuling": "Each night*, choose a player: they are safe from the Alpha tonight. If they are the Alpha, you learn this.",
-      "howToRun": "Each night*, choose a player: they are safe from the Alpha tonight. If they are the Alpha, you learn this.",
-      "interactions": [],
-      "examples": [],
+      "shortRuling": "After the first night, choose a player: protect them from the Alpha tonight and learn if they are the Alpha.",
+      "howToRun": "Each night after the first, wake Trapper and ask them to choose one player. The printed ability does not exclude Trapper, dead players, or repeating a previous target. If Trapper’s ability works, mark the chosen player safe from the Alpha’s ability tonight. If the chosen player registers as the Alpha for this check, privately tell Trapper this. Clear the protection at dawn. If Trapper is poisoned or confused, the choice gives no real protection and the information may be unreliable.",
+      "interactions": [
+        "Protecting a non-Alpha target should stop harmful effects of the Alpha on that target; confirm whether “safe” includes effects beyond death.",
+        "Choosing the Alpha provides information and may protect that Alpha from an Alpha effect, but the printed text does not say it suppresses all Alpha actions.",
+        "Recluse registration may affect whether Trapper learns an Alpha result. Spy cannot register as Alpha through its printed ability."
+      ],
+      "examples": [
+        "Trapper chooses a living Empath. The Alpha attacks Empath that night; Empath survives if Trapper’s ability works.",
+        "Trapper chooses the current Alpha. The Storyteller privately tells Trapper that the target is the Alpha."
+      ],
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
       "sourceNotes": [
-        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES",
+        "wolfsbane/components/game/grimoire-wizard.tsx Trapper target and Alpha-block logic"
       ],
       "reviewStatus": "draft",
       "reviewNotes": [
-        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+        "Confirm the printed protection-plus-detection ability versus Game Master’s current rule that choosing the Alpha blocks all Alpha actions but does not protect an ordinary chosen target.",
+        "Confirm self/dead/repeat choices, scope of “safe,” Recluse registration for Alpha detection, and whether non-Alpha targets receive an explicit no."
       ],
       "legacyPath": "roles/trapper.html",
       "hasExistingGuide": false
@@ -1079,19 +1088,31 @@
       "aliases": [],
       "type": "outsider",
       "ability": "Whoever wins, loses & whoever loses, wins, even if you are dead.",
-      "shortRuling": "Whoever wins, loses & whoever loses, wins, even if you are dead.",
-      "howToRun": "Whoever wins, loses & whoever loses, wins, even if you are dead.",
-      "interactions": [],
-      "examples": [],
+      "shortRuling": "When Bill’s ability works at game end, reverse the winner and loser, even if Bill is dead.",
+      "howToRun": "When any victory condition would end the game, first determine which team would win without Bill. If Bill has a working ability at that moment, declare the opposite team the winner. Bill continues to have this ability while dead, but poisoning or confusion suspends it. Apply this to ordinary wins and ability-caused wins alike, including Saint, Klutz, and Mayor. Resolve the final winner once; do not invert an already-inverted announcement again.",
+      "interactions": [
+        "Bill’s death does not turn off the inversion. Check Bill’s impairment at the moment the game ends.",
+        "A poisoned or confused Bill does not invert the result while impaired; if Bill recovers before game end, the inversion applies again.",
+        "Confirm whether any setup incompatibilities from the comparison game’s Heretic should apply to Wolf’s Bane, and how multiple copies of Bill’s ability would interact."
+      ],
+      "examples": [
+        "Fenrir is executed. Good would normally win, so a working Bill makes evil win.",
+        "Saint is executed. Evil would normally win, so a working Bill makes good win.",
+        "Bill is dead but healthy when a victory condition occurs. The outcome is still reversed."
+      ],
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
       "sourceNotes": [
-        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES",
+        "wolfsbane/lib/game-utils.ts isSoberBillInPlay",
+        "wolfsbane/hooks/useGameState.ts victory checks",
+        "https://wiki.bloodontheclocktower.com/Heretic (comparison rules)"
       ],
       "reviewStatus": "draft",
       "reviewNotes": [
-        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+        "Confirm whether Wolf’s Bane adopts Heretic-style setup incompatibilities, especially Spy, Baron, and Godfather.",
+        "Confirm how simultaneous Bill abilities would interact if Apprentice can gain Bill."
       ],
       "legacyPath": "roles/bill.html",
       "hasExistingGuide": false
@@ -1103,32 +1124,34 @@
       "aliases": [],
       "type": "outsider",
       "ability": "Each night, choose a player (not yourself): tomorrow, you may only vote if they are voting too.",
-      "shortRuling": "Each night, choose a player (not yourself): tomorrow, you may only vote if they are voting too.",
-      "howToRun": "Each night, wake the Butler. They point at any player. Mark this player with the MASTER reminder token. Put the Butler to sleep. During a nomination, the Butler may only have their hand raised to vote if the Master has their hand raised to vote or if the Master's vote has already been counted. If the Butler accidentally votes illegally, tally the Butler's vote anyway. If you don't, the total will be less than it should be, and all players will know which player is the Butler, which is unfair for the evil team.",
-      "interactions": [],
+      "shortRuling": "Each night choose another player; tomorrow, Butler may vote only when that Master votes.",
+      "howToRun": "Each night, wake Butler and ask them to choose any other player, living or dead. Mark that player as Master for the next day; repeating a previous choice is allowed. During an execution vote, Butler may vote if the Master has their hand raised or the Master’s vote has already been counted. Butler need not vote when Master does. If Master lowers their hand before their vote counts, Butler must lower theirs. If Butler accidentally casts an illegal vote, count it publicly and correct the mistake privately afterward. A dead Butler has no restriction and may use their remaining vote freely. Exile votes are unaffected by Butler’s ability.",
+      "interactions": [
+        "A dead Master can enable Butler’s vote only when that Master uses their remaining vote.",
+        "Voting position around the circle does not matter once the Master’s vote has been counted.",
+        "Butler has no printed setup effect; Game Master currently changes the role mix when Butler is selected, which needs separate correction."
+      ],
       "examples": [
-        "The Butler chooses Filip to be their Master. Tomorrow, if Filip raises his hand to vote on an execution, then the Butler may too. If not, then the Butler may not raise their hand.",
-        "A nomination is in progress. The Butler and their Master both have their hands raised to vote. As the Storyteller is counting votes, the Master lowers their hand at the last second. The Butler must lower their hand immediately.",
-        "The Butler is dead. Because dead players have no ability, the Butler may vote with their vote token at any time."
+        "Butler chooses a dead player as Master. If the dead Master has a vote token and raises their hand, Butler may vote on that nomination, even if Butler is counted first.",
+        "Master’s vote is counted before Butler’s seat comes up. Butler may then vote even if Master lowers their hand.",
+        "Butler accidentally votes while Master abstains. Count the vote, then explain the rule privately."
       ],
       "tips": [
-        "The player who you choose as your 'Master' is very important. Your vote still counts as much as a normal vote, it is just that you will not be able to vote at all if your Master has their hand down. So, spend a good deal of time listening, and being involved in figuring out which players are good.",
-        "If you tell your Master that you have selected them, they will often vote under the assumption that you will be voting with them. Observing how your Master wants you to vote can give you some hints as to whether your Master is good or evil.",
-        "Even though you may not vote unless your Master has their hand up to vote too, you do not have to vote just because they do. Remember to only vote for players you truly believe are evil, or otherwise deserve it!",
-        "The player you choose as your Master will usually trust you, and want to keep you alive. After all, you are in their power! It is in their best interest to help you survive, so building up that trust may come in handy if anybody nominates you for execution.",
-        "You can choose a dead player as your Master, but do this carefully - as dead players only have one remaining vote, they may not use it for a while, meaning that you might not be able to vote at all.",
-        "If particular other players think that you are evil, and want to execute you, you can often win their support by promising to be their Butler tonight. If you ask them not to nominate or vote for you today, and in return you will choose them as your master tonight, they will often agree, and keep you alive.",
-        "You may choose a dead player to be your Master. Sometimes, you will do so without intending to, if you and the Alpha Wolf choose the same player."
+        "Choose a Master whose voting judgment you trust, while remembering you are never required to vote with them.",
+        "A dead Master may leave you unable to vote for many nominations because they have only one remaining vote."
       ],
       "tipsGood": [],
       "tipsEvil": [],
       "sourceNotes": [
         "wolfsbane-info/index.html embedded role data",
-        "wolfsbane/lib/game-constants.ts"
+        "wolfsbane/lib/game-constants.ts",
+        "wolfsbane/hooks/useGameState.ts Butler setup behavior",
+        "https://wiki.bloodontheclocktower.com/Butler (comparison rules)"
       ],
       "reviewStatus": "draft",
       "reviewNotes": [
-        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
+        "Confirm that Butler has no setup modifier; Game Master currently replaces two Townsfolk with Outsiders when Butler is selected.",
+        "Confirm dead Master, accidental illegal vote, and exile-vote handling."
       ],
       "legacyPath": "roles/butler.html",
       "hasExistingGuide": true
@@ -1140,19 +1163,32 @@
       "aliases": [],
       "type": "outsider",
       "ability": "Each night, the first player to choose you with their ability is confused until dusk. You become their alignment.",
-      "shortRuling": "Each night, the first player to choose you with their ability is confused until dusk. You become their alignment.",
-      "howToRun": "Each night, the first player to choose you with their ability is confused until dusk. You become their alignment.",
-      "interactions": [],
-      "examples": [],
+      "shortRuling": "Each night, the first player who chooses Goon is confused until dusk and Goon takes that player’s alignment.",
+      "howToRun": "Each night, track the first choice of Goon that successfully triggers Goon’s working ability. Immediately mark that choosing player confused until the following dusk, then set Goon’s alignment to match that player’s current alignment. Privately tell Goon if their alignment changed. Resolve that player’s ability with the new confusion in effect. Later choices of Goon that night do not trigger Goon again and resolve normally. A Storyteller choosing Goon for another ability does not count as a player choice. Clear the confusion at dusk; reset the first-choice marker for the next night.",
+      "interactions": [
+        "An already poisoned or confused player who chooses Goon can still trigger a working Goon; Goon copies that player’s alignment.",
+        "Assassin may kill Goon despite becoming confused from the choice; confirm this exception for Wolf’s Bane.",
+        "For an ability with sequential targets, effects already resolved before Goon was chosen remain; confirm the night-order treatment.",
+        "Goon’s current alignment controls team membership, including after Goon dies and can no longer switch.",
+        "A choice made while Goon is impaired does not consume the first successful trigger; if Goon recovers later that night, a later choice can trigger it."
+      ],
+      "examples": [
+        "Poisoner chooses Goon first tonight. Poisoner becomes confused, their poison does not take effect, and Goon becomes evil.",
+        "A good Sailor chooses Goon first. Sailor becomes confused and Goon becomes good.",
+        "A second player chooses Goon later the same night. Goon’s first-choice effect does not trigger again."
+      ],
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
       "sourceNotes": [
-        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES",
+        "wolfsbane/components/game/grimoire-wizard.tsx Goon first-targeter logic",
+        "https://wiki.bloodontheclocktower.com/Goon (comparison rules)"
       ],
       "reviewStatus": "draft",
       "reviewNotes": [
-        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+        "Confirm Assassin’s exception and sequential multi-target resolution.",
+        "Game Master’s manual targeting and wizard use different first-target logic and may grant Goon broader night-kill immunity than printed."
       ],
       "legacyPath": "roles/goon.html",
       "hasExistingGuide": false
@@ -1164,30 +1200,34 @@
       "aliases": [],
       "type": "outsider",
       "ability": "When you learn that you died, publicly choose 1 alive player: if they are a Werewolf, your team loses.",
-      "shortRuling": "When you learn that you died, publicly choose 1 alive player: if they are evil, your team loses.",
-      "howToRun": "When the Klutz player is declared dead, they must declare that they are the Klutz and then point at any player. (Give them time.) If they choose an evil player, the game ends and the evil team wins. If they choose a good player, the game continues. In the strange situation where the Klutz is evil and chooses an evil player, then the game ends and the good team wins instead.",
-      "interactions": [],
+      "shortRuling": "When Klutz learns they died, they publicly choose one living player; if that player is evil, Klutz’s current team loses.",
+      "howToRun": "When Klutz learns that they died, allow a short discussion, then have them publicly name one living player. If that player counts as evil for this check and Klutz has a working ability, Klutz’s current team loses immediately; otherwise the game continues. A dead target is invalid and must be replaced. If Klutz is evil and chooses an evil player, the evil team loses. If Klutz is poisoned or confused, the choice has no effect. Privately remind a new player to make the choice if needed. Resolve any Bill inversion after determining the underlying winner.",
+      "interactions": [
+        "Confirm whether “Werewolf” in the printed ability means current evil alignment, including an evil Goon or evil Traveler.",
+        "Spy and Recluse registration might change whether the chosen player counts as evil; confirm Storyteller discretion.",
+        "The absence of a loss does not prove the target is good: impairment, registration, or a false Klutz claim may explain it."
+      ],
       "examples": [
-        "The Klutz dies by execution. After much yelling and confusion, the Klutz chooses a player—who is secretly the Seer. Night falls, and the game continues.",
-        "The Alpha Wolf kills Dave, the Klutz. In the morning, when the Storyteller informs the group that Dave is dead, Dave says 'Ok everybody, I was the Klutz' and after discussion for a few minutes, Dave publicly chooses the player that is the Alpha Wolf. The game ends immediately and evil rejoices."
+        "A good Klutz dies at night, learns this at dawn, and publicly chooses a living evil Goon. If evil alignment qualifies, good loses.",
+        "An evil Klutz publicly chooses an evil player. Klutz’s own evil team loses.",
+        "Klutz chooses a good player while Bill’s ability works. Klutz causes no win or loss; play continues."
       ],
       "tips": [
-        "Like nearly all Outsiders, you should avoid dying if at all possible. Your ability is particularly nasty as it can end the game if you choose poorly, but it only becoming an issue if you actually die!",
-        "If the good team is floundering, you can die deliberately and confirm someone as good by choosing them. Your ability yields incredibly powerful information for incredibly high risk. Knowing for sure that someone is good allows you to trust them completely, a very rare thing in this game!",
-        "Before you die, work with the other players and try to find one alive player you believe is good, so you have a safe choice to pick in the event you accidentally die. (It's up to you if you want to reveal your identity before death to this player - if you do, they may be more inclined to trust you while you're both alive. If you don't, your choice will be more of a surprise, but it will look less like you're colluding with that player. It all depends on how the group is leaning right now.)",
-        "Don't pick players who are doubling up their character claim with another player - in most cases, a double up means one of the two is evil, which gives you a 50/50 chance to lose!",
-        "If the group is keen to execute you, you can pre-empt the voting by loudly proclaiming which player you WILL choose as the Klutz after you die. If the group thinks that this player might be evil, they are less likely to kill you.",
-        "If you die, and choose a player, and the game does not end, you can be almost certain that that player is good. "
+        "Plan a trusted living choice before you die, but remember that registration and impairment can complicate what the result proves.",
+        "The choice must be public and made after you learn of your death."
       ],
       "tipsGood": [],
       "tipsEvil": [],
       "sourceNotes": [
         "wolfsbane-info/index.html embedded role data",
-        "wolfsbane/lib/game-constants.ts"
+        "wolfsbane/lib/game-constants.ts",
+        "wolfsbane/hooks/useGameState.ts Klutz reminder",
+        "https://wiki.bloodontheclocktower.com/Klutz (comparison rules)"
       ],
       "reviewStatus": "draft",
       "reviewNotes": [
-        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
+        "Confirm that “Werewolf” means current evil alignment, including evil Goon and evil Travelers, rather than only Werewolf character types.",
+        "Confirm Spy/Recluse registration and how Bill applies to a Klutz-triggered loss. Game Master currently broadcasts a reminder but does not resolve Klutz’s choice."
       ],
       "legacyPath": "roles/klutz.html",
       "hasExistingGuide": true
