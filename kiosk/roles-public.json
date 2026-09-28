@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "contentVersion": "2026-09-27-draft.6",
-  "checksum": "cc23aac7399cd3febb4d96a34f790f1edf357423154178e475c1c79d8dbe8068",
+  "contentVersion": "2026-09-27-draft.7",
+  "checksum": "2a32c1d129191801f1d772c1044522aa1854045c26e9250436a0473a938eae0c",
   "roles": [
     {
       "id": "artist",
@@ -397,7 +397,7 @@
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "sailor",
@@ -408,7 +408,7 @@
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "seer",
@@ -423,7 +423,7 @@
       ],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "soldier",
@@ -438,7 +438,7 @@
       ],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "tea-lady",
@@ -449,7 +449,7 @@
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "trapper",

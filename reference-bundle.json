@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "contentVersion": "2026-09-27-draft.6",
-  "checksum": "cc23aac7399cd3febb4d96a34f790f1edf357423154178e475c1c79d8dbe8068",
+  "contentVersion": "2026-09-27-draft.7",
+  "checksum": "2a32c1d129191801f1d772c1044522aa1854045c26e9250436a0473a938eae0c",
   "roles": [
     {
       "id": "artist",
@@ -871,12 +871,12 @@
       "aliases": [],
       "type": "townsfolk",
       "ability": "If the Alpha kills you, you learn that it is 1 of 2 players.",
-      "shortRuling": "If the Alpha’s ability kills Sage at night, show two distinct players, including the Alpha who killed them.",
-      "howToRun": "When Sage dies from the Alpha’s ability, wake Sage that night. Point to two distinct players, one of whom is the Alpha who caused that death. The other may be alive or dead. Do not wake Sage for execution or a night death caused by another character. If Sage is impaired when the information is given, the two players shown need not include the killer. The Storyteller resolves any special registration before showing the pair.",
+      "shortRuling": "If the Alpha’s ability kills Sage, show two players including the Alpha who caused that death.",
+      "howToRun": "When Sage dies from the Alpha’s ability, even on the first night if such a kill occurs, wake Sage that night. If Sage’s ability is working, point to two distinct players: the actual Alpha who killed Sage and one other player, who may be alive or dead. Recluse may register as an Alpha for this interaction, but cannot replace the actual killer in the pair. Do not wake Sage for execution or a night death caused by another character. If Sage is impaired when the information is given, a simulated pair may be unreliable.",
       "interactions": [
-        "Track the Alpha who actually caused the death, even if another player later becomes the Alpha.",
-        "A night death from Assassin, Gossip, or another non-Alpha ability does not trigger Sage.",
-        "The comparison game permits Recluse to register as the Alpha for this information; confirm whether Wolf’s Bane follows that interaction."
+        "The pair must include the actual Alpha who caused Sage’s death; a later replacement Alpha cannot stand in for that killer.",
+        "Recluse may register as an Alpha at Storyteller discretion, but the actual killer still appears in a working Sage result.",
+        "An Alpha kill on the first night triggers Sage; death from Assassin, Gossip, or another non-Alpha ability does not."
       ],
       "examples": [
         "Fenrir kills Sage. The Storyteller shows Fenrir and one other player.",
@@ -891,13 +891,12 @@
         "wolfsbane/lib/game-utils.ts night wake logic",
         "https://wiki.bloodontheclocktower.com/Sage (comparison rules)"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Confirm the Recluse registration interaction and first-night behavior if a special Alpha ability kills Sage then.",
-        "Game Master currently wakes Sage for any Died Tonight tag; it does not track whether the Alpha caused the death."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/sage.html",
-      "hasExistingGuide": false
+      "hasExistingGuide": false,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-27"
     },
     {
       "id": "sailor",
@@ -910,14 +909,15 @@
       "howToRun": "Each night, wake Sailor and ask them to choose any living player, including themself. If they point to a dead player, ask them to choose again. If Sailor’s ability is working, decide whether Sailor or the chosen player becomes confused until the following dusk; choosing themself necessarily confuses Sailor. If Sailor is already impaired, the choice creates no new confusion. Mark the effect and clear it at dusk. While Sailor has a working ability and is not confused, they cannot die, including by execution. If they are executed but survive, announce the execution and end nominations for the day.",
       "interactions": [
         "A healthy Sailor cannot die even before they first wake to choose.",
-        "If Sailor is poisoned or made confused, their no-death protection does not function.",
-        "Confirm whether poisoning Sailor later suspends the ongoing confusion they caused to another player.",
+        "If Sailor later becomes poisoned or confused by another source, confusion they caused to another player pauses; it resumes if Sailor recovers before that effect would expire. An action attempted while already impaired creates no delayed effect.",
+        "For a closed droison cycle, keep everyone in the cycle impaired until one of its durations naturally expires. A Sailor who chooses themself remains confused until dusk, rather than immediately cancelling their own effect.",
         "Assassin can kill through Sailor’s no-death protection."
       ],
       "examples": [
         "Sailor chooses a living Empath. The Storyteller confuses Empath until dusk; Sailor survives an Alpha attack that night.",
         "Sailor chooses themself. Sailor is confused and can die until the effect clears.",
-        "A healthy Sailor is executed and remains alive; that still uses the day’s execution."
+        "A healthy Sailor is executed and remains alive; that still uses the day’s execution.",
+        "Sailor confuses themself. This self-cycle remains in effect until dusk; Sailor can die while confused."
       ],
       "tips": [],
       "tipsGood": [],
@@ -925,15 +925,15 @@
       "sourceNotes": [
         "wolfsbane/lib/game-constants.ts ROLE_ABILITIES",
         "wolfsbane/lib/role-rulings.ts night poisoning projection",
-        "https://wiki.bloodontheclocktower.com/Sailor (comparison rules)"
+        "https://wiki.bloodontheclocktower.com/Sailor (comparison rules)",
+        "https://wiki.bloodontheclocktower.com/States (ongoing effects and impairment comparison)"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Confirm the until-dusk duration, self-selection, and suspension of an ongoing effect if Sailor later becomes poisoned.",
-        "Game Master currently offers dead targets in the Sailor selection and requires Storyteller review of the confusion result."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/sailor.html",
-      "hasExistingGuide": false
+      "hasExistingGuide": false,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-27"
     },
     {
       "id": "seer",
@@ -966,13 +966,12 @@
         "wolfsbane/lib/game-constants.ts",
         "https://wiki.bloodontheclocktower.com/Fortune_Teller (comparison rules)"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Confirm that the red herring is one fixed good player, and that Recluse registration can create another yes.",
-        "Game Master’s Seer wizard currently permits duplicate targets; the standalone Seer form checks a different red-herring representation."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/seer.html",
-      "hasExistingGuide": true
+      "hasExistingGuide": true,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-27"
     },
     {
       "id": "soldier",
@@ -1005,13 +1004,12 @@
         "wolfsbane/lib/game-constants.ts",
         "https://wiki.bloodontheclocktower.com/Soldier (comparison rules)"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Confirm whether safety covers all harmful effects of an Alpha ability, beyond killing.",
-        "The older guide’s claim that a night death proves Poisoner or Village Idiot was removed because other causes exist."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/soldier.html",
-      "hasExistingGuide": true
+      "hasExistingGuide": true,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-27"
     },
     {
       "id": "tea-lady",
@@ -1020,19 +1018,19 @@
       "aliases": [],
       "type": "townsfolk",
       "ability": "If both your alive neighbors are Villagers, they cannot die.",
-      "shortRuling": "If both closest living neighbors are good, Tea Lady prevents either neighbor from dying while her ability works.",
-      "howToRun": "Continually identify Tea Lady’s nearest living neighbor in each direction, skipping dead players. If both neighbors are currently good and Tea Lady has a working ability, neither neighbor can die from ordinary death attempts, including execution; Assassin is an exception. Tea Lady does not protect themself. Recheck the condition whenever deaths, alignment, or impairment changes the situation. If a protected neighbor is executed, announce that they were executed but did not die; the day’s execution is still used.",
+      "shortRuling": "If both nearest living neighbors register as good, Tea Lady prevents either from dying while her ability works.",
+      "howToRun": "Continually identify Tea Lady’s nearest living neighbor in each direction, skipping dead players. Good Outsiders and good Travelers count as good neighbors. At the Storyteller’s discretion, Spy or Recluse registration may change whether a neighbor counts as good for this check. If both neighbors count as good and Tea Lady has a working ability, neither neighbor can die, including by execution or exile; Assassin is an exception. Tea Lady does not protect themself. Recheck whenever deaths, alignment, registration, or impairment changes the condition. An execution or exile still happens even when the protected player survives.",
       "interactions": [
-        "A good Outsider is a Villager and can satisfy the condition. Confirm whether a good Traveler does too.",
-        "An evil neighbor means neither neighbor is protected. A poisoned or confused Tea Lady protects neither.",
-        "In the comparison game, a protected Traveler may be exiled yet survive. Confirm whether Wolf’s Bane follows that ruling; Game Master currently applies exile as a death.",
-        "Spy and Recluse registration may affect whether a neighbor counts as good; confirm the Storyteller choice.",
-        "Assassin can kill a protected neighbor despite Tea Lady’s no-death effect."
+        "Good Outsiders and good Travelers may satisfy the two-good-neighbors condition.",
+        "Spy and Recluse may register as good or evil for this check at the Storyteller’s discretion. If either neighbor counts as evil, neither is protected.",
+        "A protected Traveler can be exiled but does not die; exile still occurs.",
+        "A poisoned or confused Tea Lady protects neither neighbor. Assassin can bypass Tea Lady’s no-death protection."
       ],
       "examples": [
         "Tea Lady has a good Outsider and a good Townsfolk as nearest living neighbors. Both are protected.",
         "One living neighbor turns evil. Neither neighbor remains protected.",
-        "A protected neighbor is executed but survives; no more nominations happen that day."
+        "A protected neighbor is executed but survives; no more nominations happen that day.",
+        "A protected good Traveler is exiled. The exile occurs, but Tea Lady prevents the Traveler from dying."
       ],
       "tips": [],
       "tipsGood": [],
@@ -1042,13 +1040,12 @@
         "wolfsbane/hooks/useGameState.ts execution protection",
         "https://wiki.bloodontheclocktower.com/Tea_Lady (comparison rules)"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Confirm whether good Travelers count as Villagers for Tea Lady, whether Spy/Recluse registration can change the condition, and whether a protected Traveler survives exile.",
-        "Game Master checks actual alignment and applies exile directly without Tea Lady protection."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/tea-lady.html",
-      "hasExistingGuide": false
+      "hasExistingGuide": false,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-27"
     },
     {
       "id": "trapper",

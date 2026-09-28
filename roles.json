@@ -441,8 +441,8 @@
     {
       "name": "Sage",
       "type": "townsfolk",
-      "summary": "If the Alpha’s ability kills Sage at night, show two distinct players, including the Alpha who killed them.",
-      "howToRun": "When Sage dies from the Alpha’s ability, wake Sage that night. Point to two distinct players, one of whom is the Alpha who caused that death. The other may be alive or dead. Do not wake Sage for execution or a night death caused by another character. If Sage is impaired when the information is given, the two players shown need not include the killer. The Storyteller resolves any special registration before showing the pair.",
+      "summary": "If the Alpha’s ability kills Sage, show two players including the Alpha who caused that death.",
+      "howToRun": "When Sage dies from the Alpha’s ability, even on the first night if such a kill occurs, wake Sage that night. If Sage’s ability is working, point to two distinct players: the actual Alpha who killed Sage and one other player, who may be alive or dead. Recluse may register as an Alpha for this interaction, but cannot replace the actual killer in the pair. Do not wake Sage for execution or a night death caused by another character. If Sage is impaired when the information is given, a simulated pair may be unreliable.",
       "examples": [
         "Fenrir kills Sage. The Storyteller shows Fenrir and one other player.",
         "Assassin kills Sage during the night. Sage receives no information.",
@@ -460,7 +460,8 @@
       "examples": [
         "Sailor chooses a living Empath. The Storyteller confuses Empath until dusk; Sailor survives an Alpha attack that night.",
         "Sailor chooses themself. Sailor is confused and can die until the effect clears.",
-        "A healthy Sailor is executed and remains alive; that still uses the day’s execution."
+        "A healthy Sailor is executed and remains alive; that still uses the day’s execution.",
+        "Sailor confuses themself. This self-cycle remains in effect until dusk; Sailor can die while confused."
       ],
       "tipsAndTricks": [],
       "tipsAndTricksGood": [],
@@ -505,12 +506,13 @@
     {
       "name": "Tea Lady",
       "type": "townsfolk",
-      "summary": "If both closest living neighbors are good, Tea Lady prevents either neighbor from dying while her ability works.",
-      "howToRun": "Continually identify Tea Lady’s nearest living neighbor in each direction, skipping dead players. If both neighbors are currently good and Tea Lady has a working ability, neither neighbor can die from ordinary death attempts, including execution; Assassin is an exception. Tea Lady does not protect themself. Recheck the condition whenever deaths, alignment, or impairment changes the situation. If a protected neighbor is executed, announce that they were executed but did not die; the day’s execution is still used.",
+      "summary": "If both nearest living neighbors register as good, Tea Lady prevents either from dying while her ability works.",
+      "howToRun": "Continually identify Tea Lady’s nearest living neighbor in each direction, skipping dead players. Good Outsiders and good Travelers count as good neighbors. At the Storyteller’s discretion, Spy or Recluse registration may change whether a neighbor counts as good for this check. If both neighbors count as good and Tea Lady has a working ability, neither neighbor can die, including by execution or exile; Assassin is an exception. Tea Lady does not protect themself. Recheck whenever deaths, alignment, registration, or impairment changes the condition. An execution or exile still happens even when the protected player survives.",
       "examples": [
         "Tea Lady has a good Outsider and a good Townsfolk as nearest living neighbors. Both are protected.",
         "One living neighbor turns evil. Neither neighbor remains protected.",
-        "A protected neighbor is executed but survives; no more nominations happen that day."
+        "A protected neighbor is executed but survives; no more nominations happen that day.",
+        "A protected good Traveler is exiled. The exile occurs, but Tea Lady prevents the Traveler from dying."
       ],
       "tipsAndTricks": [],
       "tipsAndTricksGood": [],

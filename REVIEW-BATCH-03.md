@@ -1,15 +1,23 @@
 # Storyteller role guide review — batch 3
 
-Status: **Draft for owner review.** These five roles remain unapproved. The previous 24 approvals are preserved.
+Status: **Sage, Sailor, Seer, Soldier, and Tea Lady approved by the Wolf’s Bane owner on 2026-09-27.**
 
-| Role | Proposed ruling | Decision to review |
-| --- | --- | --- |
-| [Sage](roles/sage.html) | Wake only when the Alpha's ability kills Sage; show two distinct players including the actual killer. | Can Recluse register as Alpha for the pair? Does an unusual first-night Alpha kill trigger Sage? |
-| [Sailor](roles/sailor.html) | Choose any living player, including self. Confuse one of the two until dusk; healthy Sailor cannot die. | If Sailor is poisoned later, does confusion already applied to someone else pause? |
-| [Seer](roles/seer.html) | Choose two distinct players each night. One fixed good red herring registers as Alpha, and Recluse may also register as Alpha. | Confirm the fixed red herring and additional Recluse registration. |
-| [Soldier](roles/soldier.html) | A healthy Soldier is safe from harmful effects of the Alpha's ability. Other deaths and execution remain possible. | Confirm protection beyond the Alpha's kill. |
-| [Tea Lady](roles/tea-lady.html) | If both nearest living neighbors are good, neither can die while Tea Lady's ability works. | Do good Travelers count? Can Spy/Recluse registration change the test? Does a protected Traveler survive exile? |
+| Role | Approved ruling |
+| --- | --- |
+| [Sage](roles/sage.html) | An Alpha kill, even on the first night, triggers Sage. A working result includes the actual Alpha killer and one other player. Recluse may register as Alpha but cannot replace the killer. |
+| [Sailor](roles/sailor.html) | Choose a living player, including self. Confusion lasts until dusk. An active effect pauses while Sailor is impaired, except that a closed droison cycle remains impaired until one duration expires. |
+| [Seer](roles/seer.html) | Choose two distinct players nightly; one fixed good red herring and possible Recluse registration affect the result. |
+| [Soldier](roles/soldier.html) | A healthy Soldier is safe from harmful effects of the Alpha's ability, beyond the kill. |
+| [Tea Lady](roles/tea-lady.html) | Good Travelers count as good neighbors. Spy and Recluse registration is at Storyteller discretion. A protected Traveler survives exile. |
 
-Game Master differences are recorded in the editorial notes on each draft page. Approval of these rulings does not itself change the game's executable rules.
+## Game Master follow-ups
 
-Comparison rules: [Sage](https://wiki.bloodontheclocktower.com/Sage), [Sailor](https://wiki.bloodontheclocktower.com/Sailor), [Fortune Teller](https://wiki.bloodontheclocktower.com/Fortune_Teller), [Soldier](https://wiki.bloodontheclocktower.com/Soldier), and [Tea Lady](https://wiki.bloodontheclocktower.com/Tea_Lady).
+- Sage currently wakes for any night death and suggests the current Alpha, without tracking which Alpha caused Sage's death.
+- Sailor's app does not yet model suspension, resumption, and closed droison cycles for an effect already in progress.
+- Seer's two target selectors permit duplicates; the standalone form reads a different red-herring marker from the wizard.
+- Tea Lady's automatic protection does not offer discretionary Spy/Recluse registration, and exile currently kills a protected Traveler.
+- Soldier's broader protection from harmful Alpha effects needs an audit beyond Alpha kill prevention.
+
+These are app implementation tasks; the guides record the approved rulings. The publication gate still requires approval of all selectable roles.
+
+Comparison rules: [Sage](https://wiki.bloodontheclocktower.com/Sage), [Sailor](https://wiki.bloodontheclocktower.com/Sailor), [Fortune Teller](https://wiki.bloodontheclocktower.com/Fortune_Teller), [Soldier](https://wiki.bloodontheclocktower.com/Soldier), [Tea Lady](https://wiki.bloodontheclocktower.com/Tea_Lady), and [States](https://wiki.bloodontheclocktower.com/States). The closed-cycle rule is the owner's Wolf’s Bane ruling; the linked pages establish ongoing-effect pause/resume and Sailor self-confusion, not a general cycle algorithm.
