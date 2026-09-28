@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "contentVersion": "2026-09-27-draft.4",
+  "contentVersion": "2026-09-27-draft.5",
   "roles": [
     {
       "id": "artist",
@@ -681,22 +681,31 @@
       "aliases": [],
       "type": "townsfolk",
       "ability": "When a Minion dies by execution, all other players (except Travelers) are confused until dusk tomorrow.",
-      "shortRuling": "When a Minion dies by execution, all other players (except Travelers) are confused until dusk tomorrow.",
-      "howToRun": "When a Minion dies by execution, all other players (except Travelers) are confused until dusk tomorrow.",
-      "interactions": [],
-      "examples": [],
+      "shortRuling": "When a Minion dies by execution, everyone else except Travelers is confused until the following dusk.",
+      "howToRun": "When a living Minion actually dies by execution while the Minstrel has their ability, mark every other player except Travelers as confused immediately. This includes dead players and the Alpha Wolf, but not the Minstrel. Keep the effect through tonight and tomorrow, then remove it at the following dusk. A Minion killed another way, an already-dead Minion who is executed, or an execution that does not kill does not trigger it. If another Minion dies by execution while the ability works, renew the effect through the next dusk.",
+      "interactions": [
+        "The Minstrel must have a working ability when the Minion dies; a poisoned or confused Minstrel does not trigger it.",
+        "An immediate execution, such as New in Town, can trigger Minstrel if a Minion actually dies. Exile is not execution.",
+        "Confused players keep acting when instructed, but their abilities have no effect while the Minstrel effect lasts. Travelers are excluded."
+      ],
+      "examples": [
+        "The town executes a Minion who dies. The Alpha Wolf and all other non-Travelers except the Minstrel are confused that night and through the next day.",
+        "A Minion is executed but protected from death. The Minstrel effect does not begin."
+      ],
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
       "sourceNotes": [
-        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES",
+        "wolfsbane/hooks/useGameState.ts Minstrel execution trigger",
+        "https://wiki.bloodontheclocktower.com/Minstrel (comparison rules)"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/minstrel.html",
-      "hasExistingGuide": false
+      "hasExistingGuide": false,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-27"
     },
     {
       "id": "new-in-town",
@@ -704,42 +713,39 @@
       "appName": "New in Town",
       "aliases": [],
       "type": "townsfolk",
-      "ability": "The 1st time you are nominated, if the nominator is a Villager, they are executed immediately.",
-      "shortRuling": "The 1st time you are nominated, if the nominator is a Villager, they are executed immediately.",
-      "howToRun": "If the first player to ever nominate the New in Town is a Villager, immediately declare that the nominating player is executed. That player dies—put a shroud on their character token in the Grimoire. The New in Town loses their ability—put the New in Town's NO ABILITY reminder token by the New in Town token. End the nomination process and proceed to the night phase. (No one else can be executed today.) If the first player to ever nominate the New in Town is not a Villager, continue the vote as normal. The New in Town loses their ability—put the New in Town's NO ABILITY reminder token by the New in Town token.",
-      "interactions": [],
+      "ability": "The 1st time you are nominated, if the nominator is a Townsfolk, they are executed immediately.",
+      "shortRuling": "The first time New in Town is nominated, a qualifying Townsfolk nominator is immediately executed.",
+      "howToRun": "On the first valid nomination of New in Town, spend the ability even if New in Town is poisoned or the nominator does not qualify. If New in Town has a working ability and the nominator is a Townsfolk (or qualifies through registration), immediately execute the nominator, resolve whether they die, end nominations, and proceed to night. The execution counts for the day even when another ability prevents death. Otherwise continue the nomination and vote normally. Later nominations do not trigger New in Town again.",
+      "interactions": [
+        "For this ability, a good Outsider is a Villager but is not a Townsfolk nominator. A Spy may register as Townsfolk and trigger the execution.",
+        "A poisoned New in Town spends the first nomination without executing the nominator.",
+        "If an executed nominator survives through protection, the execution still happened and the day ends."
+      ],
       "examples": [
-        "The Housekeeper nominates the New in Town. The Housekeeper is immediately executed and the day ends.",
-        "The Village Idiot, who thinks they are the Chef, nominates the New in Town. The Village Idiot remains alive, and the New in Town loses their ability. Players may now vote on whether or not to execute the New in Town. (This happens because the Village Idiot is not a Villager.)",
-        "A dead player nominates the New in Town. The dead, however, cannot nominate. The Storyteller declares that the nomination does not count. The New in Town does not lose their ability."
+        "A healthy Housekeeper first nominates New in Town. Housekeeper is immediately executed; if they die, mark their death and end nominations.",
+        "A good Outsider first nominates New in Town. No immediate execution occurs, and the ability is spent.",
+        "A Spy first nominates New in Town and registers as Townsfolk. The Spy is immediately executed; any applicable death protection is then resolved."
       ],
       "tips": [
-        "You are one of the few Villager in the game that can be absolutely confirmed as good. If a player is executed for nominating you, that is absolute and undeniable proof that you are the New in Town.",
-        "Characters who have received their information or have used their ability already (like the Housekeeper, Investigator or Hunter) are great choices to encourage into nominating you. Not only will they and their information be validated by their death, but they don't lose out on gaining any more information as the game continues.",
-        "Characters like the Gravedigger, Seer or even Empath are great choices if they have received a little information and want to confirm they are good, or if they are under suspicion and want to remove themselves as a potential Alpha Wolf.",
-        "An Outsider who nominates you will not be executed. Your ability requires your nominator to be a Villager, not merely good.",
-        "Don't like any of your potential suitors? You can nominate yourself and trigger your ability, proving you are the New in Town! This can prevent an evil Minion or hapless Outsider from wasting your ability.",
-        "Once your ability activates, the nominator is immediately executed, ending the day (even if someone else had the votes and was due to be executed). Using this strategically can allow you to block an execution from happening in addition to proving yourself as good.",
-        "If you are known to be the New in Town but haven't used your ability yet, you are a prime target for death or poisoning. Using your ability early minimizes this risk and allows you to be a rally point for the good team to work around.",
-        "Waiting a couple of days before announcing that you're the New in Town can give you a chance to decide who should nominate you. A player being proven good, a few days into the game, can completely unravel an evil narrative.",
-        "Not claiming to be the New in Town until you get nominated can be a powerful strategy to uncover an evil player who is claiming to be a Villager, but might not be willing to nominate you if you were to claim to be the New in Town.",
-        "If you can find a player that is claiming to be the Bodyguard, convince them to protect you every night. Since you no longer have to fear death in the night, you can always wait another day to get somebody to nominate you.",
-        "If your ability doesn't activate, this can mean a few things: The person who did the nominating is evil! Evil players can nominate the New in Town so that your ability does not activate, leaving you unable to be confirmed and throwing you both into doubt. The person who nominated is an Outsider. This includes the Village Idiot, who thinks they are a Villager. You are in fact the Village Idiot or poisoned, so you have no ability.",
-        "Your ability only triggers the first time you are nominated. Even if you were poisoned or nominated by a non-Villager, your ability is already spent, and you can no longer cause an execution from your ability.",
-        "Beware the Spy! It is the only evil character that can activate your ability, since it registers as a Villager."
+        "A Townsfolk nominating a healthy New in Town is immediately executed. This can support both players’ claims, but Spy registration and impairment prevent absolute confirmation.",
+        "Invite a Townsfolk who has already used a one-time ability to nominate you when the town can afford the execution.",
+        "A good Outsider is a Villager but does not qualify as a Townsfolk nominator for this ability. The first nomination still spends your ability.",
+        "You can nominate yourself if you are a Townsfolk. The resulting execution ends nominations for the day, even if another ability prevents your death.",
+        "A missing immediate execution may mean the nominator was not a Townsfolk, you were impaired, or you are not actually New in Town."
       ],
       "tipsGood": [],
       "tipsEvil": [],
       "sourceNotes": [
         "wolfsbane-info/index.html embedded role data",
-        "wolfsbane/lib/game-constants.ts"
+        "wolfsbane/lib/game-constants.ts",
+        "https://wiki.bloodontheclocktower.com/Virgin (comparison rules)"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/new-in-town.html",
-      "hasExistingGuide": true
+      "hasExistingGuide": true,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-27"
     },
     {
       "id": "pacifist",
@@ -747,23 +753,33 @@
       "appName": "Pacifist",
       "aliases": [],
       "type": "townsfolk",
-      "ability": "Executed Villager players might not die.",
-      "shortRuling": "Executed Villager players might not die.",
-      "howToRun": "Executed Villager players might not die.",
-      "interactions": [],
-      "examples": [],
+      "ability": "Executed good players might not die.",
+      "shortRuling": "When a good player is executed, the Storyteller may let them live; the execution still counts.",
+      "howToRun": "When a good player, including a good Outsider or the Pacifist, is executed while a living Pacifist has their ability, choose whether that player dies. If saved, announce that the player was executed but did not die, without naming the cause. The execution still ends nominations for the day. Pacifist does not prevent death by exile or other causes. If Pacifist is poisoned, dead, or otherwise without their ability, do not offer this protection.",
+      "interactions": [
+        "A good Outsider is a Villager for Pacifist and can be saved. An evil player is not protected.",
+        "Pacifist can save themself if their ability is working when they are executed.",
+        "Other death protection may prevent an execution death independently; do not attribute survival publicly."
+      ],
+      "examples": [
+        "A good Outsider is executed. The Storyteller chooses to save them; the player remains alive and no further nomination occurs today.",
+        "Pacifist is executed while healthy. The Storyteller chooses to let Pacifist live.",
+        "A good Traveler is exiled. Pacifist does not protect them from exile."
+      ],
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
       "sourceNotes": [
-        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES",
+        "wolfsbane/hooks/useGameState.ts execution protection",
+        "https://wiki.bloodontheclocktower.com/Pacifist (comparison rules)"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/pacifist.html",
-      "hasExistingGuide": false
+      "hasExistingGuide": false,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-27"
     },
     {
       "id": "professor",
@@ -772,31 +788,38 @@
       "aliases": [],
       "type": "townsfolk",
       "ability": "Once per game, at night*, choose a dead player: if they are a Townsfolk, they are resurrected.",
-      "shortRuling": "Once per game, at night*, choose a dead player: if they are a Villager, they are resurrected.",
-      "howToRun": "Each night except the first, wake the Professor. The Professor either shakes their head no or points to a dead player. Put the Professor to sleep. If the Professor chose a dead Villager, the chosen player becomes alive again—mark them with the Professor's ALIVE reminder and remove their shroud. (They wake later tonight if they normally would. If they wake on the first night only, they wake now to use their ability.) At dawn, after declaring which players died, declare which player is alive again. (Do not say why.) The Professor loses their ability—mark them with the NO ABILITY reminder and remove their night token from the night sheet.",
-      "interactions": [],
-      "examples": [],
+      "shortRuling": "Once per game after the first night, choose a dead player; resurrect them only if they qualify as Townsfolk.",
+      "howToRun": "Each night after the first, wake an unused Professor. They may decline or choose any dead player. Declining preserves the use. A choice spends the ability, even if Professor is poisoned or the target does not qualify. If Professor has a working ability and the target is a Townsfolk (or registers as one for this check), remove the target’s death marker and restore them to life. They regain their ability, including a previously used once-per-game ability. If they would wake later this night, wake them then; if their ability is first-night-only, wake them immediately after Professor. At dawn announce the resurrection, without naming its cause.",
+      "interactions": [
+        "A good Outsider is a Villager but is not normally a Townsfolk, so Professor does not resurrect them. A qualifying registration can change the result.",
+        "A failed choice still spends Professor’s once-per-game use; declining does not.",
+        "A revived Townsfolk regains their ability. Resolve their wake in the current night order as appropriate."
+      ],
+      "examples": [
+        "Professor chooses a dead Fool. Fool returns to life and regains their unused or spent first-death protection.",
+        "Professor chooses a dead good Outsider. Nothing happens, and Professor’s use is spent.",
+        "Professor declines on night two and may choose on a later night."
+      ],
       "tips": [
-        "Use your ability as early as you possibly can! Evil players will really not want to keep you around, so getting your ability to trigger as soon as possible will give you an edge. Additionally, it is more likely that players who die early in the game will be good Villager, since they are in the majority and evil will be protecting each other.",
-        "Use your ability as late in the game as you dare! While risky, you can't underestimate how disruptive the resurrection of a confirmed Villager at the end of the game can be for the evil team. The good team will be able to rally around both you and your revived Villager, and the evil team will have a lot less options for disguising themselves as the game has worn on.",
-        "Remember that if your ability fails, the dead player is either evil or an Outsider. Don't jump to conclusions right away - you could've targeted the Recluse or the Spy!",
-        "Resurrect players who died at night, rather than players who were executed. Players who die at night were probably targeted by the Alpha Wolf, and are therefore most likely good.",
-        "Resurrect executed players if you believe the town has made a mistake! If your ability works, you have absolved an innocent villager. If it doesn't, well, you can be very sure that they were right to execute them the first time. (Bonus strategy: Reveal yourself to a player you believe to be good, and ask them to be deliberately executed so you can bring them back, proving both of you. Especially effective early in the game!)",
-        "Successfully resurrect a villager, and you are going to be one of the more trustworthy good players in the game. While you won't be totally free of suspicion, you and your revived Villager will know you can trust each other 100%, and most other players will want to join your circle! Use this to your advantage to rally the good team in the face of evil.",
-        "When picking who to resurrect, consider telling the player ahead of time what you intend to do. The player can warn you off if they are an outsider who is bluffing as a villager for whatever reason. Additionally, if the player agrees to go along with this plan and doesn't come back, you can be much more confident that they are evil, since they had the chance to stop you and didn't!"
+        "You may wait to use the ability, but a choice spends it even when nobody returns.",
+        "A successful resurrection shows that the chosen player qualified as Townsfolk for this check; registration can complicate what that proves about their actual character or team.",
+        "A failed resurrection does not prove the target is evil. They may be a good Outsider, the Professor may be poisoned, or registration may affect the result.",
+        "Revived Townsfolk regain their abilities, including spent once-per-game abilities and first-night information."
       ],
       "tipsGood": [],
       "tipsEvil": [],
       "sourceNotes": [
         "wolfsbane-info/index.html embedded role data",
-        "wolfsbane/lib/game-constants.ts"
+        "wolfsbane/lib/game-constants.ts",
+        "wolfsbane/components/game/grimoire-wizard/role-steps/StandardSelectionStep.tsx",
+        "https://wiki.bloodontheclocktower.com/Professor (comparison rules)"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/professor.html",
-      "hasExistingGuide": true
+      "hasExistingGuide": true,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-27"
     },
     {
       "id": "ravenkeeper",
@@ -805,12 +828,17 @@
       "aliases": [],
       "type": "townsfolk",
       "ability": "If you die at night, you may choose a player: you learn their role.",
-      "shortRuling": "If you die at night, you are woken to choose a player: you learn their character.",
-      "howToRun": "If the Ravenkeeper died tonight, wake them. They point at any player. Show the chosen player's character token to the Ravenkeeper. Put the Ravenkeeper to sleep.",
-      "interactions": [],
+      "shortRuling": "If Ravenkeeper dies at night, wake them to choose any player and learn that player’s character.",
+      "howToRun": "Whenever Ravenkeeper dies during the night, including the first night if a night death occurs, wake them before dawn. They choose any player, living or dead. If Ravenkeeper has a working ability, show the chosen player’s current character, applying any valid registration. If Ravenkeeper is poisoned or otherwise impaired, any information shown is unreliable. Put Ravenkeeper to sleep. A daytime death does not trigger this ability. A prevented night death does not trigger it.",
+      "interactions": [
+        "An Alpha attack is one way to trigger Ravenkeeper, but a night death from another source also qualifies. The Alpha normally has no first-night kill; that timing does not limit Ravenkeeper.",
+        "Spy or Recluse registration can change the character shown.",
+        "If another ability redirects a night death to Ravenkeeper, Ravenkeeper still wakes."
+      ],
       "examples": [
-        "The Ravenkeeper is killed by the Alpha Wolf, and then wakes to choose a player. After some deliberation, they choose Benjamin. Benjamin is the Empath, and the Ravenkeeper learns this.",
-        "The Alpha Wolf attacks the Mayor. The Mayor doesn't die, but the Ravenkeeper dies instead, due to the Mayor's ability. The Ravenkeeper is woken and chooses Douglas, who is a dead Recluse. The Ravenkeeper learns that Douglas is the Successor, since the Recluse registered as a Minion."
+        "The Alpha kills Ravenkeeper on a later night. Ravenkeeper chooses a living player and learns their character.",
+        "An unusual first-night effect kills Ravenkeeper. Ravenkeeper still wakes before dawn.",
+        "The Mayor redirects a nighttime death to Ravenkeeper. Ravenkeeper chooses a dead Recluse, who registers as a Minion; the Storyteller shows an eligible Minion character."
       ],
       "tips": [
         "If the Alpha Wolf knows you are the Ravenkeeper, they are very unlikely to kill you. It is to your benefit to bluff as a character who is a constant threat to the evil team, such as the Empath, Seer, Hunter, or Gravedigger. Even bluffing as a good character that tends to be trusted by the good team (such as Chef or Housekeeper) can make you look like a trusted good player in the eyes of the Alpha Wolf, and attract their attention at night.",
@@ -824,14 +852,16 @@
       "tipsEvil": [],
       "sourceNotes": [
         "wolfsbane-info/index.html embedded role data",
-        "wolfsbane/lib/game-constants.ts"
+        "wolfsbane/lib/game-constants.ts",
+        "wolfsbane/lib/game-utils.ts night wake check",
+        "https://wiki.bloodontheclocktower.com/Ravenkeeper (comparison rules)"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/ravenkeeper.html",
-      "hasExistingGuide": true
+      "hasExistingGuide": true,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-27"
     },
     {
       "id": "sage",

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "contentVersion": "2026-09-27-draft.4",
-  "checksum": "baa23f5f74cc6aabd3c572ab681634680719bf709aa6b1b77c41be7315c68cef",
+  "contentVersion": "2026-09-27-draft.5",
+  "checksum": "a4209feb763951567de2cab4b03efee83353831907a96c3f57d60c5418200c13",
   "roles": [
     {
       "id": "artist",
@@ -19,7 +19,7 @@
       ],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "bodyguard",
@@ -41,7 +41,7 @@
       ],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "chambermaid",
@@ -70,7 +70,7 @@
       ],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "clockmaker",
@@ -113,7 +113,7 @@
       ],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "warden",
@@ -124,7 +124,7 @@
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "fool",
@@ -157,7 +157,7 @@
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "grandmother",
@@ -168,14 +168,14 @@
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "gravedigger",
       "name": "Gravedigger",
       "aliases": [],
       "type": "townsfolk",
-      "ability": "Each night*, if someone died by execution today, you may choose a player: you learn their role.",
+      "ability": "Each night*, you learn which character died by execution today.",
       "tips": [
         "The more players that are executed, the more information you get. It's to your benefit to facilitate as many executions as you can. The good team's main method for killing evil players is execution as they are far less likely to die at night, so every execution is a chance to hit the Alpha Wolf. If you don't, you'll at least arrive on the final day knowing a lot more about your fellow players and their roles.",
         "You do not learn the identity of Travelers; they are exiled, not executed. The only exception to this is the Scapegoat, since they are explicitly executed by their character ability. However, you do not learn their alignment, only their character.",
@@ -192,7 +192,7 @@
       ],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "housekeeper",
@@ -203,20 +203,20 @@
       "tips": [
         "The Housekeeper is deceptively powerful. Even though you don't gain information on the evil players, you can confirm the identity of a good player. This player should be your focus for the game, because if they have great information, then you have that information too. If they have a useful ability that they choose to use, you can help them use it wisely.",
         "When the Housekeeper is poisoned or is actually the Village Idiot, they will often get information that is easy to figure out is incorrect—at least compared to other characters. While the Chef has no clue as to whether their '1' is incorrect, if both of the players the Storyteller pointed at tell you they're a different character to the one the Storyteller showed you, it is likely that you are the Village Idiot or poisoned.",
-        "You know that of the two players you are shown, one must be the Villager you are shown. Importantly, this means that you know that the person you see is not the Village Idiot.",
-        "To find out which of the two players is the Villager, either ask the group publicly or have a private conversation with each player individually. It is usually best to reveal what you know before the Villager in question says who they are so they trust you more.",
-        "If you share your information on the first day, and speak up quickly, the good team has some solid information to begin with. This is particularly useful if you confirm another information-receiving Villager like the Empath or the Seer.",
-        "Waiting until the final day - or at least very late in the game - to share your information with the group can also be very useful. If you can keep the Villager that you know alive until the final day, then you know one player who is not the Alpha Wolf!",
-        "Talk to the Villager player that you know, and secretly let them know that you know who they are. This way, you can hopefully form an alliance, and can come to each other's defence if either of you are nominated for execution.",
-        "After talking to the Villager that you know in private, and confirming who they are, you can tell the group that they are a different character than they actually are. This strategy is useful if you want to protect a powerful Villager from characters like the Poisoner.",
+        "You know that of the two players you are shown, one must be the Townsfolk you are shown. Importantly, this means that you know that the person you see is not the Village Idiot.",
+        "To find out which of the two players is the Townsfolk, either ask the group publicly or have a private conversation with each player individually. It is usually best to reveal what you know before the Townsfolk in question says who they are so they trust you more.",
+        "If you share your information on the first day, and speak up quickly, the good team has some solid information to begin with. This is particularly useful if you confirm another information-receiving Townsfolk like the Empath or the Seer.",
+        "Waiting until the final day - or at least very late in the game - to share your information with the group can also be very useful. If you can keep the Townsfolk that you know alive until the final day, then you know one player who is not the Alpha Wolf!",
+        "Talk to the Townsfolk player that you know, and secretly let them know that you know who they are. This way, you can hopefully form an alliance, and can come to each other's defence if either of you are nominated for execution.",
+        "After talking to the Townsfolk that you know in private, and confirming who they are, you can tell the group that they are a different character than they actually are. This strategy is useful if you want to protect a powerful Townsfolk from characters like the Poisoner.",
         "You can claim to be a more powerful character than you actually are. You start with all the information you're going to get, so if the Alpha Wolf kills you, they aren't killing the Hunter or the Seer.",
-        "You could claim to be the Housekeeper and point to a player you suspect is evil, stating that they are the Villager you learned about. An opportunistic evil player may pounce on an opportunity to appear good.",
-        "Beware of the Spy! They may register as a Villager character to you. That player who you think is the Investigator may not be the Investigator after all...",
-        "Remember that while the Spy is likely to know that you've seen them as a Villager, they won't know which Villager you've seen them as."
+        "You could claim to be the Housekeeper and point to a player you suspect is evil, stating that they are the Townsfolk you learned about. An opportunistic evil player may pounce on an opportunity to appear good.",
+        "Beware of the Spy! They may register as a Townsfolk character to you. That player who you think is the Investigator may not be the Investigator after all...",
+        "Remember that while the Spy is likely to know that you've seen them as a Townsfolk, they won't know which Townsfolk you've seen them as."
       ],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "hunter",
@@ -241,7 +241,7 @@
       ],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "innkeeper",
@@ -252,7 +252,7 @@
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "investigator",
@@ -273,7 +273,7 @@
       ],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "librarian",
@@ -295,7 +295,7 @@
       ],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "mayor",
@@ -313,7 +313,7 @@
       ],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "minstrel",
@@ -324,43 +324,35 @@
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "new-in-town",
       "name": "New in Town",
       "aliases": [],
       "type": "townsfolk",
-      "ability": "The 1st time you are nominated, if the nominator is a Villager, they are executed immediately.",
+      "ability": "The 1st time you are nominated, if the nominator is a Townsfolk, they are executed immediately.",
       "tips": [
-        "You are one of the few Villager in the game that can be absolutely confirmed as good. If a player is executed for nominating you, that is absolute and undeniable proof that you are the New in Town.",
-        "Characters who have received their information or have used their ability already (like the Housekeeper, Investigator or Hunter) are great choices to encourage into nominating you. Not only will they and their information be validated by their death, but they don't lose out on gaining any more information as the game continues.",
-        "Characters like the Gravedigger, Seer or even Empath are great choices if they have received a little information and want to confirm they are good, or if they are under suspicion and want to remove themselves as a potential Alpha Wolf.",
-        "An Outsider who nominates you will not be executed. Your ability requires your nominator to be a Villager, not merely good.",
-        "Don't like any of your potential suitors? You can nominate yourself and trigger your ability, proving you are the New in Town! This can prevent an evil Minion or hapless Outsider from wasting your ability.",
-        "Once your ability activates, the nominator is immediately executed, ending the day (even if someone else had the votes and was due to be executed). Using this strategically can allow you to block an execution from happening in addition to proving yourself as good.",
-        "If you are known to be the New in Town but haven't used your ability yet, you are a prime target for death or poisoning. Using your ability early minimizes this risk and allows you to be a rally point for the good team to work around.",
-        "Waiting a couple of days before announcing that you're the New in Town can give you a chance to decide who should nominate you. A player being proven good, a few days into the game, can completely unravel an evil narrative.",
-        "Not claiming to be the New in Town until you get nominated can be a powerful strategy to uncover an evil player who is claiming to be a Villager, but might not be willing to nominate you if you were to claim to be the New in Town.",
-        "If you can find a player that is claiming to be the Bodyguard, convince them to protect you every night. Since you no longer have to fear death in the night, you can always wait another day to get somebody to nominate you.",
-        "If your ability doesn't activate, this can mean a few things: The person who did the nominating is evil! Evil players can nominate the New in Town so that your ability does not activate, leaving you unable to be confirmed and throwing you both into doubt. The person who nominated is an Outsider. This includes the Village Idiot, who thinks they are a Villager. You are in fact the Village Idiot or poisoned, so you have no ability.",
-        "Your ability only triggers the first time you are nominated. Even if you were poisoned or nominated by a non-Villager, your ability is already spent, and you can no longer cause an execution from your ability.",
-        "Beware the Spy! It is the only evil character that can activate your ability, since it registers as a Villager."
+        "A Townsfolk nominating a healthy New in Town is immediately executed. This can support both players’ claims, but Spy registration and impairment prevent absolute confirmation.",
+        "Invite a Townsfolk who has already used a one-time ability to nominate you when the town can afford the execution.",
+        "A good Outsider is a Villager but does not qualify as a Townsfolk nominator for this ability. The first nomination still spends your ability.",
+        "You can nominate yourself if you are a Townsfolk. The resulting execution ends nominations for the day, even if another ability prevents your death.",
+        "A missing immediate execution may mean the nominator was not a Townsfolk, you were impaired, or you are not actually New in Town."
       ],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "pacifist",
       "name": "Pacifist",
       "aliases": [],
       "type": "townsfolk",
-      "ability": "Executed Villager players might not die.",
+      "ability": "Executed good players might not die.",
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "professor",
@@ -369,17 +361,14 @@
       "type": "townsfolk",
       "ability": "Once per game, at night*, choose a dead player: if they are a Townsfolk, they are resurrected.",
       "tips": [
-        "Use your ability as early as you possibly can! Evil players will really not want to keep you around, so getting your ability to trigger as soon as possible will give you an edge. Additionally, it is more likely that players who die early in the game will be good Villager, since they are in the majority and evil will be protecting each other.",
-        "Use your ability as late in the game as you dare! While risky, you can't underestimate how disruptive the resurrection of a confirmed Villager at the end of the game can be for the evil team. The good team will be able to rally around both you and your revived Villager, and the evil team will have a lot less options for disguising themselves as the game has worn on.",
-        "Remember that if your ability fails, the dead player is either evil or an Outsider. Don't jump to conclusions right away - you could've targeted the Recluse or the Spy!",
-        "Resurrect players who died at night, rather than players who were executed. Players who die at night were probably targeted by the Alpha Wolf, and are therefore most likely good.",
-        "Resurrect executed players if you believe the town has made a mistake! If your ability works, you have absolved an innocent villager. If it doesn't, well, you can be very sure that they were right to execute them the first time. (Bonus strategy: Reveal yourself to a player you believe to be good, and ask them to be deliberately executed so you can bring them back, proving both of you. Especially effective early in the game!)",
-        "Successfully resurrect a villager, and you are going to be one of the more trustworthy good players in the game. While you won't be totally free of suspicion, you and your revived Villager will know you can trust each other 100%, and most other players will want to join your circle! Use this to your advantage to rally the good team in the face of evil.",
-        "When picking who to resurrect, consider telling the player ahead of time what you intend to do. The player can warn you off if they are an outsider who is bluffing as a villager for whatever reason. Additionally, if the player agrees to go along with this plan and doesn't come back, you can be much more confident that they are evil, since they had the chance to stop you and didn't!"
+        "You may wait to use the ability, but a choice spends it even when nobody returns.",
+        "A successful resurrection shows that the chosen player qualified as Townsfolk for this check; registration can complicate what that proves about their actual character or team.",
+        "A failed resurrection does not prove the target is evil. They may be a good Outsider, the Professor may be poisoned, or registration may affect the result.",
+        "Revived Townsfolk regain their abilities, including spent once-per-game abilities and first-night information."
       ],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "ravenkeeper",
@@ -397,7 +386,7 @@
       ],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "sage",

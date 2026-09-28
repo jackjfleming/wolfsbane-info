@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "contentVersion": "2026-09-27-draft.4",
-  "checksum": "baa23f5f74cc6aabd3c572ab681634680719bf709aa6b1b77c41be7315c68cef",
+  "contentVersion": "2026-09-27-draft.5",
+  "checksum": "a4209feb763951567de2cab4b03efee83353831907a96c3f57d60c5418200c13",
   "roles": [
     {
       "id": "artist",
@@ -12,7 +12,9 @@
       "ability": "Once per game, during the day, privately ask the Storyteller any yes/no question.",
       "shortRuling": "Once per game, during the day, privately ask the Storyteller any yes/no question.",
       "howToRun": "During any day, the Artist can request a private chat with you. Take them away from the circle so you cannot be overheard. They will ask you a question. Whisper 'Yes,' 'No,' or 'I don't know,' to them, or if you cannot answer in one of these ways, prompt the Artist to ask again in a different way. The Artist loses their ability - mark them with the NO ABILITY reminder.",
-      "interactions": [],
+      "interactions": [
+        "Attempting the Artist question spends the once-per-game use even if the Artist is poisoned or confused. An impaired Artist may receive unreliable information."
+      ],
       "examples": [
         "The Artist asks, 'Is the Alpha Wolf sitting in a brown chair?' The Storyteller answers, 'No,' because the Alpha Wolf is in a black chair.",
         "The Artist asks, 'Is David the Evil Twin?' and the Storyteller answers, 'Yes,' because David is.",
@@ -33,10 +35,8 @@
         "wolfsbane-info/index.html embedded role data",
         "wolfsbane/lib/game-constants.ts"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/artist.html",
       "hasExistingGuide": true
     },
@@ -73,10 +73,8 @@
         "wolfsbane-info/index.html embedded role data",
         "wolfsbane/lib/game-constants.ts"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/bodyguard.html",
       "hasExistingGuide": true
     },
@@ -121,9 +119,12 @@
       "aliases": [],
       "type": "townsfolk",
       "ability": "You start knowing how many pairs of Werewolf players sit next to each other.",
-      "shortRuling": "You start knowing how many pairs of evil players there are.",
-      "howToRun": "During the first night, wake the Chef. Show the Chef fingers (0, 1, 2, etc.) equaling the number of pairs of neighboring evil players. Put the Chef to sleep.",
-      "interactions": [],
+      "shortRuling": "You start knowing how many pairs of Werewolf players sit next to each other.",
+      "howToRun": "During the first night, count each pair of neighboring Werewolf players around the full seating circle, including the pair across the end of the seating order. Wake the Chef, show the number of pairs on your fingers, then put the Chef to sleep. Game Master suggests a count; check special registration before giving the final number.",
+      "interactions": [
+        "A Werewolf-aligned Traveler counts as a Werewolf player for each neighboring pair.",
+        "The Recluse may register as a Werewolf for one neighboring pair and not the other; determine registration separately for each pair."
+      ],
       "examples": [
         "No evil players are sitting next to each other. The Chef learns a '0'.",
         "The Alpha Wolf is sitting next to the Baron. Across the circle, the Poisoner is sitting next to the Successor. The Chef learns a '2'.",
@@ -144,10 +145,8 @@
         "wolfsbane-info/index.html embedded role data",
         "wolfsbane/lib/game-constants.ts"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/chef.html",
       "hasExistingGuide": true
     },
@@ -226,9 +225,13 @@
       "aliases": [],
       "type": "townsfolk",
       "ability": "Each night, you learn how many of your living neighbors are Werewolves.",
-      "shortRuling": "Each night, you learn how many of your 2 alive neighbors are evil.",
-      "howToRun": "Each night, wake the Empath. Show the Empath fingers (0, 1, or 2) equaling the number of evil alive neighbors of the Empath. Put the Empath to sleep.",
-      "interactions": [],
+      "shortRuling": "Each night, learn how many of your 2 living neighbors are Werewolves.",
+      "howToRun": "Each night, wake the Empath. On each side of the Empath, skip dead players to find the nearest living neighbor. Count how many of these two living neighbors register as Werewolves, and show the Empath 0, 1, or 2 fingers. The Recluse may register as a Werewolf for this information. Put the Empath to sleep.",
+      "interactions": [
+        "A Recluse may register as a Werewolf neighbor or not, at the Storyteller's discretion.",
+        "A Werewolf-aligned Traveler counts as a Werewolf neighbor when alive.",
+        "The Empath's information can be false while the Empath is poisoned or confused."
+      ],
       "examples": [
         "The Empath neighbors two good players—a Soldier and a Bodyguard. The Empath learns a '0'.",
         "The next day, the Soldier is executed. That night, the Bodyguard is killed by the Alpha Wolf. The Empath now detects the players sitting next to the Soldier and the Bodyguard, which are a Librarian and an evil Gunslinger. The Empath now learns a '1'.",
@@ -251,10 +254,8 @@
         "wolfsbane-info/index.html embedded role data",
         "wolfsbane/lib/game-constants.ts"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/empath.html",
       "hasExistingGuide": true
     },
@@ -266,8 +267,10 @@
       "type": "townsfolk",
       "ability": "Each night except the first, choose a player (not the same as last night): the Alpha Wolf, if chosen, learns who you are & does not act tonight due to your patrol.",
       "shortRuling": "Each night except the first, choose a player (not the same as last night): the Alpha Wolf, if chosen, learns who you are & does not act tonight due to your patrol.",
-      "howToRun": "Each night except the first, choose a player (not the same as last night): the Alpha Wolf, if chosen, learns who you are & does not act tonight due to your patrol.",
-      "interactions": [],
+      "howToRun": "Each night except the first, wake the Warden and ask them to choose a player different from their choice last night. If they repeat last night's choice, shake your head no and ask for another. Record the chosen player and put the Warden to sleep. If the chosen player is the Alpha Wolf, wake the Alpha Wolf, show them who the Warden is, then put them to sleep without taking the Alpha Wolf's action tonight. Effects caused by the Alpha Wolf on earlier nights still resolve. Other players' abilities and wakes proceed normally.",
+      "interactions": [
+        "If the Warden chooses the Alpha Wolf, only the Alpha Wolf's action tonight is prevented. Effects established on earlier nights still resolve."
+      ],
       "examples": [],
       "tips": [],
       "tipsGood": [],
@@ -275,10 +278,8 @@
       "sourceNotes": [
         "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/warden.html",
       "hasExistingGuide": false
     },
@@ -360,8 +361,11 @@
       "type": "townsfolk",
       "ability": "Each day, you may make a public statement. Tonight, if it was true, a player dies.",
       "shortRuling": "Each day, you may make a public statement. Tonight, if it was true, a player dies.",
-      "howToRun": "Each day, you may make a public statement. Tonight, if it was true, a player dies.",
-      "interactions": [],
+      "howToRun": "Each day, listen for a clear public statement that all players and the Storyteller can hear and understand as the Gossip using their ability. Record the statement and determine whether it is definitely true. Mumbled, private, ambiguous, or unanswerable statements do not count; ask for a clear public statement. Each night except the first, if the Gossip made a qualifying true statement that day and their ability is working when it resolves tonight, choose a player to die and mark the death. A Gossip who was poisoned or confused when making the statement can still cause a death if their ability works when it resolves at night. If the statement was false or their ability is not working at resolution, it causes no death.",
+      "interactions": [
+        "The statement must be clear, public, and recognizable as the Gossip's ability to the whole group.",
+        "Check whether the Gossip's ability is working at night when the effect resolves. Impairment when the statement was made does not prevent a death if the ability works at night."
+      ],
       "examples": [],
       "tips": [],
       "tipsGood": [],
@@ -369,10 +373,8 @@
       "sourceNotes": [
         "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/gossip.html",
       "hasExistingGuide": false
     },
@@ -384,8 +386,11 @@
       "type": "townsfolk",
       "ability": "You start knowing 1 player & their character (they are Good). If the Alpha kills them, you die too.",
       "shortRuling": "You start knowing 1 player & their character (they are Good). If the Alpha kills them, you die too.",
-      "howToRun": "You start knowing 1 player & their character (they are Good). If the Alpha kills them, you die too.",
-      "interactions": [],
+      "howToRun": "Before the first night, choose one good Townsfolk or Outsider as the Grandchild and mark them. On the first night, wake the Grandmother, show them the Grandchild's character and point to that player, then put the Grandmother to sleep. Do not tell the Grandchild about the Grandmother. If the Alpha Wolf kills the Grandchild, the Grandmother dies too; mark both deaths. If the Grandchild dies by execution or another cause, the Grandmother does not die from this ability.",
+      "interactions": [
+        "Choose a good Townsfolk or Outsider as Grandchild; do not notify the Grandchild.",
+        "The Grandmother dies from this ability only when the Alpha Wolf kills the Grandchild, not when the Grandchild dies from another cause."
+      ],
       "examples": [],
       "tips": [],
       "tipsGood": [],
@@ -393,10 +398,8 @@
       "sourceNotes": [
         "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/grandmother.html",
       "hasExistingGuide": false
     },
@@ -406,7 +409,7 @@
       "appName": "Gravedigger",
       "aliases": [],
       "type": "townsfolk",
-      "ability": "Each night*, if someone died by execution today, you may choose a player: you learn their role.",
+      "ability": "Each night*, you learn which character died by execution today.",
       "shortRuling": "Each night*, you learn which character died by execution today.",
       "howToRun": "If a player dies by execution, put the Gravedigger's DIED TODAY reminder token by the dead player's character token. Each night except the first, if any player died by execution today, wake the Gravedigger. Show the character token marked DIED TODAY to the Gravedigger. Put the Gravedigger to sleep. Remove the Gravedigger's reminder token when convenient. In Trouble Brewing, there can only be one execution per day, and every execution causes a player to die. In other editions, there may be more than one execution per day (in which case the Storyteller chooses which character to show the Gravedigger) or the execution does not cause a death (in which case the Gravedigger learns nothing).",
       "interactions": [],
@@ -436,10 +439,8 @@
         "wolfsbane-info/index.html embedded role data",
         "wolfsbane/lib/game-constants.ts"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/gravedigger.html",
       "hasExistingGuide": true
     },
@@ -450,27 +451,29 @@
       "aliases": [],
       "type": "townsfolk",
       "ability": "You start knowing that 1 of 2 players is a particular Townsfolk.",
-      "shortRuling": "You start knowing that 1 of 2 players is a particular Villager.",
-      "howToRun": "While preparing the first night, put the Housekeeper's VILLAGER reminder token by any Villager character token, and put the Housekeeper's WRONG reminder token by any other character token. During the first night, wake the Housekeeper and point to the players marked VILLAGER and WRONG. Show the character token marked VILLAGER to the Housekeeper. Put the Housekeeper to sleep. Remove the Housekeeper's reminder tokens when convenient.",
-      "interactions": [],
+      "shortRuling": "You start knowing that 1 of 2 players is a particular Townsfolk.",
+      "howToRun": "While preparing the first night, put the Housekeeper's TOWNSFOLK reminder token by any Townsfolk character token, and put the Housekeeper's WRONG reminder token by any other character token. During the first night, wake the Housekeeper and point to the players marked TOWNSFOLK and WRONG. Show the character token marked TOWNSFOLK to the Housekeeper. Put the Housekeeper to sleep. Remove the Housekeeper's reminder tokens when convenient.",
+      "interactions": [
+        "A Spy may register as a Townsfolk character to the Housekeeper. The two shown players can therefore include the Spy even when neither actually has the shown character."
+      ],
       "examples": [
         "Evin is the Chef, and Amy is the Ravenkeeper. The Housekeeper learns that either Evin or Amy is the Chef.",
         "Julian is the Alpha Wolf, and Alex is the New in Town. The Housekeeper learns that either Julian or Alex is the New in Town.",
-        "Marianna is the Spy, and Sarah is the Successor. The Housekeeper learns that one of them is the Ravenkeeper. Here, the Spy is registering as a Villager—in this case, the Ravenkeeper."
+        "Marianna is the Spy, and Sarah is the Successor. The Housekeeper learns that one of them is the Ravenkeeper. Here, the Spy is registering as a Townsfolk—in this case, the Ravenkeeper."
       ],
       "tips": [
         "The Housekeeper is deceptively powerful. Even though you don't gain information on the evil players, you can confirm the identity of a good player. This player should be your focus for the game, because if they have great information, then you have that information too. If they have a useful ability that they choose to use, you can help them use it wisely.",
         "When the Housekeeper is poisoned or is actually the Village Idiot, they will often get information that is easy to figure out is incorrect—at least compared to other characters. While the Chef has no clue as to whether their '1' is incorrect, if both of the players the Storyteller pointed at tell you they're a different character to the one the Storyteller showed you, it is likely that you are the Village Idiot or poisoned.",
-        "You know that of the two players you are shown, one must be the Villager you are shown. Importantly, this means that you know that the person you see is not the Village Idiot.",
-        "To find out which of the two players is the Villager, either ask the group publicly or have a private conversation with each player individually. It is usually best to reveal what you know before the Villager in question says who they are so they trust you more.",
-        "If you share your information on the first day, and speak up quickly, the good team has some solid information to begin with. This is particularly useful if you confirm another information-receiving Villager like the Empath or the Seer.",
-        "Waiting until the final day - or at least very late in the game - to share your information with the group can also be very useful. If you can keep the Villager that you know alive until the final day, then you know one player who is not the Alpha Wolf!",
-        "Talk to the Villager player that you know, and secretly let them know that you know who they are. This way, you can hopefully form an alliance, and can come to each other's defence if either of you are nominated for execution.",
-        "After talking to the Villager that you know in private, and confirming who they are, you can tell the group that they are a different character than they actually are. This strategy is useful if you want to protect a powerful Villager from characters like the Poisoner.",
+        "You know that of the two players you are shown, one must be the Townsfolk you are shown. Importantly, this means that you know that the person you see is not the Village Idiot.",
+        "To find out which of the two players is the Townsfolk, either ask the group publicly or have a private conversation with each player individually. It is usually best to reveal what you know before the Townsfolk in question says who they are so they trust you more.",
+        "If you share your information on the first day, and speak up quickly, the good team has some solid information to begin with. This is particularly useful if you confirm another information-receiving Townsfolk like the Empath or the Seer.",
+        "Waiting until the final day - or at least very late in the game - to share your information with the group can also be very useful. If you can keep the Townsfolk that you know alive until the final day, then you know one player who is not the Alpha Wolf!",
+        "Talk to the Townsfolk player that you know, and secretly let them know that you know who they are. This way, you can hopefully form an alliance, and can come to each other's defence if either of you are nominated for execution.",
+        "After talking to the Townsfolk that you know in private, and confirming who they are, you can tell the group that they are a different character than they actually are. This strategy is useful if you want to protect a powerful Townsfolk from characters like the Poisoner.",
         "You can claim to be a more powerful character than you actually are. You start with all the information you're going to get, so if the Alpha Wolf kills you, they aren't killing the Hunter or the Seer.",
-        "You could claim to be the Housekeeper and point to a player you suspect is evil, stating that they are the Villager you learned about. An opportunistic evil player may pounce on an opportunity to appear good.",
-        "Beware of the Spy! They may register as a Villager character to you. That player who you think is the Investigator may not be the Investigator after all...",
-        "Remember that while the Spy is likely to know that you've seen them as a Villager, they won't know which Villager you've seen them as."
+        "You could claim to be the Housekeeper and point to a player you suspect is evil, stating that they are the Townsfolk you learned about. An opportunistic evil player may pounce on an opportunity to appear good.",
+        "Beware of the Spy! They may register as a Townsfolk character to you. That player who you think is the Investigator may not be the Investigator after all...",
+        "Remember that while the Spy is likely to know that you've seen them as a Townsfolk, they won't know which Townsfolk you've seen them as."
       ],
       "tipsGood": [],
       "tipsEvil": [],
@@ -478,10 +481,8 @@
         "wolfsbane-info/index.html embedded role data",
         "wolfsbane/lib/game-constants.ts"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/housekeeper.html",
       "hasExistingGuide": true
     },
@@ -493,8 +494,11 @@
       "type": "townsfolk",
       "ability": "Once per game, during the day, publicly choose a player: if they are the Alpha, they die.",
       "shortRuling": "Once per game, during the day, publicly choose a player: if they are the Alpha Wolf, they die.",
-      "howToRun": "During the day, the Hunter can declare that they wish to use their ability. If so, the Hunter points at any player. If the chosen player is an alive Alpha Wolf, declare that the chosen player dies—put a shroud on their character token in the Grimoire. If the chosen player is not an alive Alpha Wolf, say 'Nothing happens.' Either way, the Hunter loses their ability—put the Hunter's NO ABILITY reminder token by the Hunter token. If a player is bluffing as the Hunter and declares they wish to use their ability, act as if they were indeed the Hunter—allow time for discussion, let them make the decision, and act like you're fiddling with tokens in your Grimoire, then say 'Nothing happens.' When the Hunter declares that they wish to use their ability, give the group a minute or two to discuss who the Hunter should choose. This allows the group to feel responsible for the win (or the loss!), but the Hunter always makes the final choice.",
-      "interactions": [],
+      "howToRun": "During the day, the Hunter can declare that they wish to use their ability. If so, the Hunter points at any player. If the chosen player is an alive Alpha Wolf, or an alive Recluse whom you choose to register as an Alpha Wolf for this shot, declare that the chosen player dies—put a shroud on their character token in the Grimoire. Otherwise, say 'Nothing happens.' Either way, including when poisoned or confused, the Hunter loses their ability—put the Hunter's NO ABILITY reminder token by the Hunter token. If a player is bluffing as the Hunter and declares they wish to use their ability, act as if they were indeed the Hunter—allow time for discussion, let them make the decision, and act like you're fiddling with tokens in your Grimoire, then say 'Nothing happens.' When the Hunter declares that they wish to use their ability, give the group a minute or two to discuss who the Hunter should choose. This allows the group to feel responsible for the win (or the loss!), but the Hunter always makes the final choice.",
+      "interactions": [
+        "The Recluse may register as the Alpha Wolf for a Hunter shot, at the Storyteller's discretion, and die as a result.",
+        "An attempted once-per-game Hunter use is spent even if the Hunter is poisoned or confused."
+      ],
       "examples": [
         "The Hunter chooses the Alpha Wolf. The Alpha Wolf dies, and good wins!",
         "The Hunter chooses the Recluse. The Storyteller decides that the Recluse registers as the Alpha Wolf, so the Recluse dies, but the game continues.",
@@ -521,10 +525,8 @@
         "wolfsbane-info/index.html embedded role data",
         "wolfsbane/lib/game-constants.ts"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/hunter.html",
       "hasExistingGuide": true
     },
@@ -536,8 +538,11 @@
       "type": "townsfolk",
       "ability": "Each night*, choose 2 players: they are safe from the Alpha tonight, but 1 is confused.",
       "shortRuling": "Each night*, choose 2 players: they are safe from the Alpha tonight, but 1 is confused.",
-      "howToRun": "Each night*, choose 2 players: they are safe from the Alpha tonight, but 1 is confused.",
-      "interactions": [],
+      "howToRun": "Each night except the first, wake the Innkeeper and ask them to choose two different players; the Innkeeper may choose themself. Put the Innkeeper to sleep. Mark both chosen players safe from the Alpha Wolf tonight. Choose one of those two players to become confused and mark them confused until dusk the following day. At dawn, remove the safety markers. At dusk, remove the confusion marker. If the Innkeeper becomes confused, their ability no longer provides protection while confused, including to the other chosen player.",
+      "interactions": [
+        "The Innkeeper may choose themself as one of the two players. If the Innkeeper is the one made confused, neither chosen player remains protected by the Innkeeper's ability while that confusion applies.",
+        "Confusion from the Innkeeper lasts until dusk the following day."
+      ],
       "examples": [],
       "tips": [],
       "tipsGood": [],
@@ -545,10 +550,8 @@
       "sourceNotes": [
         "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/innkeeper.html",
       "hasExistingGuide": false
     },
@@ -559,9 +562,12 @@
       "aliases": [],
       "type": "townsfolk",
       "ability": "You start knowing that 1 of 2 players is a particular Minion, or that zero are in play.",
-      "shortRuling": "You start knowing that 1 of 2 players is a particular Minion.",
-      "howToRun": "While preparing the first night, put the Investigator's MINION reminder token by any Minion character token, and put the Investigator's WRONG reminder token by any other character token. During the first night, wake the Investigator and point to the players marked MINION and WRONG. Show the character token marked MINION to the Investigator. Put the Investigator to sleep. Remove the Investigator's reminder tokens when convenient.",
-      "interactions": [],
+      "shortRuling": "You start knowing that 1 of 2 players is a particular Minion, or that zero Minions are in play.",
+      "howToRun": "Before the first night, if a Minion is in play, mark a Minion character and a different player as the two choices. A Recluse may register as the particular Minion at the Storyteller's discretion. Wake the Investigator, point to both players, show the marked Minion character, and put the Investigator to sleep. If no Minions are in play, wake the Investigator and show 'zero Minions' without pointing to two players or showing a Minion character. Remove the reminder markers when convenient.",
+      "interactions": [
+        "A Recluse may register as any particular Minion for Investigator information at the Storyteller's discretion.",
+        "When no Minions are in play, show 'zero Minions' rather than pointing to two players."
+      ],
       "examples": [
         "Amy is the Baron, and Julian is the Mayor. The Investigator learns that either Amy or Julian is the Baron.",
         "Angelus is the Spy, and Lewis is the Poisoner. The Investigator learns that either Angelus or Lewis is the Spy.",
@@ -584,10 +590,8 @@
         "wolfsbane-info/index.html embedded role data",
         "wolfsbane/lib/game-constants.ts"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/investigator.html",
       "hasExistingGuide": true
     },
@@ -599,8 +603,12 @@
       "type": "townsfolk",
       "ability": "You start knowing that 1 of 2 players is a particular Outsider, or that zero are in play.",
       "shortRuling": "You start knowing that 1 of 2 players is a particular Outsider. (Or that zero are in play.)",
-      "howToRun": "While preparing the first night, put the Librarian's OUTSIDER reminder token by any Outsider character token, and put the Librarian's WRONG reminder token by any other character token. During the first night, wake the Librarian and point to the players marked OUTSIDER and WRONG. Show the character token marked OUTSIDER to the Librarian. Put the Librarian to sleep. Remove the Librarian's reminder tokens when convenient.",
-      "interactions": [],
+      "howToRun": "Before the first night, if an Outsider is in play, mark that Outsider's true character and a different player. Wake the Librarian, point to both players, show the marked Outsider character, and put the Librarian to sleep. A Spy may register as a particular Outsider at the Storyteller's discretion. If no Outsiders are in play, wake the Librarian and show '0' without pointing to two players or showing an Outsider character. Remove the reminder markers when convenient.",
+      "interactions": [
+        "Show an Outsider's true character, including the Village Idiot when that player believes they have another character.",
+        "A Spy may register as an Outsider for Librarian information at the Storyteller's discretion.",
+        "When no Outsiders are in play, show '0' without pointing to players."
+      ],
       "examples": [
         "Benjamin is the Saint, and Filip is the Baron. The Librarian learns that either Benjamin or Filip is the Saint.",
         "There are no Outsiders in this game. The Librarian learns a '0'.",
@@ -624,10 +632,8 @@
         "wolfsbane-info/index.html embedded role data",
         "wolfsbane/lib/game-constants.ts"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/librarian.html",
       "hasExistingGuide": true
     },
@@ -639,12 +645,16 @@
       "type": "townsfolk",
       "ability": "If only 3 players live & no execution occurs, your team wins. If you die at night, another player might die instead.",
       "shortRuling": "If only 3 players live & no execution occurs, your team wins. If you die at night, another player might die instead.",
-      "howToRun": "During the night, if the Mayor would die, you choose if the Mayor actually dies, or if the Mayor remains alive and another character dies instead—put the Alpha Wolf's DEAD reminder token by that character token instead of the Mayor, and put a shroud on that character token instead of the Mayor. At dawn, declare that the player marked DEAD died at night. (Do not say how they died.) At dusk, if exactly three players are alive and no player was executed today, declare that the game ends and good wins.",
-      "interactions": [],
+      "howToRun": "Whenever the living Mayor would die at night, pause before marking the death. If the Mayor's ability is working, choose whether to let the Mayor die or have another player receive that death instead. If you let the Mayor die, mark and announce the Mayor's death as normal. To resist the Mayor's death, leave the Mayor alive, choose a different player to receive the death, and resolve that death against the chosen player, including any protection that prevents it. If the chosen player cannot die, neither player dies from this attempt. Mark any resulting death and announce it at dawn without giving the cause. At dusk, if exactly three players are alive, including any Travelers, and no player was executed today, the Mayor's current team wins. Exile is not execution. If the Mayor's ability is not working, resolve the original death normally and do not trigger the special win.",
+      "interactions": [
+        "The Mayor can resist a nighttime death by redirecting that death to another player at the Storyteller's discretion. If that player is protected and cannot die, the Mayor survives and the redirected death does not occur.",
+        "The no-execution win belongs to the Mayor's current team, including the Werewolf team if the Mayor has become a Werewolf.",
+        "Living Travelers count toward the three-player condition; exile does not count as execution."
+      ],
       "examples": [
         "The Alpha Wolf attacks the Mayor. The Storyteller chooses that the Ravenkeeper dies instead.",
-        "There are three players alive. There are no nominations for execution today. Good wins.",
-        "There are five players alive, including two Travelers. Both Travelers are exiled, and the vote is tied between the remaining players. Because a tied vote means neither player is executed, good wins."
+        "There are three players alive. There are no nominations for execution today. The Mayor's current team wins.",
+        "There are five players alive, including two Travelers. Both Travelers are exiled, and the vote is tied between the remaining players. Because a tied vote means neither player is executed, the Mayor's current team wins."
       ],
       "tips": [
         "Your power activates on the final day, when just three players are alive. You may not know who the Alpha Wolf is, but you can definitely win by not executing. Do whatever you can to convince the group that you are the Mayor. Everything. If the good team believes you, they will either not nominate anybody, or will deliberately tie votes so that no execution occurs.",
@@ -660,10 +670,8 @@
         "wolfsbane-info/index.html embedded role data",
         "wolfsbane/lib/game-constants.ts"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/mayor.html",
       "hasExistingGuide": true
     },
@@ -674,22 +682,31 @@
       "aliases": [],
       "type": "townsfolk",
       "ability": "When a Minion dies by execution, all other players (except Travelers) are confused until dusk tomorrow.",
-      "shortRuling": "When a Minion dies by execution, all other players (except Travelers) are confused until dusk tomorrow.",
-      "howToRun": "When a Minion dies by execution, all other players (except Travelers) are confused until dusk tomorrow.",
-      "interactions": [],
-      "examples": [],
+      "shortRuling": "When a Minion dies by execution, everyone else except Travelers is confused until the following dusk.",
+      "howToRun": "When a living Minion actually dies by execution while the Minstrel has their ability, mark every other player except Travelers as confused immediately. This includes dead players and the Alpha Wolf, but not the Minstrel. Keep the effect through tonight and tomorrow, then remove it at the following dusk. A Minion killed another way, an already-dead Minion who is executed, or an execution that does not kill does not trigger it. If another Minion dies by execution while the ability works, renew the effect through the next dusk.",
+      "interactions": [
+        "The Minstrel must have a working ability when the Minion dies; a poisoned or confused Minstrel does not trigger it.",
+        "An immediate execution, such as New in Town, can trigger Minstrel if a Minion actually dies. Exile is not execution.",
+        "Confused players keep acting when instructed, but their abilities have no effect while the Minstrel effect lasts. Travelers are excluded."
+      ],
+      "examples": [
+        "The town executes a Minion who dies. The Alpha Wolf and all other non-Travelers except the Minstrel are confused that night and through the next day.",
+        "A Minion is executed but protected from death. The Minstrel effect does not begin."
+      ],
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
       "sourceNotes": [
-        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES",
+        "wolfsbane/hooks/useGameState.ts Minstrel execution trigger",
+        "https://wiki.bloodontheclocktower.com/Minstrel (comparison rules)"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/minstrel.html",
-      "hasExistingGuide": false
+      "hasExistingGuide": false,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-27"
     },
     {
       "id": "new-in-town",
@@ -697,42 +714,39 @@
       "appName": "New in Town",
       "aliases": [],
       "type": "townsfolk",
-      "ability": "The 1st time you are nominated, if the nominator is a Villager, they are executed immediately.",
-      "shortRuling": "The 1st time you are nominated, if the nominator is a Villager, they are executed immediately.",
-      "howToRun": "If the first player to ever nominate the New in Town is a Villager, immediately declare that the nominating player is executed. That player dies—put a shroud on their character token in the Grimoire. The New in Town loses their ability—put the New in Town's NO ABILITY reminder token by the New in Town token. End the nomination process and proceed to the night phase. (No one else can be executed today.) If the first player to ever nominate the New in Town is not a Villager, continue the vote as normal. The New in Town loses their ability—put the New in Town's NO ABILITY reminder token by the New in Town token.",
-      "interactions": [],
+      "ability": "The 1st time you are nominated, if the nominator is a Townsfolk, they are executed immediately.",
+      "shortRuling": "The first time New in Town is nominated, a qualifying Townsfolk nominator is immediately executed.",
+      "howToRun": "On the first valid nomination of New in Town, spend the ability even if New in Town is poisoned or the nominator does not qualify. If New in Town has a working ability and the nominator is a Townsfolk (or qualifies through registration), immediately execute the nominator, resolve whether they die, end nominations, and proceed to night. The execution counts for the day even when another ability prevents death. Otherwise continue the nomination and vote normally. Later nominations do not trigger New in Town again.",
+      "interactions": [
+        "For this ability, a good Outsider is a Villager but is not a Townsfolk nominator. A Spy may register as Townsfolk and trigger the execution.",
+        "A poisoned New in Town spends the first nomination without executing the nominator.",
+        "If an executed nominator survives through protection, the execution still happened and the day ends."
+      ],
       "examples": [
-        "The Housekeeper nominates the New in Town. The Housekeeper is immediately executed and the day ends.",
-        "The Village Idiot, who thinks they are the Chef, nominates the New in Town. The Village Idiot remains alive, and the New in Town loses their ability. Players may now vote on whether or not to execute the New in Town. (This happens because the Village Idiot is not a Villager.)",
-        "A dead player nominates the New in Town. The dead, however, cannot nominate. The Storyteller declares that the nomination does not count. The New in Town does not lose their ability."
+        "A healthy Housekeeper first nominates New in Town. Housekeeper is immediately executed; if they die, mark their death and end nominations.",
+        "A good Outsider first nominates New in Town. No immediate execution occurs, and the ability is spent.",
+        "A Spy first nominates New in Town and registers as Townsfolk. The Spy is immediately executed; any applicable death protection is then resolved."
       ],
       "tips": [
-        "You are one of the few Villager in the game that can be absolutely confirmed as good. If a player is executed for nominating you, that is absolute and undeniable proof that you are the New in Town.",
-        "Characters who have received their information or have used their ability already (like the Housekeeper, Investigator or Hunter) are great choices to encourage into nominating you. Not only will they and their information be validated by their death, but they don't lose out on gaining any more information as the game continues.",
-        "Characters like the Gravedigger, Seer or even Empath are great choices if they have received a little information and want to confirm they are good, or if they are under suspicion and want to remove themselves as a potential Alpha Wolf.",
-        "An Outsider who nominates you will not be executed. Your ability requires your nominator to be a Villager, not merely good.",
-        "Don't like any of your potential suitors? You can nominate yourself and trigger your ability, proving you are the New in Town! This can prevent an evil Minion or hapless Outsider from wasting your ability.",
-        "Once your ability activates, the nominator is immediately executed, ending the day (even if someone else had the votes and was due to be executed). Using this strategically can allow you to block an execution from happening in addition to proving yourself as good.",
-        "If you are known to be the New in Town but haven't used your ability yet, you are a prime target for death or poisoning. Using your ability early minimizes this risk and allows you to be a rally point for the good team to work around.",
-        "Waiting a couple of days before announcing that you're the New in Town can give you a chance to decide who should nominate you. A player being proven good, a few days into the game, can completely unravel an evil narrative.",
-        "Not claiming to be the New in Town until you get nominated can be a powerful strategy to uncover an evil player who is claiming to be a Villager, but might not be willing to nominate you if you were to claim to be the New in Town.",
-        "If you can find a player that is claiming to be the Bodyguard, convince them to protect you every night. Since you no longer have to fear death in the night, you can always wait another day to get somebody to nominate you.",
-        "If your ability doesn't activate, this can mean a few things: The person who did the nominating is evil! Evil players can nominate the New in Town so that your ability does not activate, leaving you unable to be confirmed and throwing you both into doubt. The person who nominated is an Outsider. This includes the Village Idiot, who thinks they are a Villager. You are in fact the Village Idiot or poisoned, so you have no ability.",
-        "Your ability only triggers the first time you are nominated. Even if you were poisoned or nominated by a non-Villager, your ability is already spent, and you can no longer cause an execution from your ability.",
-        "Beware the Spy! It is the only evil character that can activate your ability, since it registers as a Villager."
+        "A Townsfolk nominating a healthy New in Town is immediately executed. This can support both players’ claims, but Spy registration and impairment prevent absolute confirmation.",
+        "Invite a Townsfolk who has already used a one-time ability to nominate you when the town can afford the execution.",
+        "A good Outsider is a Villager but does not qualify as a Townsfolk nominator for this ability. The first nomination still spends your ability.",
+        "You can nominate yourself if you are a Townsfolk. The resulting execution ends nominations for the day, even if another ability prevents your death.",
+        "A missing immediate execution may mean the nominator was not a Townsfolk, you were impaired, or you are not actually New in Town."
       ],
       "tipsGood": [],
       "tipsEvil": [],
       "sourceNotes": [
         "wolfsbane-info/index.html embedded role data",
-        "wolfsbane/lib/game-constants.ts"
+        "wolfsbane/lib/game-constants.ts",
+        "https://wiki.bloodontheclocktower.com/Virgin (comparison rules)"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/new-in-town.html",
-      "hasExistingGuide": true
+      "hasExistingGuide": true,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-27"
     },
     {
       "id": "pacifist",
@@ -740,23 +754,33 @@
       "appName": "Pacifist",
       "aliases": [],
       "type": "townsfolk",
-      "ability": "Executed Villager players might not die.",
-      "shortRuling": "Executed Villager players might not die.",
-      "howToRun": "Executed Villager players might not die.",
-      "interactions": [],
-      "examples": [],
+      "ability": "Executed good players might not die.",
+      "shortRuling": "When a good player is executed, the Storyteller may let them live; the execution still counts.",
+      "howToRun": "When a good player, including a good Outsider or the Pacifist, is executed while a living Pacifist has their ability, choose whether that player dies. If saved, announce that the player was executed but did not die, without naming the cause. The execution still ends nominations for the day. Pacifist does not prevent death by exile or other causes. If Pacifist is poisoned, dead, or otherwise without their ability, do not offer this protection.",
+      "interactions": [
+        "A good Outsider is a Villager for Pacifist and can be saved. An evil player is not protected.",
+        "Pacifist can save themself if their ability is working when they are executed.",
+        "Other death protection may prevent an execution death independently; do not attribute survival publicly."
+      ],
+      "examples": [
+        "A good Outsider is executed. The Storyteller chooses to save them; the player remains alive and no further nomination occurs today.",
+        "Pacifist is executed while healthy. The Storyteller chooses to let Pacifist live.",
+        "A good Traveler is exiled. Pacifist does not protect them from exile."
+      ],
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
       "sourceNotes": [
-        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES",
+        "wolfsbane/hooks/useGameState.ts execution protection",
+        "https://wiki.bloodontheclocktower.com/Pacifist (comparison rules)"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/pacifist.html",
-      "hasExistingGuide": false
+      "hasExistingGuide": false,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-27"
     },
     {
       "id": "professor",
@@ -765,31 +789,38 @@
       "aliases": [],
       "type": "townsfolk",
       "ability": "Once per game, at night*, choose a dead player: if they are a Townsfolk, they are resurrected.",
-      "shortRuling": "Once per game, at night*, choose a dead player: if they are a Villager, they are resurrected.",
-      "howToRun": "Each night except the first, wake the Professor. The Professor either shakes their head no or points to a dead player. Put the Professor to sleep. If the Professor chose a dead Villager, the chosen player becomes alive again—mark them with the Professor's ALIVE reminder and remove their shroud. (They wake later tonight if they normally would. If they wake on the first night only, they wake now to use their ability.) At dawn, after declaring which players died, declare which player is alive again. (Do not say why.) The Professor loses their ability—mark them with the NO ABILITY reminder and remove their night token from the night sheet.",
-      "interactions": [],
-      "examples": [],
+      "shortRuling": "Once per game after the first night, choose a dead player; resurrect them only if they qualify as Townsfolk.",
+      "howToRun": "Each night after the first, wake an unused Professor. They may decline or choose any dead player. Declining preserves the use. A choice spends the ability, even if Professor is poisoned or the target does not qualify. If Professor has a working ability and the target is a Townsfolk (or registers as one for this check), remove the target’s death marker and restore them to life. They regain their ability, including a previously used once-per-game ability. If they would wake later this night, wake them then; if their ability is first-night-only, wake them immediately after Professor. At dawn announce the resurrection, without naming its cause.",
+      "interactions": [
+        "A good Outsider is a Villager but is not normally a Townsfolk, so Professor does not resurrect them. A qualifying registration can change the result.",
+        "A failed choice still spends Professor’s once-per-game use; declining does not.",
+        "A revived Townsfolk regains their ability. Resolve their wake in the current night order as appropriate."
+      ],
+      "examples": [
+        "Professor chooses a dead Fool. Fool returns to life and regains their unused or spent first-death protection.",
+        "Professor chooses a dead good Outsider. Nothing happens, and Professor’s use is spent.",
+        "Professor declines on night two and may choose on a later night."
+      ],
       "tips": [
-        "Use your ability as early as you possibly can! Evil players will really not want to keep you around, so getting your ability to trigger as soon as possible will give you an edge. Additionally, it is more likely that players who die early in the game will be good Villager, since they are in the majority and evil will be protecting each other.",
-        "Use your ability as late in the game as you dare! While risky, you can't underestimate how disruptive the resurrection of a confirmed Villager at the end of the game can be for the evil team. The good team will be able to rally around both you and your revived Villager, and the evil team will have a lot less options for disguising themselves as the game has worn on.",
-        "Remember that if your ability fails, the dead player is either evil or an Outsider. Don't jump to conclusions right away - you could've targeted the Recluse or the Spy!",
-        "Resurrect players who died at night, rather than players who were executed. Players who die at night were probably targeted by the Alpha Wolf, and are therefore most likely good.",
-        "Resurrect executed players if you believe the town has made a mistake! If your ability works, you have absolved an innocent villager. If it doesn't, well, you can be very sure that they were right to execute them the first time. (Bonus strategy: Reveal yourself to a player you believe to be good, and ask them to be deliberately executed so you can bring them back, proving both of you. Especially effective early in the game!)",
-        "Successfully resurrect a villager, and you are going to be one of the more trustworthy good players in the game. While you won't be totally free of suspicion, you and your revived Villager will know you can trust each other 100%, and most other players will want to join your circle! Use this to your advantage to rally the good team in the face of evil.",
-        "When picking who to resurrect, consider telling the player ahead of time what you intend to do. The player can warn you off if they are an outsider who is bluffing as a villager for whatever reason. Additionally, if the player agrees to go along with this plan and doesn't come back, you can be much more confident that they are evil, since they had the chance to stop you and didn't!"
+        "You may wait to use the ability, but a choice spends it even when nobody returns.",
+        "A successful resurrection shows that the chosen player qualified as Townsfolk for this check; registration can complicate what that proves about their actual character or team.",
+        "A failed resurrection does not prove the target is evil. They may be a good Outsider, the Professor may be poisoned, or registration may affect the result.",
+        "Revived Townsfolk regain their abilities, including spent once-per-game abilities and first-night information."
       ],
       "tipsGood": [],
       "tipsEvil": [],
       "sourceNotes": [
         "wolfsbane-info/index.html embedded role data",
-        "wolfsbane/lib/game-constants.ts"
+        "wolfsbane/lib/game-constants.ts",
+        "wolfsbane/components/game/grimoire-wizard/role-steps/StandardSelectionStep.tsx",
+        "https://wiki.bloodontheclocktower.com/Professor (comparison rules)"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/professor.html",
-      "hasExistingGuide": true
+      "hasExistingGuide": true,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-27"
     },
     {
       "id": "ravenkeeper",
@@ -798,12 +829,17 @@
       "aliases": [],
       "type": "townsfolk",
       "ability": "If you die at night, you may choose a player: you learn their role.",
-      "shortRuling": "If you die at night, you are woken to choose a player: you learn their character.",
-      "howToRun": "If the Ravenkeeper died tonight, wake them. They point at any player. Show the chosen player's character token to the Ravenkeeper. Put the Ravenkeeper to sleep.",
-      "interactions": [],
+      "shortRuling": "If Ravenkeeper dies at night, wake them to choose any player and learn that player’s character.",
+      "howToRun": "Whenever Ravenkeeper dies during the night, including the first night if a night death occurs, wake them before dawn. They choose any player, living or dead. If Ravenkeeper has a working ability, show the chosen player’s current character, applying any valid registration. If Ravenkeeper is poisoned or otherwise impaired, any information shown is unreliable. Put Ravenkeeper to sleep. A daytime death does not trigger this ability. A prevented night death does not trigger it.",
+      "interactions": [
+        "An Alpha attack is one way to trigger Ravenkeeper, but a night death from another source also qualifies. The Alpha normally has no first-night kill; that timing does not limit Ravenkeeper.",
+        "Spy or Recluse registration can change the character shown.",
+        "If another ability redirects a night death to Ravenkeeper, Ravenkeeper still wakes."
+      ],
       "examples": [
-        "The Ravenkeeper is killed by the Alpha Wolf, and then wakes to choose a player. After some deliberation, they choose Benjamin. Benjamin is the Empath, and the Ravenkeeper learns this.",
-        "The Alpha Wolf attacks the Mayor. The Mayor doesn't die, but the Ravenkeeper dies instead, due to the Mayor's ability. The Ravenkeeper is woken and chooses Douglas, who is a dead Recluse. The Ravenkeeper learns that Douglas is the Successor, since the Recluse registered as a Minion."
+        "The Alpha kills Ravenkeeper on a later night. Ravenkeeper chooses a living player and learns their character.",
+        "An unusual first-night effect kills Ravenkeeper. Ravenkeeper still wakes before dawn.",
+        "The Mayor redirects a nighttime death to Ravenkeeper. Ravenkeeper chooses a dead Recluse, who registers as a Minion; the Storyteller shows an eligible Minion character."
       ],
       "tips": [
         "If the Alpha Wolf knows you are the Ravenkeeper, they are very unlikely to kill you. It is to your benefit to bluff as a character who is a constant threat to the evil team, such as the Empath, Seer, Hunter, or Gravedigger. Even bluffing as a good character that tends to be trusted by the good team (such as Chef or Housekeeper) can make you look like a trusted good player in the eyes of the Alpha Wolf, and attract their attention at night.",
@@ -817,14 +853,16 @@
       "tipsEvil": [],
       "sourceNotes": [
         "wolfsbane-info/index.html embedded role data",
-        "wolfsbane/lib/game-constants.ts"
+        "wolfsbane/lib/game-constants.ts",
+        "wolfsbane/lib/game-utils.ts night wake check",
+        "https://wiki.bloodontheclocktower.com/Ravenkeeper (comparison rules)"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/ravenkeeper.html",
-      "hasExistingGuide": true
+      "hasExistingGuide": true,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-27"
     },
     {
       "id": "sage",
@@ -1181,7 +1219,9 @@
       "ability": "You might register as a Werewolf & as a Minion or Alpha, even when dead.",
       "shortRuling": "You might register as evil & as a Minion or Alpha Wolf, even if dead.",
       "howToRun": "The Recluse has no ability that affects the game directly. However, if the Recluse's alignment is detected by another character's ability, you choose whether the Recluse registers as good or evil. If the Recluse is targeted by an ability that affects a Minion or Alpha Wolf specifically, you choose whether the Recluse is affected or not.",
-      "interactions": [],
+      "interactions": [
+        "At the Storyteller's discretion, the Recluse may register as any Werewolf, Minion, or Alpha Wolf when another ability checks or affects that identity, even while dead. For example, a Hunter shot can kill a Recluse registered as the Alpha Wolf."
+      ],
       "examples": [
         "The Hunter uses their ability on the Recluse. The Storyteller decides that the Recluse registers as the Alpha Wolf, so the Recluse dies. The Hunter believes that they just killed the Alpha Wolf.",
         "The Empath, who neighbors the Recluse and the Bodyguard, learns she is neighboring one evil player. The next night, the Empath learns they are neighboring no evil players.",
@@ -1503,7 +1543,9 @@
       "ability": "Each night, you see the Grimoire. You might register as a Villager & as a Townsfolk or Outsider, even when dead.",
       "shortRuling": "Each night, you see the Grimoire. You might register as good & as a Villager or Outsider, even if dead.",
       "howToRun": "Each night, wake the Spy and show them the Grimoire for as long as they need. Put the Spy to sleep.",
-      "interactions": [],
+      "interactions": [
+        "At the Storyteller's discretion, the Spy may register as any Villager character, including a Townsfolk or Outsider, when another ability checks or affects that identity, even while dead."
+      ],
       "examples": [
         "The Housekeeper learns that either Abdallah or Douglas is the Ravenkeeper. Abdallah is the Bodyguard, and Douglas is the Spy registering as the Ravenkeeper.",
         "The Spy neighbors the Alpha Wolf and the Empath. The Chef learns a '1' because the Spy is registering as evil. Later that night, the Empath learns a '0' because the Spy is now registering as good.",
