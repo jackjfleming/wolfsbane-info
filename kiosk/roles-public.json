@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "contentVersion": "2026-09-27-draft.9",
-  "checksum": "b69fa46dae61e7383dd3a4b543394c46d36dedb7f578aecae3a9e68e58c9ddf4",
+  "contentVersion": "2026-09-27-draft.10",
+  "checksum": "01c6fd50ea4b3afafc6c5ee18e3525ac033f90050f6f3243cd4df94b9607f5d8",
   "roles": [
     {
       "id": "artist",
@@ -471,7 +471,7 @@
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "butler",
@@ -485,7 +485,7 @@
       ],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "goon",
@@ -496,7 +496,7 @@
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "klutz",
@@ -510,7 +510,7 @@
       ],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "lunatic",

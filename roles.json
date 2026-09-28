@@ -538,7 +538,7 @@
       "name": "Bill",
       "type": "outsider",
       "summary": "When Bill’s ability works at game end, reverse the winner and loser, even if Bill is dead.",
-      "howToRun": "When any victory condition would end the game, first determine which team would win without Bill. If Bill has a working ability at that moment, declare the opposite team the winner. Bill continues to have this ability while dead, but poisoning or confusion suspends it. Apply this to ordinary wins and ability-caused wins alike, including Saint, Klutz, and Mayor. Resolve the final winner once; do not invert an already-inverted announcement again.",
+      "howToRun": "At setup, allow only one Bill ability in play. Bill cannot coexist with Baron, Godfather, Spy, Lleech, Pit-Hag, or Widow; the latter three characters are not currently selectable in Wolf’s Bane. If Boffin is ever added, its Demon cannot gain Bill’s ability. Do not create a second Bill ability through a character change or ability copy. When any victory condition would end the game, first determine which team would win without Bill. If Bill has a working ability at that moment, declare the opposite team the winner. Bill continues to have this ability while dead, but poisoning or confusion suspends it. Apply this to ordinary wins and ability-caused wins alike, including Saint, Klutz, and Mayor. Resolve the final winner once.",
       "examples": [
         "Fenrir is executed. Good would normally win, so a working Bill makes evil win.",
         "Saint is executed. Evil would normally win, so a working Bill makes good win.",
@@ -582,12 +582,12 @@
     {
       "name": "Klutz",
       "type": "outsider",
-      "summary": "When Klutz learns they died, they publicly choose one living player; if that player is evil, Klutz’s current team loses.",
-      "howToRun": "When Klutz learns that they died, allow a short discussion, then have them publicly name one living player. If that player counts as evil for this check and Klutz has a working ability, Klutz’s current team loses immediately; otherwise the game continues. A dead target is invalid and must be replaced. If Klutz is evil and chooses an evil player, the evil team loses. If Klutz is poisoned or confused, the choice has no effect. Privately remind a new player to make the choice if needed. Resolve any Bill inversion after determining the underlying winner.",
+      "summary": "When Klutz learns they died, they publicly choose one living player; if that player counts as a Werewolf, Klutz’s current team loses.",
+      "howToRun": "When Klutz learns that they died, allow a short discussion, then have them publicly name one living player. If that player counts as a Werewolf for this check and Klutz has a working ability, Klutz’s current team loses immediately; otherwise the game continues. Use the target’s current team, including a Werewolf Goon or Traveler, subject to Spy and Recluse registration at Storyteller discretion. A dead target is invalid and must be replaced. If Klutz is a Werewolf and chooses a player who counts as a Werewolf, the Werewolf team loses. If Klutz is poisoned or confused, the choice has no effect. Privately remind a new player to make the choice if needed. Resolve any Bill inversion after determining the underlying winner.",
       "examples": [
-        "A good Klutz dies at night, learns this at dawn, and publicly chooses a living evil Goon. If evil alignment qualifies, good loses.",
-        "An evil Klutz publicly chooses an evil player. Klutz’s own evil team loses.",
-        "Klutz chooses a good player while Bill’s ability works. Klutz causes no win or loss; play continues."
+        "A Villager Klutz dies at night, learns this at dawn, and publicly chooses a living Werewolf Goon. The Villager team loses.",
+        "A Werewolf Klutz publicly chooses a player who counts as a Werewolf. The Werewolf team loses.",
+        "Klutz chooses a Villager while Bill’s ability works. Klutz causes no win or loss; play continues."
       ],
       "tipsAndTricks": [
         "Plan a trusted living choice before you die, but remember that registration and impairment can complicate what the result proves.",

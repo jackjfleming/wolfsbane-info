@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "contentVersion": "2026-09-27-draft.9",
-  "checksum": "b69fa46dae61e7383dd3a4b543394c46d36dedb7f578aecae3a9e68e58c9ddf4",
+  "contentVersion": "2026-09-27-draft.10",
+  "checksum": "01c6fd50ea4b3afafc6c5ee18e3525ac033f90050f6f3243cd4df94b9607f5d8",
   "roles": [
     {
       "id": "artist",
@@ -1090,11 +1090,12 @@
       "type": "outsider",
       "ability": "Whoever wins, loses & whoever loses, wins, even if you are dead.",
       "shortRuling": "When Bill’s ability works at game end, reverse the winner and loser, even if Bill is dead.",
-      "howToRun": "When any victory condition would end the game, first determine which team would win without Bill. If Bill has a working ability at that moment, declare the opposite team the winner. Bill continues to have this ability while dead, but poisoning or confusion suspends it. Apply this to ordinary wins and ability-caused wins alike, including Saint, Klutz, and Mayor. Resolve the final winner once; do not invert an already-inverted announcement again.",
+      "howToRun": "At setup, allow only one Bill ability in play. Bill cannot coexist with Baron, Godfather, Spy, Lleech, Pit-Hag, or Widow; the latter three characters are not currently selectable in Wolf’s Bane. If Boffin is ever added, its Demon cannot gain Bill’s ability. Do not create a second Bill ability through a character change or ability copy. When any victory condition would end the game, first determine which team would win without Bill. If Bill has a working ability at that moment, declare the opposite team the winner. Bill continues to have this ability while dead, but poisoning or confusion suspends it. Apply this to ordinary wins and ability-caused wins alike, including Saint, Klutz, and Mayor. Resolve the final winner once.",
       "interactions": [
         "Bill’s death does not turn off the inversion. Check Bill’s impairment at the moment the game ends.",
         "A poisoned or confused Bill does not invert the result while impaired; if Bill recovers before game end, the inversion applies again.",
-        "Confirm whether any setup incompatibilities from the comparison game’s Heretic should apply to Wolf’s Bane, and how multiple copies of Bill’s ability would interact."
+        "Heretic jinxes apply to Bill: only one of Bill and Baron, Godfather, Spy, Lleech, Pit-Hag, or Widow may be in play. Boffin’s Demon may not gain Bill’s ability if Boffin is added.",
+        "Only one Bill ability may exist at a time, including after a character change or ability copy."
       ],
       "examples": [
         "Fenrir is executed. Good would normally win, so a working Bill makes evil win.",
@@ -1110,13 +1111,12 @@
         "wolfsbane/hooks/useGameState.ts victory checks",
         "https://wiki.bloodontheclocktower.com/Heretic (comparison rules)"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Confirm whether Wolf’s Bane adopts Heretic-style setup incompatibilities, especially Spy, Baron, and Godfather.",
-        "Confirm how simultaneous Bill abilities would interact if Apprentice can gain Bill."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/bill.html",
-      "hasExistingGuide": false
+      "hasExistingGuide": false,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-27"
     },
     {
       "id": "butler",
@@ -1149,13 +1149,12 @@
         "wolfsbane/hooks/useGameState.ts Butler setup behavior",
         "https://wiki.bloodontheclocktower.com/Butler (comparison rules)"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Confirm that Butler has no setup modifier; Game Master currently replaces two Townsfolk with Outsiders when Butler is selected.",
-        "Confirm dead Master, accidental illegal vote, and exile-vote handling."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/butler.html",
-      "hasExistingGuide": true
+      "hasExistingGuide": true,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-27"
     },
     {
       "id": "goon",
@@ -1168,8 +1167,8 @@
       "howToRun": "Each night, track the first choice of Goon that successfully triggers Goon’s working ability. Immediately mark that choosing player confused until the following dusk, then set Goon’s alignment to match that player’s current alignment. Privately tell Goon if their alignment changed. Resolve that player’s ability with the new confusion in effect. Later choices of Goon that night do not trigger Goon again and resolve normally. A Storyteller choosing Goon for another ability does not count as a player choice. Clear the confusion at dusk; reset the first-choice marker for the next night.",
       "interactions": [
         "An already poisoned or confused player who chooses Goon can still trigger a working Goon; Goon copies that player’s alignment.",
-        "Assassin may kill Goon despite becoming confused from the choice; confirm this exception for Wolf’s Bane.",
-        "For an ability with sequential targets, effects already resolved before Goon was chosen remain; confirm the night-order treatment.",
+        "Assassin may kill Goon despite becoming confused from the choice.",
+        "For an ability with sequential targets, effects already resolved before Goon was chosen remain; resolve later targets with the new confusion in effect.",
         "Goon’s current alignment controls team membership, including after Goon dies and can no longer switch.",
         "A choice made while Goon is impaired does not consume the first successful trigger; if Goon recovers later that night, a later choice can trigger it."
       ],
@@ -1186,13 +1185,12 @@
         "wolfsbane/components/game/grimoire-wizard.tsx Goon first-targeter logic",
         "https://wiki.bloodontheclocktower.com/Goon (comparison rules)"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Confirm Assassin’s exception and sequential multi-target resolution.",
-        "Game Master’s manual targeting and wizard use different first-target logic and may grant Goon broader night-kill immunity than printed."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/goon.html",
-      "hasExistingGuide": false
+      "hasExistingGuide": false,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-27"
     },
     {
       "id": "klutz",
@@ -1201,17 +1199,17 @@
       "aliases": [],
       "type": "outsider",
       "ability": "When you learn that you died, publicly choose 1 alive player: if they are a Werewolf, your team loses.",
-      "shortRuling": "When Klutz learns they died, they publicly choose one living player; if that player is evil, Klutz’s current team loses.",
-      "howToRun": "When Klutz learns that they died, allow a short discussion, then have them publicly name one living player. If that player counts as evil for this check and Klutz has a working ability, Klutz’s current team loses immediately; otherwise the game continues. A dead target is invalid and must be replaced. If Klutz is evil and chooses an evil player, the evil team loses. If Klutz is poisoned or confused, the choice has no effect. Privately remind a new player to make the choice if needed. Resolve any Bill inversion after determining the underlying winner.",
+      "shortRuling": "When Klutz learns they died, they publicly choose one living player; if that player counts as a Werewolf, Klutz’s current team loses.",
+      "howToRun": "When Klutz learns that they died, allow a short discussion, then have them publicly name one living player. If that player counts as a Werewolf for this check and Klutz has a working ability, Klutz’s current team loses immediately; otherwise the game continues. Use the target’s current team, including a Werewolf Goon or Traveler, subject to Spy and Recluse registration at Storyteller discretion. A dead target is invalid and must be replaced. If Klutz is a Werewolf and chooses a player who counts as a Werewolf, the Werewolf team loses. If Klutz is poisoned or confused, the choice has no effect. Privately remind a new player to make the choice if needed. Resolve any Bill inversion after determining the underlying winner.",
       "interactions": [
-        "Confirm whether “Werewolf” in the printed ability means current evil alignment, including an evil Goon or evil Traveler.",
-        "Spy and Recluse registration might change whether the chosen player counts as evil; confirm Storyteller discretion.",
-        "The absence of a loss does not prove the target is good: impairment, registration, or a false Klutz claim may explain it."
+        "“Werewolf” means the target counts as a member of the Werewolf team at the time of the choice, including a Werewolf Goon or Traveler.",
+        "Spy and Recluse may register differently for this check at Storyteller discretion.",
+        "The absence of a loss does not prove the target is a Villager: impairment, registration, or a false Klutz claim may explain it."
       ],
       "examples": [
-        "A good Klutz dies at night, learns this at dawn, and publicly chooses a living evil Goon. If evil alignment qualifies, good loses.",
-        "An evil Klutz publicly chooses an evil player. Klutz’s own evil team loses.",
-        "Klutz chooses a good player while Bill’s ability works. Klutz causes no win or loss; play continues."
+        "A Villager Klutz dies at night, learns this at dawn, and publicly chooses a living Werewolf Goon. The Villager team loses.",
+        "A Werewolf Klutz publicly chooses a player who counts as a Werewolf. The Werewolf team loses.",
+        "Klutz chooses a Villager while Bill’s ability works. Klutz causes no win or loss; play continues."
       ],
       "tips": [
         "Plan a trusted living choice before you die, but remember that registration and impairment can complicate what the result proves.",
@@ -1225,13 +1223,12 @@
         "wolfsbane/hooks/useGameState.ts Klutz reminder",
         "https://wiki.bloodontheclocktower.com/Klutz (comparison rules)"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Confirm that “Werewolf” means current evil alignment, including evil Goon and evil Travelers, rather than only Werewolf character types.",
-        "Confirm Spy/Recluse registration and how Bill applies to a Klutz-triggered loss. Game Master currently broadcasts a reminder but does not resolve Klutz’s choice."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/klutz.html",
-      "hasExistingGuide": true
+      "hasExistingGuide": true,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-27"
     },
     {
       "id": "lunatic",
