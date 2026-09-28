@@ -5,7 +5,7 @@ Status: **Sage, Sailor, Seer, Soldier, and Tea Lady approved by the Wolf’s Ban
 | Role | Approved ruling |
 | --- | --- |
 | [Sage](roles/sage.html) | An Alpha kill, even on the first night, triggers Sage. A working result includes the actual Alpha killer and one other player. Recluse may register as Alpha but cannot replace the killer. |
-| [Sailor](roles/sailor.html) | Choose a living player, including self. Confusion lasts until dusk. An active effect pauses while Sailor is impaired, except that a closed droison cycle remains impaired until one duration expires. |
+| [Sailor](roles/sailor.html) | Choose a living player, including self. Confusion lasts until dusk. An active effect pauses while Sailor is impaired, except that everyone in a closed droison cycle remains impaired until one duration expires; remaining effects then resolve normally. |
 | [Seer](roles/seer.html) | Choose two distinct players nightly; one fixed good red herring and possible Recluse registration affect the result. |
 | [Soldier](roles/soldier.html) | A healthy Soldier is safe from harmful effects of the Alpha's ability, beyond the kill. |
 | [Tea Lady](roles/tea-lady.html) | Good Travelers count as good neighbors. Spy and Recluse registration is at Storyteller discretion. A protected Traveler survives exile. |
@@ -20,4 +20,4 @@ Status: **Sage, Sailor, Seer, Soldier, and Tea Lady approved by the Wolf’s Ban
 
 These are app implementation tasks; the guides record the approved rulings. The publication gate still requires approval of all selectable roles.
 
-Comparison rules: [Sage](https://wiki.bloodontheclocktower.com/Sage), [Sailor](https://wiki.bloodontheclocktower.com/Sailor), [Fortune Teller](https://wiki.bloodontheclocktower.com/Fortune_Teller), [Soldier](https://wiki.bloodontheclocktower.com/Soldier), [Tea Lady](https://wiki.bloodontheclocktower.com/Tea_Lady), and [States](https://wiki.bloodontheclocktower.com/States). The closed-cycle rule is the owner's Wolf’s Bane ruling; the linked pages establish ongoing-effect pause/resume and Sailor self-confusion, not a general cycle algorithm.
+Comparison rules: [Sage](https://wiki.bloodontheclocktower.com/Sage), [Sailor](https://wiki.bloodontheclocktower.com/Sailor), [Fortune Teller](https://wiki.bloodontheclocktower.com/Fortune_Teller), [Soldier](https://wiki.bloodontheclocktower.com/Soldier), [Tea Lady](https://wiki.bloodontheclocktower.com/Tea_Lady), and [States](https://wiki.bloodontheclocktower.com/States). The closed-cycle rule is the owner's Wolf’s Bane ruling. For example, if A poisons B, B confuses C, and C poisons A, all three remain impaired until one effect expires; the rest then resolve normally. The linked pages establish ongoing-effect pause/resume and Sailor self-confusion, not a general cycle algorithm.

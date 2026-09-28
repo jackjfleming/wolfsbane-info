@@ -461,7 +461,8 @@
         "Sailor chooses a living Empath. The Storyteller confuses Empath until dusk; Sailor survives an Alpha attack that night.",
         "Sailor chooses themself. Sailor is confused and can die until the effect clears.",
         "A healthy Sailor is executed and remains alive; that still uses the day’s execution.",
-        "Sailor confuses themself. This self-cycle remains in effect until dusk; Sailor can die while confused."
+        "Sailor confuses themself. This self-cycle remains in effect until dusk; Sailor can die while confused.",
+        "Player A poisons Player B; B confuses Player C; C poisons A. All three remain impaired until one effect expires, then the remaining effects resolve in normal order."
       ],
       "tipsAndTricks": [],
       "tipsAndTricksGood": [],

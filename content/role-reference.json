@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "contentVersion": "2026-09-27-draft.7",
+  "contentVersion": "2026-09-27-draft.8",
   "roles": [
     {
       "id": "artist",
@@ -909,14 +909,15 @@
       "interactions": [
         "A healthy Sailor cannot die even before they first wake to choose.",
         "If Sailor later becomes poisoned or confused by another source, confusion they caused to another player pauses; it resumes if Sailor recovers before that effect would expire. An action attempted while already impaired creates no delayed effect.",
-        "For a closed droison cycle, keep everyone in the cycle impaired until one of its durations naturally expires. A Sailor who chooses themself remains confused until dusk, rather than immediately cancelling their own effect.",
+        "Droison-cycle rule: if effects form a closed chain that would cancel itself, every player in that loop stays poisoned or confused and has no working ability. The loop remains impaired until one effect reaches its natural expiration. Then resolve the remaining effects in ordinary order. Sailor choosing themself is a one-player loop and remains confused until dusk.",
         "Assassin can kill through Sailor’s no-death protection."
       ],
       "examples": [
         "Sailor chooses a living Empath. The Storyteller confuses Empath until dusk; Sailor survives an Alpha attack that night.",
         "Sailor chooses themself. Sailor is confused and can die until the effect clears.",
         "A healthy Sailor is executed and remains alive; that still uses the day’s execution.",
-        "Sailor confuses themself. This self-cycle remains in effect until dusk; Sailor can die while confused."
+        "Sailor confuses themself. This self-cycle remains in effect until dusk; Sailor can die while confused.",
+        "Player A poisons Player B; B confuses Player C; C poisons A. All three remain impaired until one effect expires, then the remaining effects resolve in normal order."
       ],
       "tips": [],
       "tipsGood": [],
@@ -925,7 +926,8 @@
         "wolfsbane/lib/game-constants.ts ROLE_ABILITIES",
         "wolfsbane/lib/role-rulings.ts night poisoning projection",
         "https://wiki.bloodontheclocktower.com/Sailor (comparison rules)",
-        "https://wiki.bloodontheclocktower.com/States (ongoing effects and impairment comparison)"
+        "https://wiki.bloodontheclocktower.com/States (ongoing effects and impairment comparison)",
+        "Wolf’s Bane owner: explicit droison-cycle ruling on 2026-09-27"
       ],
       "reviewStatus": "approved",
       "reviewNotes": [],
