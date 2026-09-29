@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "contentVersion": "2026-09-28-reviewed.1",
-  "checksum": "ad61eee0277dc9746ba94d437a08fac71ab9ebf4afd6792467165390f386ea18",
+  "contentVersion": "2026-09-27-draft.10",
+  "checksum": "b84c2248bcb4297067e68d58370873bf2f6311849f342bdeec58e0d61e3c2626",
   "roles": [
     {
       "id": "artist",
@@ -1055,19 +1055,17 @@
       "appName": "Trapper",
       "aliases": [],
       "type": "townsfolk",
-      "ability": "Each night*, choose a player (different to last night): the Alpha, if chosen, learns who you are then doesn't wake tonight.",
-      "shortRuling": "After the first night, choose a player different from last night. If they are the Alpha, reveal Trapper to that Alpha and skip its ordinary wake tonight.",
-      "howToRun": "Each night after the first, wake Trapper and ask them to choose any player, including themself or a dead player, except the player they chose last night. Record the choice even if Trapper is poisoned or confused; it still restricts tomorrow's choice. If Trapper’s ability works and the chosen player is the actual Alpha, wake that Alpha, identify Trapper, then do not wake the Alpha for its ordinary action tonight. Give Trapper no direct result. Other reasons for the Alpha to wake and already-running or passive Alpha effects still resolve. If Trapper is impaired, the Alpha is not blocked or told who Trapper is. A healthy Recluse may register as Alpha for the reveal; the actual Alpha still wakes normally in that case.",
+      "ability": "Each night*, choose a player: they are safe from the Alpha tonight. If they are the Alpha, you learn this.",
+      "shortRuling": "After the first night, choose a player: protect them from the Alpha tonight and learn if they are the Alpha.",
+      "howToRun": "Each night after the first, wake Trapper and ask them to choose one player. The printed ability does not exclude Trapper, dead players, or repeating a previous target. If Trapper’s ability works, mark the chosen player safe from the Alpha’s ability tonight. If the chosen player registers as the Alpha for this check, privately tell Trapper this. Clear the protection at dawn. If Trapper is poisoned or confused, the choice gives no real protection and the information may be unreliable.",
       "interactions": [
-        "Trapper no longer protects a chosen player; Bodyguard is Wolf’s Bane’s Monk counterpart and supplies that protection.",
-        "An Exorcist-style block suppresses the Alpha's ordinary wake and new action, not a Pukka delayed death, a Zombuul survival ability, a Shabaloth regurgitation, or a wake caused by another character.",
-        "The actual Alpha learns Trapper’s identity when chosen. Trapper receives no yes/no result, even after choosing the Alpha.",
-        "A healthy Recluse may register as Alpha and receive Trapper’s identity without stopping the actual Alpha. Spy cannot register as Alpha. A notification wake does not count as an Alpha ability wake for Chambermaid.",
-        "Po retains an existing charge when blocked; the skipped wake neither charges nor spends it. Warden already has a similar Wolf’s Bane ability."
+        "Protecting a non-Alpha target should stop harmful effects of the Alpha on that target; confirm whether “safe” includes effects beyond death.",
+        "Choosing the Alpha provides information and may protect that Alpha from an Alpha effect, but the printed text does not say it suppresses all Alpha actions.",
+        "Recluse registration may affect whether Trapper learns an Alpha result. Spy cannot register as Alpha through its printed ability."
       ],
       "examples": [
-        "Trapper chooses Fenrir. Fenrir privately learns who Trapper is and does not wake for its ordinary attack that night; Trapper is not told that the choice succeeded.",
-        "Trapper chooses Pukka after Pukka poisoned a player yesterday. Pukka skips choosing a new target tonight, but the previously poisoned player's delayed death can still occur."
+        "Trapper chooses a living Empath. The Alpha attacks Empath that night; Empath survives if Trapper’s ability works.",
+        "Trapper chooses the current Alpha. The Storyteller privately tells Trapper that the target is the Alpha."
       ],
       "tips": [],
       "tipsGood": [],
@@ -1077,12 +1075,12 @@
         "wolfsbane/components/game/grimoire-wizard.tsx Trapper target and Alpha-block logic",
         "Blood on the Clocktower Exorcist: https://wiki.bloodontheclocktower.com/Exorcist"
       ],
-      "reviewStatus": "approved",
-      "reviewNotes": [],
+      "reviewStatus": "draft",
+      "reviewNotes": [
+        "Owner identified Exorcist as the likely BOTC counterpart. Confirm whether to retain printed Trapper protection-plus-detection or replace it with Exorcist block-and-reveal before approving. Official Exorcist differs: cannot repeat previous target, informs chosen Alpha who chose them, stops the normal Alpha wake, gives Trapper no direct result, and does not block delayed/passive Alpha effects."
+      ],
       "legacyPath": "roles/trapper.html",
-      "hasExistingGuide": false,
-      "reviewedBy": "Wolf’s Bane owner",
-      "reviewedAt": "2026-09-28"
+      "hasExistingGuide": false
     },
     {
       "id": "bill",

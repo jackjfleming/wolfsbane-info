@@ -4,7 +4,7 @@ This is the consolidated backlog for differences between **owner-approved** stor
 
 Audit baseline: `wolfsbane-info` `1f657e44fb5091ec9f0758a74fc641c9e8c6507d`; `wolfsbane` `00306fafe6ede2cffe4310b3ea868052b1b3a78f` (2026-09-27). App links use the branch for navigation; compare with these commits if that branch changes. This was a source inspection, not an end-to-end playtest.
 
-**Status:** `Open` means code inspection found a mismatch or missing executable workflow. `Verify` means the code or manual path needs an end-to-end check before calling it a defect. `Done` requires a linked app change and a test or documented manual check. A guide's approval does not close an app item.
+**Status:** `Open` means code inspection found a mismatch or missing executable workflow. `Verify` means the code or manual path needs an end-to-end check before calling it a defect. `Done` requires a linked app change and a test or documented manual check. A guide's approval does not close an app item. Trapper is deferred and excluded until its ruling is approved.
 
 For each item, implement or verify the approved behavior, add a focused regression check where automated behavior changes, record the app commit or PR here, and then mark it `Done`. Keep this list updated during later review batches.
 
@@ -39,7 +39,6 @@ For each item, implement or verify the approved behavior, add a focused regressi
 | GM-39 | [Barista](roles/barista.html): Storyteller chooses recipient and effect, recipient learns it, true-info mode also grants sobriety/health and overrides false registration information, and twice mode can restore spent once-per-game uses until dusk. | [Manual action](https://github.com/jackjfleming/wolfsbane/blob/codex/storyteller-reference/hooks/useGameState.ts#L3624-L3653) and [wizard tag handling](https://github.com/jackjfleming/wolfsbane/blob/codex/storyteller-reference/components/game/grimoire-wizard.tsx#L1269-L1281) use effect tags; recipient notice and ability-use paths need an end-to-end implementation audit. | Open |
 | GM-40 | [Bone Collector](roles/bone-collector.html): grant a dead player’s ability until **dusk**, including spent once-per-game and first-night abilities; end it early if Bone Collector loses ability. | [Manual action](https://github.com/jackjfleming/wolfsbane/blob/codex/storyteller-reference/hooks/useGameState.ts#L3655-L3683) marks restoration; [day-transition tag cleanup](https://github.com/jackjfleming/wolfsbane/blob/codex/storyteller-reference/hooks/useGameState.ts#L2087-L2090) must be checked against dusk expiry. | Open |
 | GM-41 | [Gangster](roles/gangster.html): a refused agreement preserves today’s use and permits retry; a successful agreement spends the use even if the victim survives. Use current nearest living neighbors and apply protection. | [Manual action](https://github.com/jackjfleming/wolfsbane/blob/codex/storyteller-reference/hooks/useGameState.ts#L3835-L3842) only broadcasts a message; no agreement, use, or death workflow is visible there. | Open |
-| GM-43 | [Trapper](roles/trapper.html): implement the approved Exorcist rule in manual and wizard flows. Permit self/dead choices but not last night's choice; retain the choice during impairment. Privately identify Trapper to a qualifying Alpha, suppress only its ordinary ability wake, give Trapper no direct result, and preserve delayed/passive effects and Po's charge. Support Recluse registration without blocking the actual Alpha, and do not count the notification wake for Chambermaid. Warden already has a similar ability. | [Wizard selection and resolution](https://github.com/jackjfleming/wolfsbane/blob/codex/storyteller-reference/components/game/grimoire-wizard.tsx) excludes self/dead choices and suppresses Pukka's delayed death; [manual action](https://github.com/jackjfleming/wolfsbane/blob/codex/storyteller-reference/hooks/useGameState.ts) only stores a target and broadcasts. | Open |
 
 ## Verification items
 
@@ -70,13 +69,13 @@ These may be handled manually today. Verify the complete interaction before conv
 
 ## Approved-role coverage
 
-All **69 approved guides** are represented in this backlog. The latest 36 approvals came from the [remaining-role grid](REVIEW-REMAINING-ROLES.md). The release check still requires review metadata for 14 earlier-approved guides; executable discrepancies remain open.
+All **68 approved guides** are represented in this backlog. The latest 35 approvals came from the [remaining-role grid](REVIEW-REMAINING-ROLES.md). **Trapper remains the only draft** while its printed ability is compared with Exorcist.
 
 | Review source | Approved roles covered |
 | --- | --- |
 | [Batch 1](REVIEW-BATCH-01.md) | Chambermaid GM-17; Clockmaker GM-18; Courtier GM-19; Fool GM-19/21; Gambler GM-19. |
 | [Batch 2](REVIEW-BATCH-02.md) | Minstrel GM-05; New in Town GM-04; Pacifist GM-21; Professor GM-06; Ravenkeeper GM-22. |
 | [Batch 3](REVIEW-BATCH-03.md) | Sage GM-07; Sailor GM-08; Seer GM-09; Soldier GM-10; Tea Lady GM-11. |
-| [Batch 4](REVIEW-BATCH-04.md) | Bill GM-12; Butler GM-13; Goon GM-14; Klutz GM-15; Trapper GM-43 (approved later). |
+| [Batch 4](REVIEW-BATCH-04.md) | Bill GM-12; Butler GM-13; Goon GM-14; Klutz GM-15. Trapper remains deferred. |
 | [Remaining-role grid](REVIEW-REMAINING-ROLES.md) | Lunatic GM-27; Moonchild GM-28; Recluse/Spy GM-30; Saint GM-25; Assassin GM-14/31; Baron/Godfather/Advocate GM-31; Mastermind GM-26; Poisoner GM-29; Village Idiot GM-32; Successor/Fenrir GM-34; Vigormortis GM-33; No Dashii/Po/Pukka/Shabaloth/Zombuul/Apprentice GM-35; Fang Gu GM-34/36; Evil Twin GM-37; Matron GM-38; Barista GM-39; Bone Collector GM-40; Gangster GM-41; Tinker/Beggar/Bureaucrat/Butcher/Gunslinger/Judge/Scapegoat/Thief GM-42. |
 | Earlier owner-reviewed guides | Artist GM-16; Bodyguard GM-10; Chef GM-18; Empath GM-18; Warden GM-20; Gossip GM-20; Grandmother GM-01; Gravedigger GM-18; Housekeeper GM-18; Hunter GM-03; Innkeeper GM-20; Investigator GM-18; Librarian GM-18; Mayor GM-02/23/24. |

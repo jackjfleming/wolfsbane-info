@@ -522,11 +522,11 @@
     {
       "name": "Trapper",
       "type": "townsfolk",
-      "summary": "After the first night, choose a player different from last night. If they are the Alpha, reveal Trapper to that Alpha and skip its ordinary wake tonight.",
-      "howToRun": "Each night after the first, wake Trapper and ask them to choose any player, including themself or a dead player, except the player they chose last night. Record the choice even if Trapper is poisoned or confused; it still restricts tomorrow's choice. If Trapper’s ability works and the chosen player is the actual Alpha, wake that Alpha, identify Trapper, then do not wake the Alpha for its ordinary action tonight. Give Trapper no direct result. Other reasons for the Alpha to wake and already-running or passive Alpha effects still resolve. If Trapper is impaired, the Alpha is not blocked or told who Trapper is. A healthy Recluse may register as Alpha for the reveal; the actual Alpha still wakes normally in that case.",
+      "summary": "After the first night, choose a player: protect them from the Alpha tonight and learn if they are the Alpha.",
+      "howToRun": "Each night after the first, wake Trapper and ask them to choose one player. The printed ability does not exclude Trapper, dead players, or repeating a previous target. If Trapper’s ability works, mark the chosen player safe from the Alpha’s ability tonight. If the chosen player registers as the Alpha for this check, privately tell Trapper this. Clear the protection at dawn. If Trapper is poisoned or confused, the choice gives no real protection and the information may be unreliable.",
       "examples": [
-        "Trapper chooses Fenrir. Fenrir privately learns who Trapper is and does not wake for its ordinary attack that night; Trapper is not told that the choice succeeded.",
-        "Trapper chooses Pukka after Pukka poisoned a player yesterday. Pukka skips choosing a new target tonight, but the previously poisoned player's delayed death can still occur."
+        "Trapper chooses a living Empath. The Alpha attacks Empath that night; Empath survives if Trapper’s ability works.",
+        "Trapper chooses the current Alpha. The Storyteller privately tells Trapper that the target is the Alpha."
       ],
       "tipsAndTricks": [],
       "tipsAndTricksGood": [],
