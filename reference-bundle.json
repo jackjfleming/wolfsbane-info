@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "contentVersion": "2026-09-27-draft.10",
-  "checksum": "b84c2248bcb4297067e68d58370873bf2f6311849f342bdeec58e0d61e3c2626",
+  "checksum": "c6fac4bcaff0c0cdea3d6098509cc8b0aac1a0286d740cfefa2d96cd1df098fa",
   "roles": [
     {
       "id": "artist",
@@ -1077,7 +1077,7 @@
       ],
       "reviewStatus": "draft",
       "reviewNotes": [
-        "Owner identified Exorcist as the likely BOTC counterpart. Confirm whether to retain printed Trapper protection-plus-detection or replace it with Exorcist block-and-reveal before approving. Official Exorcist differs: cannot repeat previous target, informs chosen Alpha who chose them, stops the normal Alpha wake, gives Trapper no direct result, and does not block delayed/passive Alpha effects."
+        "Exorcist replacement was reverted because Warden already has that ability; Bodyguard already corresponds to Monk. Trapper remains a separate printed protection-plus-detection role requiring review of target restrictions, registration, and protection scope."
       ],
       "legacyPath": "roles/trapper.html",
       "hasExistingGuide": false
