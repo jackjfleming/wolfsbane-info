@@ -660,9 +660,12 @@
     {
       "name": "Tinker",
       "type": "outsider",
-      "summary": "You might die at any time.",
-      "howToRun": "You might die at any time.",
-      "examples": [],
+      "summary": "While your ability works, the Storyteller may choose to kill you at any time. Protection against death can prevent it; protection limited to Alpha effects cannot.",
+      "howToRun": "While Tinker is alive and their ability works, the Storyteller may choose a moment during the day or night for Tinker to die. Check protection at that moment. Protection from death can prevent this death; protection limited to Alpha effects cannot, because Tinker is dying from their own ability. Announce a successful day death immediately or record a night death and announce it at dawn. The Storyteller chooses when to attempt the death relative to other actions and a final-day win check; resolve any win condition using the actual living players at the time it is checked.",
+      "examples": [
+        "Tinker is protected only from Alpha effects. The Storyteller chooses to kill Tinker during the day; Tinker dies and the death is announced immediately.",
+        "Tinker has protection from death. The Storyteller attempts to kill Tinker through their ability; the protection prevents the death."
+      ],
       "tipsAndTricks": [],
       "tipsAndTricksGood": [],
       "tipsAndTricksEvil": []
