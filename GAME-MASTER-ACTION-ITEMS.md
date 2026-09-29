@@ -69,7 +69,7 @@ These may be handled manually today. Verify the complete interaction before conv
 
 ## Approved-role coverage
 
-All **68 approved guides** are represented in this backlog. The latest 35 approvals came from the [remaining-role grid](REVIEW-REMAINING-ROLES.md). **Trapper remains the only draft** while its printed ability is compared with Exorcist.
+All **68 selectable guides** are approved and represented in this backlog. The latest 35 approvals came from the [remaining-role grid](REVIEW-REMAINING-ROLES.md). **Trapper is deferred** from selection and the published reference while its app-defined ability is reviewed. The 14 earlier approvals now have their recorded reviewer and date metadata.
 
 | Review source | Approved roles covered |
 | --- | --- |

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "contentVersion": "2026-09-27-draft.10",
+  "contentVersion": "2026-09-28-reviewed.2",
   "roles": [
     {
       "id": "artist",
@@ -37,7 +37,9 @@
       "reviewStatus": "approved",
       "reviewNotes": [],
       "legacyPath": "roles/artist.html",
-      "hasExistingGuide": true
+      "hasExistingGuide": true,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-27"
     },
     {
       "id": "bodyguard",
@@ -75,7 +77,9 @@
       "reviewStatus": "approved",
       "reviewNotes": [],
       "legacyPath": "roles/bodyguard.html",
-      "hasExistingGuide": true
+      "hasExistingGuide": true,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-27"
     },
     {
       "id": "chambermaid",
@@ -147,7 +151,9 @@
       "reviewStatus": "approved",
       "reviewNotes": [],
       "legacyPath": "roles/chef.html",
-      "hasExistingGuide": true
+      "hasExistingGuide": true,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-27"
     },
     {
       "id": "clockmaker",
@@ -256,7 +262,9 @@
       "reviewStatus": "approved",
       "reviewNotes": [],
       "legacyPath": "roles/empath.html",
-      "hasExistingGuide": true
+      "hasExistingGuide": true,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-27"
     },
     {
       "id": "warden",
@@ -280,7 +288,9 @@
       "reviewStatus": "approved",
       "reviewNotes": [],
       "legacyPath": "roles/warden.html",
-      "hasExistingGuide": false
+      "hasExistingGuide": false,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-27"
     },
     {
       "id": "fool",
@@ -375,7 +385,9 @@
       "reviewStatus": "approved",
       "reviewNotes": [],
       "legacyPath": "roles/gossip.html",
-      "hasExistingGuide": false
+      "hasExistingGuide": false,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-27"
     },
     {
       "id": "grandmother",
@@ -400,7 +412,9 @@
       "reviewStatus": "approved",
       "reviewNotes": [],
       "legacyPath": "roles/grandmother.html",
-      "hasExistingGuide": false
+      "hasExistingGuide": false,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-27"
     },
     {
       "id": "gravedigger",
@@ -441,7 +455,9 @@
       "reviewStatus": "approved",
       "reviewNotes": [],
       "legacyPath": "roles/gravedigger.html",
-      "hasExistingGuide": true
+      "hasExistingGuide": true,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-27"
     },
     {
       "id": "housekeeper",
@@ -483,7 +499,9 @@
       "reviewStatus": "approved",
       "reviewNotes": [],
       "legacyPath": "roles/housekeeper.html",
-      "hasExistingGuide": true
+      "hasExistingGuide": true,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-27"
     },
     {
       "id": "hunter",
@@ -527,7 +545,9 @@
       "reviewStatus": "approved",
       "reviewNotes": [],
       "legacyPath": "roles/hunter.html",
-      "hasExistingGuide": true
+      "hasExistingGuide": true,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-27"
     },
     {
       "id": "innkeeper",
@@ -552,7 +572,9 @@
       "reviewStatus": "approved",
       "reviewNotes": [],
       "legacyPath": "roles/innkeeper.html",
-      "hasExistingGuide": false
+      "hasExistingGuide": false,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-27"
     },
     {
       "id": "investigator",
@@ -592,7 +614,9 @@
       "reviewStatus": "approved",
       "reviewNotes": [],
       "legacyPath": "roles/investigator.html",
-      "hasExistingGuide": true
+      "hasExistingGuide": true,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-27"
     },
     {
       "id": "librarian",
@@ -634,7 +658,9 @@
       "reviewStatus": "approved",
       "reviewNotes": [],
       "legacyPath": "roles/librarian.html",
-      "hasExistingGuide": true
+      "hasExistingGuide": true,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-27"
     },
     {
       "id": "mayor",
@@ -672,7 +698,9 @@
       "reviewStatus": "approved",
       "reviewNotes": [],
       "legacyPath": "roles/mayor.html",
-      "hasExistingGuide": true
+      "hasExistingGuide": true,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-27"
     },
     {
       "id": "minstrel",
@@ -1052,6 +1080,7 @@
       "id": "trapper",
       "name": "Trapper",
       "appName": "Trapper",
+      "availability": "deferred",
       "aliases": [],
       "type": "townsfolk",
       "ability": "Each night*, choose a player: they are safe from the Alpha tonight. If they are the Alpha, you learn this.",
@@ -1076,7 +1105,7 @@
       ],
       "reviewStatus": "draft",
       "reviewNotes": [
-        "Exorcist replacement was reverted because Warden already has that ability; Bodyguard already corresponds to Monk. Trapper remains a separate printed protection-plus-detection role requiring review of target restrictions, registration, and protection scope."
+        "Exorcist replacement was reverted because Warden already has that ability; Bodyguard already corresponds to Monk. Trapper remains a separate app-defined protection-plus-detection role requiring review of target restrictions, registration, and protection scope."
       ],
       "legacyPath": "roles/trapper.html",
       "hasExistingGuide": false

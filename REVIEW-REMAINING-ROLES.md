@@ -1,6 +1,6 @@
 # Remaining storyteller role review
 
-**Status: 35 of these 36 guides approved; Trapper remains a draft.** The proposed rulings below summarize Wolf's Bane's abilities and current guide decisions. The Blood on the Clocktower column is comparison material, not an automatic Wolf's Bane rule. Each row links to its role guide and an official Clocktower source. The last column records approvals and remaining decisions. Bodyguard already corresponds to Monk, and Warden already corresponds to Exorcist; Trapper's separate printed ability remains under review.
+**Status: 35 of these 36 guides approved; Trapper is deferred and unavailable for new games.** The proposed rulings below summarize Wolf's Bane's abilities and current guide decisions. The Blood on the Clocktower column is comparison material, not an automatic Wolf's Bane rule. Each row links to its role guide and an official Clocktower source. The last column records approvals and remaining decisions. Bodyguard already corresponds to Monk, and Warden already corresponds to Exorcist; Trapper's separate app-defined ability remains under review.
 
 The editable source is [`content/role-reference.json`](content/role-reference.json). Once a role is approved, update its guide and review status, regenerate the bundles, and add any executable gap to [`GAME-MASTER-ACTION-ITEMS.md`](GAME-MASTER-ACTION-ITEMS.md).
 
@@ -8,7 +8,7 @@ The editable source is [`content/role-reference.json`](content/role-reference.js
 
 | Role | Proposed ruling | Blood on the Clocktower comparison | Decision to review |
 | --- | --- | --- | --- |
-| [Trapper](roles/trapper.html) | Printed Wolf’s Bane ability: choose a player after the first night; protect them from Alpha effects and privately learn if they are Alpha. | No single base-script counterpart combines these effects. [Monk](https://wiki.bloodontheclocktower.com/Monk) supplies protection and corresponds to Bodyguard; [Exorcist](https://wiki.bloodontheclocktower.com/Exorcist) blocks the Alpha and corresponds to Warden. | **Draft.** Retain Trapper as a distinct protection-plus-detection role; its target restrictions and registration details still need review. The Exorcist replacement was reverted to avoid duplicating Warden. |
+| [Trapper](roles/trapper.html) | Existing app text: choose a player after the first night; protect them from Alpha effects and privately learn if they are Alpha. | No single base-script counterpart combines these effects. [Monk](https://wiki.bloodontheclocktower.com/Monk) supplies protection and corresponds to Bodyguard; [Exorcist](https://wiki.bloodontheclocktower.com/Exorcist) blocks the Alpha and corresponds to Warden. | **Deferred from selection and published reference.** Preserve the draft and saved-game handling; decide its rules before making it selectable again. |
 
 ## Outsiders
 
