@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "contentVersion": "2026-09-27-draft.10",
-  "checksum": "614891f10a985a522e822c148b193832e63007e8e138e918a2240719c933f9a4",
+  "checksum": "8c785439ae3e3eb155a10394d2184c102d577f18289cc1ccb5a82cccba014dae",
   "roles": [
     {
       "id": "artist",
@@ -1400,19 +1400,23 @@
       "aliases": [],
       "type": "outsider",
       "ability": "You do not know you are the village idiot. You think you are a Townsfolk character, but you are not.",
-      "shortRuling": "You do not know you are the Village Idiot. You think you are a Townsfolk character, but you are actually an Outsider without that ability.",
-      "howToRun": "While setting up the game, before putting character tokens in the bag, remove the Village Idiot token and add a Townsfolk character token. Add the Village Idiot's IS THE VILLAGE IDIOT reminder token to the Grimoire. Put the swapped Townsfolk character token in the bag, not the Village Idiot character token. While preparing the first night, put the Village Idiot's IS THE VILLAGE IDIOT reminder token by any Townsfolk character token, changing that player's character to the Village Idiot. They are now an Outsider, and do not have the ability of this Townsfolk character. (But they think they do.) During the game, act as if the Village Idiot is actually this Townsfolk character.",
-      "interactions": [],
+      "shortRuling": "You are an Outsider who believes you are a Townsfolk. Your apparent ability has no real effect; an attempted once-per-game use looks spent and malfunctions.",
+      "howToRun": "While setting up the game, before putting character tokens in the bag, remove the Village Idiot token and add a Townsfolk character token. Add the Village Idiot's IS THE VILLAGE IDIOT reminder token to the Grimoire. Put the swapped Townsfolk character token in the bag, not the Village Idiot character token. While preparing the first night, put the Village Idiot's IS THE VILLAGE IDIOT reminder token by any Townsfolk character token, changing that player's character to the Village Idiot. They are now an Outsider, and do not have the ability of this Townsfolk character. (But they think they do.) During the game, act as if the Village Idiot is actually this Townsfolk character. When another character checks this player, use the actual Village Idiot character and Outsider type, not the perceived Townsfolk, unless a separate registration effect applies. If the apparent Townsfolk ability gives information, wake and answer as appropriate for an ability that malfunctions. If it is once per game, let the player attempt it once and show it as spent, but do not apply the Townsfolk effect.",
+      "interactions": [
+        "Other characters detect the actual Village Idiot Outsider, not the perceived Townsfolk, unless an independent registration effect changes that check.",
+        "An attempted once-per-game ability of the perceived Townsfolk appears spent to Village Idiot and has no true effect; information can be false."
+      ],
       "examples": [
         "The Village Idiot, who thinks they are the Soldier, is attacked by the Alpha Wolf. The Village Idiot dies.",
         "The Village Idiot, who thinks they are the Empath, wakes and learns a '0,' even though they are sitting next to one evil player. The next night, they learn a '1'.",
         "The Village Idiot, who thinks they are the Ravenkeeper, is killed at night. They choose the Saint, but learn that this player is the Poisoner.",
-        "The Seer is executed. That night, the Village Idiot, who thinks they are Gravedigger, learns that the Village Idiot died today."
+        "The Seer is executed. That night, the Village Idiot, who thinks they are the Gravedigger, may be shown a false character for the executed player; another real Gravedigger checking the Village Idiot would learn Village Idiot.",
+        "The Village Idiot believes they are the Hunter and attempts a shot. The Storyteller presents the use as spent, but the shot has no effect."
       ],
       "tips": [
-        "The Village Idiot will never know that they are the Village Idiot - they will start the game with a Villager token and behave as that Villager normally while receiving bad information.",
-        "Figuring out if a Village Idiot is in play is important - this will allow Villager to know whether or not they should be scrutinizing their information.",
-        "If you suspect a Village Idiot is in play, it is important to determine which of the Villager it is as soon as possible. There can only be one Village Idiot in play, so knowing who it is will allow you to treat their information skeptically.",
+        "The Village Idiot will never know that they are the Village Idiot - they will start the game with a Townsfolk token and behave as that Townsfolk normally while receiving bad information.",
+        "Figuring out if a Village Idiot is in play is important - this will allow Villagers to know whether or not they should be scrutinizing their information.",
+        "If you suspect a Village Idiot is in play, it is important to determine which of the apparent Townsfolk it is as soon as possible. There can only be one Village Idiot in play, so knowing who it is will allow you to treat their information skeptically.",
         "Differentiating the effects of a Village Idiot from a Poisoner can be difficult, but crucial. If only one person seems to be receiving false information, they might be the Village Idiot.",
         "Characters like the Gravedigger and Ravenkeeper will see the Village Idiot character when checking that player. You are an actual Outsider, not the Townsfolk you think you are!",
         "If you have figured out you are the Village Idiot, try to reverse engineer what you know. For example, if you thought you were the Empath and have been getting a read of '0', you should be suspicious that you have at least one evil neighbor after all."
@@ -1421,14 +1425,15 @@
       "tipsEvil": [],
       "sourceNotes": [
         "wolfsbane-info/index.html embedded role data",
-        "wolfsbane/lib/game-constants.ts"
+        "wolfsbane/lib/game-constants.ts",
+        "Owner review annotation, 2026-09-28"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Confirm how apparent once-per-game abilities are presented and spent, and what other roles learn about the actual Outsider. The perceived role must be Townsfolk."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/village-idiot.html",
-      "hasExistingGuide": true
+      "hasExistingGuide": true,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-28"
     },
     {
       "id": "assassin",

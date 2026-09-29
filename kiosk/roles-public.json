@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "contentVersion": "2026-09-27-draft.10",
-  "checksum": "614891f10a985a522e822c148b193832e63007e8e138e918a2240719c933f9a4",
+  "checksum": "8c785439ae3e3eb155a10394d2184c102d577f18289cc1ccb5a82cccba014dae",
   "roles": [
     {
       "id": "artist",
@@ -587,16 +587,16 @@
       "type": "outsider",
       "ability": "You do not know you are the village idiot. You think you are a Townsfolk character, but you are not.",
       "tips": [
-        "The Village Idiot will never know that they are the Village Idiot - they will start the game with a Villager token and behave as that Villager normally while receiving bad information.",
-        "Figuring out if a Village Idiot is in play is important - this will allow Villager to know whether or not they should be scrutinizing their information.",
-        "If you suspect a Village Idiot is in play, it is important to determine which of the Villager it is as soon as possible. There can only be one Village Idiot in play, so knowing who it is will allow you to treat their information skeptically.",
+        "The Village Idiot will never know that they are the Village Idiot - they will start the game with a Townsfolk token and behave as that Townsfolk normally while receiving bad information.",
+        "Figuring out if a Village Idiot is in play is important - this will allow Villagers to know whether or not they should be scrutinizing their information.",
+        "If you suspect a Village Idiot is in play, it is important to determine which of the apparent Townsfolk it is as soon as possible. There can only be one Village Idiot in play, so knowing who it is will allow you to treat their information skeptically.",
         "Differentiating the effects of a Village Idiot from a Poisoner can be difficult, but crucial. If only one person seems to be receiving false information, they might be the Village Idiot.",
         "Characters like the Gravedigger and Ravenkeeper will see the Village Idiot character when checking that player. You are an actual Outsider, not the Townsfolk you think you are!",
         "If you have figured out you are the Village Idiot, try to reverse engineer what you know. For example, if you thought you were the Empath and have been getting a read of '0', you should be suspicious that you have at least one evil neighbor after all."
       ],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "assassin",

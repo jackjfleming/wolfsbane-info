@@ -30,6 +30,7 @@ For each item, implement or verify the approved behavior, add a focused regressi
 | GM-24 | [Mayor](roles/mayor.html): bring the same redirection decision to manual night-kill actions outside the Grimoire wizard, including Fenrir and other eligible killers. Do not prompt for an impaired Mayor or an Assassin bypass. | [Direct Fenrir action](https://github.com/jackjfleming/wolfsbane/blob/codex/storyteller-reference/hooks/useGameState.ts#L3428-L3464) kills the selected player immediately; other manual kill handlers need the same audit. | Open |
 | GM-25 | [Saint](roles/saint.html): trigger only when the actual Saint **dies by execution** while their ability works. Saint's current team loses, then apply Bill once. A registration-only Saint and an execution without death do not trigger this rule. | [Victory check](https://github.com/jackjfleming/wolfsbane/blob/codex/storyteller-reference/hooks/useGameState.ts#L1765-L1772) hardcodes Werewolf victory and checks an execution ID without checking death. | Open |
 | GM-26 | [Mastermind](roles/mastermind.html): start an extra day only when the Alpha **dies by execution** and would otherwise end the game. On that day, executing a good player wins for Werewolves; executing an evil player or nobody wins for Villagers, then apply Bill once. | [Victory check](https://github.com/jackjfleming/wolfsbane/blob/codex/storyteller-reference/hooks/useGameState.ts#L1802-L1849) starts after any Alpha death and gives Werewolves the no-execution win. | Open |
+| GM-32 | [Village Idiot](roles/village-idiot.html): restrict the perceived character to Townsfolk in every setup and role-change path. Other players' role checks use the actual Village Idiot Outsider; apparent once-per-game attempts look spent and fail. | [Setup selection](https://github.com/jackjfleming/wolfsbane/blob/codex/storyteller-reference/hooks/useGameState.ts#L207-L228) currently offers both Townsfolk and Outsiders. The [night wizard](https://github.com/jackjfleming/wolfsbane/blob/codex/storyteller-reference/components/game/grimoire-wizard.tsx#L803-L919) impersonates the perceived role and needs a full spent-use check. | Open |
 
 ## Verification items
 
@@ -58,7 +59,7 @@ These may be handled manually today. Verify the complete interaction before conv
 
 ## Approved-role coverage
 
-All **44 approved guides** are represented in this backlog. The latest 11 approvals came from the [remaining-role grid](REVIEW-REMAINING-ROLES.md). The other **25 guides**, including Trapper, remain drafts. Partial decisions for Tinker, Village Idiot, Evil Twin, and Successor are recorded in that grid but do not count as guide approvals.
+All **45 approved guides** are represented in this backlog. The latest 12 approvals came from the [remaining-role grid](REVIEW-REMAINING-ROLES.md). The other **24 guides**, including Trapper, remain drafts. Partial decisions for Tinker, Evil Twin, and Successor are recorded in that grid but do not count as guide approvals.
 
 | Review source | Approved roles covered |
 | --- | --- |
@@ -66,5 +67,5 @@ All **44 approved guides** are represented in this backlog. The latest 11 approv
 | [Batch 2](REVIEW-BATCH-02.md) | Minstrel GM-05; New in Town GM-04; Pacifist GM-21; Professor GM-06; Ravenkeeper GM-22. |
 | [Batch 3](REVIEW-BATCH-03.md) | Sage GM-07; Sailor GM-08; Seer GM-09; Soldier GM-10; Tea Lady GM-11. |
 | [Batch 4](REVIEW-BATCH-04.md) | Bill GM-12; Butler GM-13; Goon GM-14; Klutz GM-15. Trapper remains deferred. |
-| [Remaining-role grid](REVIEW-REMAINING-ROLES.md) | Lunatic GM-27; Moonchild GM-28; Recluse/Spy GM-30; Saint GM-25; Assassin GM-14/31; Baron/Godfather/Advocate GM-31; Mastermind GM-26; Poisoner GM-29. |
+| [Remaining-role grid](REVIEW-REMAINING-ROLES.md) | Lunatic GM-27; Moonchild GM-28; Recluse/Spy GM-30; Saint GM-25; Assassin GM-14/31; Baron/Godfather/Advocate GM-31; Mastermind GM-26; Poisoner GM-29; Village Idiot GM-32. |
 | Earlier owner-reviewed guides | Artist GM-16; Bodyguard GM-10; Chef GM-18; Empath GM-18; Warden GM-20; Gossip GM-20; Grandmother GM-01; Gravedigger GM-18; Housekeeper GM-18; Hunter GM-03; Innkeeper GM-20; Investigator GM-18; Librarian GM-18; Mayor GM-02/23/24. |
