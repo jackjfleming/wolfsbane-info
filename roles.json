@@ -661,10 +661,10 @@
       "name": "Tinker",
       "type": "outsider",
       "summary": "While your ability works, the Storyteller may choose to kill you at any time. Protection against death can prevent it; protection limited to Alpha effects cannot.",
-      "howToRun": "While Tinker is alive and their ability works, the Storyteller may choose a moment during the day or night for Tinker to die. Check protection at that moment. Protection from death can prevent this death; protection limited to Alpha effects cannot, because Tinker is dying from their own ability. Announce a successful day death immediately or record a night death and announce it at dawn. The Storyteller chooses when to attempt the death relative to other actions and a final-day win check; resolve any win condition using the actual living players at the time it is checked.",
+      "howToRun": "While Tinker is alive and their ability works, Storyteller may choose a moment during day or night to attempt a Tinker death. Check protection at that moment: general death protection can prevent it, but Alpha-only protection cannot because the source is Tinker. Announce a successful day death immediately or a night death at dawn. The Storyteller chooses its timing relative to other actions and final-day win checks. A successful death follows ordinary death rules: it triggers another ability only if that ability’s own cause and timing conditions are met.",
       "examples": [
-        "Tinker is protected only from Alpha effects. The Storyteller chooses to kill Tinker during the day; Tinker dies and the death is announced immediately.",
-        "Tinker has protection from death. The Storyteller attempts to kill Tinker through their ability; the protection prevents the death."
+        "Storyteller kills Tinker during the day. Zombuul sees a death today and does not attack tonight.",
+        "A good Tinker seated next to a healthy Tea Lady cannot die while that protection works."
       ],
       "tipsAndTricks": [],
       "tipsAndTricksGood": [],
@@ -733,11 +733,11 @@
     {
       "name": "Evil Twin",
       "type": "minion",
-      "summary": "You & an opposing player know each other. If the good player is executed, evil wins. Good can't win if you both live.",
-      "howToRun": "While setting up the game, choose a Good Twin by marking any good character with the TWIN reminder. During the first night, wake both Twins. Let them make eye contact. Point at the Evil Twin, then show the Evil Twin token to the Good Twin. Point at the Good Twin, then show the Good Twin's character token to the Evil Twin. Put them both to sleep. While both Twins are alive, the good team cannot win. If a good-aligned Twin is executed, the evil team wins.",
+      "summary": "The currently Villager-aligned twin’s execution wins for Werewolves, even if death is prevented. Villagers cannot win while both twins live.",
+      "howToRun": "Pair Evil Twin with an opposite-alignment player. On the first night, wake both, let them see each other, and show each the other’s character. Track each twin’s current alignment rather than assuming the Evil Twin character is always evil. If both become the same alignment, choose a new opposite-alignment twin and inform the pair. While both twins are alive and Evil Twin’s ability works, block Villager victory. If the currently Villager-aligned twin is executed while the ability works, Werewolves win even if protection prevents death. Apply Bill inversion once. A dead Evil Twin normally loses this ability unless another effect, such as Vigormortis or Bone Collector, preserves it.",
       "examples": [
-        "Both twins are claiming to be the Oracle. The Evil Twin is executed. The game continues.",
-        "The Good Twin and the Evil Twin are both loudly claiming to be the Artist. Both players approach the Storyteller to ask a question in private. The good players, confused, execute the Alpha Wolf. The game continues, with no death during the night from now on."
+        "The paired Villager changes to Werewolf, making both twins Werewolves. Storyteller chooses a new Villager-aligned twin.",
+        "A Villager-aligned player holding the Evil Twin character is executed but survives through protection; Werewolves still win, subject to Bill."
       ],
       "tipsAndTricks": [
         "Say that the good twin is the Evil Twin. Say it again, and again, and again. After all, that's what the good twin will be doing!",
@@ -975,9 +975,12 @@
     {
       "name": "Barista",
       "type": "traveler",
-      "summary": "Each night, choose a player: they learn true info, or their ability works twice tonight/tomorrow. (Storyteller decides)",
-      "howToRun": "Each night, choose a player: they learn true info, or their ability works twice tonight/tomorrow. (Storyteller decides)",
-      "examples": [],
+      "summary": "Storyteller chooses both recipient and effect nightly. The recipient learns whether they have true information and sobriety, or their ability works twice until dusk.",
+      "howToRun": "Each night Storyteller chooses any player and one Barista effect. Privately tell that player, not Barista, which effect applies. Until dusk, either make them sober and healthy and guarantee true information despite ordinary false-information sources and registration, or let their ability work twice at its normal timing. An unused once-per-game ability may be used twice during the effect; an already-spent one may be used once more. Mandatory effects happen twice; optional abilities may be used twice. Clear the effect at dusk.",
+      "examples": [
+        "Storyteller chooses a poisoned Empath for true-information mode. Empath is healthy and learns true information until dusk.",
+        "Storyteller chooses an Artist who already asked their question; Artist may ask once more before dusk."
+      ],
       "tipsAndTricks": [],
       "tipsAndTricksGood": [],
       "tipsAndTricksEvil": []
@@ -985,11 +988,11 @@
     {
       "name": "Beggar",
       "type": "traveler",
-      "summary": "You must use a vote token to vote. If a dead player gives you theirs, you learn their alignment.",
-      "howToRun": "The Beggar cannot vote unless they have a vote token. They lose one vote token each time they vote. During the day, a dead player can declare that they give their vote token to the Beggar. Transfer the vote token to the Beggar and privately tell the Beggar the alignment of that player.",
+      "summary": "Spend one token per execution vote. A dead player may voluntarily give you theirs; you learn that player’s alignment. Exile votes need no token.",
+      "howToRun": "Beggar cannot vote in an execution without a token. A dead player may publicly give their unused vote token to Beggar; transfer it and privately tell Beggar that player’s alignment, allowing discretionary registration such as Recluse. Spend one token each time Beggar votes on an execution, even if the nomination fails. Exile votes require no token. If Beggar dies, discard collected tokens and give them the usual one dead vote token. Beggar remains sober and healthy.",
       "examples": [
-        "The Beggar cannot vote. On the fourth day, the Monk gives her vote token to the Beggar. The Beggar may now vote (once), and learns that the player is good. The Beggar is evil and tells the group that the Monk player is evil.",
-        "The good Beggar has three vote tokens. The Recluse gives the Beggar their vote token, and the Beggar learns that they are evil. That day, the Beggar dies, and loses all their vote tokens except for one."
+        "A dead player donates a token; Beggar learns their alignment privately and spends the token on one execution vote.",
+        "Beggar votes to exile a Traveler without spending a token."
       ],
       "tipsAndTricks": [],
       "tipsAndTricksGood": [
@@ -1014,9 +1017,11 @@
     {
       "name": "Bone Collector",
       "type": "traveler",
-      "summary": "Once per game, at night, choose a dead player: they regain their ability until dawn tomorrow.",
-      "howToRun": "Once per game, at night, choose a dead player: they regain their ability until dawn tomorrow.",
-      "examples": [],
+      "summary": "Once per game at night, restore a dead player’s ability until dusk, including spent once-per-game or first-night abilities.",
+      "howToRun": "On a night after the first, Bone Collector may choose one dead player. The choice spends Bone Collector’s use. While Bone Collector is alive and able to act, the dead player regains their ability until the next dusk while remaining dead. A spent once-per-game ability is available again during this window; a first-night-only ability may run this night. End the borrowed ability at dusk or earlier if Bone Collector dies or loses the ability.",
+      "examples": [
+        "Bone Collector restores a dead Artist; Artist may ask one question before dusk while still dead."
+      ],
       "tipsAndTricks": [],
       "tipsAndTricksGood": [],
       "tipsAndTricksEvil": []
@@ -1024,12 +1029,10 @@
     {
       "name": "Bureaucrat",
       "type": "traveler",
-      "summary": "Each night, choose a player (not yourself): their vote counts as 3 votes tomorrow.",
-      "howToRun": "Each night, wake the Bureaucrat. They point at any player. Mark the chosen player with the Bureaucrat's 3 VOTES reminder. Put the Bureaucrat to sleep. Each time you tally the vote of a player marked 3 VOTES, count it as three votes instead of one. (Count this out loud, as normal.)",
+      "summary": "Each night choose another player. Their execution votes count as three tomorrow while your ability works; exile votes stay normal.",
+      "howToRun": "Each night wake Bureaucrat to choose a player other than themself, including a dead player. A repeat choice on consecutive nights is allowed. Until the next dusk, each execution vote cast by that player counts as three while Bureaucrat’s ability works; count all three publicly. If Bureaucrat dies or is impaired, the modification stops. Exile votes are unaffected.",
       "examples": [
-        "The Bureaucrat chooses Evin. The next day, when the first vote is being tallied, the Storyteller counts \"1... 2... 3... 4-5-6... 7.” The nominated player now has seven votes for their execution, and the nomination process continues.",
-        "The Bureaucrat chooses Filip. The next day, Filip has a triple vote, which he uses during four nominations.",
-        "The Bureaucrat chooses Douglas, who is dead. The next day, Douglas uses his vote token to vote, and his vote counts as triple."
+        "Bureaucrat selects a player who votes on two nominations; each vote counts as three."
       ],
       "tipsAndTricks": [],
       "tipsAndTricksGood": [
@@ -1052,12 +1055,10 @@
     {
       "name": "Butcher",
       "type": "traveler",
-      "summary": "Each day, after the 1st execution, you may nominate again.",
-      "howToRun": "Each day, immediately after a player is executed, the Butcher may nominate a player for execution. (Remind them if needed.) To succeed, this nomination must tally votes of at least half the alive players, as normal, but does not have to exceed the votes of the execution that prompted the Butcher ability. If this second execution succeeds, it does not allow the Butcher to nominate a third player.",
+      "summary": "After the first execution each day, you may nominate once more; the second nomination needs the ordinary half-of-living threshold.",
+      "howToRun": "Immediately after the first execution of the day, including one where the executed player survives, offer Butcher one additional nomination. Butcher may nominate an earlier nominee. The second vote succeeds with at least half the living players, as for an ordinary execution; it need not beat the first tally. Resolve that execution, then close nominations. Butcher’s extra execution does not open a third nomination. Exile does not trigger this ability.",
       "examples": [
-        "The Baron is executed and dies. The Butcher then nominates the Seer, who gets enough votes to be executed. The Seer dies too.",
-        "The Gunslinger is exiled, and then the Beggar is exiled. There are no executions today. The Butcher does not get to nominate again, because exiles are not executions.",
-        "The Butcher nominates the Recluse, but the Recluse is not executed. The Investigator gets more votes and is executed today. The game continues, and the Butcher nominates the Recluse again. This time, enough hands are raised, and the Recluse is executed."
+        "A protected player survives the first execution. Butcher still nominates another player, who reaches the ordinary threshold and is executed."
       ],
       "tipsAndTricks": [],
       "tipsAndTricksGood": [
@@ -1077,12 +1078,11 @@
     {
       "name": "Gangster",
       "type": "traveler",
-      "summary": "Once per day, you may choose to kill 1 of your 2 alive neighbors, if your other alive neighbor agrees.",
-      "howToRun": "Once per day, the Gangster can declare that they wish to use their ability. If so, ask if an alive neighbor agrees. If an alive neighbor agrees, the other alive neighbor dies. If both alive neighbors agree, the Gangster chooses which alive neighbor dies. If neither alive neighbor agrees, the Gangster may not use their ability today.",
+      "summary": "Once per day, with one nearest living neighbor’s agreement, kill the other. If agreement is refused, you may retry; an agreed attempt spends the use even if death is prevented.",
+      "howToRun": "Identify Gangster’s nearest living neighbor clockwise and counterclockwise, skipping dead players and updating after seat changes. With Storyteller present, Gangster proposes killing one and asks the other to agree. If agreement is refused, no use is spent and Gangster may try again later that day. If either agrees, Gangster chooses the victim if both agree, then attempts the kill immediately; this spends the daily use even if protection prevents death. Reset at the next day.",
       "examples": [
-        "The Gangster neighbors the Saint and the Baron. The Gangster asks the Baron if they want to kill the Saint. The Baron agrees and the Saint dies.",
-        "The Gangster neighbours the Chambermaid and the Poppy Grower, but they are both dead. The Gangster's two living neighbours are the Engineer and the Po. The Gangster talks with the Po and offers to kill the Engineer. The Po declines. The Gangster talks with the Engineer and the Engineer asks the Gangster to kill the Po. The Gangster agrees, and the Po dies. Good wins.",
-        "The Gangster neighbours the Fool and the Sage. The Sage and the Gangster kill the Fool but the Fool doesn't die, because of the Fool's ability. The Gangster may not use their ability again today."
+        "One neighbor refuses. Gangster later asks the other neighbor, who agrees; the first is killed.",
+        "A neighbor agrees, but the victim is protected from death. Gangster cannot attempt another kill that day."
       ],
       "tipsAndTricks": [],
       "tipsAndTricksGood": [
@@ -1109,11 +1109,10 @@
     {
       "name": "Gunslinger",
       "type": "traveler",
-      "summary": "Each day, after the 1st vote has been tallied, you may choose a player that voted: they die.",
-      "howToRun": "Each day, after the first vote has been tallied, the Gunslinger may choose a player that voted. That player dies immediately.",
+      "summary": "Immediately after the first execution vote is tallied each day, you may kill one player who voted, even if the vote failed or tied.",
+      "howToRun": "After the first execution vote of each day is tallied, before the next nomination or phase, ask Gunslinger whether to shoot. This is their only opportunity that day, even if the vote failed or tied. If they choose an actual voter, attempt to kill that player immediately, applying ordinary death protection. Exile votes are not execution votes and do not open this opportunity.",
       "examples": [
-        "The Alpha Wolf has been nominated. There are 10 players alive, and five votes for the Alpha Wolf, so the Alpha Wolf is about to die. The Gunslinger chooses a voting player to die. They die, and the nomination continues, with the Alpha Wolf still about to die.",
-        "The players exile the Thief. Then, the Butler is nominated for execution and gets one vote. This is the first nomination for execution, since the Thief’s exile does not count. The Gunslinger chooses to kill the single voting player. Later that day, the Saint is nominated and six players vote. The Gunslinger cannot use their ability now because this is not the first vote for execution today."
+        "The first nomination gets too few votes. Gunslinger may still immediately shoot a voter."
       ],
       "tipsAndTricks": [],
       "tipsAndTricksGood": [
@@ -1142,9 +1141,11 @@
     {
       "name": "Judge",
       "type": "traveler",
-      "summary": "Once per game, you may choose to force the outcome of a nomination, even after the votes are counted.",
-      "howToRun": "Once per game, you may choose to force the outcome of a nomination, even after the votes are counted.",
-      "examples": [],
+      "summary": "Once per game, force a nomination made by another player to pass or fail, even just after its tally and before the next nomination.",
+      "howToRun": "Once per game during a nomination made by someone other than Judge, or immediately after its tally before another nomination starts, Judge may force the result. A forced pass immediately executes the nominee regardless of tally, then resolve survival and victory rules; Butcher may still gain its extra nomination. A forced fail cancels this nomination’s votes and restores any earlier leading nomination as appropriate. The choice spends Judge’s use even if Judge is impaired.",
+      "examples": [
+        "Judge forces another player’s nomination to pass with zero votes. The nominee is executed, though protection may keep them alive."
+      ],
       "tipsAndTricks": [],
       "tipsAndTricksGood": [],
       "tipsAndTricksEvil": []
@@ -1152,9 +1153,11 @@
     {
       "name": "Matron",
       "type": "traveler",
-      "summary": "Each day, you may choose which 2 players sit next to you.",
-      "howToRun": "Each day, you may choose which 2 players sit next to you.",
-      "examples": [],
+      "summary": "Once each day, swap up to three pairs of seats consecutively. The new order persists; private game talks are limited to immediate seated neighbors.",
+      "howToRun": "Once each day, Matron may choose up to three pairs of players to swap seats, one pair after another in a single opportunity. The same player may move more than once. Update the Grimoire and recompute seating-dependent abilities after each swap; the final arrangement persists until changed. While Matron’s ability works, players may discuss the game privately only with immediate seated neighbors and may not leave their seats to do so. Make reasonable accessibility accommodations for anyone who cannot move seats.",
+      "examples": [
+        "Matron swaps two pairs and stops. They cannot return later that same day for a third swap."
+      ],
       "tipsAndTricks": [],
       "tipsAndTricksGood": [],
       "tipsAndTricksEvil": []
@@ -1162,12 +1165,10 @@
     {
       "name": "Scapegoat",
       "type": "traveler",
-      "summary": "If a player of your alignment is executed, you might be executed instead.",
-      "howToRun": "If a player of the same alignment as the Scapegoat is about to be executed, you may choose to execute the Scapegoat instead. If you do, the Scapegoat dies and the original player lives.",
+      "summary": "If a same-team player would be executed, Storyteller may execute living Scapegoat instead; this replaces the execution, not merely its death.",
+      "howToRun": "When a player would be executed, before applying that execution, Storyteller may choose a living Scapegoat who counts as the same alignment at that moment. Use approved per-check Spy/Recluse registration where applicable. Replace the original execution with Scapegoat’s execution and end nominations as an execution normally does. Apply death protection to Scapegoat; they may survive, but the original nominee was not executed. Exile is not execution.",
       "examples": [
-        "The Seer is about to be executed, but the Storyteller chooses to execute the good Scapegoat instead. The Fortune Teller lives and the Scapegoat dies. That night, the Gravedigger learns that a Scapegoat was executed today.",
-        "The Poisoner is about to be executed, but the Storyteller chooses to execute the evil Scapegoat instead. The Storyteller could have let the Poisoner die as normal, but chose not to.",
-        "The Spy is about to be executed. The good Scapegoat dies instead."
+        "Saint is about to be executed, but same-team Scapegoat receives the execution instead. Saint lives and Saint’s loss does not trigger."
       ],
       "tipsAndTricks": [],
       "tipsAndTricksGood": [
@@ -1191,11 +1192,10 @@
     {
       "name": "Thief",
       "type": "traveler",
-      "summary": "Each night, choose a player (not yourself): their vote counts negatively tomorrow.",
-      "howToRun": "Each night, wake the Thief. They point at any player. Mark the chosen player with the Thief's NEGATIVE VOTE reminder. Put the Thief to sleep. Each time you tally the vote of a player marked NEGATIVE VOTE, count it as subtracting one vote instead of adding one vote. (Count this out loud, as normal.)",
+      "summary": "Each night choose another player. Each execution vote they cast tomorrow subtracts one while your ability works; exile votes stay normal.",
+      "howToRun": "Each night wake Thief to choose a player other than themself, including a dead player. A repeat choice is allowed. Until next dusk, subtract one for each execution vote cast by that player while Thief’s ability works; preserve signed vote arithmetic rather than clamping each step. If Thief dies or is impaired, the modification stops. Exile votes are unaffected.",
       "examples": [
-        "The Thief chooses Marianna. The next day, while tallying the first vote, the Storyteller counts '1... 2... 3... 2... 3... 4... 5.' The nominated player now has five votes for their execution, and the nomination process continues.",
-        "The Thief chooses Abdallah. Abdallah votes for an execution, and instead of the tally being six, it is four. Since 10 players are alive, the nominee is not executed today. Later that day, the players are voting to exile the Gunslinger. Abdallah votes to exile, and his vote counts as positive."
+        "Thief chooses a voter. During an execution tally, their vote changes the count from three to two."
       ],
       "tipsAndTricks": [],
       "tipsAndTricksGood": [

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "contentVersion": "2026-09-27-draft.10",
-  "checksum": "115a2211167ea3ad4d8b96bfadef6f9b3305aba79541514332b8bfbe34a9352b",
+  "checksum": "b84c2248bcb4297067e68d58370873bf2f6311849f342bdeec58e0d61e3c2626",
   "roles": [
     {
       "id": "artist",
@@ -578,7 +578,7 @@
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "village-idiot",
@@ -636,7 +636,7 @@
       "name": "Evil Twin",
       "aliases": [],
       "type": "minion",
-      "ability": "You & an opposing player know each other. If the Villager player is executed, Werewolves win. Villagers cannot win while you both live.",
+      "ability": "You and an opposing player know each other. If the Villager-aligned twin is executed, Werewolves win. Villagers cannot win while both twins live.",
       "tips": [
         "Say that the good twin is the Evil Twin. Say it again, and again, and again. After all, that's what the good twin will be doing!",
         "Claim that you are the same character as the good twin. On the first night, you learn the character of the good twin, and they learn yours. This is a hint to help you know a character that is safe to bluff as.",
@@ -647,7 +647,7 @@
       ],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "godfather",
@@ -746,7 +746,7 @@
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "fenrir",
@@ -857,18 +857,18 @@
       "name": "Barista",
       "aliases": [],
       "type": "traveler",
-      "ability": "Each night, choose a player: they learn true info, or their ability works twice tonight/tomorrow. (Storyteller decides)",
+      "ability": "Each night, until dusk, Storyteller chooses a player: they become sober and healthy and get true information, or their ability works twice. That player learns which.",
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "beggar",
       "name": "Beggar",
       "aliases": [],
       "type": "traveler",
-      "ability": "You must use a vote token to vote. If a dead player gives you theirs, you learn their alignment. You are sober and healthy.",
+      "ability": "You must use a vote token to vote on execution. If a dead player gives you theirs, you learn their alignment. You are sober and healthy.",
       "tips": [],
       "tipsGood": [
         "You definitely want to learn the alignment of at least one player, but don't get too greedy. Learning 1 or 2 players' alignments could mean that 1 or 2 good players can no longer vote - this is probably acceptable. But learning 5 players' alignment could mean that 5 good players can no longer vote - and that gives evil the majority vote at the next execution, granting evil the win. Gain a vote token or two... or three... but know when to stop.",
@@ -888,18 +888,18 @@
         "Use your vote wisely or throw it away. Either way, it doesn't really matter. What is important is that you look like you use your vote wisely, and that you save at least one vote token for the final day. The final day is all that really matters, so who you vote for before that point is mostly about making you look trustworthy so that you can survive until the final day.",
         "Be proactive in getting players to give you their vote token. Ask. Demand. Bargain. Beg. Others will not usually volunteer to give you their token, because they have other things on their mind, but will often consider it if you pester them a little."
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "bone-collector",
       "name": "Bone Collector",
       "aliases": [],
       "type": "traveler",
-      "ability": "Once per game, at night, choose a dead player: they regain their ability until dawn tomorrow.",
+      "ability": "Once per game, at night, choose a dead player: they regain their ability until dusk.",
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "bureaucrat",
@@ -924,7 +924,7 @@
         "Choose an evil player on the final day. Although it might be tempting to choose a good player on the final day, so that you look more trustworthy, a good player having triple voting power is a huge danger to your team and far outweighs any benefits gained due to your angelic appearance. On the contrary, an evil player getting triple votes on the final day can win the game.",
         "Choose dead evil players, if you can justify your reason for doing so. The dead are generally more trustworthy than the living, so giving a dead Minion triple votes not only helps your image, but gets that brutal extra two votes for the evil teams' desired nominee. A dead evil player with triple votes is really maximizing their offensive potential, as long as they actually are believed to be good."
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "butcher",
@@ -946,7 +946,7 @@
         "Nominate Minions using your ability. Or don't. Whatever you think is best.",
         "If an Evil Twin is in play, co-ordinate with them to see if you can quickly get the number of living players to just 3 - the Evil Twin, the good twin, and the Alpha Wolf. At this point, evil has usually already won."
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "gangster",
@@ -975,7 +975,7 @@
         "If you suspect that a good neighbor is about to be nominated and executed, don't kill them with your Gangster ability today. A death by the Gangster's ability doesn't count as an execution, and the day will continue afterwards. It is more helpful to the evil team if the day ends after the death occurs, so that the Alpha Wolf can't accidentally be executed today as well.",
         "Choose players to die so that the distance between you and the Alpha Wolf is maximized. Since the Gangster can only kill living neighbors, the good players may have some very strong opinions on which of your living neighbors should die. If one of your living neighbors is the Alpha Wolf, they may put a lot of pressure on you to kill them, and while you can always choose not to, this may end up looking incredibly suspicious and reveal that you are evil and know who the Alpha Wolf is. It is best to avoid this situation by never neighboring the Alpha Wolf in the first place. When the Alpha Wolf is sitting 2, 3, 4, or more players away from you, keep it that way by killing players in the opposite direction."
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "gunslinger",
@@ -1006,7 +1006,7 @@
         "Use fear as a weapon. Nominate evil players, or bluff nominating evil players, and dare the good team to vote for it. You'll probably get exiled, but you can have some control over the execution for a day or two.",
         "If the good players are foolish enough to keep you alive until just 3 players are left alive (not including Travelers), you've basically won. As soon as the first vote happens, kill a non-Alpha Wolf player and seize victory."
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "judge",
@@ -1017,18 +1017,18 @@
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "matron",
       "name": "Matron",
       "aliases": [],
       "type": "traveler",
-      "ability": "Each day, you may choose which 2 players sit next to you.",
+      "ability": "Each day, you may choose up to 3 pairs of players to swap seats. Players may not leave their seats to talk privately about the game.",
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "scapegoat",
@@ -1054,7 +1054,7 @@
         "If the game is near to a close, and you died in place of a Minion, it may be best if you look as evil as possible to the group. The following day, if just 3 or 4 players are left alive, the good team will probably execute the player you saved, believing them to be the Alpha Wolf. If you look evil, the good team thinks that the Minion is evil, and may not click that they are not in fact the Alpha Wolf. This strategy may still be useful if 5, 6, or even 7 players are still alive. Convincing the group to execute a Minion (again) at least means that they are not executing the Alpha Wolf, and good loses precious time and votes in the process.",
         "Do whatever you can to convince the rest of the group that the player whose life you saved is good. This may be an uphill struggle, depending on the number of other Travelers in play. Since the group will know for a fact that you are both the same alignment, they may be able to use this information to prove or disprove other player's alignments. Pay attention, and focus on discrediting key players. For example, if the Alpha Wolf just got executed but saved by you, and the Empath is sitting next to you and knows that one of their neighbors is evil, you will need to completely discredit either the Empath, or their other living neighbor... otherwise it's curtains for team evil."
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "thief",
@@ -1078,7 +1078,7 @@
         "Pick evil players, and tell them that you have picked them. Evil players know exactly who is good and who is evil, so will always use their negative vote effectively. You may need to swap between evil players - choosing the Alpha Wolf one night, then choosing a Minion the next night.",
         "On the final day, you definitely want to choose an evil player, and have them know that you have chosen them. Even if the good team exiles you after the fact, having a negative vote on the Alpha Wolf is incredibly helpful. It may even win you the game!"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     }
   ]
 }
