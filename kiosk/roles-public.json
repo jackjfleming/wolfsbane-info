@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "contentVersion": "2026-09-27-draft.10",
-  "checksum": "8c785439ae3e3eb155a10394d2184c102d577f18289cc1ccb5a82cccba014dae",
+  "checksum": "115a2211167ea3ad4d8b96bfadef6f9b3305aba79541514332b8bfbe34a9352b",
   "roles": [
     {
       "id": "artist",
@@ -714,7 +714,7 @@
       "name": "Successor",
       "aliases": [],
       "type": "minion",
-      "ability": "If there are 5 or more non-Traveler players alive when the Alpha dies, you immediately become that Alpha.",
+      "ability": "If 5 or more non-Traveler players are alive immediately before the Alpha dies, you immediately become that Alpha.",
       "tips": [
         "The Successor is at her strongest when you co-ordinate with the Alpha Wolf and figure out a strategy that you both like, since the Alpha Wolf can safely die. Maybe you accuse the Alpha Wolf of being evil, and the Alpha Wolf does everything possible to make the good team think they are indeed evil? This makes you look very good, and trustworthy. Maybe the Alpha Wolf kills themselves of a night time and claims to be the Ravenkeeper, saying that you are the character you say you are. Maybe the Alpha Wolf accuses you of being evil, but does so unconvincingly, so that you look good by comparison. Maybe you and the Alpha Wolf both claim to be the same character, such as the Mayor? After all, \"one of you must be the Mayor\", right? It doesn't matter which one of you dies, since the game continues with a living Alpha Wolf either way.",
         "In the early game, staying alive is more important for you compared to other Minions. Whist it doesn't really matter if the Baron, or Poisoner dies early (since they can often cause a lot of disruption early in the game), you will need to survive until the end of the game if you intend to become the Alpha Wolf at some point. Waiting, listening, then claiming to be a character that you know is not in play often achieves this best.",
@@ -724,7 +724,7 @@
       ],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "advocate",
@@ -773,7 +773,7 @@
       ],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "no-dashii",
@@ -784,7 +784,7 @@
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "po",
@@ -795,18 +795,18 @@
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "pukka",
       "name": "Pukka",
       "aliases": [],
       "type": "alpha",
-      "ability": "Each night, choose a player: they are poisoned until tomorrow night, then die. You act on the first night.",
+      "ability": "Each night, choose a player: they are poisoned. The previously poisoned player dies, then becomes healthy.",
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "shabaloth",
@@ -817,18 +817,18 @@
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "vigormortis",
       "name": "Vigormortis",
       "aliases": [],
       "type": "alpha",
-      "ability": "Each night*, choose a player: they die. Minions you kill keep their ability & register as a Villager. [+1 Outsider]",
+      "ability": "Each night*, choose a player: they die. Minions you kill keep their ability and poison 1 Townsfolk neighbor. [-1 Outsider]",
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "zombuul",
@@ -839,7 +839,7 @@
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "apprentice",
@@ -850,7 +850,7 @@
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
-      "reviewStatus": "draft"
+      "reviewStatus": "approved"
     },
     {
       "id": "barista",

@@ -1387,7 +1387,7 @@
       ],
       "reviewStatus": "draft",
       "reviewNotes": [
-        "Owner confirmed free day/night timing, that Alpha-only protection does not stop Tinker’s own ability, that other death protection may stop it, and that the Storyteller chooses the timing relative to final-day win checks. Confirm whether a successful Tinker death triggers other roles exactly as an ordinary death before approving the guide."
+        "Owner approved Tinker timing and protection scope. Official BOTC/default death-rule answer for owner review: a successful Tinker death is an ordinary death, and triggers another role only if that role’s own cause and timing requirements are met (for example, a daytime death blocks Zombuul’s attack). Await owner approval of this last point."
       ],
       "legacyPath": "roles/tinker.html",
       "hasExistingGuide": false
@@ -1534,7 +1534,7 @@
       ],
       "reviewStatus": "draft",
       "reviewNotes": [
-        "Bill inverts the final victory result. Clarify whether later twin alignment changes re-pair the twins and whether execution without death triggers the win before approval."
+        "Official BOTC answer for owner review: check the paired player’s current team, not their character name. If both twins become the same team, Storyteller chooses a new opposite-team twin. Executing the currently Villager-aligned twin wins for Werewolves even if death is prevented; Bill inverts the result. Owner asked for clarification but has not approved this full ruling."
       ],
       "legacyPath": "roles/evil-twin.html",
       "hasExistingGuide": true
@@ -1679,14 +1679,17 @@
       "appName": "Successor",
       "aliases": [],
       "type": "minion",
-      "ability": "If there are 5 or more non-Traveler players alive when the Alpha dies, you immediately become that Alpha.",
-      "shortRuling": "If at least 5 non-Traveler players are alive immediately before the Alpha dies, you immediately become that Alpha.",
-      "howToRun": "If the Alpha Wolf dies and there were five or more alive players immediately before the Alpha Wolf died, immediately replace the Successor token with a spare Alpha Wolf token, changing that player's character from the Successor into the Alpha Wolf. (They are now the Alpha Wolf and have the Alpha Wolf's ability. If they die, good wins.)",
-      "interactions": [],
+      "ability": "If 5 or more non-Traveler players are alive immediately before the Alpha dies, you immediately become that Alpha.",
+      "shortRuling": "With at least five living non-Travelers immediately before Alpha death, you immediately become that Alpha. A Fang Gu jump takes precedence, leaving you Successor.",
+      "howToRun": "When the Alpha dies, count living non-Travelers immediately before that death. If there were at least five and Successor is alive and able to act, immediately change Successor into the same Alpha type and show them their new character that night. Fenrir self-kill passes to Successor ahead of another Minion. If Fang Gu dies as part of a successful jump to an Outsider, the Outsider becomes Fang Gu and Successor remains Successor; this is the Fang Gu–Scarlet Woman jinx adapted to Wolf’s Bane.",
+      "interactions": [
+        "The five-player threshold excludes Travelers and is checked immediately before the Alpha dies.",
+        "Fang Gu jump creates the new Alpha in the attacked Outsider, so Successor does not also transform.",
+        "Fenrir self-kill chooses Successor before another living Minion when Successor qualifies."
+      ],
       "examples": [
-        "There are seven players alive: the Alpha Wolf, the Successor, two Villager, and three Travelers. The Alpha Wolf is executed, so the game ends and good wins because Travelers do not add to the player count for the Successor's ability.",
-        "There are five players alive: the Alpha Wolf, the Successor, the Baron, and two Villager. The Alpha Wolf is executed. The Successor becomes the Alpha Wolf, and the game continues.",
-        "Brianna is the Successor. The Seer chooses Brianna and Alex, and learns a 'no.' Later, the Alpha Wolf dies, so Brianna becomes the Alpha Wolf. The Seer chooses Brianna and Alex again, and learns a 'yes.'"
+        "Six non-Travelers are alive. Fenrir kills themself; Successor immediately becomes Fenrir.",
+        "Fang Gu attacks an eligible Outsider and dies instead. The Outsider becomes Fang Gu; Successor stays a Minion."
       ],
       "tips": [
         "The Successor is at her strongest when you co-ordinate with the Alpha Wolf and figure out a strategy that you both like, since the Alpha Wolf can safely die. Maybe you accuse the Alpha Wolf of being evil, and the Alpha Wolf does everything possible to make the good team think they are indeed evil? This makes you look very good, and trustworthy. Maybe the Alpha Wolf kills themselves of a night time and claims to be the Ravenkeeper, saying that you are the character you say you are. Maybe the Alpha Wolf accuses you of being evil, but does so unconvincingly, so that you look good by comparison. Maybe you and the Alpha Wolf both claim to be the same character, such as the Mayor? After all, \"one of you must be the Mayor\", right? It doesn't matter which one of you dies, since the game continues with a living Alpha Wolf either way.",
@@ -1701,14 +1704,16 @@
         "wolfsbane-info/index.html embedded role data",
         "wolfsbane/lib/game-constants.ts",
         "Blood on the Clocktower Scarlet Woman: https://wiki.bloodontheclocktower.com/Scarlet_Woman",
-        "Owner review, 2026-09-28: adopt five-player limit"
+        "Owner review, 2026-09-28: adopt five-player limit",
+        "Blood on the Clocktower: https://wiki.bloodontheclocktower.com/Scarlet_Woman",
+        "Owner review annotations, 2026-09-28"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "The five-living-non-Traveler threshold, counted immediately before Alpha death, and immediate conversion are owner-approved. Fenrir self-kill passes to Successor. Resolve Fang Gu jump priority before approving the full guide."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/successor.html",
-      "hasExistingGuide": true
+      "hasExistingGuide": true,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-28"
     },
     {
       "id": "advocate",
@@ -1746,19 +1751,28 @@
       "aliases": [],
       "type": "alpha",
       "ability": "Each night*, choose a player: they die. The 1st Outsider you kill becomes a Werewolf Fang Gu & you die. [+1 Outsider]",
-      "shortRuling": "Each night*, choose a player: they die. The 1st Outsider you kill becomes a Werewolf Fang Gu & you die. [+1 Outsider]",
-      "howToRun": "Each night*, choose a player: they die. The 1st Outsider you kill becomes a Werewolf Fang Gu & you die. [+1 Outsider]",
-      "interactions": [],
-      "examples": [],
+      "shortRuling": "The first Outsider your attack would kill becomes an evil Fang Gu and you die instead. This jump happens once per game; Successor stays Successor.",
+      "howToRun": "Add one Outsider at setup in place of a Townsfolk. Each night except the first, wake Fang Gu to choose a player. On the first attack that would kill a player who counts as an Outsider, kill the original Fang Gu instead, make the attacked Outsider alive, evil, and the new Fang Gu, and mark the once-per-game jump as used for the rest of the game. A protected target that would not die does not cause a jump. Show the new Fang Gu their new character and evil alignment, but do not reveal the Minions to them. On later nights, Outsider attacks cause ordinary deaths. The new Fang Gu does not attack again in the same night. If Successor is in play, it remains Successor rather than creating two Alphas.",
+      "interactions": [
+        "A player that registers as Outsider for this interaction may qualify, subject to Storyteller discretion; it is still the first qualifying jump of the game.",
+        "The Fang Gu–Scarlet Woman jinx gives the attacked Outsider the handoff instead of Successor.",
+        "If protection blocks the would-be kill, neither conversion nor original Fang Gu death occurs."
+      ],
+      "examples": [
+        "Fang Gu attacks an unprotected Outsider. Original Fang Gu dies; the Outsider becomes an evil Fang Gu and remains alive.",
+        "Fang Gu attacks a protected Outsider. The Outsider survives and no jump occurs."
+      ],
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
       "sourceNotes": [
-        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES",
+        "Blood on the Clocktower: https://wiki.bloodontheclocktower.com/Fang_Gu",
+        "Owner review annotations, 2026-09-28"
       ],
       "reviewStatus": "draft",
       "reviewNotes": [
-        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
+        "Owner confirmed that a successful Fang Gu jump goes to the attacked Outsider, not Successor. Official BOTC procedure supplies proposed answers for protection, registration, once-per-game use, first wake, and Minion knowledge; obtain owner approval of the full guide."
       ],
       "legacyPath": "roles/fang-gu.html",
       "hasExistingGuide": false
@@ -1773,13 +1787,15 @@
       ],
       "type": "alpha",
       "ability": "Each night*, choose a player: they die. If you kill yourself this way, a Minion becomes the Alpha.",
-      "shortRuling": "Each night*, choose a player: they die. If you kill yourself this way, a Minion becomes the Alpha Wolf.",
-      "howToRun": "Each night except the first, wake the Alpha Wolf. They point at any player. Put the Alpha Wolf to sleep. The chosen player dies—put a DEAD reminder token by their character token and lay the character token flat. If the Alpha Wolf chose themselves, replace a living Minion's character token with a spare Alpha Wolf token instead.",
-      "interactions": [],
+      "shortRuling": "Each night after the first, kill a player. If you kill yourself with this ability, Successor claims the handoff if eligible; otherwise Storyteller chooses a living Minion to become Fenrir.",
+      "howToRun": "Each night except the first, wake Fenrir to choose one player. If Fenrir chooses themself and the kill succeeds, Fenrir dies. If an eligible Successor is alive and able to act, immediately change Successor into Fenrir. Otherwise the Storyteller chooses one living Minion to become Fenrir immediately. If no Minion can take over, there is no living Alpha and Villagers win, subject to Bill inversion and any other active win-blocking ability. The new Fenrir does not attack again that night.",
+      "interactions": [
+        "Successor has priority over the normal Storyteller-selected Minion handoff when its five-player condition is met.",
+        "A prevented self-kill does not transfer the Alpha role."
+      ],
       "examples": [
-        "It is the first night. The Alpha Wolf learns that Evin and Sarah are the Minions. The Alpha Wolf also learns that the Bodyguard, Chef, and Librarian are not in play. The Alpha Wolf bluffs as the Chef, then bluffs as Mayor halfway through the game. Eventually, the Alpha Wolf is executed and good wins.",
-        "On the third night, there are just five players left alive, including the Alpha Wolf and the Successor. The Alpha Wolf kills themselves, so the Successor becomes the new Alpha Wolf. The game continues.",
-        "There are lots of reasons why you should register as an evil Alpha Wolf to good players. If this happens, don't despair! Maybe you can convince the group that Empath is village idiot? Maybe you can argue that you are that Seer's 'red herring'?"
+        "Fenrir kills themself with Successor in play and six non-Travelers alive. Successor becomes Fenrir.",
+        "Fenrir kills themself with no living Minion available. Villagers win if no other rule delays or changes that result."
       ],
       "tips": [
         "There are many strategies for evil players, particularly the Alpha Wolf, that are covered in more detail in Player Strategy section. Generally speaking, as the Alpha Wolf, you want to look trustworthy, spread false information where possible, get your Minions to confirm that you are a good player, and sacrifice them when needed. Take a look at this section for more information.",
@@ -1799,14 +1815,16 @@
       "tipsEvil": [],
       "sourceNotes": [
         "wolfsbane-info/index.html embedded role data",
-        "wolfsbane/lib/game-constants.ts"
+        "wolfsbane/lib/game-constants.ts",
+        "Blood on the Clocktower: https://wiki.bloodontheclocktower.com/Imp",
+        "Owner review annotations, 2026-09-28"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Confirm this existing guide matches current Wolf’s Bane rules and Game Master behavior."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/alpha-wolf.html",
-      "hasExistingGuide": true
+      "hasExistingGuide": true,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-28"
     },
     {
       "id": "no-dashii",
@@ -1815,22 +1833,29 @@
       "aliases": [],
       "type": "alpha",
       "ability": "Each night*, choose a player: they die. Your 2 nearest Townsfolk neighbors are poisoned.",
-      "shortRuling": "Each night*, choose a player: they die. Your 2 nearest Townsfolk neighbors are poisoned.",
-      "howToRun": "Each night*, choose a player: they die. Your 2 nearest Townsfolk neighbors are poisoned.",
-      "interactions": [],
-      "examples": [],
+      "shortRuling": "Your nearest Townsfolk in each seating direction are poisoned, including dead Townsfolk, while your ability works.",
+      "howToRun": "On the first night, find the nearest player who counts as Townsfolk in each seating direction from No Dashii, skipping Outsiders, Minions, and Travelers but not dead Townsfolk. Poison those two players while No Dashii has its ability. Recalculate immediately when seats, characters, or relevant registration changes; remove this poison from former neighbors and apply it to new ones. If No Dashii dies or loses its ability, its poison pauses or ends as appropriate. Each night except the first, wake No Dashii to choose a player to attack.",
+      "interactions": [
+        "Village Idiot is an actual Outsider and is skipped; Spy may count as Townsfolk for a particular check under the approved registration rule.",
+        "If No Dashii is impaired, its poison does not operate; other poison sources remain active."
+      ],
+      "examples": [
+        "A dead Townsfolk is the closest Townsfolk clockwise from No Dashii and remains poisoned."
+      ],
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
       "sourceNotes": [
-        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES",
+        "Blood on the Clocktower: https://wiki.bloodontheclocktower.com/No_Dashii",
+        "Owner review annotations, 2026-09-28"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/no-dashii.html",
-      "hasExistingGuide": false
+      "hasExistingGuide": false,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-28"
     },
     {
       "id": "po",
@@ -1839,22 +1864,29 @@
       "aliases": [],
       "type": "alpha",
       "ability": "Each night*, choose a player: they die. Or, choose no one tonight & 3 players tomorrow night.",
-      "shortRuling": "Each night*, choose a player: they die. Or, choose no one tonight & 3 players tomorrow night.",
-      "howToRun": "Each night*, choose a player: they die. Or, choose no one tonight & 3 players tomorrow night.",
-      "interactions": [],
-      "examples": [],
+      "shortRuling": "After the first night, choose one player to attack or choose nobody to charge; after a no-one choice, you must choose three players on your next acting night.",
+      "howToRun": "Each night except the first, wake Po. Normally Po may choose one player or explicitly choose nobody. Choosing nobody charges three attacks, even if Po is impaired; choosing a player whose death fails does not charge. On the next night Po acts, require three choices one at a time and resolve each in order before the next, including any Goon effect. Follow normal choice rules for repeated targets; a later attack on someone already dead has no further death effect. If Po misses a wake after charging, retain the charge until Po next acts. The first night never counts as choosing nobody.",
+      "interactions": [
+        "Impairment may stop kills but does not erase an explicit no-one choice or a pending charge.",
+        "Sequential resolution matters: if the second target is Goon, confusion may block the third attack."
+      ],
+      "examples": [
+        "Po chooses nobody while poisoned. On the next acting night Po must choose three players, though poisoning then may make the attacks fail."
+      ],
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
       "sourceNotes": [
-        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES",
+        "Blood on the Clocktower: https://wiki.bloodontheclocktower.com/Po",
+        "Owner review annotations, 2026-09-28"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/po.html",
-      "hasExistingGuide": false
+      "hasExistingGuide": false,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-28"
     },
     {
       "id": "pukka",
@@ -1862,23 +1894,30 @@
       "appName": "Pukka",
       "aliases": [],
       "type": "alpha",
-      "ability": "Each night, choose a player: they are poisoned until tomorrow night, then die. You act on the first night.",
-      "shortRuling": "Each night, choose a player: they are poisoned until tomorrow night, then die. You act on the first night.",
-      "howToRun": "Each night, choose a player: they are poisoned until tomorrow night, then die. You act on the first night.",
-      "interactions": [],
-      "examples": [],
+      "ability": "Each night, choose a player: they are poisoned. The previously poisoned player dies, then becomes healthy.",
+      "shortRuling": "Act on the first night. Each choice poisons the new target; the previous target dies while still poisoned, then the Pukka poison clears.",
+      "howToRun": "Each night, including the first, wake Pukka to choose a player. If Pukka can act, poison the new target immediately. Then attempt to kill the previous Pukka-poisoned target while that target is still poisoned; clear only this Pukka poison afterward if the death was attempted, while leaving any other poison sources intact, including when protection prevents death. Keep the poison through any death-triggered ability resolution before clearing it. If Pukka is impaired, its existing effect pauses and may resume when Pukka regains ability; a choice made while impaired creates no new poison. If Pukka does not wake because another role suppresses its wake, an existing previous victim can still die if Pukka retains its ability.",
+      "interactions": [
+        "Protection from death can prevent the delayed death without necessarily blocking the initial poison; Alpha-effect protection can block Pukka’s harmful effects according to its scope.",
+        "The prior victim is poisoned at death, so a death-triggered information ability can malfunction."
+      ],
+      "examples": [
+        "Pukka poisons Sage one night. Next night Pukka poisons another player, then Sage dies while poisoned; Sage’s death information may be false."
+      ],
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
       "sourceNotes": [
-        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES",
+        "Blood on the Clocktower: https://wiki.bloodontheclocktower.com/Pukka",
+        "Owner review annotations, 2026-09-28"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/pukka.html",
-      "hasExistingGuide": false
+      "hasExistingGuide": false,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-28"
     },
     {
       "id": "shabaloth",
@@ -1887,22 +1926,29 @@
       "aliases": [],
       "type": "alpha",
       "ability": "Each night*, choose 2 players: they die. A dead player you chose last night might be regurgitated.",
-      "shortRuling": "Each night*, choose 2 players: they die. A dead player you chose last night might be regurgitated.",
-      "howToRun": "Each night*, choose 2 players: they die. A dead player you chose last night might be regurgitated.",
-      "interactions": [],
-      "examples": [],
+      "shortRuling": "After the first night choose two attack targets in order. Before a later Shabaloth wake, Storyteller may revive one player attacked the previous night, including someone already dead when attacked.",
+      "howToRun": "Each night except the first, wake Shabaloth to choose two players one after another; resolve attacks in that order. Before each later Shabaloth wake, Storyteller may revive one dead player Shabaloth chose on the previous night, including someone already dead when chosen. A revived player regains their ability and a used once-per-game ability; a first-night-only ability runs on that revival night; another wake ability uses its ordinary slot, waiting until the following night if that slot has passed. Announce revival at dawn. Shabaloth cannot revive themself after their own death because their ability is no longer active.",
+      "interactions": [
+        "Self, repeat, and dead targets may be chosen, but an already dead target does not die again.",
+        "Revival happens before Shabaloth acts and rechecks ordinary wake order."
+      ],
+      "examples": [
+        "Shabaloth attacks a dead Professor and a living Townsfolk. On the next night Storyteller may revive Professor before Shabaloth wakes."
+      ],
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
       "sourceNotes": [
-        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES",
+        "Blood on the Clocktower: https://wiki.bloodontheclocktower.com/Shabaloth",
+        "Owner review annotations, 2026-09-28"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/shabaloth.html",
-      "hasExistingGuide": false
+      "hasExistingGuide": false,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-28"
     },
     {
       "id": "vigormortis",
@@ -1910,23 +1956,31 @@
       "appName": "Vigormortis",
       "aliases": [],
       "type": "alpha",
-      "ability": "Each night*, choose a player: they die. Minions you kill keep their ability & register as a Villager. [+1 Outsider]",
-      "shortRuling": "Each night*, choose a player: they die. Minions you kill keep their ability & register as a Villager. [+1 Outsider]",
-      "howToRun": "Each night*, choose a player: they die. Minions you kill keep their ability & register as a Villager. [+1 Outsider]",
-      "interactions": [],
-      "examples": [],
+      "ability": "Each night*, choose a player: they die. Minions you kill keep their ability and poison 1 Townsfolk neighbor. [-1 Outsider]",
+      "shortRuling": "Minions killed by your attack keep their abilities while you live and each poisons one nearest Townsfolk neighbor. Remove one Outsider at setup.",
+      "howToRun": "At setup remove one Outsider and add one Townsfolk; if there is no Outsider to remove, make no swap. Each night except the first, wake Vigormortis to attack one player. A Minion killed by this attack remains dead but keeps their ability while Vigormortis lives and has its ability. For each such Minion, Storyteller chooses one nearest Townsfolk clockwise or counterclockwise, skipping other character types but not dead Townsfolk, to poison. Recalculate the affected Townsfolk when relevant characters or seats change. If Vigormortis dies or loses its ability, the retained Minion abilities and poison ordinarily stop; the official Mastermind jinx preserves a Mastermind ability already granted by Vigormortis when Vigormortis dies.",
+      "interactions": [
+        "Killed Minions do not register as Villagers; the prior Wolf’s Bane draft wording is superseded by the adopted BOTC rule.",
+        "Dead Minions can themselves be poisoned or confused, pausing the retained ability.",
+        "Mastermind keeps its granted ability after Vigormortis dies under the official jinx."
+      ],
+      "examples": [
+        "Vigormortis kills Poisoner. Poisoner remains dead but can act, and one nearest Townsfolk is poisoned while Vigormortis continues to empower that Minion."
+      ],
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
       "sourceNotes": [
-        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES",
+        "Blood on the Clocktower: https://wiki.bloodontheclocktower.com/Vigormortis",
+        "Owner review annotations, 2026-09-28"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/vigormortis.html",
-      "hasExistingGuide": false
+      "hasExistingGuide": false,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-28"
     },
     {
       "id": "zombuul",
@@ -1935,22 +1989,29 @@
       "aliases": [],
       "type": "alpha",
       "ability": "Each night*, if no one died today, choose a player: they die. The first time you die, you appear to die but are secretly still alive.",
-      "shortRuling": "Each night*, if no one died today, choose a player: they die. The first time you die, you appear to die but are secretly still alive.",
-      "howToRun": "Each night*, if no one died today, choose a player: they die. The first time you die, you appear to die but are secretly still alive.",
-      "interactions": [],
-      "examples": [],
+      "shortRuling": "If nobody died today, attack tonight. The first time you would die, you appear dead but remain secretly alive; while apparently dead, use ordinary dead-player public rules.",
+      "howToRun": "On the first would-be death while Zombuul has its ability, do not actually kill Zombuul, but announce a death, flip their public life marker, and mark them as apparently dead. This counts as a death today for Zombuul’s wake condition. They have one public dead vote token, cannot nominate, and are skipped as a living neighbor, but remain secretly alive for their own ability and victory. A second would-be death kills them for real. If nobody died today, wake Zombuul after the first night to choose one player to attack. Executing an already dead player without a new death does not block this wake. If Zombuul is impaired before their first would-be death, the first-death protection does not work; do not announce an apparently dead Zombuul as alive merely because it later becomes impaired.",
+      "interactions": [
+        "An apparent first death is not a real Alpha death for Mastermind or Successor, although it counts as a public death and blocks that night’s Zombuul attack.",
+        "A truly dead Zombuul ends the game under normal Alpha-death rules, subject to other active effects."
+      ],
+      "examples": [
+        "Zombuul is executed and appears dead. It does not attack that night; on a later no-death day, it may attack while still publicly dead."
+      ],
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
       "sourceNotes": [
-        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES",
+        "Blood on the Clocktower: https://wiki.bloodontheclocktower.com/Zombuul",
+        "Owner review annotations, 2026-09-28"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/zombuul.html",
-      "hasExistingGuide": false
+      "hasExistingGuide": false,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-28"
     },
     {
       "id": "apprentice",
@@ -1959,22 +2020,29 @@
       "aliases": [],
       "type": "traveler",
       "ability": "On your first night, you gain a Townsfolk ability (if Villager) or a Minion ability (if Werewolf).",
-      "shortRuling": "On your first night, you gain a Townsfolk ability (if Villager) or a Minion ability (if Werewolf).",
-      "howToRun": "On your first night, you gain a Townsfolk ability (if Villager) or a Minion ability (if Werewolf).",
-      "interactions": [],
-      "examples": [],
+      "shortRuling": "On your first night, Storyteller gives you a Townsfolk ability if Villager or a Minion ability if Werewolf; you remain a Traveler.",
+      "howToRun": "On the first night after Apprentice enters play, Storyteller chooses and shows one ability from an eligible Townsfolk character if Apprentice is a Villager, or an eligible Minion character if Apprentice is a Werewolf. Apprentice gains that ability without becoming the character and may use it that night if its normal wake time occurs then. A first-night-only ability works on Apprentice’s own first night. A duplicate ability is possible, although a not-in-play character is usually simpler. If Apprentice changes alignment later, the already-gained ability remains; there is no second first-night grant. This follows from the ability being granted only on Apprentice’s first night. Apprentice remains a Traveler for character checks, exile, and player counts.",
+      "interactions": [
+        "The gained ability follows its normal limits and can be impaired independently of the fact that Apprentice remains a Traveler.",
+        "Another player checking Apprentice’s character sees Apprentice, not the character whose ability was gained."
+      ],
+      "examples": [
+        "A Werewolf Apprentice gains Assassin. They remain Apprentice but may use the Assassin ability according to its once-per-game timing."
+      ],
       "tips": [],
       "tipsGood": [],
       "tipsEvil": [],
       "sourceNotes": [
-        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES"
+        "wolfsbane/lib/game-constants.ts ROLE_ABILITIES",
+        "Blood on the Clocktower: https://wiki.bloodontheclocktower.com/Apprentice",
+        "Owner review annotations, 2026-09-28"
       ],
-      "reviewStatus": "draft",
-      "reviewNotes": [
-        "Write and verify the complete storyteller procedure and key interactions against Wolf’s Bane rules."
-      ],
+      "reviewStatus": "approved",
+      "reviewNotes": [],
       "legacyPath": "roles/apprentice.html",
-      "hasExistingGuide": false
+      "hasExistingGuide": false,
+      "reviewedBy": "Wolf’s Bane owner",
+      "reviewedAt": "2026-09-28"
     },
     {
       "id": "barista",
