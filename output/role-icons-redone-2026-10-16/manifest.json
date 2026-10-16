@@ -1,0 +1,1167 @@
+{
+  "date": "2026-10-16",
+  "redone": [
+    "Acrobat",
+    "Alchemist",
+    "Banshee",
+    "Bounty Hunter",
+    "Choirboy",
+    "Cult Leader",
+    "Engineer",
+    "Farmer",
+    "Fortune Teller",
+    "General",
+    "High Priestess",
+    "Huntsman",
+    "King",
+    "Knight",
+    "Lycanthrope",
+    "Magician",
+    "Monk",
+    "Nightwatchman",
+    "Noble",
+    "Pixie",
+    "Poppy Grower",
+    "Preacher",
+    "Shugenja",
+    "Steward",
+    "Undertaker",
+    "Washerwoman",
+    "Damsel",
+    "Hatter",
+    "Ogre",
+    "Plague Doctor",
+    "Snitch",
+    "Boffin",
+    "Fearmonger",
+    "Harpy",
+    "Marionette",
+    "Mezepheles",
+    "Organ Grinder",
+    "Scarlet Woman",
+    "Summoner",
+    "Vizier",
+    "Wizard",
+    "Wraith",
+    "Xaan",
+    "Al-Hadikhia",
+    "Alpha Info & Bluffs",
+    "Imp",
+    "Kazali",
+    "Legion",
+    "Lil' Monsta",
+    "Lleech",
+    "Lord of Typhon",
+    "Ojo",
+    "Yaggababble",
+    "Socialite",
+    "Angel",
+    "Buddhist",
+    "Duchess",
+    "Toymaker",
+    "Storm Catcher",
+    "Tor"
+  ],
+  "approved_samples_preserved": [
+    "Alchemist",
+    "Nightwatchman",
+    "Lycanthrope"
+  ],
+  "existing_artwork_preserved_count": 167,
+  "catalog_count": 157,
+  "catalog": [
+    {
+      "role": "Acrobat",
+      "runtime_filename": "Acrobat.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Alchemist",
+      "runtime_filename": "Alchemist.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Amnesiac",
+      "runtime_filename": "Amnesiac.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Artist",
+      "runtime_filename": "Artist.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Balloonist",
+      "runtime_filename": "Balloonist.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Banshee",
+      "runtime_filename": "Banshee.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Bodyguard",
+      "runtime_filename": "Bodyguard.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Bounty Hunter",
+      "runtime_filename": "Bounty Hunter.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Cannibal",
+      "runtime_filename": "Cannibal.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Chambermaid",
+      "runtime_filename": "Chambermaid.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Chef",
+      "runtime_filename": "Chef.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Choirboy",
+      "runtime_filename": "Choirboy.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Clockmaker",
+      "runtime_filename": "Clockmaker.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Courtier",
+      "runtime_filename": "Courtier.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Cult Leader",
+      "runtime_filename": "Cult Leader.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Dreamer",
+      "runtime_filename": "Dreamer.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Empath",
+      "runtime_filename": "Empath.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Engineer",
+      "runtime_filename": "Engineer.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Warden",
+      "runtime_filename": "Exorcist.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Farmer",
+      "runtime_filename": "Farmer.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Fisherman",
+      "runtime_filename": "Fisherman.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Flowergirl",
+      "runtime_filename": "Flowergirl.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Fool",
+      "runtime_filename": "Fool.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Fortune Teller",
+      "runtime_filename": "Fortune Teller.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Gambler",
+      "runtime_filename": "Gambler.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "General",
+      "runtime_filename": "General.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Gossip",
+      "runtime_filename": "Gossip.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Grandmother",
+      "runtime_filename": "Grandmother.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Gravedigger",
+      "runtime_filename": "Gravedigger.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "High Priestess",
+      "runtime_filename": "High Priestess.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Housekeeper",
+      "runtime_filename": "Housekeeper.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Hunter",
+      "runtime_filename": "Hunter.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Huntsman",
+      "runtime_filename": "Huntsman.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Innkeeper",
+      "runtime_filename": "Innkeeper.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Investigator",
+      "runtime_filename": "Investigator.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Juggler",
+      "runtime_filename": "Juggler.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "King",
+      "runtime_filename": "King.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Knight",
+      "runtime_filename": "Knight.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Librarian",
+      "runtime_filename": "Librarian.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Lycanthrope",
+      "runtime_filename": "Lycanthrope.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Magician",
+      "runtime_filename": "Magician.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Mathematician",
+      "runtime_filename": "Mathematician.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Mayor",
+      "runtime_filename": "Mayor.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Minstrel",
+      "runtime_filename": "Minstrel.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Monk",
+      "runtime_filename": "Monk.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "New in Town",
+      "runtime_filename": "New in Town.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Nightwatchman",
+      "runtime_filename": "Nightwatchman.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Noble",
+      "runtime_filename": "Noble.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Oracle",
+      "runtime_filename": "Oracle.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Pacifist",
+      "runtime_filename": "Pacifist.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Philosopher",
+      "runtime_filename": "Philosopher.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Pixie",
+      "runtime_filename": "Pixie.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Poppy Grower",
+      "runtime_filename": "Poppy Grower.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Preacher",
+      "runtime_filename": "Preacher.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Professor",
+      "runtime_filename": "Professor.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Ravenkeeper",
+      "runtime_filename": "Ravenkeeper.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Sage",
+      "runtime_filename": "Sage.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Sailor",
+      "runtime_filename": "Sailor.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Savant",
+      "runtime_filename": "Savant.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Seamstress",
+      "runtime_filename": "Seamstress.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Seer",
+      "runtime_filename": "Seer.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Shugenja",
+      "runtime_filename": "Shugenja.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Snake Charmer",
+      "runtime_filename": "Snakecharmer.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Soldier",
+      "runtime_filename": "Soldier.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Steward",
+      "runtime_filename": "Steward.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Tea Lady",
+      "runtime_filename": "Tealady.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Town Crier",
+      "runtime_filename": "Town Crier.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Trapper",
+      "runtime_filename": "Trapper.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Undertaker",
+      "runtime_filename": "Undertaker.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Washerwoman",
+      "runtime_filename": "Washerwoman.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Barber",
+      "runtime_filename": "Barber.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Bill",
+      "runtime_filename": "Bill.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Butler",
+      "runtime_filename": "Butler.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Damsel",
+      "runtime_filename": "Damsel.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Goon",
+      "runtime_filename": "Goon.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Hatter",
+      "runtime_filename": "Hatter.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Klutz",
+      "runtime_filename": "Klutz.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Lunatic",
+      "runtime_filename": "Lunatic.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Moonchild",
+      "runtime_filename": "Moonchild.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Mutant",
+      "runtime_filename": "Mutant.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Ogre",
+      "runtime_filename": "Ogre.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Plague Doctor",
+      "runtime_filename": "Plague Doctor.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Recluse",
+      "runtime_filename": "Recluse.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Saint",
+      "runtime_filename": "Saint.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Snitch",
+      "runtime_filename": "Snitch.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Sweetheart",
+      "runtime_filename": "Sweetheart.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Tinker",
+      "runtime_filename": "Tinker.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Village Idiot",
+      "runtime_filename": "Village Idiot.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Assassin",
+      "runtime_filename": "Assassin.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Baron",
+      "runtime_filename": "Baron.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Boffin",
+      "runtime_filename": "Boffin.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Cerenovus",
+      "runtime_filename": "Cerenovus.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Evil Twin",
+      "runtime_filename": "Evil Twin.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Fearmonger",
+      "runtime_filename": "Fearmonger.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Goblin",
+      "runtime_filename": "Goblin.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Godfather",
+      "runtime_filename": "Godfather.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Harpy",
+      "runtime_filename": "Harpy.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Marionette",
+      "runtime_filename": "Marionette.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Mastermind",
+      "runtime_filename": "Mastermind.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Mezepheles",
+      "runtime_filename": "Mezepheles.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Organ Grinder",
+      "runtime_filename": "Organ Grinder.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Pit-Hag",
+      "runtime_filename": "Pit Hag.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Poisoner",
+      "runtime_filename": "Poisoner.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Scarlet Woman",
+      "runtime_filename": "Scarlet Woman.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Spy",
+      "runtime_filename": "Spy.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Successor",
+      "runtime_filename": "Successor.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Summoner",
+      "runtime_filename": "Summoner.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Vizier",
+      "runtime_filename": "Vizier.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Advocate",
+      "runtime_filename": "WerewolfAdvocate.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Widow",
+      "runtime_filename": "Widow.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Witch",
+      "runtime_filename": "Witch.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Wizard",
+      "runtime_filename": "Wizard.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Wraith",
+      "runtime_filename": "Wraith.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Xaan",
+      "runtime_filename": "Xaan.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Al-Hadikhia",
+      "runtime_filename": "Al-Hadikhia.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Alpha Info & Bluffs",
+      "runtime_filename": "Alpha Info & Bluffs.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Fang Gu",
+      "runtime_filename": "Fang Gu.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Fenrir",
+      "runtime_filename": "Fenrir.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Imp",
+      "runtime_filename": "Imp.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Kazali",
+      "runtime_filename": "Kazali.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Legion",
+      "runtime_filename": "Legion.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Leviathan",
+      "runtime_filename": "Leviathan.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Lil' Monsta",
+      "runtime_filename": "Lil' Monsta.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Lleech",
+      "runtime_filename": "Lleech.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Lord of Typhon",
+      "runtime_filename": "Lord of Typhon.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "No Dashii",
+      "runtime_filename": "No Dashii.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Ojo",
+      "runtime_filename": "Ojo.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Po",
+      "runtime_filename": "Po.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Pukka",
+      "runtime_filename": "Pukka.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Shabaloth",
+      "runtime_filename": "Shabaloth.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Vigormortis",
+      "runtime_filename": "Vigormortis.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Vortox",
+      "runtime_filename": "Vortox.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Yaggababble",
+      "runtime_filename": "Yaggababble.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Zombuul",
+      "runtime_filename": "Zombuul.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Apprentice",
+      "runtime_filename": "Apprentice.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Barista",
+      "runtime_filename": "Barista.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Beggar",
+      "runtime_filename": "Beggar.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Bishop",
+      "runtime_filename": "Bishop.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Bone Collector",
+      "runtime_filename": "Bone Collector.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Bureaucrat",
+      "runtime_filename": "Bureaucrat.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Butcher",
+      "runtime_filename": "Butcher.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Courtisan",
+      "runtime_filename": "Courtisan.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Deviant",
+      "runtime_filename": "Deviant.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Gangster",
+      "runtime_filename": "Gangster.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Gunslinger",
+      "runtime_filename": "Gunslinger.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Judge",
+      "runtime_filename": "Judge.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Matron",
+      "runtime_filename": "Matron.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Scapegoat",
+      "runtime_filename": "Scapegoat.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Socialite",
+      "runtime_filename": "Socialite.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Thief",
+      "runtime_filename": "Thief.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Voudon",
+      "runtime_filename": "Voudon.svg",
+      "newly_redone": false
+    },
+    {
+      "role": "Angel",
+      "runtime_filename": "Angel.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Buddhist",
+      "runtime_filename": "Buddhist.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Duchess",
+      "runtime_filename": "Duchess.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Toymaker",
+      "runtime_filename": "Toymaker.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Storm Catcher",
+      "runtime_filename": "Storm Catcher.svg",
+      "newly_redone": true
+    },
+    {
+      "role": "Tor",
+      "runtime_filename": "Tor.svg",
+      "newly_redone": true
+    }
+  ],
+  "new_svg_checks": [
+    "one black compound path",
+    "explicitly closed contours",
+    "transparent evenodd holes",
+    "no strokes masks transforms fonts or rasters"
+  ],
+  "files": [
+    {
+      "role": "Acrobat",
+      "before_sha256": "636f39947762f8b5cc99f867a97d92b9e71c9eed21360c50ceb0b7733f7b25f5",
+      "sha256": "9634372546d33e71dd63f5003e2ea2dfae7a2223ff3470256da8f9c470f09ee3"
+    },
+    {
+      "role": "Alchemist",
+      "before_sha256": "bf82d2a13fb9c2e4e06cde66082b23c23f5d2c8a3bb782dfa4ad42b259d90cc8",
+      "sha256": "8030b318bbb0cf13d2eb5762e4b1ea4fed77fbf2c6b57dd36ac306d0cbf9ce71"
+    },
+    {
+      "role": "Banshee",
+      "before_sha256": "4bd6746b203220e69cf45883249f3aed5ac5398238e834ed736736239854dda5",
+      "sha256": "507b3001d4052c89f0fb56b14acc2e963580710f7725040325e8146f9b9c0e2c"
+    },
+    {
+      "role": "Bounty Hunter",
+      "before_sha256": "af9a82b2989cc3a29e13b1841b77ba2ad7521fa26a5fc2e9b4f763eb88037da8",
+      "sha256": "337f5aaa63335c0807d5df910c541742e00dd7e02dc024bede8c4dad68b2628e"
+    },
+    {
+      "role": "Choirboy",
+      "before_sha256": "27f638b45ac66387948bcbf64908e94d8789f24291b56bd4b494bdc8afd1e8eb",
+      "sha256": "04d004896c39b3560d86b5c94c400ff81cebd828761210ac85054f8bae200d1a"
+    },
+    {
+      "role": "Cult Leader",
+      "before_sha256": "aacc51e599fdd9a7403e6645e5b0b17941eb60c26cafd3c156a4d5ee3adb499a",
+      "sha256": "cc5564abf0e8344a56416ad0d2fff3ad77c8e3257a522d15af0e7a31f094f2f6"
+    },
+    {
+      "role": "Engineer",
+      "before_sha256": "e71a05797608a1abe0fb0a9dcb615d3ee337c4b13bf085bf2cba38c38f91f37b",
+      "sha256": "134d65ef86c418d02f0d35917da3882d5a7e95e9829dfdce7a045bb5a1195c4b"
+    },
+    {
+      "role": "Farmer",
+      "before_sha256": "eb83475c0b7231317a9f2af355b2ccb5def259eb8bfa8d30d33b6a3025240b6f",
+      "sha256": "9a476e3daa838d74e833ab0852cfa1803a1889662cc142197bc6138495dacfba"
+    },
+    {
+      "role": "Fortune Teller",
+      "before_sha256": "0420e56491dc23f1cba9691d43e6e9d369f2973db3b16abae99422c1e0153133",
+      "sha256": "97f13102877b5a083c5935b923386f2e4e022ba8237f0f739a5f2e06768beb5e"
+    },
+    {
+      "role": "General",
+      "before_sha256": "ca777da7c10d2cfde7c708a03e8649a79c4da511f6e88cdb8ddd9e8d90b32c07",
+      "sha256": "68058ee9d3cac5324a7492e8cfe3afd9fa1f265af6635551928c5145e7ccfc60"
+    },
+    {
+      "role": "High Priestess",
+      "before_sha256": "e32122bd098fe37624d64c46903acd9be510e8c1e60f565d2d3467c347642ed9",
+      "sha256": "33474f7c0c6f8bceae643f86d48a070962554f075fc6e8c39d2ed967cee3277b"
+    },
+    {
+      "role": "Huntsman",
+      "before_sha256": "fe6381f17d63bb14ede585a625badfa6b44ba8dd218b231f067750e6f182108f",
+      "sha256": "f82bcd6a0a2a07d861e0549e37ce785e3587264712e7a1abefa39f95babb57ec"
+    },
+    {
+      "role": "King",
+      "before_sha256": "78f6ed33ff22c42a480bc08c69d9ec51080dcdd74fa5f4ea103411478f78831e",
+      "sha256": "fef56e7f0842b8defe13a6096611b56d52b5c877b4e363fcbf92a8e170434dbc"
+    },
+    {
+      "role": "Knight",
+      "before_sha256": "121ef4232c705a5d17e97060dc158b290197a4b04581fd3add53357c0a00a011",
+      "sha256": "daa268204374b9a6775d8c093a5a8ad542735329ecd99212c36598c50cf1d362"
+    },
+    {
+      "role": "Lycanthrope",
+      "before_sha256": "ed5631a43de62f243cb199f14be37ac8ff555f635f0edc608b9956fc4621d1aa",
+      "sha256": "f97d5320e6caf41eda7cc43b2db174e3cc2ea7068faefc2d80363b5f38dd339b"
+    },
+    {
+      "role": "Magician",
+      "before_sha256": "5e0c17c94f6a4b8467067ae8c166c6f7920d2bf4b56c736d996cefde171ddbf5",
+      "sha256": "139e83c252254d61aa1450b927152e0a60b8c7e9e7adafceedc2b3c4b5d5a809"
+    },
+    {
+      "role": "Monk",
+      "before_sha256": "a6f4a5a390d4ba57259f595fcc1a0587b04e1e16ea290269a3fa918430633b74",
+      "sha256": "9801cf3a0455a5d410893a64ba9faa0f963ead339e058243080065830b3126d3"
+    },
+    {
+      "role": "Nightwatchman",
+      "before_sha256": "6febc73225951261cb93ffdcd4501f23176d5bfbc2dfc14a9bcbc093d752830b",
+      "sha256": "ab17311a75cb36caed2c95938da3f2f74f0eddd12636f7c64de74d8a194f6a42"
+    },
+    {
+      "role": "Noble",
+      "before_sha256": "9ca6f0851fea7c995f3708ccbe7cee1709248acf48407d404f44e945af28d89f",
+      "sha256": "cbcb7cf4e43d1c54d9c522d21405c8cb975b364f228133571e8fc24f2e5345e5"
+    },
+    {
+      "role": "Pixie",
+      "before_sha256": "fae8225dbb7b3d391dd60592e81b115b408f7816af2245403f8163e6719448d0",
+      "sha256": "c126477ac4221a2f3218439acd64b6cae073cb38ca88bb514d82c4e616a4eb28"
+    },
+    {
+      "role": "Poppy Grower",
+      "before_sha256": "807b2c3765ddc0a98aef2363a78072189c17fda6295fed4b203d7b951d49d146",
+      "sha256": "f8dfd05bf489428c230a4930fb92cc4374f1124078cdbe7a0c6419112be0cc43"
+    },
+    {
+      "role": "Preacher",
+      "before_sha256": "ed83d9d6f7e7b3cb869abcbd136e1da3fb7373a13b0257541abf259e8166e469",
+      "sha256": "18dfeb6457170d3c20eb8c823c7b928f5dd69ef9609b7df83a66d7d230a63532"
+    },
+    {
+      "role": "Shugenja",
+      "before_sha256": "3f164b625abf9493bc77ce9afb6f449da3112980666f29b5a5d138b605209c5f",
+      "sha256": "3d43cd9b70de804ab9f2adb6a196c2c81979e44b7ae4967364df3c896bf8a51b"
+    },
+    {
+      "role": "Steward",
+      "before_sha256": "899e5c0267de9a1564f9bf4fe070a409d277e28a85367df091fe6b163abe2c6f",
+      "sha256": "f05a3cc49c12697fb05d3de888d0f5aa75f35a6510f0ffafc181729c0ec208db"
+    },
+    {
+      "role": "Undertaker",
+      "before_sha256": "c2bbe55626652fc2dd53b2da7c8d2bcdbd86936f9224e8efd5f7991b76aa8517",
+      "sha256": "6c6079630fd3e5607f46616fc9e0e28d9ab93deff1d274850f7c99906b4b8038"
+    },
+    {
+      "role": "Washerwoman",
+      "before_sha256": "1804e9cb955371503bf0845f24dacd7381edaa51694b66e910ed123269e44a35",
+      "sha256": "aa8612bfe21b6dd3abe2ced6e7013c59a4031d843011ed8c001de37e148ee491"
+    },
+    {
+      "role": "Damsel",
+      "before_sha256": "18a4e89c07a937aa6d4b912945fb783657f658804a13d7a9e5f31f5fb2cc4721",
+      "sha256": "5a6b59b96f7f7e25b7ee6711ef222d8b50ec38200fb87b1b351943bf1dd66d83"
+    },
+    {
+      "role": "Hatter",
+      "before_sha256": "86b88cd19585c3092def6057f570f2be86af43bf8a467bf512db5553a8a9381b",
+      "sha256": "201966f7cb8b4323569572d874a3047735ed67ef4b38215b1392c0152e9e1b5e"
+    },
+    {
+      "role": "Ogre",
+      "before_sha256": "4410b64db0c50f3e30fee41cf189efd9371e4bedb73d607492ffeb29ea3b805b",
+      "sha256": "9c5fa70871f60b0d25cf8458d51834cede7a437a09d62759427df12a89f43728"
+    },
+    {
+      "role": "Plague Doctor",
+      "before_sha256": "889bcb741e7a83297406c860017c23176e8f6a1c1e8921f0908500c41b8ae10c",
+      "sha256": "d2197015d1220f9dd0ad937af5d65cab37576ef8060800ffcb1151fcca74695d"
+    },
+    {
+      "role": "Snitch",
+      "before_sha256": "bbc99f7e707ef4103adfb5d29f6cafd0853a36397342cd59c2ef32627cf93ed5",
+      "sha256": "ef4cc3f5bfb58a44fef517188db7375531cd249444d51410a80c8a208a277883"
+    },
+    {
+      "role": "Boffin",
+      "before_sha256": "7d17b01409bfb6a6b2f0cdf4c7caa8e8ef7df8efce2b4bf6a52694da4c831443",
+      "sha256": "68b474cfab2e67af46f6f42ddf750e4a201c4a98db6560a10be009e154a63959"
+    },
+    {
+      "role": "Fearmonger",
+      "before_sha256": "6c1aa6fca3a9cf9f979ef71b20e53e18bef1ff38b3e0c10a0a2e1efd4e488b4a",
+      "sha256": "4c561e1d1639039564a8a00be4d1dcfe11a57421e3ad851537af4f0660e5ce5e"
+    },
+    {
+      "role": "Harpy",
+      "before_sha256": "e73c59384abc5e0dd4e2974244bf1103ecb16e4e1176ce3d3271f74881a6599d",
+      "sha256": "ec8b9c9a0ab65a41778e22d7549e8f82396c7a98db6f3f217a04cce70470bac0"
+    },
+    {
+      "role": "Marionette",
+      "before_sha256": "f8dd4357f6087581fc97aa5e3da6f9165f69f73582b126821b707fc509769160",
+      "sha256": "c90a01848711ee9025c4978e38327e8c541d282288fb41956c590ac927caf052"
+    },
+    {
+      "role": "Mezepheles",
+      "before_sha256": "efccc9499b76c2f926d42d62352d6863f169972c655fba3392e0e8628e83e721",
+      "sha256": "61cc732266433243f270815a8f3cffbf4e252ec546a1aa684407ec1ddb5cf94f"
+    },
+    {
+      "role": "Organ Grinder",
+      "before_sha256": "74b49b4d16f7d3b16084a6902e52839215914a948452474d4f505dbe827943f9",
+      "sha256": "750358d4b7cdad5cb5c5487c21fe8d02e519209e85587c7a3a25a11e2469a214"
+    },
+    {
+      "role": "Scarlet Woman",
+      "before_sha256": "a650eacc6f890f7a655914706040be4ab65bb2bf1f438043e775f5c18d45eb15",
+      "sha256": "c2b7daa95a88219331fc62a16e361bf0177763aacbc7edebeac9752d7b16fa0b"
+    },
+    {
+      "role": "Summoner",
+      "before_sha256": "a66b467604222c1f6ab2cd2b9e47d90a1c01eccc48de5a1d402350d117500d30",
+      "sha256": "21d60446cf4aedbe94ae9b661d6f12c86135fb4e8369c33ebab83689824f55e7"
+    },
+    {
+      "role": "Vizier",
+      "before_sha256": "906a2cadc087c99761293495c1ae71e7c279d562022680799c8de6df71c15a5c",
+      "sha256": "f54a6d682eacde923e703bd5e2181c1620d8f09a0202532fef731a2351f451ab"
+    },
+    {
+      "role": "Wizard",
+      "before_sha256": "fe4223953793bf0eacdbc0800446b3a6d114c634b70f87c723314c83f5f88e3b",
+      "sha256": "0896937888138378fa71f1ef7811f3d76fdc860b989629ab98118031cc5505e5"
+    },
+    {
+      "role": "Wraith",
+      "before_sha256": "5f9873ae72dc43955537e5f239199fc661460202a94f5539ef56d06f97b6f64a",
+      "sha256": "00ed416c7d697e78d3b50f58a5b9fec77a53f0bca116ac49b7648538d9bdb515"
+    },
+    {
+      "role": "Xaan",
+      "before_sha256": "5e58ed48ff1c666de1342e559222eed1609a8c3e6e5ff57b35287522e6bc4fa0",
+      "sha256": "fdbcbeee3e732aa7c614efc326f4a3073fb0cb2752e7889b9072e683b0442745"
+    },
+    {
+      "role": "Al-Hadikhia",
+      "before_sha256": "3943f055d9a21b8fd72aae96093e2e092824839d1b63e3b6d73fc02b24cc0f49",
+      "sha256": "e0bf4ed8f244a88a7e54fa36c91acdc678d939bbab82eddff95258ad205a4218"
+    },
+    {
+      "role": "Alpha Info & Bluffs",
+      "before_sha256": "fb3c41bf4334e9a6493cf576bfada85d62bbe18dd5a8c99ab918e53f0c1d8d50",
+      "sha256": "be567d7ab465b3931d53f3848b35fbf3541a8703edbe9fd15d1e77132b4e4e45"
+    },
+    {
+      "role": "Imp",
+      "before_sha256": "18e3d62bebfdda3abe84032764f8db830c09ceff99fda1b28cce53d2272e37e1",
+      "sha256": "1b704b8bc1f27ddf5bd12583a8737ead70f00048d9e6eede6c650ac9d2441ff8"
+    },
+    {
+      "role": "Kazali",
+      "before_sha256": "a089f2fe93c37d8b00d9de38fe9f40a0a22fd44ae8dd50876ee6b0eb75f763e0",
+      "sha256": "1476103011d03dcd4584c9a0fd7aec2b8158ff939aa411f760f22136dfe9130f"
+    },
+    {
+      "role": "Legion",
+      "before_sha256": "3b238b566a049b2bc5859e117a7e81e5377057adc7f162693cd24ad6f7d8cbd7",
+      "sha256": "d2313bb9ce4218caac81ca60943d21bf391644188e0d574f969659495b49e39a"
+    },
+    {
+      "role": "Lil' Monsta",
+      "before_sha256": "4e70c6253ce9e79fabb17c06b8d923d5ac804750b4ec10975a17a1c183ead0c9",
+      "sha256": "57d88c5c4fa832a73bd4a0e8394594e7ccb68c811ab492952fbd240f218e2b20"
+    },
+    {
+      "role": "Lleech",
+      "before_sha256": "74cf37a1b03a07d05871346ffaa9fe04c59ed0663e105d8bbc5e12e5022e6089",
+      "sha256": "5425b932b34bdbf04add1e15c50cb498869f7f9e3a85abd98b354441d91d3b16"
+    },
+    {
+      "role": "Lord of Typhon",
+      "before_sha256": "2c1c2e6afcb736cce45cd358ff4436faa35798b915c2c9436c3dd7521649f8f5",
+      "sha256": "9efa53b2c292ed4139b08e5bc7af552d444c1cbb38e76c2ca039e7659e82da77"
+    },
+    {
+      "role": "Ojo",
+      "before_sha256": "72c780d4f2bc59d8710c8eb994c988b7962d1cd3f05057643243fad5e96d5e70",
+      "sha256": "1d046f776c2cfd835cf405de00652beb0e115ccce7a6a5e8b247be1dfabec899"
+    },
+    {
+      "role": "Yaggababble",
+      "before_sha256": "0f4b6957e675ba7bb569fb28bc86741d999068dfebe8a927c5454656c05408e5",
+      "sha256": "0af813303f1ed4439a7bd6a779382a4418ff600469437e3b4b4b80b08214fcd6"
+    },
+    {
+      "role": "Socialite",
+      "before_sha256": "689550b401f7d6ae378cfe28614a3230bc9927baa93f656105304c99c3f076fc",
+      "sha256": "d3936a2f0a3250d8521f6dec866f74b007e495ff8483c1b60753a9ce10bb754f"
+    },
+    {
+      "role": "Angel",
+      "before_sha256": "3e2a27caa6b79e03d007d5a1f1cf5f51a2da461b79da6fd75c1c90063f520418",
+      "sha256": "9cf4e2df9643a943b757fca1eb12d1b233697bde1f1b25b933222becdec3eba1"
+    },
+    {
+      "role": "Buddhist",
+      "before_sha256": "2a31cde5e104e633ccbe967d87b14262c164a818e4818e3fdbf307bc8c37343a",
+      "sha256": "78b060efa9ccfff0b2cc86f29032b491eefe4fded589f54ebda9f91d045f1477"
+    },
+    {
+      "role": "Duchess",
+      "before_sha256": "461499843943e3a3c7bf78bfcb672315364cdb48d1c30ad9bf8a5acd79a28a15",
+      "sha256": "78e3058a958bf684b1959562105dbcd94d38b64cd8a9aa49f97571b4c5056626"
+    },
+    {
+      "role": "Toymaker",
+      "before_sha256": "b5b4a3f1ab241d6d3bcd0312910184bf5947b69fc004007b9eb4cdc2cceeabd7",
+      "sha256": "f9d29c739f3800867f85a670596bc77f3bbffb18913e62c2a2b1ffc2f850025a"
+    },
+    {
+      "role": "Storm Catcher",
+      "before_sha256": "0c0a2fce47ceea1f955a6bb5fcd1cb43fe817166cbb87d657adf89a56bb46211",
+      "sha256": "d4d5626f51e92510947a1937e0e299785315941d71dce29e8d90c2f22cf54ff7"
+    },
+    {
+      "role": "Tor",
+      "before_sha256": "fddaf31b41444d460f7c630dfdb779e8d87c83b7cadf2971f9cb5c5233b6a414",
+      "sha256": "734c12858e598701c3f9c5aaf39094b345ff1f7d4232eac6e5cc869e86180134"
+    }
+  ]
+}

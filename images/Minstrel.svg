@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100%" viewBox="25 9 462 462" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <mask id="mask-Minstrel">
+      <rect x="-5000" y="-5000" width="10000" height="10000" fill="#FFFFFF" />
+      <circle cx="256" cy="330" r="32" fill="#000000" />
+      <rect x="216" y="400" width="80" height="16" rx="4" fill="#000000" />
+    </mask>
+  </defs>
+  <g mask="url(#mask-Minstrel)">
+    <rect x="236" y="80" width="40" height="200" rx="4" />
+    <path d="M 236 80 L 276 80 L 296 30 L 256 30 Z" />
+    <circle cx="220" cy="45" r="8" />
+    <circle cx="220" cy="65" r="8" />
+    <circle cx="312" cy="45" r="8" />
+    <circle cx="312" cy="65" r="8" />
+    <path d="M 216 260 
+             C 130 300, 130 450, 256 450 
+             C 382 450, 382 300, 296 260 
+             Z" />
+    <circle cx="256" cy="330" r="14" fill="#000000" />
+  </g>
+</svg>

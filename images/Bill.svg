@@ -1,0 +1,14 @@
+<svg width="100%" viewBox="277 45 469 469" xmlns="http://www.w3.org/2000/svg">
+  <!-- Bill Cipher Hat -->
+  <path d="M 479,66 H 544 V 149 H 479 Z" fill="black" />
+  <path d="M 450,149 H 573 V 164 H 450 Z" fill="black" />
+
+  <!-- Bill Cipher Triangle Body -->
+  <path d="M 511.5,164 L 712,492 H 311 Z" fill="black" />
+
+  <!-- Eye Almond White Shape -->
+  <path d="M 414,330 Q 511.5,276 609,330 Q 511.5,384 414,330 Z M 414,330 Q 511.5,367 609,330 Q 511.5,293 414,330 Z" fill="white" fill-rule="evenodd" />
+
+  <!-- Pupil White Circle -->
+  <path d="M 500.5,330 A 11,11 0 1 1 522.5,330 A 11,11 0 1 1 500.5,330 Z" fill="white" />
+</svg>

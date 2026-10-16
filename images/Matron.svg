@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100%" viewBox="53 32 407 407" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <mask id="mask-Matron">
+      <rect x="-5000" y="-5000" width="10000" height="10000" fill="#FFFFFF" />
+      <path d="M 130 390 C 200 412, 312 412, 382 390" stroke="#000000" stroke-width="12" stroke-linecap="round" fill="none" />
+    </mask>
+  </defs>
+  <g mask="url(#mask-Matron)">
+    <circle cx="256" cy="170" r="28" fill="#000000" />
+    <path d="M 240 50 C 240 50, 220 110, 242 170 L 270 170 C 292 110, 272 50, 272 50 Z" fill="#000000" />
+    <circle cx="256" cy="45" r="20" fill="#000000" />
+    <path d="M 210 190 
+           C 210 190, 160 300, 110 380 
+           C 90 410, 120 420, 160 420 
+           L 352 420 
+           C 392 420, 422 410, 402 380 
+           C 352 300, 302 190, 302 190 
+           Z" fill="#000000" />
+    <circle cx="256" cy="438" r="22" fill="#000000" />
+    <rect x="251" y="410" width="10" height="20" fill="#000000" />
+  </g>
+</svg>
