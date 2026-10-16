@@ -6,6 +6,8 @@ Approved-ruling discrepancies and verification tasks for Game Master are tracked
 
 ## Review and publish
 
+The 34 approved Trouble Brewing + icon alternatives are saved in [the deferred artwork package](artwork/deferred/trouble-brewing-plus/README.md). Keep the existing icons active until replacement tokens are printed and activation is explicitly requested.
+
 1. Open a generated role page to see its ruling, procedure, examples, source notes, and editorial questions. The canonical text is in `content/role-reference.json`.
 2. For each role, resolve its `reviewNotes`, verify `shortRuling`, `howToRun`, and `interactions`, then set `reviewStatus` to `approved` with `reviewedBy` and an ISO `reviewedAt` date. Do this only after the rules owner approves that role.
 3. Run `node scripts/build-reference.mjs` and `node --test scripts/test-reference.mjs` to regenerate and check the pages. `node scripts/build-reference.mjs --release` is the publication gate and fails while any published role remains draft, lacks approval metadata, or has unresolved review notes.

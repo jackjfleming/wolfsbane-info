@@ -1,0 +1,5 @@
+{
+  "prompt": "Edit this icon precisely, preserving the two overlapping theater masks and simple black silhouette style. Back mask at upper left must look unmistakably GOOD, kind and happy: replace its sharply slanted eyes with soft rounded upward-curving happy crescent eyes, and give it a gentle friendly rounded smile. No angry angles on the back mask. Front mask at lower right must look unmistakably EVIL: sharply slanted narrow eyes angled down toward the center, and an asymmetrical wicked grin. Preserve the front mask silhouette, overlapping placement, white separation between masks, broad black shapes and broad white cutouts. Exactly two eyes per mask, partially hidden where overlapped. Flat solid black on white. No gradients, texture, additional symbols, lettering, horns, tiny teeth or fine lines. Clear good twin behind and evil twin in front, readable at small token size for 3D relief printing and laser engraving.",
+  "output": "svg/Evil Twin.svg",
+  "sha256": "7315832b894c70e7f34f2ccbc05203cffac86cf7962eb8b4cd92a7046c420afc"
+}
