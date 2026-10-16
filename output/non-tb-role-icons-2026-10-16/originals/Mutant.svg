@@ -1,0 +1,17 @@
+<svg width="100%" viewBox="14 50 484 484" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <mask id="bio-mask">
+      <rect width="512" height="512" fill="white"/>
+      <circle cx="256" cy="256" r="40" fill="black"/>
+      <circle cx="256" cy="170" r="24" fill="black"/>
+      <circle cx="330" cy="306" r="24" fill="black"/>
+      <circle cx="182" cy="306" r="24" fill="black"/>
+      <rect x="240" y="60" width="32" height="60" fill="black"/>
+      <rect x="336" y="336" width="32" height="60" fill="black" transform="rotate(120 352 366)"/>
+      <rect x="144" y="336" width="32" height="60" fill="black" transform="rotate(-120 160 366)"/>
+    </mask>
+  </defs>
+  <path d="M256 72 C200 72 152 108 136 160 C120 212 140 268 184 304 C188 308 188 312 184 316 C152 348 136 392 152 436 C168 480 208 508 256 512 L256 432 C224 428 200 400 200 368 C200 352 208 336 220 324 L256 288 Z" fill="#000" mask="url(#bio-mask)"/>
+  <path d="M256 72 C312 72 360 108 376 160 C392 212 372 268 328 304 C324 308 324 312 328 316 C360 348 376 392 360 436 C344 480 304 508 256 512 L256 432 C288 428 312 400 312 368 C312 352 304 336 292 324 L256 288 Z" fill="#000" mask="url(#bio-mask)"/>
+  <path d="M256 288 L220 324 C208 336 200 352 200 368 C200 400 224 428 256 432 L256 512 C208 508 168 480 152 436 C136 392 152 348 184 316 C188 312 188 308 184 304 C140 268 120 212 136 160 L200 200 C192 216 192 236 200 252 L256 288 Z" fill="#000" mask="url(#bio-mask)"/>
+</svg>

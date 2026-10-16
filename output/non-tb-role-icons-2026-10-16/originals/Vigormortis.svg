@@ -1,0 +1,11 @@
+<svg width="100%" viewBox="3 6 94 94" xmlns="http://www.w3.org/2000/svg">
+  <mask id="skull-mask">
+    <rect width="100%" height="100%" fill="white" />
+    <circle cx="38" cy="45" r="8" fill="black" />
+    <circle cx="62" cy="45" r="8" fill="black" />
+    <path d="M50 50 L45 60 L55 60 Z" fill="black" />
+    <rect x="44" y="70" width="3" height="15" fill="black" />
+    <rect x="53" y="70" width="3" height="15" fill="black" />
+  </mask>
+  <path fill="#060606" mask="url(#skull-mask)" d="M50 10C27.9 10 10 27.9 10 50C10 65.5 18.8 78.9 31.8 85.5L31.8 95L68.2 95L68.2 85.5C81.2 78.9 90 65.5 90 50C90 27.9 72.1 10 50 10Z" />
+</svg>

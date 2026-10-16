@@ -1,0 +1,7 @@
+<svg width="100%" viewBox="6 6 88 88" xmlns="http://www.w3.org/2000/svg">
+  <mask id="nodashii-mask">
+    <rect width="100%" height="100%" fill="white" />
+    <path d="M50 25 C55 40 55 60 50 75 C45 60 45 40 50 25 Z" fill="black" />
+  </mask>
+  <path fill="#060606" mask="url(#nodashii-mask)" d="M50 15C20 15 10 50 10 50C10 50 20 85 50 85C80 85 90 50 90 50C90 50 80 15 50 15ZM50 70C39 70 30 61 30 50C30 39 39 30 50 30C61 30 70 39 70 50C70 61 61 70 50 70Z" />
+</svg>

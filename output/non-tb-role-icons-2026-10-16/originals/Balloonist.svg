@@ -1,0 +1,12 @@
+<svg width="100%" viewBox="32 28 449 449" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <mask id="balloon-mask">
+      <rect width="512" height="512" fill="white"/>
+      <path d="M200 80 L200 320 L232 320 L232 80 Z" fill="black"/>
+      <path d="M280 80 L280 320 L312 320 L312 80 Z" fill="black"/>
+    </mask>
+  </defs>
+  <path d="M256 48 C164 48 96 128 96 216 C96 288 144 340 192 364 L196 368 L200 392 L312 392 L316 368 L320 364 C368 340 416 288 416 216 C416 128 348 48 256 48 Z" fill="#000" mask="url(#balloon-mask)"/>
+  <path d="M204 392 L200 424 L312 424 L308 392 Z" fill="#000"/>
+  <path d="M212 424 L208 448 L216 456 L296 456 L304 448 L300 424 Z" fill="#000"/>
+</svg>

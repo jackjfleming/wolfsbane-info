@@ -1,0 +1,14 @@
+<svg width="100%" viewBox="-8 -8 528 528" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <mask id="eye-mask">
+      <rect width="512" height="512" fill="white"/>
+      <circle cx="256" cy="256" r="96" fill="black"/>
+    </mask>
+  </defs>
+  <path d="M16 256 C16 256 104 96 256 96 C408 96 496 256 496 256 C496 256 408 416 256 416 C104 416 16 256 16 256 Z" fill="#000" mask="url(#eye-mask)"/>
+  <path d="M256 160 A96 96 0 0 1 352 256" stroke="#000" stroke-width="24" fill="none" stroke-linecap="round"/>
+  <path d="M256 352 A96 96 0 0 1 160 256" stroke="#000" stroke-width="24" fill="none" stroke-linecap="round"/>
+  <circle cx="256" cy="256" r="28" fill="#000"/>
+  <path d="M280 216 A40 40 0 0 1 296 256" stroke="#000" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <path d="M232 296 A40 40 0 0 1 216 256" stroke="#000" stroke-width="12" fill="none" stroke-linecap="round"/>
+</svg>
